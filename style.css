@@ -100,8 +100,7 @@ aside {
     position: fixed;
     transition: right .4s ease;
     right: -420px;
-
-    width: 328px;
+    width: 268px;
     color: #ffffff;
     background-color: #181818;
     padding: 80px 40px;
