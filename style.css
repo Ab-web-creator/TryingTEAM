@@ -48,7 +48,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
-    padding: 15px 10px;
+    padding: 5px 10px;
     color: #050e72;
     font-size: 1em;
 }
@@ -63,7 +63,7 @@ header {
 }
 
 .header_container a {
-    font-size: 1.7rem;
+    font-size: 1rem;
     color: inherit;
 }
 
@@ -79,11 +79,15 @@ header {
 
 /* Icons of the header */
 .header_icons img {
-    width: 2rem;
+    width: 1.2rem;
+}
+
+.phone_icon img {
+    width: 1rem;
 }
 
 .bx-menu {
-   font-size: 2rem;
+   font-size: 1.4rem;
 }
 
 .hamburger_menu {
@@ -207,7 +211,7 @@ section {
 /* logo image  */
 .logo img, .simulatordagi_logo img, .theorydagi_logo img, .impactdagi_logo img {
     position: fixed;
-    margin-top: 100px;
+    margin-top: 50px;
     z-index: 20;
     margin-left: 20px;
     width: 50%;
@@ -218,7 +222,7 @@ section {
     display: block;
     position: absolute;
     z-index: 20;
-    margin-top: 150px;
+    margin-top: 80px;
     
     left: 50%;
     transform: translate(-50%);
@@ -226,7 +230,7 @@ section {
     color: #f7f2f1;
    
     font-family:  'Segoe UI';
-    font-size: 2rem;
+    font-size: 1.2rem;
     
     -webkit-text-stroke: 1px black; /* width and color */
 
@@ -278,6 +282,9 @@ section {
 }
 
 .icons_next_menuKnop img {
-    width: 65px;
+    width: 35px;
 }
 
+.mainMenuKnop img {
+    width: 55px;
+}
