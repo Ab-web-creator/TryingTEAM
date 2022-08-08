@@ -247,7 +247,7 @@ section {
     padding: 10px 7px;
 
     background-color: #020c7be6;
-    width: 80%;
+    width: 90%;
     height: 220px;
     z-index: 30;
     border-style: solid;
@@ -272,7 +272,7 @@ section {
     padding: 20px 10px;
 
     background-color: #020c7be6;
-    width: 80%;
+    width: 90%;
     height: 95%;
     z-index: 30;
     border-style: solid;
@@ -289,7 +289,7 @@ section {
     margin-bottom: 5px;
 }
 .text_container {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 
