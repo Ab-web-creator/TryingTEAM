@@ -333,7 +333,7 @@ section {
 }
 
 .mainMenuKnop  {
-    bottom: 50px;
+    bottom: 30px;
     z-index: 40;
     position: fixed;
     left: 50%;
