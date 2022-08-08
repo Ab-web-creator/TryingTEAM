@@ -289,7 +289,7 @@ section {
     margin-bottom: 5px;
 }
 .text_container {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 
@@ -324,7 +324,7 @@ section {
     grid-template-columns: 1fr  1fr;
     gap: 1rem;
     align-items: center;
-    margin-top: 190px;
+    margin-top: 220px;
 }
 
 .icons_next_menuKnop img {
@@ -333,7 +333,7 @@ section {
 }
 
 .mainMenuKnop  {
-    bottom: 100px;
+    bottom: 80px;
     z-index: 40;
     position: fixed;
     left: 50%;
