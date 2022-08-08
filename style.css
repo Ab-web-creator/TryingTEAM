@@ -214,11 +214,13 @@ section {
     z-index: 20;
     margin-left: 20px;
     width: 50%;
+    
 }
 
 
 .title h1 {
-    display: block;
+   
+    
     position: absolute;
     z-index: 20;
     margin-top: 80px;
@@ -236,9 +238,10 @@ section {
 }
 
 .blue_container {
+    
     margin: 0;
     position: absolute;
-    bottom: 10%;
+    bottom: 80px;
     left: 50%;
     transform: translate(-50%);
 
@@ -249,7 +252,7 @@ section {
     padding: 10px 7px;
 
     background-color: #020c7be6;
-    width: 95%;
+    width: 80%;
     height: fit-content;
     z-index: 30;
     border-style: solid;
@@ -267,10 +270,21 @@ section {
     margin-bottom: -5px;
 }
 
+.text_container p {
+    text-align: center;
+}
 .blue_container p {
+   
     margin-bottom: 0px;
     line-height: 22px;
     font-size: 1rem;
+}
+
+
+.blue_container p span {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 600;
 }
 
 .menu_button_container {
