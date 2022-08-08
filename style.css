@@ -209,25 +209,20 @@ section {
 
 /* logo image  */
 .logo img, .simulatordagi_logo img, .theorydagi_logo img, .impactdagi_logo img {
-    position: fixed;
+    position: relative;
     margin-top: 50px;
     z-index: 20;
     margin-left: 20px;
-    width: 50%;
+    width: 170px;
     
 }
 
 
 .title h1 {
-   
-    
-    position: absolute;
+    position: relative;
     z-index: 20;
-    margin-top: 80px;
-    
-    left: 50%;
-    transform: translate(-50%);
-
+    margin-top: -15px;
+    text-align: center;
     color: #f7f2f1;
    
     font-family:  'Segoe UI';
@@ -237,11 +232,11 @@ section {
 
 }
 
-.blue_container {
+.blue_container_short {
     
     margin: 0;
     position: absolute;
-    bottom: 80px;
+    bottom: 0px;
     left: 50%;
     transform: translate(-50%);
 
@@ -253,12 +248,12 @@ section {
 
     background-color: #020c7be6;
     width: 80%;
-    height: fit-content;
+    height: 200px;
     z-index: 30;
     border-style: solid;
     border-width: 2px;
     border-color: #f7f2f1;
-    border-radius: 10%;
+    border-radius: 10% 10% 0 0;
 }
 
 
@@ -296,9 +291,11 @@ section {
 }
 
 .icons_next_menuKnop img {
+    margin-top: 40px;
     width: 35px;
 }
 
 .mainMenuKnop img {
+    
     width: 55px;
 }
