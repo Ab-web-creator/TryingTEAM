@@ -152,7 +152,7 @@ aside button.close {
 }
 
 section {
-
+  
 }
 
 .home {
@@ -168,6 +168,33 @@ section {
 
     /* background-color: rgb(51, 34, 230);
     background-blend-mode: darken; */
+
+  
+}
+
+section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(9, 1fr);
+}
+ .blue_container_short {
+    grid-column: span 9;
+    grid-row-start: 9;
+}
+
+.logo {
+    grid-row-start: 1;
+    grid-column: span 4;
+}
+.title {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column: span 9;
+}
+
+.blue_container_long {
+    grid-column: span 9;
+    grid-row-start: 1;
 }
 
 .simulator {
@@ -215,7 +242,7 @@ section {
     z-index: 20;
     margin-left: 20px;
     width: 170px;
-    
+    grid-area: logo;
 }
 
 
@@ -230,16 +257,15 @@ section {
     font-size: 1.2rem;
     
     -webkit-text-stroke: 1px black; /* width and color */
-
+     
 }
 
 .blue_container_short {
+     
+    margin-left: auto;
+    margin-right: auto;
     
-    margin: 0;
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%);
+    position: relative;
 
     color: #f7f2f1;
     font-size: 18px;
@@ -260,11 +286,11 @@ section {
 
 .blue_container_long {
     
-    margin: 0;
-    position: absolute;
+   
+    position: relative;
     top: 0px;
-    left: 50%;
-    transform: translate(-50%);
+    margin-left: auto;
+    margin-right: auto;
 
     color: #f7f2f1;
     
