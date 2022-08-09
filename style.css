@@ -130,7 +130,7 @@ aside button.close {
     font-size: 24px;
     border: 0;
     background-color: transparent;
-    position: absolute;
+    /* position: absolute; */
     top: 10px;
     right: 20px;
     padding: 10px;
@@ -251,7 +251,7 @@ section {
     z-index: 20;
     margin-top: -15px;
     text-align: center;
-    color: #afdc1c;
+    color: #dc1c8f;
    
     font-family:  'Segoe UI';
     font-size: 1.2rem;
