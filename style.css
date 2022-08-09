@@ -160,6 +160,7 @@ section {
     height: 100vh;
     position: relative;
     background-image: url(img/mainpage_1_mobile.jpg); 
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -174,7 +175,7 @@ section {
     height: 100vh;
     position: relative;
     background: url(img/mainpage_2_mobile.jpg);
-
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -187,7 +188,7 @@ section {
     height: 100vh;
     position: relative;
     background: url(img/mainpage_3_mobile.jpg);
-
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -200,7 +201,7 @@ section {
     height: 100vh;
     position: relative;
     background: url(img/mainpage_4_mobile.jpg);
-
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
