@@ -150,17 +150,14 @@ aside button.close {
 .backdrop.active {
     display: block;
 }
-
-section {
-  
-}
+ 
 
 .home {
     width: 100%;
     height: 100vh;
     position: relative;
     background-image: url(img/mainpage_1_mobile.jpg); 
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -176,25 +173,27 @@ section {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(9, 1fr);
+   
 }
+
  .blue_container_short {
     grid-column: span 9;
-    grid-row-start: 9;
+    grid-row-start: 19;
+   
 }
 
 .logo {
-    grid-row-start: 1;
+    grid-row-start: 4;
     grid-column: span 4;
 }
 .title {
-    grid-row-start: 2;
+    grid-row-start: 5;
     grid-column-start: 1;
     grid-column: span 9;
 }
 
 .blue_container_long {
     grid-column: span 9;
-    grid-row-start: 1;
 }
 
 .simulator {
@@ -238,11 +237,9 @@ section {
 /* logo image  */
 .logo img, .simulatordagi_logo img, .theorydagi_logo img, .impactdagi_logo img {
     position: relative;
-    margin-top: 50px;
     z-index: 20;
     margin-left: 20px;
     width: 170px;
-    grid-area: logo;
 }
 
 
@@ -251,7 +248,7 @@ section {
     z-index: 20;
     margin-top: -15px;
     text-align: center;
-    color: #dc1c8f;
+    color: #1cdc52;
    
     font-family:  'Segoe UI';
     font-size: 1.2rem;
