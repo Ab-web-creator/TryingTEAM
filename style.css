@@ -47,7 +47,7 @@ header {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(226, 244, 153);
+    background-color: rgb(153, 185, 244);
     padding: 5px 10px;
     color: #050e72;
     font-size: 1em;
@@ -283,7 +283,7 @@ section {
     border-radius: 10% 10% 10% 10%;
 }
 
-
+/* 
 .blue_container_long {
     
    
@@ -306,7 +306,7 @@ section {
     border-width: 0px 2px 2px 2px;
     border-color: #f7f2f1;
     border-radius: 0 0 10% 10%;
-}
+} */
  
 .text_container {
     margin-top: 10px;
@@ -337,7 +337,7 @@ section {
 }
 
 .mainMenuKnop  {
-    bottom: 0px;
+    bottom: -20px;
     z-index: 100;
     position: fixed;
     left: 50%;
