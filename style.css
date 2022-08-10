@@ -174,12 +174,12 @@ section {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 18;
+    /* grid-template-rows: 14; */
    
 }
 
  .blue_container_short {
-    grid-column: 2/ span 5;
+    grid-column: 1/ span 7;
     grid-row: 14 / span 4;
    
 }
@@ -188,12 +188,13 @@ section {
     grid-row-start: 4;
     grid-column-start: 2;
 }
-.title {
+
+/* .title {
     grid-row-start: 5;
     grid-column-start: 1;
     grid-column: span 12;
     margin-top: -45px;
-}
+} */
 
 .blue_container_long {
     grid-column: span 9;
@@ -238,10 +239,10 @@ section {
 }
 
 /* logo image  */
-.logo img, .simulatordagi_logo img, .theorydagi_logo img, .impactdagi_logo img {
+.logo img {
     position: relative;
     z-index: 20;
-    width: 250px;
+    width: 220px;
 }
 
 
@@ -328,14 +329,7 @@ section {
     align-items: center;
     margin-top: 40px;
 }
-
-.menu_buttons_container2 {
-    display: grid;
-    grid-template-columns: 1fr  1fr;
-    gap: 1rem;
-    align-items: center;
-    margin-top: 80px;
-}
+ 
 
 .icons_next_menuKnop img {
     margin-top: -50px;
