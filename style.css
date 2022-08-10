@@ -25,7 +25,7 @@
     src: url(img/Segoe UI.ttf);
   }
 
-
+/* 
 .scroller {
     height: 100vh;
     overflow-y: scroll;
@@ -35,7 +35,7 @@
 
 .scroller section {
     scroll-snap-align: center;
-} 
+}  */
 
 /* Mobile Header */
 header {
@@ -64,6 +64,7 @@ header {
 
 .nav_container a {
     font-size: 1.2rem;
+    font-weight: 600;
     color: inherit;
 }
 
@@ -79,15 +80,15 @@ header {
 
 /* Icons of the nav-bar */
 .nav_icons img {
-    width: 1.5rem;
+    width: 1.8rem;
 }
 
 .phone_icon img {
-    width: 1.3rem;
+    width: 1.5rem;
 }
 
 .bx-menu {
-   font-size: 1.6rem;
+   font-size: 2rem;
 }
 
 .hamburger_menu {
@@ -171,25 +172,27 @@ aside button.close {
 
 section {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(9, 1fr);
+    gap: 20px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 18;
    
 }
 
  .blue_container_short {
-    grid-column: span 9;
-    grid-row-start: 19;
+    grid-column: 2/ span 5;
+    grid-row: 14 / span 4;
    
 }
 
 .logo {
     grid-row-start: 4;
-    grid-column: span 4;
+    grid-column-start: 2;
 }
 .title {
     grid-row-start: 5;
     grid-column-start: 1;
-    grid-column: span 9;
+    grid-column: span 12;
+    margin-top: -45px;
 }
 
 .blue_container_long {
@@ -238,17 +241,16 @@ section {
 .logo img, .simulatordagi_logo img, .theorydagi_logo img, .impactdagi_logo img {
     position: relative;
     z-index: 20;
-    margin-left: 20px;
-    width: 170px;
+    width: 250px;
 }
 
 
 .title h1 {
     position: relative;
     z-index: 20;
-    margin-top: -15px;
+   
     text-align: center;
-    color: #1cdc52;
+    color: #eff93d;
    
     font-family:  'Segoe UI';
     font-size: 1.2rem;
@@ -272,12 +274,12 @@ section {
 
     background-color: #020c7be6;
     width: 90%;
-    height: 220px;
+    height: fit-content;
     z-index: 30;
     border-style: solid;
-    border-width: 2px 2px 0px 2px;
+    border-width: 2px 2px 2px 2px;
     border-color: #f7f2f1;
-    border-radius: 10% 10% 0 0;
+    border-radius: 10% 10% 10% 10%;
 }
 
 
@@ -306,33 +308,25 @@ section {
 }
  
 .text_container {
-    margin-top: 40px;
-}
-
-.text_container p {
-    text-align: center;
-    
-}
-.blue_container p {
-   
-    margin-bottom: 10px;
-    line-height: 32px;
-    font-size: 1rem;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 150%;
 }
 
 
-.blue_container p span {
+
+/* .blue_container p span {
     font-size: 1rem;
     font-style: italic;
     font-weight: 600;
-}
+} */
 
 .menu_buttons_container {
     display: grid;
     grid-template-columns: 1fr  1fr;
     gap: 1rem;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .menu_buttons_container2 {
