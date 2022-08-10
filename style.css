@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: rgb(239, 230, 249);
+    background-color: rgb(215, 215, 215);
 }
 
 :root {
@@ -244,6 +244,7 @@ section {
     font-family:  'Segoe UI';
     font-size: 1.2rem;
     
+    
     -webkit-text-stroke: 1px black; /* width and color */
      
 }
@@ -299,6 +300,8 @@ section {
 .text_container h1 {
     margin-top: 10px;
     font-size: 16px;
+    font-style: italic;
+
     line-height: 80%;
 }
 
