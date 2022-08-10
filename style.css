@@ -1,4 +1,4 @@
-/* Google fonts */
+    /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
@@ -13,6 +13,11 @@
     font-family:  'Segoe UI', sans-serif;
     
 }
+
+header {
+    background-color: rgb(195, 101, 238);
+}
+
 :root {
     --main-color: #fe5b3d;
     --second-color: #ffac38;
@@ -46,7 +51,7 @@ header {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(238, 204, 101);
+    /* background-color: rgb(238, 204, 101); */
     padding: 5px 10px;
     color: #050e72;
     font-size: 1em;
@@ -315,12 +320,12 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
  
 
 .icons_next_menuKnop img {
-    margin-top: 40px;
+    margin-top: 70px;
     width: 35px;
 }
 
