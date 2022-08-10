@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: rgb(52, 7, 130);
+    background-color: rgb(213, 212, 214);
 }
 
 :root {
@@ -333,7 +333,7 @@ section {
 }
 
 .mainMenuKnop  {
-    bottom: 10px;
+    bottom: -2px;
     z-index: 100;
     position: relative;
     left: 50%;
