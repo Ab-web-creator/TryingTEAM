@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: rgb(120, 70, 5);
+    background-color: rgb(97, 104, 93);
 }
 
 :root {
@@ -301,10 +301,10 @@ section {
     border-radius: 0 0 10% 10%;
 } */
  
-.text_container {
+.text_container h1, .text_container p {
     margin-top: 10px;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 80%;
 }
 
 
@@ -330,7 +330,7 @@ section {
 }
 
 .mainMenuKnop  {
-    bottom: -30px;
+    bottom: -25px;
     z-index: 100;
     position: relative;
     left: 50%;
