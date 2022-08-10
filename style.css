@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: rgb(194, 145, 243);
+    background-color: rgb(68, 58, 79);
 }
 
 :root {
@@ -296,11 +296,18 @@ section {
     border-radius: 0 0 10% 10%;
 } */
  
-.text_container h1, .text_container p {
+.text_container h1 {
     margin-top: 10px;
     font-size: 16px;
     line-height: 80%;
 }
+
+.text_container p {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 80%;
+}
+
 
 
 
@@ -319,20 +326,20 @@ section {
 
 .menu_buttons_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr  1fr;
     gap: 1rem;
     align-items: center;
 }
  
 
 .icons_next_menuKnop img {
-    margin-top: 60px;
+    margin-top: 10px;
     width: 55px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .mainMenuKnop  {
-    bottom: -10px;
+    bottom: -50px;
     z-index: 100;
     position: relative;
     left: 50%;
