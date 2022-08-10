@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: rgb(195, 101, 238);
+    background-color: rgb(120, 70, 5);
 }
 
 :root {
@@ -261,10 +261,10 @@ section {
     position: relative;
 
     color: #f7f2f1;
-    font-size: 18px;
+   
     line-height: 150%;
     text-align: center;
-    padding: 10px 7px;
+    padding: 3px 6px;
 
     background-color: #020c7be6;
     width: 90%;
@@ -303,7 +303,7 @@ section {
  
 .text_container {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 150%;
 }
 
