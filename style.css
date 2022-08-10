@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: rgb(98, 226, 23);
+    background-color: rgb(229, 241, 198);
 }
 
 :root {
@@ -325,12 +325,13 @@ section {
  
 
 .icons_next_menuKnop img {
-    margin-top: 70px;
-    width: 35px;
+    margin-top: 100px;
+    width: 55px;
+    margin-bottom: 30px;
 }
 
 .mainMenuKnop  {
-    bottom: -25px;
+    bottom: 10px;
     z-index: 100;
     position: relative;
     left: 50%;
