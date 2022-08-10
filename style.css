@@ -324,7 +324,7 @@ section {
 
 .menu_buttons_container {
     display: grid;
-    grid-template-columns: 1fr  1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     align-items: center;
     margin-top: 40px;
@@ -339,7 +339,7 @@ section {
 .mainMenuKnop  {
     bottom: -20px;
     z-index: 100;
-    position: fixed;
+    position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
 }
