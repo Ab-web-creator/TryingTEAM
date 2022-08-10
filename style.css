@@ -47,7 +47,7 @@ header {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(244, 239, 153);
+    background-color: rgb(120, 26, 56);
     padding: 5px 10px;
     color: #050e72;
     font-size: 1em;
@@ -251,7 +251,7 @@ section {
     z-index: 20;
    
     text-align: center;
-    color: #eff93d;
+    color: #f3f8f5;
    
     font-family:  'Segoe UI';
     font-size: 1.2rem;
@@ -327,12 +327,12 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
  
 
 .icons_next_menuKnop img {
-    margin-top: -50px;
+    margin-top: 20px;
     width: 35px;
 }
 
