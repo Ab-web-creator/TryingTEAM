@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: rgb(97, 104, 93);
+    background-color: rgb(98, 226, 23);
 }
 
 :root {
@@ -185,7 +185,7 @@ section {
  .blue_container {
 
     /* grid-column: 1/ span 7; */
-    grid-row: 9 / span 4;
+    grid-row: 8 / span 4;
 }
 
 .logo {
