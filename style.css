@@ -39,7 +39,6 @@
 
 /* Mobile Header */
 header {
-    
     position: fixed;
     top: 0;
     right: 0;
@@ -47,7 +46,7 @@ header {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(209, 231, 186);
+    background-color: rgb(238, 204, 101);
     padding: 5px 10px;
     color: #050e72;
     font-size: 1em;
@@ -185,7 +184,7 @@ section {
 }
 
 .logo {
-    grid-row-start: 4;
+    grid-row-start: 3;
     /* grid-column-start: 2; */
 }
 
