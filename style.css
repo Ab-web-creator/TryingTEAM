@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: rgb(213, 212, 214);
+    background-color: rgb(194, 145, 243);
 }
 
 :root {
@@ -322,18 +322,17 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     align-items: center;
-    margin-top: 5px;
 }
  
 
 .icons_next_menuKnop img {
-    margin-top: 80px;
+    margin-top: 60px;
     width: 55px;
     margin-bottom: 30px;
 }
 
 .mainMenuKnop  {
-    bottom: -2px;
+    bottom: -10px;
     z-index: 100;
     position: relative;
     left: 50%;
