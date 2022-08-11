@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: rgb(244, 127, 127);
+    background-color: rgb(178, 250, 168);
 }
 
 :root {
@@ -30,7 +30,7 @@ header {
     src: url(img/Segoe UI.ttf);
   }
 
-
+/* 
 .scroller {
     height: 100vh;
     overflow-y: scroll;
@@ -40,7 +40,7 @@ header {
 
 .scroller section {
     scroll-snap-align: center;
-} 
+}  */
 
 /* Mobile Header */
 header {
@@ -156,25 +156,15 @@ aside button.close {
     display: block;
 }
  
-
-.home {
-    width: 100%;
+section {
+    max-width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url(img/mainpage_1_mobile.jpg); 
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;
-    padding: 0px 0px;
-
-    /* background-color: rgb(51, 34, 230);
-    background-blend-mode: darken; */
-
-  
-}
-
-section {
+   
+    padding: 0px 0px; 
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
@@ -186,44 +176,6 @@ section {
 .logo {
     grid-row-start: 3;
     /* grid-column-start: 2; */
-}
-
-.simulator {
-    max-width: 100%;
-    height: 100vh;
-    position: relative;
-    background: url(img/mainpage_2_mobile.jpg);
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    padding: 0px 0px; 
-}
-
-
-.theory {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background: url(img/mainpage_3_mobile.jpg);
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    padding: 0px 0px; 
-}
-
-
-.impact {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background: url(img/mainpage_4_mobile.jpg);
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    padding: 0px 0px; 
 }
 
 /* logo image  */
@@ -244,7 +196,6 @@ section {
     font-family:  'Segoe UI';
     font-size: 1.2rem;
     
-    
     -webkit-text-stroke: 1px black; /* width and color */
      
 }
@@ -253,15 +204,11 @@ section {
      
     margin-left: auto;
     margin-right: auto;
-    
     position: relative;
-
     color: #f7f2f1;
-   
     line-height: 150%;
     text-align: center;
     padding: 3px 6px;
-
     background-color: #020c7be6;
     width: 90%;
     height: fit-content;
@@ -271,37 +218,12 @@ section {
     border-color: #f7f2f1;
     border-radius: 10% 10% 10% 10%;
 }
+  
 
-/* 
-.blue_container_long {
-    
-   
-    position: relative;
-    top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-
-    color: #f7f2f1;
-    
-    line-height: 150%;
-    text-align: center;
-    padding: 20px 10px;
-
-    background-color: #020c7be6;
-    width: 90%;
-    height: 95%;
-    z-index: 30;
-    border-style: solid;
-    border-width: 0px 2px 2px 2px;
-    border-color: #f7f2f1;
-    border-radius: 0 0 10% 10%;
-} */
- 
 .text_container h1 {
     margin-top: 10px;
     font-size: 16px;
     font-style: italic;
-
     line-height: 80%;
 }
 
@@ -312,17 +234,7 @@ section {
 }
 
 
-
-
-/* .blue_container p span {
-    font-size: 1rem;
-    font-style: italic;
-    font-weight: 600;
-} */
-
-
 .blue_container {
-
     /* grid-column: 1/ span 7; */
     grid-row: 12 / span 4;
 }
