@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: rgb(178, 250, 168);
+    background-color: rgb(246, 199, 235);
 }
 
 :root {
@@ -30,17 +30,17 @@ header {
     src: url(img/Segoe UI.ttf);
   }
 
-/* 
+
 .scroller {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scroll-padding: 40px;
 }
 
 .scroller section {
     scroll-snap-align: center;
-}  */
+} 
 
 /* Mobile Header */
 header {
@@ -148,7 +148,7 @@ aside button.close {
     position: fixed;
     inset: 0;
     background-color: rgba(27, 19, 19, 0.56);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     z-index: 210;
 }
 
@@ -264,3 +264,4 @@ section {
 .mainMenuKnop img {
     width: 65px;
 }
+
