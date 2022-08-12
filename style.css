@@ -42,6 +42,9 @@ header {
     scroll-snap-align: center;
 } 
 
+.inverse {
+    opacity: 0.4;
+}
 /* Mobile Header */
 header {
     position: fixed;
