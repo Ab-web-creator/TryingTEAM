@@ -34,7 +34,7 @@ header {
 .scroller {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     scroll-padding: 40px;
 }
 
@@ -265,3 +265,12 @@ section {
     width: 65px;
 }
 
+
+/* 
+git pull
+
+git add .
+
+git commit -m "lyuboe sobwenie"
+
+git push */
