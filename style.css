@@ -14,7 +14,7 @@
 }
 
 header {
-  background-color: rgb(217, 65, 225);
+  background-color: rgb(235, 247, 187);
 }
 
 :root {
@@ -253,6 +253,13 @@ section {
   width: 65px;
 }
 
+
+.inverse {
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
+
 /* 
 git pull
 
@@ -262,7 +269,3 @@ git commit -m "lyuboe sobwenie"
 
 git push */
 
-.inverse {
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
-}
