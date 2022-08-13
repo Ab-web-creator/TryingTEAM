@@ -14,7 +14,7 @@
 }
 
 header {
-  background-color: rgb(235, 247, 187);
+  background-color: rgb(254, 254, 254);
 }
 
 :root {
@@ -261,11 +261,14 @@ section {
 
 
 /* 
+
 git pull
 
 git add .
 
 git commit -m "lyuboe sobwenie"
 
-git push */
+git push
+
+*/
 

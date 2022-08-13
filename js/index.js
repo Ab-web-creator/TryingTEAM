@@ -16,11 +16,11 @@ const observer = new IntersectionObserver(function (entries, observer) {
       entry.target.classList.remove('inverse')
       setTimeout(() => {
         entry.target.classList.add('inverse')
-      }, 1000)
+      }, 500)
     } else {
       setTimeout(() => {
         entry.target.classList.add('inverse')
-      }, 500)
+      }, 200)
     }
   })
 }, options)
@@ -28,6 +28,9 @@ const observer = new IntersectionObserver(function (entries, observer) {
 sections.forEach((section) => {
   observer.observe(section)
 })
+
+
+
 
 const blueContainers = document.querySelectorAll('.blue_container')
 console.log(blueContainers)
@@ -47,11 +50,11 @@ const watcher = new IntersectionObserver(function (entries, observer) {
       entry.target.classList.remove('inverse')
       setTimeout(() => {
         entry.target.classList.add('inverse')
-      }, 1000)
+      }, 500)
     } else {
       setTimeout(() => {
         entry.target.classList.add('inverse')
-      }, 500)
+      }, 200)
     }
   })
 }, settings)
