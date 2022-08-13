@@ -12,14 +12,14 @@ const observer = new IntersectionObserver(function (entries, observer) {
       return
     }
     console.log(entry)
-    if (entry.target.classList.contains('inverse')) {
-      entry.target.classList.remove('inverse')
+    if (entry.target.classList.contains('fade_in')) {
+      entry.target.classList.remove('fade_in')
       setTimeout(() => {
-        entry.target.classList.add('inverse')
-      }, 500)
+        entry.target.classList.add('fade_in')
+      }, 200)
     } else {
       setTimeout(() => {
-        entry.target.classList.add('inverse')
+        entry.target.classList.add('fade_in')
       }, 200)
     }
   })
@@ -29,7 +29,7 @@ sections.forEach((section) => {
   observer.observe(section)
 })
 
-
+// the second element
 
 
 const blueContainers = document.querySelectorAll('.blue_container')
@@ -46,14 +46,14 @@ const watcher = new IntersectionObserver(function (entries, observer) {
       return
     }
     console.log(entry)
-    if (entry.target.classList.contains('inverse')) {
-      entry.target.classList.remove('inverse')
+    if (entry.target.classList.contains('fade_in')) {
+      entry.target.classList.remove('fade_in')
       setTimeout(() => {
-        entry.target.classList.add('inverse')
-      }, 500)
+        entry.target.classList.add('fade_in')
+      }, 200)
     } else {
       setTimeout(() => {
-        entry.target.classList.add('inverse')
+        entry.target.classList.add('fade_in')
       }, 200)
     }
   })

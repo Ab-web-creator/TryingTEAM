@@ -254,7 +254,7 @@ section {
 }
 
 
-.inverse {
+.fade_in {
   opacity: 1;
   transition: opacity .5s ease-in;
 }
