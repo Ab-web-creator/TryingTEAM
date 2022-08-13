@@ -256,7 +256,7 @@ section {
 
 .inverse {
   opacity: 1;
-  transition: opacity 2s ease-in;
+  transition: opacity .5s ease-in;
 }
 
 
