@@ -1,7 +1,7 @@
  
 
 
-// not working?
-window.addEventListener('touchstart', () => {
-    alert("ddd");
-});
+// // not working?
+// window.addEventListener('touchstart', () => {
+//     alert("touchstart");
+// });
