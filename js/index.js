@@ -76,4 +76,4 @@ const scroller = document.getElementById('scroller')
 
 scroller.addEventListener('scroll', scrollHandler)
 
-console.log(isScrolling)
+console.log('isScrolling')
