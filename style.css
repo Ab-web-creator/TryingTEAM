@@ -14,7 +14,7 @@
 }
 
 header {
-  background-color: rgb(183, 181, 189);
+  background-color: rgb(246, 232, 188);
 }
 
 :root {
@@ -165,7 +165,8 @@ section {
 }
 
 .logo {
-  grid-row-start: 3;
+  margin-left: 20px;
+  grid-row-start: 4;
   /* grid-column-start: 2; */
   opacity: 0;
   /* transition: opacity 0.5s linear; */
@@ -260,11 +261,11 @@ git add .
 
 git commit -m "lyuboe sobwenie"
 
-git push 
+git push
 
 */
 
 .inverse {
   opacity: 1;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }

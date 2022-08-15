@@ -1,3 +1,6 @@
+// Old script. We are not using it for this website.
+
+
 const sections = document.querySelectorAll('.logo')
 console.log(sections)
 const options = {

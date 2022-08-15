@@ -7,22 +7,25 @@ function scrollHandler(e) {
 
   clearTimeout(e.target.scrollTimeout) //clear previous timeout
 
+
+
   e.target.scrollTimeout = setTimeout(function () {
-    console.log('Scrolling stopped!')
+    
     const sections = document.querySelectorAll('.logo')
-    console.log(sections)
+     
     const options = {
       root: null,
       threshold: 0,
       rootMargin: '0px',
     }
 
+    
     const observer = new IntersectionObserver(function (entries, observer) {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
           return
         }
-        console.log(entry)
+       
         if (entry.target.classList.contains('inverse')) {
           entry.target.classList.remove('inverse')
           setTimeout(() => {
@@ -40,7 +43,11 @@ function scrollHandler(e) {
       observer.observe(section)
     })
 
-    console.log(blueContainers)
+
+
+
+
+    
     const settings = {
       root: null,
       threshold: 0,
@@ -52,7 +59,7 @@ function scrollHandler(e) {
         if (!entry.isIntersecting) {
           return
         }
-        console.log(entry)
+   
         if (entry.target.classList.contains('inverse')) {
           entry.target.classList.remove('inverse')
           setTimeout(() => {
@@ -72,8 +79,9 @@ function scrollHandler(e) {
   }, timeOut)
 }
 
+
+
+
+
 const scroller = document.getElementById('scroller')
-
 scroller.addEventListener('scroll', scrollHandler)
-
-console.log('isScrolling')
