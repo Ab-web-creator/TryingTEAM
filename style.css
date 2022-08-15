@@ -29,14 +29,14 @@ header {
   src: url(img/SegoeUI.ttf);
 }
 
-.scroller {
+#scroller {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-padding: 40px;
 }
 
-.scroller section {
+#scroller section {
   scroll-snap-align: center;
 }
 
@@ -264,5 +264,5 @@ git push */
 
 .inverse {
   opacity: 1;
-  transition: opacity 1.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
