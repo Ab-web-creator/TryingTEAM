@@ -14,7 +14,7 @@
 }
 
 header {
-  background-color: rgb(254, 254, 254);
+  background-color: rgb(226, 244, 155);
 }
 
 :root {
@@ -165,7 +165,8 @@ section {
 }
 
 .logo {
-  grid-row-start: 3;
+  grid-row-start: 4;
+  margin-left: 20px;
   /* grid-column-start: 2; */
   opacity: 0;
   /* transition: opacity 0.5s linear; */
@@ -256,7 +257,7 @@ section {
 
 .fade_in {
   opacity: 1;
-  transition: opacity .5s ease-in;
+  transition: opacity 1s ease-in;
 }
 
 

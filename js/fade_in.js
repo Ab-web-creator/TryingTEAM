@@ -29,8 +29,9 @@ sections.forEach((section) => {
   observer.observe(section)
 })
 
-// the second element
 
+
+// the second element
 
 const blueContainers = document.querySelectorAll('.blue_container')
 console.log(blueContainers)
