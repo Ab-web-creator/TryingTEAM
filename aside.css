@@ -5,7 +5,9 @@ aside {
     width: 262px;
     color: #ffffff;
     background-color: #0308a0c7;
-    padding: 50px 40px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 20px;
     padding-bottom: 60px;
     z-index: 301;
     max-height: 85%;
@@ -40,10 +42,12 @@ aside ul li a {
 }
 
 aside ul li a:hover {
-  color: cyan;
-  background: #1e1e1e; 
-  border-left-color: cyan;
-  padding: 10px 0px 10px 10px;
+  color: rgb(17, 29, 29);
+  background: #2cc6f1; 
+   
+  /* border-left-color: cyan; */
+  padding-left: 10px;
+  /* padding: 10px 0px 10px 10px; */
 }
   
 aside ul ul {
@@ -76,7 +80,7 @@ aside ul ul li a {
 aside ul li a span {
  position: absolute;
  top: 50%;
- right: 0px;
+ right: 10px;
  font-size: 12px;
  transform: translateY(-50%);
  transition: transform 0.6s;
@@ -89,14 +93,14 @@ aside ul li a:hover span.rotate {
 
 aside ul li a.active {
   color: cyan;
-  background: #7a55f4;
+  background: #55d7f4;
   border-left-color: cyan;
   
 }
 
 aside ul li.active ul li a {
   color: #e6e6e6;
-  background: #4f20eb;
+  background: #20eb4c;
   border-left-color: transparent;
 }
 
@@ -113,6 +117,8 @@ aside ul li:last-child {
 aside ul li ul {
   background: rgb(79, 62, 235);
 }
+
+
   /* close x button and backdrop */
 
   .sidebar_top {
@@ -120,8 +126,6 @@ aside ul li ul {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
-
-    
   }
   
   aside button.close {
@@ -129,12 +133,13 @@ aside ul li ul {
     font-size: 24px;
     border: 0;
     background-color: transparent;
-    /* position: absolute; */
+    position: relative;
     /* top: 10px;
     right: 20px;
     padding: 10px; */
     font-family: sans-serif;
     font-weight: 100;
+    padding-right: 10px;
   }
   
   .backdrop {
@@ -153,7 +158,6 @@ aside ul li ul {
 
 /* 
 
-
 git pull
 
 git add .
@@ -161,6 +165,5 @@ git add .
 git commit -m "lyuboe sobwenie"
 
 git push 
-
 
 */
