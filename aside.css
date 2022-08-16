@@ -4,7 +4,7 @@ aside {
     right: -420px;
     width: 248px;
     color: #ffffff;
-    background-color: #470634;
+    background-color: #01033d;
     padding: 80px 40px;
     z-index: 301;
     height: fit-content;
@@ -60,7 +60,7 @@ aside {
     display: none;
     position: fixed;
     inset: 0;
-    background-color: rgba(31, 21, 21, 0.448);
+    background-color: rgba(31, 21, 21, 0.721);
     backdrop-filter: blur(15px);
     z-index: 210;
   }
