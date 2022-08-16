@@ -4,7 +4,7 @@ aside {
     right: -420px;
     width: 262px;
     color: #ffffff;
-    background-color: #0308a07c;
+    background-color: #0308a0c7;
     padding: 50px 40px;
     padding-bottom: 60px;
     z-index: 301;
@@ -28,7 +28,7 @@ aside {
   }
 
   aside ul  a {
-    border-bottom: 2px solid #f5c1c192;
+    border-bottom: 2px solid #3cdaf6de;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
