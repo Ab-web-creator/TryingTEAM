@@ -2,10 +2,10 @@ aside {
     position: fixed;
     transition: right 0.4s ease;
     right: -420px;
-    width: 282px;
+    width: 262px;
     color: #ffffff;
-    background-color: #01033d;
-    padding: 40px 30px;
+    background-color: #0308a07c;
+    padding: 50px 40px;
     padding-bottom: 60px;
     z-index: 301;
     height: fit-content;
@@ -22,13 +22,13 @@ aside {
     color: inherit;
     text-decoration: none;
     padding: 12px 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     z-index: 200;
   }
 
   aside ul  a {
-    border-bottom: 1px solid #f50404;
+    border-bottom: 2px solid #f5c1c192;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,8 +61,8 @@ aside {
     display: none;
     position: fixed;
     inset: 0;
-    background-color: rgba(31, 21, 21, 0.721);
-    backdrop-filter: blur(15px);
+    background-color: rgba(11, 10, 10, 0.721);
+    backdrop-filter: blur(25px);
     z-index: 210;
   }
   
