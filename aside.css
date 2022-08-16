@@ -28,7 +28,7 @@ aside {
   }
 
   aside ul  a {
-    border-bottom: 2px solid #3cdaf6de;
+    border-bottom: 2px solid #fbfbfbde;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,7 +61,7 @@ aside {
     display: none;
     position: fixed;
     inset: 0;
-    background-color: rgba(11, 10, 10, 0.721);
+    background-color: rgba(42, 28, 28, 0.636);
     backdrop-filter: blur(25px);
     z-index: 210;
   }
