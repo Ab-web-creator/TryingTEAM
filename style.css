@@ -255,6 +255,7 @@ section {
 }
 
 /* 
+
 git pull
 
 git add .
@@ -267,5 +268,5 @@ git push
 
 .inverse {
   opacity: 1;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
