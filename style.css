@@ -180,13 +180,13 @@ section {
   line-height: 80%;
 }
  
-
+/* 
 .menu_buttons_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-items: center;
-}
+} */
 
 .icons_next_menuKnop img {
   margin-top: 10px;
@@ -196,8 +196,8 @@ section {
 
 .katta_knopka {
  
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 background-color: #a42a14b5;
 border-radius: 50%;
 z-index: 400;
@@ -216,10 +216,10 @@ padding: 0px;
   transform: translate(-50%, -50%);
 }
 
-.mainMenuKnop img {
+/* .mainMenuKnop img {
   display: none;
-  /* width: 65px; */
-}
+  width: 65px;
+} */
 
 /* 
 
