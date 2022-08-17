@@ -14,7 +14,7 @@
 }
 
 header {
-  background-color: rgb(135, 235, 160);
+  background-color: rgb(233, 235, 135);
 }
 
 :root {
@@ -115,7 +115,7 @@ section {
 
 .logo {
   margin-left: 20px;
-  grid-row-start: 4;
+  grid-row-start: 3;
   /* grid-column-start: 2; */
   opacity: 0;
   /* transition: opacity 1s ease-in; */
@@ -148,8 +148,7 @@ section {
   color: #f7f2f1;
   /* line-height: 150%; */
   background-color: #7b026b5c;
-  width: 40%;
-  height: 70%;
+  width: 90%;
   z-index: 30;
   /* border-style: solid;
   border-width: 0px;
@@ -157,12 +156,12 @@ section {
   border-radius: 10% 10% 10% 10%; */
   opacity: 0;
   background-image: url(img/blue_zone.png);
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
-  height: 100%;
+  
   /* grid-column: 1; */
-  grid-row: 10 / span 6;
+  grid-row: 10 / span 7;
   display: flex;
 }
 
