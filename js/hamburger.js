@@ -1,3 +1,4 @@
+// this JS makes the hamburger menu open and close
 
 const openMenu = () => {
     document.querySelector('.backdrop').className = 'backdrop active';
@@ -12,7 +13,7 @@ const openMenu = () => {
     e.preventDefault();
     openMenu();
   }
-  document.querySelector('aside button.close').onclick = e => {
+  document.querySelector('aside button.close_sideMenuBar').onclick = e => {
     closeMenu();
   }
   document.querySelector('.backdrop').onclick = e => {

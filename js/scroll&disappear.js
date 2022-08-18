@@ -1,3 +1,5 @@
+// The following code-lines are written to make things *disappear* when scrolling
+
 const logos = document.querySelectorAll('.logo')
 const blueContainers = document.querySelectorAll('.blue_container')
 

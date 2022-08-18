@@ -1,3 +1,6 @@
+// This js makes SUBmenus expand
+
+
 $('.feat-btn').click(function() {
     $('aside ul .feat-show').toggleClass("show");
     $('aside ul .firstMenuPackOpener').toggleClass("rotate");
