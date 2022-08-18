@@ -11,6 +11,11 @@ $('.feat-btn').click(function() {
     $('aside ul .secondMenuPackOpener').toggleClass("rotate");
   });
 
+  $('.theory-btn').click(function() {
+    $('aside ul .theory-show').toggleClass("show2");
+    $('aside ul .thirdMenuPackOpener').toggleClass("rotate");
+  });
+
   $('.aside ul li').click(function() {
     $(this).addClass("active").siblings().removeClass("active"); 
   });

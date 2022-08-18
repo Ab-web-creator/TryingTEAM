@@ -2,15 +2,15 @@ aside {
     position: fixed;
     transition: right 0.4s ease;
     right: -420px;
-    width: 262px;
+    width: 270px;
     color: #ffffff;
     background-color: #0308a0c7;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 30px;
+    padding-left: 30px;
     padding-right: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     z-index: 301;
-    max-height: 100vh;
+    max-height: 95vh;
     overflow: hidden;
     top: 8%;
     border-radius: 35px 0 0 35px;
@@ -24,12 +24,15 @@ aside {
   color: #ffffff;
 }
 
+aside ul li {
+  line-height: 9px;
+}
 aside ul li a {
   position: relative;
     display: block;
     color: inherit;
     text-decoration: none;
-    padding: 20px 0px;
+    padding: 15px 0px;
     font-size: 18px;
     font-weight: 500;
     z-index: 200;
@@ -63,15 +66,20 @@ aside ul .serv-show.show1{
   display: block;
 }
 
+
+aside ul .theory-show.show2{
+  display: block;
+}
+
+
 aside ul ul li {
-  line-height: 12px;
-  
+  line-height: 9px;
 }
 
 aside ul ul li a {
-  font-size: 17px;
+  font-size: 15px;
   color: #e6e6e6;
-  padding-left: 15px;
+  padding-left: 10px;
   border-bottom: none;
 }
 
@@ -125,7 +133,7 @@ aside ul li ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   
   aside button.close_sideMenuBar {
