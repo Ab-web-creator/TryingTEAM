@@ -14,7 +14,7 @@
 }
 
 header {
-  background-color: rgb(233, 235, 135);
+  background-color: rgb(178, 217, 243);
 }
 
 :root {
@@ -147,8 +147,8 @@ section {
   position: relative;
   color: #f7f2f1;
   /* line-height: 150%; */
-  background-color: #7b020c21;
-  width: 90%;
+  /* background-color: #7b020c21; */
+  width: 100%;
   z-index: 30;
   /* border-style: solid;
   border-width: 0px;
@@ -219,6 +219,13 @@ padding: 0px;
   width: 65px;
 } */
 
+
+
+.inverse {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
 /* 
 
 git pull
@@ -230,8 +237,3 @@ git commit -m "lyuboe sobwenie"
 git push
 
 */
-
-.inverse {
-  opacity: 1;
-  transition: opacity 0.4s ease-in-out;
-}
