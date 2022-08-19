@@ -259,6 +259,8 @@ main h6 {
   main p {
     padding: 10px 20px;
     font-size: 18px;
+    line-height: 1.6rem;
+     
     }
 
 main .white_bg {
@@ -267,7 +269,7 @@ main .white_bg {
 }
 
 main .gray_bg {
-  background-color: #eaeaeb;
+  background-color: #9c9cf6;
   padding: 20px 0px;
 }
 /* 
