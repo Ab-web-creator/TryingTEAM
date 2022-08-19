@@ -281,9 +281,10 @@ main .gray_bg {
   /* color: #ffffff; */
   padding: 10px 10px;
   margin-bottom: 30px;
+  font-size: 1.5rem;
   letter-spacing: 1.7px;
-  border-top: 4px double #050e72;
-  border-bottom: 4px double #050e72;
+  border-top: 4px double #818bf91a;
+  /* border-bottom: 4px double #050e72; */
 }
 /* 
 
