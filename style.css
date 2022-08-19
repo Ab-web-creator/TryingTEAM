@@ -230,7 +230,7 @@ padding: 0px;
 
 main {
 font-size: 22px;
-
+color: #050e72;
 }
 
 .photo_for_each_page {
@@ -247,30 +247,34 @@ background-color: #ffffff;
 main h4 {
 text-align: center;
 padding: 40px 20px;
+font-weight: 700;
 }
 
 
 main h6 {
   
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 700;
   }
 
-  main p {
+
+
+main p {
     padding: 10px 20px;
     font-size: 18px;
     line-height: 1.6rem;
-     
+     font-weight: 600;
     }
 
 main .white_bg {
       background-color: #ffffff;
-      padding: 20px 0px;
+      padding: 10px 0px;
 }
 
 main .gray_bg {
-  background-color: #9c9cf6;
-  padding: 20px 0px;
+  background-color: #ffffff;
+  padding: 10px 0px;
 }
 /* 
 
