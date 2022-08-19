@@ -14,7 +14,7 @@
 }
 
 header {
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(249, 249, 249);
 }
 
 :root {
@@ -278,6 +278,7 @@ main .gray_bg {
 
 .sarlavha_with_bg {
   background-color: #edeefd;
+  /* background-image: radial-gradient(circle, #5d006745 0%, #0800ff1a 100%); */
   /* color: #ffffff; */
   padding: 10px 10px;
   margin-bottom: 30px;
