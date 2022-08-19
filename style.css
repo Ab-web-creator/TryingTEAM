@@ -118,7 +118,7 @@ section {
   grid-row-start: 3;
   /* grid-column-start: 2; */
   opacity: 0;
-  /* transition: opacity 1s ease-in; */
+  transition: opacity 0.4s ease-in-out;
 }
 
 /* logo image  */
@@ -155,6 +155,8 @@ section {
   border-color: #f7f2f1;
   border-radius: 10% 10% 10% 10%; */
   opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+
   background-image: url(img/blue_zone.png);
   background-size: 100%;
   background-repeat: no-repeat;
