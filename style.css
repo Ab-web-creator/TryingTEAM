@@ -250,15 +250,12 @@ padding: 40px 20px;
 font-weight: 700;
 }
 
-
 main h6 {
   
   padding: 10px 20px;
   font-size: 20px;
   font-weight: 700;
   }
-
-
 
 main p {
     padding: 10px 20px;
@@ -275,6 +272,14 @@ main .white_bg {
 main .gray_bg {
   background-color: #ffffff;
   padding: 10px 0px;
+}
+
+.sarlavha_with_bg {
+  background-color: #050e72;
+  color: #ffffff;
+  padding: 20px 10px;
+  margin-bottom: 30px;
+  letter-spacing: 1.7px;
 }
 /* 
 
