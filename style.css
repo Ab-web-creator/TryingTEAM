@@ -275,11 +275,13 @@ main .gray_bg {
 }
 
 .sarlavha_with_bg {
-  background-color: #050e72;
-  color: #ffffff;
-  padding: 20px 10px;
+  /* background-color: #050e72; */
+  /* color: #ffffff; */
+  padding: 10px 10px;
   margin-bottom: 30px;
   letter-spacing: 1.7px;
+  border-top: 4px double #050e72;
+  border-bottom: 4px double #050e72;
 }
 /* 
 
