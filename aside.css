@@ -29,7 +29,7 @@ figure.active {
 aside {
     position: fixed;
     transition: right 0.4s ease;
-    right: -361px;
+    right: -461px;
     width: 270px;
  
     background-color: #120587eb;
