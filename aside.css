@@ -1,7 +1,35 @@
+figure {
+  top: 7%;
+  right: -60px;
+  position: fixed;
+  content: "";
+  width: 70px;
+  height: 93%;
+  background-color: #e63010b5;
+  border-radius: 50px;
+
+  /* transition: right 0.4s ease; */
+
+/* height: 95%; */
+
+  /* background-color: #120587eb; */
+   
+  z-index: 3001;
+ 
+  /* max-height: 95vh; */
+  
+/* 
+  border-radius: 35px 0 0 35px; */
+}
+
+figure.active {
+  display: none;
+}
+
 aside {
     position: fixed;
     transition: right 0.4s ease;
-    right: -261px;
+    right: -361px;
     width: 270px;
  
     background-color: #120587eb;
