@@ -1,5 +1,5 @@
 figure {
-  top: 7%;
+  top: 8%;
   right: -60px;
   position: fixed;
   content: "";
@@ -33,7 +33,7 @@ aside {
   height: fit-content;
   max-height: 95vh;
   overflow: hidden;
-  top: 7%;
+  top: 8%;
   border-radius: 35px 0 0 35px;
 }
 
