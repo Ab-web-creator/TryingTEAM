@@ -1,5 +1,5 @@
 figure {
-  top: 8%;
+  top: 50px;
   right: -60px;
   position: fixed;
   content: "";
@@ -19,6 +19,7 @@ figure.active {
 }
 
 aside {
+  top: 50px;
   position: fixed;
   transition: right 0.4s ease;
   right: -461px;
@@ -33,7 +34,7 @@ aside {
   height: fit-content;
   max-height: 95vh;
   overflow: hidden;
-  top: 8%;
+  
   border-radius: 35px 0 0 35px;
 }
 
