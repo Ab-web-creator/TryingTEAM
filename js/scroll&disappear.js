@@ -82,8 +82,5 @@ function scrollHandler(e) {
 }
 
 
-
-
-
 const scroller = document.getElementById('scroller')
 scroller.addEventListener('scroll', scrollHandler)
