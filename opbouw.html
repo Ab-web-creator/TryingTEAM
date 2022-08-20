@@ -255,9 +255,11 @@ ontouchend="touchEnd()">
       if(startingX+100 < movingX){
                   console.log('right');
                   document.querySelector('aside').className = '';
+                  document.querySelector('figure').className = '';
       } else if(startingX-100 > movingX){
                   console.log('left');
                   document.querySelector('aside').className = 'active';
+                  document.querySelector('figure').className = 'active';
                   }
      
      if(startingY+100 < movingY){
