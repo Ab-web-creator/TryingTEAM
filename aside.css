@@ -5,21 +5,13 @@ figure {
   content: "";
   width: 70px;
   height: 93%;
-  background-color: #e63010b5;
   border-radius: 50px;
 
   /* transition: right 0.4s ease; */
 
-/* height: 95%; */
-
-  /* background-color: #120587eb; */
-   
+  background-color: #120587eb;  
   z-index: 3001;
  
-  /* max-height: 95vh; */
-  
-/* 
-  border-radius: 35px 0 0 35px; */
 }
 
 figure.active {
