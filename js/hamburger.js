@@ -5,8 +5,8 @@ const openMenu = () => {
     document.querySelector('aside').className = 'active';
     document.querySelector('figure').className = 'active';
 
-    
-    document.querySelector('main').addEventListener('wheel', preventScroll, {passive: false});
+
+    document.querySelector('#main').addEventListener('wheel', preventScroll, {passive: false});
 
         function preventScroll(e){
             e.preventDefault();
