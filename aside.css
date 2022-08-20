@@ -16,6 +16,7 @@ figure {
 
 figure.active {
   display: none;
+  
 }
 
 aside {
@@ -34,12 +35,12 @@ aside {
   height: fit-content;
   max-height: 93vh;
   overflow: hidden;
-  
   border-radius: 35px 0 0 35px;
 }
 
 aside.active {
   right: 0px;
+  overflow-y: hidden;
 }
 
 aside ul li {
@@ -212,6 +213,6 @@ git add .
 
 git commit -m "lyuboe sobwenie"
 
-git push 
+git push
 
 */
