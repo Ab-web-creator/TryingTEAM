@@ -6,17 +6,19 @@ const openMenu = () => {
     document.querySelector('figure').className = 'active';
 
 
-    document.querySelector('#main').addEventListener('wheel', preventScroll, {passive: false});
 
-        function preventScroll(e){
-            e.preventDefault();
-            e.stopPropagation();
 
-            return false;
-        };
+    var scrollable = document.querySelector('.scrollable');
+    scrollable.addEventListener('touchmove', disable, {passive: false});
+
+
+
+
+
+
+
+
   }
-
-
 
   const closeMenu = () => {
     document.querySelector('.backdrop').className = 'backdrop';
