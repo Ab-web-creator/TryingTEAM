@@ -14,10 +14,12 @@ if(startingX+100 < movingX){
             console.log('right');
             document.querySelector('aside').className = '';
             document.querySelector('figure').className = '';
+            document.querySelector('.backdrop').className = 'backdrop';
 } else if(startingX-100 > movingX){
             console.log('left');
             document.querySelector('aside').className = 'active';
             document.querySelector('figure').className = 'active';
+            document.querySelector('.backdrop').className = 'backdrop active';
             }
 
 if(startingY+100 < movingY){
