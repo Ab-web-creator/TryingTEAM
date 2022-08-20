@@ -17,5 +17,12 @@ $('.feat-btn').click(function() {
   });
 
   $('.aside ul li').click(function() {
+
+    // Вот здесь если напишем код который пройдет forEach и убирает у всех класс (например, "show", "show1" и "show2")
+    $('aside ul .feat-show.show').removeClass("show");
+    $('aside ul .serv-show.show1').removeClass("show1");
+    $('aside ul .theory-show.show2').removeClass("show2");
+ 
+
     $(this).addClass("active").siblings().removeClass("active"); 
   });
