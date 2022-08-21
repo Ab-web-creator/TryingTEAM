@@ -213,8 +213,8 @@ aside button.close_sideMenuBar {
   display: none;
   position: fixed;
   inset: 0;
-  background-color: rgba(23, 136, 170, 0.767);
-  backdrop-filter: blur(15px);
+  background-color: rgba(107, 190, 215, 0.571);
+  backdrop-filter: blur(5px);
   z-index: 210;
 }
 
