@@ -67,10 +67,11 @@ aside ul li a {
 }
 
 aside ul li a:hover {
-  color: cyan !important;
+  /* color: cyan !important; */
   letter-spacing: 0.08rem;
   transition:  letter-spacing 0.4s ease-in-out;
-  
+  color: rgb(0, 0, 0) !important;
+  background: #91ebf7 !important;
 }
 
 aside ul li:hover {
@@ -128,8 +129,8 @@ aside ul li.active ul li a {
 
 aside ul ul li a:hover {
   letter-spacing: 0.02rem;
-  color: cyan !important;
-  /* background: #1e1e1e !important; */
+  color: rgb(0, 0, 0) !important;
+  background: #91ebf7 !important;
 }
 
 aside ul li:last-child {
@@ -183,7 +184,7 @@ aside button.close_sideMenuBar {
 }
 
 .close_sideMenuBar:hover {
-  color: #72f660;
+  color: cyan;
   font-weight: 600;
   /* font-size: 22px; */
 }
