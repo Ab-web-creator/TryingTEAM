@@ -190,7 +190,7 @@ aside button.close_sideMenuBar {
   background-color: transparent;
   position: relative;
   top: 0px;
-    right: -180px;
+    right: 0px;
     padding: 10px;
   font-family: sans-serif;
   font-weight: 100;
