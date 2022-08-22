@@ -14,7 +14,7 @@
 }
 
 header {
-  background-color: rgb(244, 250, 165);
+  background-color: rgb(165, 250, 173);
 }
 
 :root {
@@ -156,16 +156,77 @@ section {
   border-radius: 10% 10% 10% 10%; */
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
-
-  background-image: url(img/blue_zone.png);
-  background-size: 100%;
+  height: 300px;
+  background-image: url(img/blue_zone.gif);
+  background-size: 95%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   
   /* grid-column: 1; */
-  grid-row: 10 / span 7;
+  grid-row: 14 / span 2;
   display: flex;
+  flex-direction: column;
 }
+
+.links_above_mainknop {
+text-align: center;
+line-height: 1.8rem;
+margin-top: 10px;
+}
+
+.links_above_mainknop a {
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.links_above_mainknop a:hover {
+  color: cyan;
+}
+
+
+.katta_knopka {
+  width: 70px;
+  height: 70px;
+  background-color: #941a046f;
+  border-radius: 50%;
+  z-index: 400;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 0px;
+
+  background-image: url(img/knop.gif);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.katta_knopka:hover {
+  background-size: 100%;
+}
+
+.mainMenuKnop {
+
+  bottom: -50px;
+  z-index: 99;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .mainMenuKnop img {
+  display: none;
+  width: 65px;
+} */
+
+
+
+
+
+
+
+
 
 .text_container h1 {
   margin-top: 10px;
@@ -193,32 +254,6 @@ section {
   width: 55px;
   margin-bottom: 20px;
 }
-
-.katta_knopka {
-  width: 70px;
-  height: 70px;
-  background-color: #a42a14b5;
-  border-radius: 50%;
-  z-index: 400;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 102px;
-  padding: 0px;
-}
-
-.mainMenuKnop {
-
-  bottom: -50px;
-  z-index: 99;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* .mainMenuKnop img {
-  display: none;
-  width: 65px;
-} */
 
 
 
