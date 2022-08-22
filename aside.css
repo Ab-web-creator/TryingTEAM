@@ -175,7 +175,7 @@ aside ul  ul {
   margin-bottom: 50px;
   line-height: 9px;
   padding-top: 10px;
-  padding-left: 30px;
+  padding-left: 20px;
   z-index: 50000;
   top: 0%;
 
@@ -183,14 +183,16 @@ aside ul  ul {
 
 .sidebar_top button {
 text-align: left;
-width: 150px;
+
+width: 100%;
 background-color: #20eb4c;
 z-index: 50001;
 }
+ 
 
 aside button.close_sideMenuBar {
-  color: #e00b0b;
-  font-size: 26px;
+  color: #ffffff;
+  font-size: 18px;
   font-weight: 600;
   float: right;
   border: 0;
