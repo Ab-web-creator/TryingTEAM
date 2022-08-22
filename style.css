@@ -177,6 +177,7 @@ margin-top: 10px;
 .links_above_mainknop a {
   color: #ffffff;
   letter-spacing: 0.5px;
+  font-size: 14px;
   font-weight: 600;
 }
 .links_above_mainknop a:hover {
