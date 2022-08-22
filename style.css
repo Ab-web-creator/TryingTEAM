@@ -14,7 +14,7 @@
 }
 
 header {
-  background-color: rgb(194, 186, 241);
+  background-color: rgb(191, 241, 186);
 }
 
 :root {
@@ -162,7 +162,7 @@ section {
   background-repeat: no-repeat;
   background-position: center top;
   
-  margin-top: 310px;
+  margin-top: 308px;
   /* grid-column: 1; */
   
   display: flex;
