@@ -183,7 +183,6 @@ aside ul  ul {
 
 .sidebar_top button {
 text-align: left;
-
 width: 100%;
 background-color: #20eb4c;
 z-index: 50001;
@@ -218,7 +217,6 @@ aside button.close_sideMenuBar {
 
 .sidebar_top a {
   color: #ffffff;
-
 }
 
 .sidebar_top a:hover {
