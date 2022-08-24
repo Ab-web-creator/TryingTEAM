@@ -528,7 +528,7 @@ header a {
 
         z-index: 2000;
         width: 100%;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(83, 241, 144);
            /* rang  */
     }
 
@@ -1215,7 +1215,7 @@ header a {
 .links_above_mainknop {
     text-align: center;
     line-height: 1.7rem;
-    margin-top: -17px;
+    margin-top: -33px;
     }
     
     .links_above_mainknop a {
@@ -1239,7 +1239,7 @@ header a {
     z-index: 400;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 18px;
+    margin-top: 0px;
     padding: 0px;
   
     background-image: url(images/knop.gif);
