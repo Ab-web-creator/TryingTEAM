@@ -162,7 +162,8 @@ header a {
 
 .main-1 {
     display: flex;
-    background-color: aqua;
+    background-color: aqua; 
+ 
     overflow: auto;
     flex: none;
     width: 100%;
@@ -527,7 +528,8 @@ header a {
 
         z-index: 2000;
         width: 100%;
-        background-color: white;
+        background-color: rgb(242, 15, 15);
+           /* rang  */
     }
 
     .mobile_header .nav_container {
