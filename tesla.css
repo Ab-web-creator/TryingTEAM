@@ -1202,9 +1202,12 @@ header a {
         flex-direction: column;
     }
 
+#invn {
+    position: fixed;
+}
 
 .links_above_mainknop {
-    position: fixed;
+   
     text-align: center;
     line-height: 1.7rem;
     margin-top: -33px;
