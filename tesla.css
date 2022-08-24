@@ -205,6 +205,7 @@ header a {
 }
 
 .head h1 {
+    position: fixed;
     background-image: url(images/logo.png);
     background-size: 100px;
     background-repeat: no-repeat;
@@ -214,14 +215,16 @@ header a {
     font-weight: 500;
     color: transparent;
     padding-bottom: 5px;
+    z-index: 100;
 }
 
 .head span {
+    position: fixed;
     color: rgb(252, 252, 252);
     font-size: 17px;
     text-align: left;
     padding-left: 40px;
-    margin-top: -10px;
+    top: 95px;
 }
 
 .head a {
@@ -528,7 +531,7 @@ header a {
 
         z-index: 2000;
         width: 100%;
-        background-color: rgb(219, 250, 175);
+        background-color: rgb(175, 221, 250);
            /* rang  */
     }
 
@@ -821,18 +824,6 @@ header a {
     left: 20px;
     height: 40vh;
     /* align-items: center; */
-}
-
-.head h1 {
-    background-image: url(images/logo.png);
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: left top;
-
-    font-size: 25px;
-    font-weight: 500;
-    color: transparent;
-    padding-bottom: 5px;
 }
 
 .head span {
@@ -1194,7 +1185,7 @@ header a {
 
 
   #order  {
-        position: absolute;
+        position: fixed;
         bottom: 0px;
         background-image: url(images/blue_zone.gif);
         background-size: 100%;
@@ -1213,12 +1204,14 @@ header a {
 
 
 .links_above_mainknop {
+    position: fixed;
     text-align: center;
     line-height: 1.7rem;
     margin-top: -33px;
     }
     
     .links_above_mainknop a {
+        
       color: #ffffff;
       letter-spacing: 0.5px;
       font-size: 14px;
