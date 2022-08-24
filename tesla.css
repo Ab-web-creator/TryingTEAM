@@ -528,7 +528,7 @@ header a {
 
         z-index: 2000;
         width: 100%;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(219, 250, 175);
            /* rang  */
     }
 
@@ -1239,7 +1239,7 @@ header a {
     z-index: 400;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -5px;
+    margin-top: -8px;
     padding: 0px;
   
     background-image: url(images/knop.gif);

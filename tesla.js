@@ -28,7 +28,7 @@ main.addEventListener("scroll", () => {
     console.log(main.scrollTop);
     const unit = main.scrollTop;
 
-    if(unit == 0 && unit < 100) {
+    if(unit == 0 && unit < 90) {
         h1.classList.remove("hide");
         l1.classList.remove("hide");
     } else {
@@ -36,7 +36,7 @@ main.addEventListener("scroll", () => {
         l1.classList.add("hide");
     }
 
-    if (unit > 600 && unit < 700) {
+    if (unit > 620 && unit < 660) {
         h2.classList.add("active");
         l2.classList.add("active");
     } else {
@@ -44,7 +44,7 @@ main.addEventListener("scroll", () => {
         l2.classList.remove("active");
     }
 
-    if (unit > 1200 && unit < 1300) {
+    if (unit > 1260 && unit < 1300) {
         h3.classList.add("active");
         l3.classList.add("active");
     } else {
@@ -52,7 +52,7 @@ main.addEventListener("scroll", () => {
         l3.classList.remove("active");
     }
 
-    if (unit > 1900 && unit < 2000) {
+    if (unit > 1900 && unit < 1940) {
         h4.classList.add("active");
         l4.classList.add("active");
     } else {
