@@ -162,7 +162,7 @@ header a {
 
 .main-1 {
     display: flex;
-    background-color: aqua; 
+    
  
     overflow: auto;
     flex: none;
@@ -1239,7 +1239,7 @@ header a {
     z-index: 400;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -8px;
+    margin-top: -10px;
     padding: 0px;
   
     background-image: url(images/knop.gif);
