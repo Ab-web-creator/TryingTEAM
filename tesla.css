@@ -205,6 +205,7 @@ header a {
 }
 
 .logo_on_screen {
+    position: absolute;
     top: 62px;
     width: 100px;
     height: 100px;
@@ -552,7 +553,7 @@ header a {
 
         z-index: 2000;
         width: 100%;
-        background-color: rgb(243, 130, 130);
+        background-color: rgb(130, 243, 235);
            /* rang  */
     }
 
@@ -1204,6 +1205,7 @@ header a {
     }
 
 .blueZone {
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
