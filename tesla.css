@@ -204,13 +204,19 @@ header a {
     
 }
 
-.head h1 {
+.logo_on_screen {
+    top: 62px;
+    width: 100px;
+    height: 100px;
     position: fixed;
     background-image: url(images/logo.png);
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: left top;
+    z-index: 100;
+}
 
+.head h1 {
     font-size: 25px;
     font-weight: 500;
     color: transparent;
@@ -336,8 +342,23 @@ header a {
     animation: showspan 1s;
 }
 
+.main .logo_on_screen {
+    animation: show 1s;
+}
+
+.main .blueZone {
+    animation: show 3s;
+}
+
+.main .links_above_mainknop span {
+    animation: show 4s;
+}
+.main .katta_knopka {
+    /* animation: show 3.5s; */
+}
+
 .main .head span {
-    animation: show 2s;
+    animation: show 4s;
 }
 
 @keyframes show {
@@ -531,7 +552,7 @@ header a {
 
         z-index: 2000;
         width: 100%;
-        background-color: rgb(175, 221, 250);
+        background-color: rgb(239, 239, 239);
            /* rang  */
     }
 
@@ -1182,18 +1203,19 @@ header a {
         /* display: none; */
     }
 
-
-
-  #order  {
-        position: fixed;
-        bottom: 0px;
-        background-image: url(images/blue_zone.gif);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: left top;
-
-    }
-
+.blueZone {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: -30px;
+    background-image: url(images/blue_zone.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: 20;
+}
 
 
     .btn {
@@ -1203,14 +1225,14 @@ header a {
     }
 
 #invn {
-    position: fixed;
+    /* position: fixed; */
 }
 
 .links_above_mainknop {
-   
+    z-index: 21;
     text-align: center;
     line-height: 1.7rem;
-    margin-top: -33px;
+    margin-top: 5px;
     }
     
     .links_above_mainknop a {
@@ -1228,15 +1250,18 @@ header a {
 .katta_knopka {
 
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     /* background-color: green; */
     border-radius: 50%;
-    z-index: 400;
+    z-index: 21;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -10px;
+    margin-top: 100px;
     padding: 0px;
+    left: 50%;
+    transform: translate(-50%);
+   
   
     background-image: url(images/knop.gif);
     background-size: 70px;
@@ -1246,7 +1271,7 @@ header a {
   }
   
   .katta_knopka:hover {
-    background-size: 100%;
+    background-size: 75px;
     background-color: cyan;
   }
 }
