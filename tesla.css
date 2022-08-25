@@ -964,7 +964,7 @@ header a {
 }
 
 .main .head span {
-    animation: show 2s;
+    /* animation: show 2s; */
 }
 
 @keyframes show {
