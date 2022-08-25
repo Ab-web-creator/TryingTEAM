@@ -552,7 +552,7 @@ header a {
 
         z-index: 2000;
         width: 100%;
-        background-color: rgb(226, 226, 223);
+        background-color: rgb(167, 242, 186);
            /* rang  */
     }
 
@@ -1000,17 +1000,17 @@ header a {
     }
 }
 
-.login #order {
+.login .blueZone {
     animation: order 3s;
 }
 
 @keyframes order {
     0% {
-        transform: translateX(-20px);
+        transform: translateY(20px);
         opacity: 0;
     }
     100% {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -1021,11 +1021,11 @@ header a {
 
 @keyframes invn {
     0% {
-        transform: translateX(20px);
+        transform: translateY(20px);
         opacity: 0;
     }
     100% {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
