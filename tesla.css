@@ -449,7 +449,7 @@ header a {
     transform: translateX(200px);
     transition: all 1.2s;
     opacity: 1;
-    z-index: 100;
+    z-index: 5000;
     height: 100%;
     overflow: scroll;
     background-color: rgb(189, 22, 22);
@@ -550,9 +550,9 @@ header a {
         top:0;
         height: 30px;
 
-        z-index: 2000;
+        z-index: 102;
         width: 100%;
-        background-color: rgb(238, 242, 167);
+        background-color: rgb(191, 191, 188);
            /* rang  */
     }
 
@@ -612,15 +612,16 @@ header a {
 
     .hdn-side {
         position: absolute;
+        top: 0;
         right: 0;
         width: 210px;
         transform: translateX(0px);
         transition: all 1.2s;
         opacity: 0;
-        z-index: 100;
+        z-index: 10000;
         height: 100%;
         overflow: scroll;
-        background-color: white;
+        background-color: rgb(244, 119, 119);
 
         /* display: none; */
     }

@@ -5,6 +5,7 @@ const blurs = document.querySelector(".blur");
 const side = document.querySelector(".hdn-side");
 
 menu.addEventListener("click", () => {
+    console.log("Menu is clicked")
     blurs.classList.add("active");
     side.classList.add("active");
 })
