@@ -340,7 +340,7 @@ header a {
 }
 
 .main .head h1 {
-    animation: showspan 1s;
+    /* animation: showspan 1s; */
 }
 
 .main .logo_on_screen {
@@ -348,18 +348,18 @@ header a {
 }
 
 .main .blueZone {
-    animation: show 3s;
+    animation: show 2s;
 }
 
 .main .links_above_mainknop span {
-    animation: show 4s;
+    /* animation: show 4s; */
 }
 .main .katta_knopka {
     /* animation: show 3.5s; */
 }
 
 .main .head span {
-    animation: show 4s;
+    /* animation: show 4s; */
 }
 
 @keyframes show {
@@ -544,7 +544,6 @@ header a {
         display: none;
     }
    
-
     .mobile_header {
         padding: 5px 0px;
         position: fixed;
@@ -553,7 +552,7 @@ header a {
 
         z-index: 2000;
         width: 100%;
-        background-color: rgb(130, 243, 235);
+        background-color: rgb(213, 243, 130);
            /* rang  */
     }
 
@@ -1234,7 +1233,7 @@ header a {
     z-index: 21;
     text-align: center;
     line-height: 1.7rem;
-    margin-top: 5px;
+    margin-top: 15px;
     }
     
     .links_above_mainknop a {
@@ -1259,7 +1258,7 @@ header a {
     z-index: 21;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 110px;
     padding: 0px;
     left: 50%;
     transform: translate(-50%);
