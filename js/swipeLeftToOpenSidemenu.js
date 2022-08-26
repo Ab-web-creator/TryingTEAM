@@ -9,6 +9,7 @@ function touchMove(evt){
 movingX = evt.touches[0].clientX ;
 movingY = evt.touches[0].clientY ;
 }
+
 function touchEnd(){
 if(startingX+100 < movingX){
             console.log('right');
@@ -24,6 +25,7 @@ if(startingX+100 < movingX){
 
 if(startingY+100 < movingY){
            console.log('down');
+           
 } else if(startingY-100 > movingY){
            console.log('up');
            }

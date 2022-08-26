@@ -40,11 +40,11 @@ main.addEventListener("scroll", () => {
 
     if(unit == 0 && unit < 90) {
         h1.classList.remove("hide");
-        l1.classList.remove("hide");
+        // l1.classList.remove("hide");
        
     } else {
         h1.classList.add("hide");
-        l1.classList.add("hide");
+        // l1.classList.add("hide");
        
     }
 
