@@ -11,30 +11,21 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="tesla.css">
 </head>
-<body>
-    <header>
-        <div>
-            <img src="images/logo.png" alt="">
-        </div>
-        <nav class="mdl">
-            <a href="#">What is what</a>
-            <a href="#">Next rijles?</a>
-            <a href="#">Krasava</a>
-            <a href="#">Nu da</a>
 
-            <a  href="#">Menu</a>
-            <div class="hover"></div>
-        </nav>
-    </header>
+
+
+<body>
 
     <div class="mobile_header">
-        <div class="nav_container">
+    
             <li class="nav_question"><a href="#">Proefles?</a></li>
             <li class="nav_icons phone_icon">
               <a href="#"> <img src="images/phone_icon.png" /></a>
@@ -46,14 +37,13 @@
               <a href="#"><img src="images/email_icon.png" /></a>
             </li>
             <li class="nav_icons">
-              <a id="menu" href="#" id="menuBtn"><img src="images/hamburger_menu.png" /></i></a>
+              <a href="#" id="menuBtn"><img src="images/hamburger_menu.png" /></i></a>
             </li>
-          </div>
     </div>
 
-    <div class="hdn-side">
+    <aside class="hdn-side">
         <div id="mark" >
-           <a  class="fa-xmark">&times;</a></div>
+           <a  class="close_sidemenu">&times;</a></div>
         <div class="hdn-cont">
             <ul>
                 <li>
@@ -65,7 +55,6 @@
                       <li><a href="deeltoets.html"> Deeltoets </a></li>
                       <li><a href="examen.html"> Examen </a></li>
                       <li><a href="RIS.html"> R.I.S. </a></li>
-        
                       
                     </ul>
                   </li>
@@ -85,7 +74,7 @@
                       <li><a href="dashboard.html">De motor </a></li>
                     </ul>
                   </li>
-        
+
                   <li> 
                     <a href="#" class="theory-btn">Theorie <span class="thirdMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
                     
@@ -98,11 +87,11 @@
                   <li> <a href="tarieven.html">De tarieven </a></li>
                 <li>  <a href="contact.html">Contact</a> </li>
                 <br><br>
-                <li>  <a href="index.html">go back to home-page</a> </li>
+                <li>  <a href="index.html">home-page</a> </li>
                 <br><br>
             </ul>
         </div>
-    </div>
+    </aside>
 
     <div class="blur"></div>
 
@@ -261,5 +250,6 @@
     </div>
 
     <script src="tesla.js"></script>
+    <script src="js/expand_submenus.js"></script>
 </body>
 </html>

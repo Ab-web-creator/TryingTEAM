@@ -35,6 +35,6 @@ $('.theory-btn').click(function () {
 })
 
 
-$('.aside ul li').click(function () {
+$('aside ul li').click(function () {
   $(this).addClass('active').siblings().removeClass('active')
 })

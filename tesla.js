@@ -1,8 +1,8 @@
 const main = document.querySelector(".main-1");
-const menu = document.querySelector("#menu");
-const cross = document.querySelector(".fa-xmark");
+const menu = document.querySelector("#menuBtn");
+const cross = document.querySelector(".close_sidemenu");
 const blurs = document.querySelector(".blur");
-const side = document.querySelector(".hdn-side");
+const side = document.querySelector("aside");
 
 menu.addEventListener("click", () => {
     console.log("Menu is clicked")
