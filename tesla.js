@@ -10,6 +10,12 @@ menu.addEventListener("click", () => {
     side.classList.add("active");
 })
 
+
+blurs.addEventListener("click", () => {
+    blurs.classList.remove("active");
+    side.classList.remove("active");
+})
+
 cross.addEventListener("click", () => {
     blurs.classList.remove("active");
     side.classList.remove("active");
