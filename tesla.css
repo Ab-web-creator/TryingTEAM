@@ -419,6 +419,16 @@ width: 24px;
 }
   
 
+.blur {
+    position: absolute;
+    width: 100%;
+    display: none;
+    height: 100vh;
+    z-index: 99;
+    transition: all 1s;
+    backdrop-filter: blur(4px);
+    background-color: #393c416e;
+}
 
 .blur.active {
     display: block;
