@@ -63,7 +63,7 @@ body{
 
     z-index: 1;
     width: 100%;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(247, 248, 180);
        /* rang  */
 
        display: flex;
@@ -154,24 +154,25 @@ width: 24px;
  
 
 .head .logo_on_screen {
-    position: absolute;
+    position: fixed;
     top: 62px;
     width: 100px;
-    height: 100px;
+    height: 20px;
     position: fixed;
     background-image: url(images/logo.png);
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: left top;
-    z-index: 100;
+    z-index: 1;
 }
 
 .head span {
     position: fixed;
+    left: 60px;
     color: rgb(252, 252, 252);
     font-size: 17px;
     text-align: left;
-    padding-left: 40px;
+    padding-left: 10px;
     top: 95px;
     margin-top: -10px;
 }
@@ -261,10 +262,7 @@ width: 24px;
         transform: translateY(0);
     }
 }
-
-.main .head h1 {
-    /* animation: showspan 1s; */
-}
+ 
 
 .main .logo_on_screen {
     animation: show 1s;
@@ -331,11 +329,11 @@ width: 24px;
     }
 }
 
-.login #invn {
-    animation: invn 3s;
+.login .links_above_mainknop {
+    animation: links_above_mainknop 3s;
 }
 
-@keyframes invn {
+@keyframes links_above_mainknop {
     0% {
         transform: translateY(20px);
         opacity: 0;
@@ -449,25 +447,25 @@ width: 24px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center bottom;
-    z-index: 20;
+    z-index: 1;
 }
 
 
 .links_above_mainknop {
-    z-index: 22;
+    z-index: 2;
     text-align: center;
     line-height: 1.7rem;
     margin-top: 34px;
     }
     
-    .links_above_mainknop a {
+.links_above_mainknop a {
         
       color: #ffffff;
       letter-spacing: 0.5px;
       font-size: 14px;
       font-weight: 600;
     }
-    .links_above_mainknop a:hover {
+.links_above_mainknop a:hover {
       color: cyan;
     }
     
@@ -479,7 +477,7 @@ width: 24px;
     height: 80px;
     /* background-color: green; */
     border-radius: 50%;
-    z-index: 21;
+    z-index: 2;
     margin-left: auto;
     margin-right: auto;
     margin-top: 117px;
