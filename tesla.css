@@ -50,13 +50,13 @@
 body{
     box-sizing: border-box;
     overflow: hidden;
-  
 }
 
 /* Tepadagi bar  */
 
 
 .mobile_header {
+    opacity: 1;
     padding: 5px 0px;
     position: fixed;
     top:0;
@@ -64,14 +64,14 @@ body{
 
     z-index: 1;
     width: 100%;
-    background-color: rgb(180, 248, 203);
+    background-color: rgb(228, 248, 180);
        /* rang  */
 
-       display: flex;
-       flex-direction: row;
-       justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-
+ 
 
 .mobile_header nav.right{
     text-align:right;
@@ -407,14 +407,14 @@ width: 24px;
     }
 
 
- 
+/*  
     .btn {
         align-items: center;
         display: flex;
         flex-direction: column;
     }
 
-  
+   */
    
 
    
@@ -428,6 +428,8 @@ width: 24px;
     animation: order 3s;
 }
   
+
+
 
 .blur {
     position: absolute;
@@ -446,8 +448,7 @@ width: 24px;
   
    
 .blueZone {
-
-    display: none;
+    /* display: none; */
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -467,7 +468,7 @@ width: 24px;
     z-index: 2;
     text-align: center;
     line-height: 1.7rem;
-    margin-top: 34px;
+    margin-top: 36px;
     }
     
 .links_above_mainknop a {
@@ -483,7 +484,6 @@ width: 24px;
     
 
 .katta_knopka {
-
     position: absolute;
     width: 80px;
     height: 80px;
@@ -492,7 +492,7 @@ width: 24px;
     z-index: 2;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 117px;
+    margin-top: 119px;
     padding: 0px;
     left: 50%;
     transform: translate(-50%);
