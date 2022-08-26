@@ -105,204 +105,7 @@ width: 24px;
   }
 
 
-  /* Hamburger menu  */
-
-
-.blur {
-    position: absolute;
-    width: 100%;
-    display: none;
-    height: 100vh;
-    z-index: 99;
-    transition: all 1s;
-    backdrop-filter: blur(4px);
-    background-color: #393c416e;
-}
-
-.blur.active {
-    display: block;
-}
-
-aside {
-    position: absolute;
-    display: none;
-    right: 0;
-    width: 210px;
-    transform: translateX(450px);
-    transition: all 1.2s;
-    opacity: 0;
-    z-index: 298;
-    height: 100%;
-    overflow-y: auto;
-    background-color: rgb(255, 255, 255);
-}
-
-aside.active {
-    display: block;
-    transform: translateX(0px);
-    opacity: 1;
-}
-
-#mark {
-    display: flex;
-    justify-content: end;
-    padding: 8px 10px;
-    background-color: white;
-    position: sticky;
-    right: 0;
-    z-index: 299;
-}
-
-#mark a {
-    font-size: 25px;
-    padding: 8px 10px;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-#mark a:hover {
-    background-color: rgb(233, 233, 233);
-    border-radius: 50%;
-}
-
-.hdn-cont {
-    /* padding: 5px 30px; */
-    height: 100%;
-    /* line-height: 9px; */
-}
-
-.hdn-cont li {
-    /* padding: 10px 15px; */
-    font-size: 15px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin-bottom: 5px;
-}
-
-.hdn-cont ul li a {
-    padding-left: 10px;  
-    /* display: flex; */
-}
-
-.hdn-cont li:hover {
-    /* background-color: rgb(217, 217, 217); */
-    /* border-radius: 15px; */
-}
-
-.hdn-cont ul li {
-    position: relative;
-    display: block;
-    text-decoration: none;
-    /* padding: 5px 5px; */
-  padding-left: 0px;
-  font-size: 18px;
-  font-weight: 500;
-  z-index: 200;
-  color: #ffffff;
-  border-bottom: 2px solid #fbfbfb1e;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-bottom: 1px solid #1e1e1e;
-  /* border-left: 3px solid transparent; */
-}
-
-
-/* aside li:last-child {
-    border-bottom: 1px solid red;
-  } */
-
-/* New start  */
-
-aside ul li a:hover {
-    /* color: cyan !important; */
-    letter-spacing: 0.08rem;
-    transition:  letter-spacing 0.4s ease-in-out;
-    color: rgb(0, 0, 0) !important;
-    /* background: #91ebf7 !important; */
-  }
-  
-aside ul li:hover {
-    
-    /* background: #010357; */
-   
-    /* border-left-color: cyan; */
-  
-    /* padding: 10px 0px 10px 10px; */
-  }
-  
-  aside  ul ul {
-    position: static;
-    display: none;
-    background: rgb(213, 213, 213);
-  }
- 
-  
-  aside  ul ul li:hover {
-    /* background-color: #b5c508; */
-  }
-  
-  aside  ul ul li a {
-
-    font-size: 16px;
-    color: #1b1717;
-    
-    /* padding-left: 20px; */
-    /* border-bottom: 1px solid #1e1e1e; */
- 
-  }
-  
-  aside  ul li a span {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    font-size: 12px;
-    transform: translateY(-50%);
-    transition: transform 1s ease-in-out;
-  }
-  
-  aside  ul li a:hover span.rotate {
-    transform: translateY(-25%) rotate(-540deg);
-  }
-  
-  aside  ul li a.active {
-    color: rgb(203, 203, 203);
-    background: #b5c508;
-    /* border-left-color: cyan; */
-  }
-  
-  aside  ul li.active ul li a {
-    color: #000000;
-    /* background: #b1fcff; */
-    /* border-left-color: transparent; */
-  }
-  
-  aside  ul ul li a:hover {
-    letter-spacing: 0.02rem;
-    color: rgb(0, 0, 0) !important;
-    /* background: #f07946 !important; */
-  }
-  
-  aside ul ul li:last-child {
-    border-bottom: 0px solid red;
-  }
-  
-  
-  /* ochish-yopish expanding  */
-  
-  
-  .show_submenus {
-    display: block;
-  /* 
-    right: 20;
-    opacity: 1;
-    transform: translateX(200px);
-    transition: transform 5s ease-in-out; */
-  }
-  
-
-
-
+  /* a Note: Hamburger menu is in aside.css */
 
 /* Asosiy qismi */
 
@@ -337,21 +140,6 @@ aside ul li:hover {
     position: relative;
 }
 
-
-.logo_on_screen {
-    position: absolute;
-    top: 62px;
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    background-image: url(images/logo.png);
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: left top;
-    z-index: 100;
-}
-
-
 .head {
     position: absolute;
     display: flex;
@@ -364,11 +152,17 @@ aside ul li:hover {
     /* align-items: center; */
 }
  
-.head h1 {
-    font-size: 25px;
-    font-weight: 500;
-    color: transparent;
-    padding-bottom: 5px;
+
+.head .logo_on_screen {
+    position: absolute;
+    top: 62px;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-image: url(images/logo.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: left top;
     z-index: 100;
 }
 
@@ -408,27 +202,18 @@ aside ul li:hover {
     justify-content: center;
 }
 
-.btn div {
-    position: fixed;
-    align-items: center;
-    margin-right: 15px;
-    margin-left: 15px;
-    width: 90%;
-    cursor: pointer;
-    
-}
 
 .btn span {
     color: transparent;
 }
-
+/* 
 #order {
     background-color: #393c4100;
     color: white;
 }
 
 #invn {
-    /* background-color: #7b0a0a; */
+    background-color: #7b0a0a; 
     color: #393c416e;
 }
 
@@ -437,18 +222,12 @@ aside ul li:hover {
     font-size: 14px;
     font-weight: 500;
     padding: 5px 5px;
-}
-
+} */
+/* 
 .blank {
     height: 70px;
-}
+} */
 
-#arrow img {
-    margin-top: 80px;
-    position: absolute;
-    width: 40px;
-    height: fit-content;
-}
 .login .arrow {
     height: 60px;
     font-size: 25px;
@@ -503,7 +282,7 @@ aside ul li:hover {
 }
 
 .main .head span {
-    /* animation: show 4s; */
+    animation: show 2s;
 }
 
 @keyframes show {
