@@ -64,7 +64,7 @@ body{
 
     z-index: 1;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(54, 249, 63);
        /* rang  */
 
     display: flex;
@@ -111,7 +111,6 @@ width: 24px;
 /* Asosiy qismi */
 .main {
 }
-
 .main-1 {
     display: flex;
     overflow: auto;

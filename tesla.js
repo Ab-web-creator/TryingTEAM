@@ -21,15 +21,16 @@ cross.addEventListener("click", () => {
     side.classList.remove("active");
 })
 
-const h1 = document.querySelector(".head-1");
-const h2 = document.querySelector(".head-2");
-const h3 = document.querySelector(".head-3");
-const h4 = document.querySelector(".head-4");
 
-const l1 = document.querySelector(".login-1");
-const l2 = document.querySelector(".login-2");
-const l3 = document.querySelector(".login-3");
-const l4 = document.querySelector(".login-4");
+// const h1 = document.querySelector(".head-1");
+// const h2 = document.querySelector(".head-2");
+// const h3 = document.querySelector(".head-3");
+// const h4 = document.querySelector(".head-4");
+
+// const l1 = document.querySelector(".login-1");
+// const l2 = document.querySelector(".login-2");
+// const l3 = document.querySelector(".login-3");
+// const l4 = document.querySelector(".login-4");
 
 
 
