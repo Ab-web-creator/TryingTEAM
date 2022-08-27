@@ -23,7 +23,9 @@
 </head>
 
 
-<body>
+<body ontouchstart="touchStart(event)"
+ontouchmove="touchMove(event)"
+ontouchend="touchEnd()">
 
     <div class="mobile_header">
     
@@ -44,7 +46,7 @@
 
     <aside class="hdn-side">
         <div id="mark" >
-           <a  class="close_sidemenu">&times;</a></div>
+           <a  class="close_sidemenu"><span>Menu</span> &times;</a></div>
         <div class="hdn-cont">
             <ul>
                 <li>
@@ -122,7 +124,7 @@
                         </div>
                     </div>
     
-                    <div class="blank"></div>
+            
 
                     <div id="arrow" class="arrow"><img src="images/chevron-down-regular-24.png" alt=""></div>     
                 </div>

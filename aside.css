@@ -2,27 +2,35 @@
   /* position: fixed; */
   /* width: 100%; */
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   padding: 8px 10px;
-  background-color: #120587;
+  background-color: #09024a;
  
-  right: 0;
+  /* right: 0; */
   z-index: 101;
+
 }
 
+#mark a span {
+  text-align: left;
+  font-size: 15px;
+  margin-right: 110px;
+  cursor: default;
+}
 #mark a {
   font-size: 25px;
   padding: 8px 5px;
   transition: all 0.5s;
   cursor: pointer;
   color: white;
+  
 }
 
-#mark a:hover {
+/* #mark a:hover {
   background-color: rgb(233, 233, 233);
-  border-radius: 50%;
+  border-radius: 5%;
   color: #120587;
-}
+} */
 
 
 
@@ -106,8 +114,18 @@ aside ul ul li a {
   color: #e6e6e6;
   
   padding-left: 25px;
+  text-align: left;
   border-bottom: 1px solid #1e1e1e;
+ 
+}
+ 
 
+aside ul ul li a:hover::after {
+  content: "click";
+ color:#c1f4fb;
+  /* border-left: 5px solid #e6e6e6; */
+  text-align: left;
+  margin-right: 15px;
 }
 
 aside ul li a span {

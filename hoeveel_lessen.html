@@ -27,6 +27,7 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="aside.css" />
         <link rel="stylesheet" href="hamburger.css" />
+        <!-- <link rel="stylesheet" href="tesla.css" /> -->
     
       </head>
 <body ontouchstart="touchStart(event)"
@@ -68,12 +69,20 @@ ontouchend="touchEnd()">
 
     <button style="margin: auto; width: 300px; background: rgb(134, 145, 239); border: none; height: 50px; border-radius: 10px; font-size: 16px; color: #e1e1e1; padding: 20px; padding-bottom: 40px; font-weight: 500; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><a href="index.html">back to Home page </a></button>
 
-    <div style="position: fixed; top: 200px; left: 50px; " class="katta_knopka">
-    <img style="width: 200px;" src="images/blue_zone_old.png" > </div>
+    <div class="login login-1">
+      <div class="blueZone">
+          <div class="katta_knopka"></div>
+          <div class="links_above_mainknop">
+              <span>  
+                  <li><a href="#">Unieke haal & bring service </a></li>
+                  <li><a href="#">Lesversnellers zoals gratis boeken </a></li>
+                  <li><a href="#">Rijles volgens de nieuwste inzichten </a></li>
+              </span>
+          </div>
+      </div>
 
-
-
-    <div class="blank"></div>
+      <div class="blank"></div>
+ 
   </div>
 
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam natus rerum reprehenderit voluptas? Quos quia, inventore a maxime ipsam officiis. Distinctio, officiis rerum architecto tempora rem aut assumenda reiciendis aliquam ipsam blanditiis, fugiat obcaecati adipisci! Voluptatum recusandae veritatis officia aperiam modi cum ab laboriosam inventore nostrum rem, est asperiores molestiae. Distinctio reprehenderit voluptates repudiandae. Similique provident aliquid nostrum earum? Veniam ipsa amet iure dolorem cupiditate ut id atque ducimus dignissimos, laboriosam, animi accusamus illo, unde voluptatem praesentium possimus asperiores maxime facere eos sapiente eum. Ratione alias consequuntur mollitia totam ullam necessitatibus eum eos blanditiis officiis tenetur dolor placeat voluptates, illo enim pariatur? Debitis, aspernatur? Minima excepturi earum in neque ab rerum, eius ullam culpa molestias reiciendis aliquam debitis? Totam et nisi natus quod, perferendis odit. Harum accusamus libero eius quis labore natus fugiat doloremque iste maxime cumque rem iusto neque ea unde suscipit numquam eligendi facilis, odit saepe voluptates earum voluptatem ratione nobis? Tempora quae aspernatur laboriosam provident quod excepturi. Quidem numquam, et vero accusantium, assumenda dolores harum repudiandae consequatur quod rerum obcaecati sit iure temporibus a! Dicta dolore quisquam odit perspiciatis fuga, mollitia alias cum corrupti illo. Pariatur illo distinctio animi perferendis, cumque vitae tempore. Nesciunt eum eaque provident labore iure ad aliquam recusandae consequuntur esse alias similique veniam porro beatae tenetur neque minima suscipit natus enim accusantium, consequatur perspiciatis soluta voluptatem nulla. Doloribus ipsum nesciunt laborum laboriosam molestiae consequuntur consequatur ab pariatur veniam corrupti sunt impedit quam, at saepe vitae ex dicta hic dolor voluptas amet dolorem consectetur explicabo. Ut sint quisquam illum et inventore quaerat error reprehenderit alias, accusantium fugiat reiciendis maiores ab, quibusdam sapiente suscipit vero est minima dolorum sed sequi quas voluptates veniam obcaecati. Animi praesentium unde blanditiis atque dicta architecto nisi repellendus repellat incidunt voluptas tempora accusantium, enim adipisci id officiis nulla numquam tempore. Fuga eos recusandae nam repudiandae? Quos praesentium repudiandae quis? Fugit eos, incidunt id dolorem laudantium esse repellat recusandae, dolores et nihil distinctio! Modi non magnam nam exercitationem accusamus dicta porro doloribus debitis, et commodi molestiae temporibus assumenda perspiciatis ipsam culpa distinctio aperiam in dignissimos nihil itaque accusantium? Saepe esse dolorem velit sequi aut, dolorum tenetur qui omnis est repellendus provident unde. Minus consequatur nemo esse reprehenderit atque nesciunt modi nulla laboriosam! Consectetur ad rem eum, necessitatibus non, quam impedit distinctio assumenda eos facilis ducimus officia, id earum eius hic! Blanditiis distinctio soluta temporibus mollitia nesciunt accusamus excepturi, ea, animi, reiciendis quasi nostrum sunt velit quas quaerat. Incidunt laboriosam dignissimos laudantium voluptate quidem voluptates hic maxime debitis illo inventore facilis pariatur at, nihil, natus asperiores eaque cum, nesciunt magnam earum quae! Repellendus fugit voluptas officiis reiciendis in consequuntur nam ab voluptatem adipisci, nihil, nobis ut fugiat quis facilis animi accusantium culpa soluta eum natus illo? Non beatae sapiente deserunt eos deleniti ab consequuntur, sequi numquam at et voluptatem possimus, corporis quasi! Eius assumenda at soluta possimus harum magni consectetur odio nihil tempore laboriosam velit necessitatibus illo libero ipsam numquam, tempora voluptatibus inventore expedita iure quod distinctio! A nihil officiis id?</p>
@@ -85,7 +94,7 @@ ontouchend="touchEnd()">
     
 
 <script>
-  var divs = $('.katta_knopka'),
+  var divs = $('.blueZone'),
   limit = 300;  /* scrolltop value when opacity should be 0 */
 
   $(window).on('scroll', function() {
