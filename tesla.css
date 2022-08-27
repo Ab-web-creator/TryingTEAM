@@ -157,7 +157,7 @@ width: 24px;
  
 
 .head .logo_on_screen {
-    position: absolute;
+    position: fixed;
     top: 62px;
     width: 100px;
     height: 20px;

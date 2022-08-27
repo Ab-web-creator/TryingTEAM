@@ -149,10 +149,10 @@ section {
 .blueZone {
   /* display: none; */
   position: fixed;
-  bottom: 30px;
+  bottom: 130px;
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 45%;
   height: 200px;
   background-color: rgb(2, 2, 185);
   border-radius: 25px;
@@ -339,3 +339,26 @@ git commit -m "lyuboe sobwenie"
 git push
 
 */
+
+
+
+.main-1 {
+  display: flex;
+  overflow: auto;
+  flex: none;
+  width: 100%;
+  height: 100vh;
+  flex-flow: column nowrap;
+  scroll-snap-type: y mandatory;
+
+}
+
+.main-1 > div {
+
+  scroll-snap-align: center;
+  flex: none;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+
+}
