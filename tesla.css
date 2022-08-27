@@ -157,11 +157,11 @@ width: 24px;
  
 
 .head .logo_on_screen {
-    position: fixed;
+    position: absolute;
     top: 62px;
     width: 100px;
     height: 20px;
-    position: fixed;
+   
     background-image: url(images/logo.png);
     background-size: 100px;
     background-repeat: no-repeat;
@@ -190,7 +190,7 @@ width: 24px;
  
 
 .login {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -492,7 +492,7 @@ width: 24px;
     
 
 .katta_knopka {
-    position: absolute;
+    position: fixed;
     width: 80px;
     height: 80px;
     /* background-color: green; */
