@@ -1,27 +1,4 @@
-const main = document.querySelector(".main-1");
-const menu = document.querySelector("#menuBtn");
-const cross = document.querySelector(".close_sidemenu");
-const blurs = document.querySelector(".blur");
-const side = document.querySelector("aside");
-
-menu.addEventListener("click", () => {
-    console.log("Menu is clicked")
-    blurs.classList.add("active");
-    side.classList.add("active");
-})
-
-
-blurs.addEventListener("click", () => {
-    blurs.classList.remove("active");
-    side.classList.remove("active");
-})
-
-cross.addEventListener("click", () => {
-    blurs.classList.remove("active");
-    side.classList.remove("active");
-})
-
-
+const main_div = document.querySelector(".main-1");
 const h1 = document.querySelector(".head-1");
 const h2 = document.querySelector(".head-2");
 const h3 = document.querySelector(".head-3");
@@ -33,9 +10,7 @@ const l3 = document.querySelector(".login-3");
 const l4 = document.querySelector(".login-4");
 
 
-
-
-main.addEventListener("scroll", () => {
+main_div.addEventListener("scroll", () => {
     console.log(main.scrollTop);
     const unit = main.scrollTop;
 

@@ -1,4 +1,4 @@
-// this JS makes the hamburger menu open and close
+// We are not using this js now. this JS makes the hamburger menu open and close
 
 const openMenu = () => {
     document.querySelector('.backdrop').className = 'backdrop active';
