@@ -523,6 +523,25 @@ width: 24px;
 
 /* boshqa betlar uchun */
 
+figure {
+    top: 50px;
+    right: -62px;
+    position: fixed;
+    content: "";
+    width: 70px;
+    height: 93%;
+    border-radius: 50px;
+  
+    /* transition: right 0.4s ease; */
+    background-color: #120587;
+    z-index: 300;
+   
+  }
+  
+  figure.active {
+    display: none;
+  }
+  
 
 .photo_for_each_page {
     padding-top: 20px;
@@ -577,7 +596,13 @@ width: 24px;
       /* border-bottom: 4px double #050e72; */
     }
 
-
+footer p {
+    font-size: 8px;
+    background-color: #8f8f8f;
+    color: #17028a;
+    padding: 10px 20px;
+    text-align: center;
+}
 
     
 /* 

@@ -1,4 +1,6 @@
-// this js opens/closes the sidemenu when swiping left and right
+// this js opens/closes the sidemenu when swiping the screen left and right
+
+
 
 var startingX , startingY , movingX , movingY ;
 function touchStart(evt){
@@ -15,12 +17,13 @@ if(startingX+100 < movingX){
             console.log('right');
             document.querySelector('aside').className = '';
             document.querySelector('figure').className = '';
-            document.querySelector('.backdrop').className = 'backdrop';
+            document.querySelector('.blur').className = 'blur';
+            
 } else if(startingX-100 > movingX){
             console.log('left');
             document.querySelector('aside').className = 'active';
             document.querySelector('figure').className = 'active';
-            document.querySelector('.backdrop').className = 'backdrop active';
+            document.querySelector('.blur').className = 'blur active';
             }
 
 if(startingY+100 < movingY){

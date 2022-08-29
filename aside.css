@@ -58,6 +58,10 @@ aside.active {
   /* overflow-y: hidden; */
 }
 
+aside.notactive {
+  right: -461px;
+}
+
 aside ul li {
   line-height: 9px;
   

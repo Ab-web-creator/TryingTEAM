@@ -22,7 +22,11 @@
   
 </head>
 
-<body style="overflow: auto; color: rgb(7, 7, 182)">
+<body style="overflow: auto; color: rgb(7, 7, 182)"
+ontouchstart="touchStart(event)"
+ontouchmove="touchMove(event)"
+ontouchend="touchEnd()">
+
 <div class="mobile_header">
     
   <li class="nav_question"><a href="#">Proefles?</a></li>
@@ -94,7 +98,7 @@
 </aside>
 
 <div class="blur"></div>
-
+<figure class="aside0"></figure>
 
      
 <!-- asosiy qismi  -->
@@ -224,6 +228,10 @@
     <br>
   </div>
 </div>
+  <footer>
+    <p>U kunt naar links vegen om het menu te openen.</p>
+  </footer>
+
 
     <script src="../js/expand_submenus.js"></script>
     <script src="../js/swipeLeftToOpenSidemenu.js"></script>
