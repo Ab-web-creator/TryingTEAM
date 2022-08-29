@@ -1,4 +1,4 @@
-const main_div = document.querySelector(".main-1");
+const mainDiv = document.querySelector(".main-1");
 const h1 = document.querySelector(".head-1");
 const h2 = document.querySelector(".head-2");
 const h3 = document.querySelector(".head-3");
@@ -10,9 +10,9 @@ const l3 = document.querySelector(".login-3");
 const l4 = document.querySelector(".login-4");
 
 
-main_div.addEventListener("scroll", () => {
-    console.log(main.scrollTop);
-    const unit = main.scrollTop;
+mainDiv.addEventListener("scroll", () => {
+    console.log(mainDiv.scrollTop);
+    const unit = mainDiv.scrollTop;
 
     if(unit == 0 && unit < 90) {
         h1.classList.remove("hide");
