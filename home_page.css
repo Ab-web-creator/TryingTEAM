@@ -391,8 +391,9 @@ width: 24px;
 }
 
 .login-1 {
-    opacity: 0;
+    opacity: 1;
     transition: all 1.5s;
+    z-index: 1;
 }
 
 .login-2,.login-3,.login-4 {
@@ -607,10 +608,20 @@ footer p {
 }
 
     .mobile_header {
-        background-color: rgb(255, 204, 246);
+        background-color: rgb(204, 255, 225);
         /* rang  */
     }
     
+
+    .coverage {
+        position: absolute;
+        height: 50vh;
+        width: 100%;
+        bottom: 0;
+        z-index: 500;
+        background-color: rgba(185, 14, 131, 0.133);
+        border: 2px solid red;
+    }
 /* 
 
 git pull
