@@ -619,8 +619,8 @@ footer p {
         width: 100%;
         bottom: 0;
         z-index: 500;
-        background-color: rgba(185, 14, 131, 0.133);
-        border: 2px solid red;
+        background-color: rgba(252, 181, 230, 0.133);
+        border: 0.2px solid red;
     }
 /* 
 
