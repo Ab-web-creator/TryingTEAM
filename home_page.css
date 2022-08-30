@@ -608,18 +608,18 @@ footer p {
 }
 
     .mobile_header {
-        background-color: rgb(204, 255, 225);
+        background-color: rgb(193, 193, 193);
         /* rang  */
     }
     
 
     .coverage {
         position: absolute;
-        height: 50vh;
+        height: 70vh;
         width: 100%;
         bottom: 0;
         z-index: 500;
-        background-color: rgba(252, 181, 230, 0.133);
+        background-color: rgba(252, 181, 229, 0);
         border: 0.2px solid red;
     }
 /* 
