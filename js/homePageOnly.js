@@ -13,10 +13,13 @@ const l4 = document.querySelector(".login-4");
 mainDiv.addEventListener("scroll", () => {
     console.log(mainDiv.scrollTop);
     const unit = mainDiv.scrollTop;
+   
 
     if(unit == 0 && unit < 90) {
+        l1.classList.add("active");
         h1.classList.remove("hide");
         l1.classList.remove("hide");
+       
        
     } else {
         h1.classList.add("hide");
