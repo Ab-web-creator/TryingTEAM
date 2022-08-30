@@ -607,10 +607,7 @@ footer p {
     text-align: center;
 }
 
-    .mobile_header {
-        background-color: rgb(193, 193, 193);
-        /* rang  */
-    }
+  
     
 
     .coverage {
@@ -621,6 +618,11 @@ footer p {
         z-index: 500;
         background-color: rgba(252, 181, 229, 0);
         border: 0.2px solid red;
+    }
+
+    .mobile_header {
+        background-color: rgb(146, 242, 178);
+        /* rang  */
     }
 /* 
 

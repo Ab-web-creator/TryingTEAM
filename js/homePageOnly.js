@@ -27,7 +27,7 @@ mainDiv.addEventListener("scroll", () => {
        
     }
 
-    if (unit > 620 && unit < 660) {
+    if (unit > 850 && unit < 900) {
         h2.classList.add("active");
         l2.classList.add("active");
        
