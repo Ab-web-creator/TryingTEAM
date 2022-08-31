@@ -1,5 +1,5 @@
 #mark {
-  /* position: fixed; */
+  position: fixed;
   /* width: 100%; */
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,7 @@
  
   /* right: 0; */
   z-index: 101;
-
+  margin-bottom: 500px;
 }
 
 #mark a span {
@@ -32,7 +32,10 @@
   color: #120587;
 } */
 
-
+.hdn-cont {
+  /* position: fixed; */
+  margin-top: 80px;
+}
 
 aside {
   top: 0px;
@@ -55,6 +58,7 @@ aside {
 
 aside.active {
   right: 0px;
+
   /* overflow-y: hidden; */
 }
 

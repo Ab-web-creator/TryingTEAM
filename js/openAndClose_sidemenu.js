@@ -11,6 +11,7 @@ menu.addEventListener("click", () => {
     blurs.classList.add("active");
     side.classList.add("active");
     figure.classList.add("active");
+    
 })
 
 

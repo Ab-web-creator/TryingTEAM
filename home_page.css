@@ -162,14 +162,17 @@ width: 24px;
 .head .logo_on_screen {
     position: fixed;
     top: 62px;
-    width: 100px;
+    width: 200px;
     height: 20px;
    
-    background-image: url(images/logo.png);
+    color: rgb(252, 252, 252);
+    font-size: 22px;
+    
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: left top;
     z-index: 1;
+    
 }
 
 .head span {
@@ -254,7 +257,6 @@ width: 24px;
     animation: updown 1.5s ease infinite;
 }
 
-
 @keyframes updown {
     0% {
         transform: translateY(0);
@@ -291,13 +293,13 @@ width: 24px;
     animation: show 2s;
 }
 
-.main .blueZone {
-    animation: show 2s;
+.main .login {
+    animation: show 3s;
 }
 
-.main .links_above_mainknop span {
+/* .main .links_above_mainknop span {
     animation: show 2s;
-}
+} */
 .main .katta_knopka {
     /* animation: show 3.5s; */
 }
@@ -325,35 +327,35 @@ width: 24px;
 }
 
 
-@keyframes showspan {
+/* @keyframes showSecondComers {
 
     0% {
-        transform: translateY(30px);
+        transform: translateX(20px);
         opacity: 0;
     }
 
     100% {
-        transform: translateY(0px);
+        transform: translateX(0px);
         opacity: 1;
     }
-}
+} */
  
-
+/* 
 @keyframes order {
     0% {
-        transform: translateY(120px);
+        transform: translateX(-120px);
         opacity: 0;
     }
     100% {
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
     }
-}
+} */
 
 
 
 .login .links_above_mainknop {
-    animation: links_above_mainknop 3s;
+    animation: order 3s;
 }
 
 @keyframes links_above_mainknop {
@@ -366,40 +368,41 @@ width: 24px;
         opacity: 1;
     }
 }
- 
-
-
 
 
 
 .head {
     opacity: 0;
+    /* z-index: 1; */
 }
 
 .head-1 {
     opacity: 1;
     transition: all 1.5s;
+    /* z-index: 1; */
 }
 
 .head-2,.head-3,.head-4 {
     opacity: 0;
     transition: all 1.5s;
+    /* z-index: 1; */
 }
 
 .login {
     opacity: 0;
+    /* z-index: 1; */
 }
 
 .login-1 {
     opacity: 1;
     transition: all 1.5s;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .login-2,.login-3,.login-4 {
     opacity: 0;
     transition: all 1.5s;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .active {
@@ -409,14 +412,12 @@ width: 24px;
 .hide {
     opacity: 0;
 }
-
-
    
-    a.logo{
+/* a.logo{
         height:12px;
         width:100px;
         color:inherit;
-    }
+    } */
 
 
 /*  
@@ -430,11 +431,7 @@ width: 24px;
    
 
    
-   
-
-.main .head span {
-    /* animation: show 2s; */
-}
+  
  
 .login .blueZone {
     animation: order 3s;
@@ -444,7 +441,7 @@ width: 24px;
 
 
 .blur {
-    position: absolute;
+    position: fixed;
     width: 100%;
     display: none;
     height: 100vh;
@@ -465,11 +462,11 @@ width: 24px;
     margin-left: auto;
     margin-right: auto;
     width: 85%;
-    height: 250px;
+    height: 270px;
     /* background-color: rgba(2, 2, 185, 0.581); */
     border-radius: 25px;
     bottom: 0px;
-    background-image: url(images/blue-box-button-ANIMATION56.gif);
+    background-image: url(images/blue_zone.gif);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -615,7 +612,7 @@ footer p {
         height: 70vh;
         width: 100%;
         bottom: 0;
-        z-index: 500;
+        z-index: 98;
         background-color: rgba(252, 181, 229, 0);
         /* border: 0.2px solid red; */
     }
