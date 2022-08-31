@@ -15,7 +15,7 @@ mainDiv.addEventListener("scroll", () => {
     const unit = mainDiv.scrollTop;
    
 
-    if(unit == 0 && unit < 90) {
+    if(unit == 0 && unit < 590) {
         l1.classList.add("active");
         h1.classList.remove("hide");
         l1.classList.remove("hide");
