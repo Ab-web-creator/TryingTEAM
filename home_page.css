@@ -287,23 +287,25 @@ width: 24px;
  
 
 .main .logo_on_screen {
-    animation: show 1s;
+    animation: show ease-in-out 1s;
 }
 
 .main .head span {
-    animation: show 2s;
+    animation: show ease-in-out 2s;
 }
 
 .main .login {
-    animation: show 3s;
+    animation: show  ease-in-out 3s;
 }
 
-/* .main .links_above_mainknop span {
-    animation: show 2s;
-} */
-.main .katta_knopka {
-    /* animation: show 3.5s; */
+.main .links_above_mainknop span {
+    animation: show ease-in-out 5s;
 }
+
+/* 
+.main .katta_knopka {
+    animation: show ease-in-out 3.5s;
+} */
 
 
 @keyframes show {
@@ -354,21 +356,21 @@ width: 24px;
 } */
 
 
-
+/* 
 .login .links_above_mainknop {
     animation: order 3s;
-}
-
+} */
+/* 
 @keyframes links_above_mainknop {
     0% {
-        transform: translateY(20px);
+        transform: translateY(40px);
         opacity: 0;
     }
     100% {
         transform: translateY(0);
         opacity: 1;
     }
-}
+} */
 
 
 
@@ -433,7 +435,7 @@ width: 24px;
 
  
 .login .blueZone {
-    animation: order 3s;
+    /* animation: order 3s; */
 }
 
 
@@ -455,7 +457,7 @@ width: 24px;
 .blueZone {
     /* display: none; */
     position: fixed;
-    bottom: 50px;
+    bottom: 60px;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
@@ -472,7 +474,8 @@ width: 24px;
 
 
 .links_above_mainknop {
-    z-index: 2;
+    position: fixed;
+    /* z-index: 2; */
     text-align: center;
     line-height: 1.7rem;
     margin-top: 36px;
