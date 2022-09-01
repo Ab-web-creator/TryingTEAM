@@ -243,6 +243,7 @@ width: 24px;
     
     width: 48px;
     height: 50px;  
+    z-index: 2;
 }
 
 .arrow {
@@ -458,7 +459,7 @@ width: 24px;
 .blueZone {
     /* display: none; */
     position: fixed;
-    bottom: 40px;
+    bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
@@ -619,7 +620,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(173, 251, 152);
+        background-color: rgb(251, 243, 152);
         /* rang  */
     }
 /* 
