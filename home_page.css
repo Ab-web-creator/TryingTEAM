@@ -293,14 +293,15 @@ width: 24px;
 .main .head span {
     animation: show ease-in-out 2s;
 }
-
+/* 
 .main .login {
     animation: show  ease-in-out 3s;
-}
+} */
 
+/* 
 .main .links_above_mainknop span {
-    /* animation: show ease-in-out 3s; */
-}
+    animation: show ease-in-out 3s;
+} */
 
 /* 
 .main .katta_knopka {
@@ -433,10 +434,10 @@ width: 24px;
    */
    
 
- 
+/*  
 .login .blueZone {
-    /* animation: order 3s; */
-}
+    animation: order 3s;
+} */
 
 
 .blur {
