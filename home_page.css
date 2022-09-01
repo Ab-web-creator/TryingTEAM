@@ -197,7 +197,7 @@ width: 24px;
  
 
 .login {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -293,10 +293,10 @@ width: 24px;
 .main .head span {
     animation: show ease-in-out 2s;
 }
-/* 
-.main .login {
-    animation: show  ease-in-out 3s;
-} */
+
+.main .blueZone {
+    animation: show  ease-in-out 2s;
+}
 
 /* 
 .main .links_above_mainknop span {
@@ -467,7 +467,6 @@ width: 24px;
     border-radius: 25px;
     bottom: 0px;
     
-    background-image: url(images/blue_zone.gif);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -620,7 +619,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(208, 208, 208);
+        background-color: rgb(173, 251, 152);
         /* rang  */
     }
 /* 
