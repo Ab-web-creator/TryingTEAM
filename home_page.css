@@ -294,7 +294,7 @@ width: 24px;
     animation: show ease-in-out 2s;
 }
 
-.main .login {
+.main .blueZone {
     animation: show  ease-in-out 3s;
 }
 
@@ -465,6 +465,7 @@ width: 24px;
     /* background-color: rgba(2, 2, 185, 0.581); */
     border-radius: 25px;
     bottom: 0px;
+    
     background-image: url(images/blue_zone.gif);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -618,7 +619,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(148, 156, 147);
+        background-color: rgb(255, 255, 255);
         /* rang  */
     }
 /* 
