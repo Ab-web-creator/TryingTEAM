@@ -1,6 +1,6 @@
 #mark {
   position: fixed;
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 8px 10px;
@@ -9,7 +9,10 @@
   /* right: 0; */
   z-index: 101;
   margin-bottom: 500px;
+ 
 }
+
+
 
 #mark a span {
   text-align: left;
@@ -18,7 +21,7 @@
   cursor: default;
 }
 #mark a {
-  font-size: 25px;
+  font-size: 20px;
   padding: 8px 5px;
   transition: all 0.5s;
   cursor: pointer;
@@ -48,19 +51,41 @@ aside {
   padding-top: 0px;
   /* padding-left: 30px; */
   /* padding-right: 20px; */
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   z-index: 100;
   height: fit-content;
   max-height: 100vh;
   overflow-y: auto;
-  /* border-radius: 35px 0 0 35px; */
+  border-radius: 0 0 0 35px;
 }
 
 aside.active {
   right: 0px;
-
-  /* overflow-y: hidden; */
+  /* animation: topSideMenu ease-in-out 1s; */
 }
+
+/* 
+
+@keyframes topSideMenu {
+  0% {
+      transform: translateX(30px);
+      opacity: 0;
+  }
+   
+  40% {
+      transform: translateX(30px);
+      opacity: 0;
+  }
+  70% {
+      transform: translateX(0px);
+      opacity: 0.5;
+  }
+   
+  100% {
+      transform: translateX(0px);
+      opacity: 1;
+  }
+} */
 
 aside.notactive {
   right: -461px;
@@ -168,7 +193,7 @@ aside ul ul li a:hover {
 }
 
 aside ul li:last-child {
-  /* border-bottom: 3px solid red; */
+  border-bottom: none;
 }
 
 aside ul  ul {

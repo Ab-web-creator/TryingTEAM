@@ -459,14 +459,13 @@ width: 24px;
 .blueZone {
     /* display: none; */
     position: fixed;
-    bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
     height: 300px;
     /* background-color: rgba(2, 2, 185, 0.581); */
     border-radius: 25px;
-    bottom: 0px;
+    bottom: -60px;
     
     background-size: 100%;
     background-repeat: no-repeat;
@@ -620,7 +619,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(251, 243, 152);
+        background-color: rgb(255, 200, 207);
         /* rang  */
     }
 /* 
