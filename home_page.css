@@ -465,7 +465,7 @@ width: 24px;
     height: 300px;
     /* background-color: rgba(2, 2, 185, 0.581); */
     border-radius: 25px;
-    bottom: -60px;
+    bottom: 0px;
     
     background-size: 100%;
     background-repeat: no-repeat;
