@@ -294,12 +294,12 @@ width: 24px;
     animation: show ease-in-out 2s;
 }
 
-.main .blueZone {
+.main .login {
     animation: show  ease-in-out 3s;
 }
 
 .main .links_above_mainknop span {
-    animation: show ease-in-out 5s;
+    /* animation: show ease-in-out 3s; */
 }
 
 /* 
@@ -457,7 +457,7 @@ width: 24px;
 .blueZone {
     /* display: none; */
     position: fixed;
-    bottom: 60px;
+    bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
@@ -479,7 +479,7 @@ width: 24px;
     /* z-index: 2; */
     text-align: center;
     line-height: 1.7rem;
-    margin-top: 36px;
+    margin-top: 46px;
     }
     
 .links_above_mainknop a {
@@ -619,7 +619,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(140, 232, 236);
         /* rang  */
     }
 /* 
