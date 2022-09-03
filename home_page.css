@@ -148,6 +148,7 @@ width: 24px;
 
 .head {
     position: fixed;
+    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,8 +242,8 @@ width: 24px;
 #arrow img {
     /* position: absolute; */
     
-    width: 48px;
-    height: 50px;  
+    width: 28px;
+    height: 25px;  
     z-index: 2;
 }
 
@@ -250,7 +251,7 @@ width: 24px;
     position: absolute;
     display: block;
     bottom: 25px;
-    left: 45%;
+    left: 47%;
     transform: translate(-50%);
     height: 50px;
     font-size: 25px;
@@ -383,7 +384,7 @@ width: 24px;
 
 .head-1 {
     opacity: 1;
-    transition: all 1.5s;
+    /* transition: all 1.5s; */
     /* z-index: 1; */
 }
 
@@ -400,7 +401,7 @@ width: 24px;
 
 .login-1 {
     opacity: 1;
-    transition: all 1.5s;
+    /* transition: all 1.5s; */
     /* z-index: 1; */
 }
 
@@ -411,7 +412,9 @@ width: 24px;
 }
 
 .active {
+     
     opacity: 1;
+    transition: ease-in-out 1s;
 }
 
 .hide {
@@ -619,7 +622,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(255, 200, 207);
+        background-color: rgb(255, 255, 255);
         /* rang  */
     }
 /* 
