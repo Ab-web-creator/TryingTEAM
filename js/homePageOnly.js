@@ -14,42 +14,30 @@ const page2 = document.getElementById('page-2')
 const page3 = document.getElementById('page-3')
 const page4 = document.getElementById('page-4')
 
-// // // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-// let vh = window.innerHeight * 0.01
-// // Then we set the value in the --vh custom property to the root of the document
-// document.documentElement.style.setProperty('--vh', `${vh}px`)
+const heightTwoToFour =
+  page2.scrollHeight + page3.scrollHeight + page4.scrollHeight
+
+const heightThreeToFour = page3.scrollHeight + page4.scrollHeight
 
 // console.log(document.querySelector('.main-1'))
 mainDiv.addEventListener('scroll', () => {
   //   console.log(mainDiv.scrollHeight)
 
-  const scrollHeight = mainDiv.scrollHeight
+  const totalHeight = mainDiv.scrollHeight
 
   //   console.log(page1.scrollHeight)
 
   //   console.log(page2.scrollHeight)
 
-  const top = mainDiv.scrollTop
+  const scrolledHeight = mainDiv.scrollTop
 
-  console.log(top)
+  // console.log(scrolledHeight)
 
   if (
-    (top == 0 &&
-      top <
-        scrollHeight -
-          (page2.scrollHeight + page3.scrollHeight + page4.scrollHeight)) ||
-    (top > 0 &&
-      top <
-        scrollHeight -
-          (page2.scrollHeight + page3.scrollHeight + page4.scrollHeight))
+    (scrolledHeight == 0 && scrolledHeight < totalHeight - heightTwoToFour) ||
+    scrolledHeight == page1.scrollHeight * 0.2
   ) {
-    console.log(
-      '1',
-      top <
-        scrollHeight -
-          (page2.scrollHeight + page3.scrollHeight + page4.scrollHeight),
-    )
-    console.log('1')
+    console.log('page 1')
     h2.classList.remove('active')
     l2.classList.remove('active')
     h3.classList.remove('active')
@@ -61,25 +49,96 @@ mainDiv.addEventListener('scroll', () => {
     l1.style.opacity = 1
     h1.classList.add('active')
     l1.classList.add('active')
-
   }
 
   if (
-    (top ==
-      scrollHeight -
-        (page2.scrollHeight + page3.scrollHeight + page4.scrollHeight) &&
-      top < scrollHeight - (page3.scrollHeight + page4.scrollHeight)) ||
-    (top >
-      scrollHeight -
-        (page2.scrollHeight + page3.scrollHeight + page4.scrollHeight) &&
-      top < scrollHeight - (page3.scrollHeight + page4.scrollHeight))
+    scrolledHeight > page1.scrollHeight * 0.2 &&
+    scrolledHeight <= page1.scrollHeight * 0.4
+  ) {
+    console.log('1')
+    h1.classList.remove('active')
+    l1.classList.remove('active')
+    h1.style.opacity = 0.4
+    l1.style.opacity = 0.4
+
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h2.style.opacity = 0
+    l2.style.opacity = 0
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight * 0.4 &&
+    scrolledHeight <= page1.scrollHeight * 0.6
   ) {
     console.log('2')
     h1.classList.remove('active')
     l1.classList.remove('active')
-
     h1.style.opacity = 0
     l1.style.opacity = 0
+
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h2.style.opacity = 0
+    l2.style.opacity = 0
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight * 0.6 &&
+    scrolledHeight <= page1.scrollHeight * 0.8
+  ) {
+    console.log('2')
+    h1.classList.remove('active')
+    l1.classList.remove('active')
+    h1.style.opacity = 0
+    l1.style.opacity = 0
+
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h2.style.opacity = 0.1
+    l2.style.opacity = 0.1
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight * 0.8 &&
+    scrolledHeight <= totalHeight - heightTwoToFour - 30
+  ) {
+    console.log('3')
+    h1.classList.remove('active')
+    l1.classList.remove('active')
+    h1.style.opacity = 0
+    l1.style.opacity = 0
+
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h2.style.opacity = 0.4
+    l2.style.opacity = 0.4
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight * 0.8 &&
+    scrolledHeight <= page1.scrollHeight * 0.9
+  ) {
+    console.log('3')
+    h1.classList.remove('active')
+    l1.classList.remove('active')
+    h1.style.opacity = 0
+    l1.style.opacity = 0
+
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h2.style.opacity = 0.6
+    l2.style.opacity = 0.6
+  }
+
+  if (
+    scrolledHeight == page1.scrollHeight &&
+    scrolledHeight < page1.scrollHeight + page2.scrollHeight * 0.25 // 500 < 500 + 100
+  ) {
+    console.log('page 2')
+
+    h1.classList.remove('active')
+    l1.classList.remove('active')
 
     h3.classList.remove('active')
     l3.classList.remove('active')
@@ -87,16 +146,66 @@ mainDiv.addEventListener('scroll', () => {
     h4.classList.remove('active')
     l4.classList.remove('active')
 
+    h2.style.opacity = 1
+    l2.style.opacity = 1
     h2.classList.add('active')
     l2.classList.add('active')
   }
 
   if (
-    (top == scrollHeight - (page3.scrollHeight + page4.scrollHeight) &&
-      top < scrollHeight - page4.scrollHeight) ||
-    (top > scrollHeight - (page3.scrollHeight + page4.scrollHeight) &&
-      top < scrollHeight - page4.scrollHeight)
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.25 &&
+    scrolledHeight < page1.scrollHeight + page2.scrollHeight * 0.4
   ) {
+    console.log('1')
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h2.style.opacity = 0.5
+    l2.style.opacity = 0.5
+
+    h3.classList.remove('active')
+    l3.classList.remove('active')
+    h3.style.opacity = 0
+    l3.style.opacity = 0
+  }
+
+  if (
+    scrolledHeight >= page1.scrollHeight + page2.scrollHeight * 0.4 &&
+    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.6
+  ) {
+    console.log('2')
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h2.style.opacity = 0
+    l2.style.opacity = 0
+
+    h3.classList.remove('active')
+    l3.classList.remove('active')
+    h3.style.opacity = 0
+    l3.style.opacity = 0
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.6 &&
+    scrolledHeight < totalHeight - heightThreeToFour - 30
+  ) {
+    console.log('we need')
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h2.style.opacity = 0
+    l2.style.opacity = 0
+
+    h3.classList.remove('active')
+    l3.classList.remove('active')
+    h3.style.opacity = 0.5
+    l3.style.opacity = 0.5
+  }
+
+  if (
+    scrolledHeight == heightThreeToFour &&
+    scrolledHeight <
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.25
+  ) {
+    // 500 < 500 + 100) {
     console.log('3')
     h1.classList.remove('active')
     l1.classList.remove('active')
@@ -107,11 +216,77 @@ mainDiv.addEventListener('scroll', () => {
     h4.classList.remove('active')
     l4.classList.remove('active')
 
+    h3.style.opacity = 1
+    l3.style.opacity = 1
     h3.classList.add('active')
     l3.classList.add('active')
   }
 
-  if (top == scrollHeight - page4.scrollHeight) {
+  if (
+    scrolledHeight >
+    page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.25
+  ) {
+    console.log('')
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h3.style.opacity = 0
+    l3.style.opacity = 0
+
+    h3.classList.remove('active')
+    l3.classList.remove('active')
+    h4.style.opacity = 0
+    l4.style.opacity = 0
+  }
+
+  if (
+    scrolledHeight >
+    page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.25
+  ) {
+    console.log('')
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h3.style.opacity = 0.5
+    l3.style.opacity = 0.5
+
+    h3.classList.remove('active')
+    l3.classList.remove('active')
+    h4.style.opacity = 0
+    l4.style.opacity = 0
+  }
+
+  if (
+    scrolledHeight >
+    page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.4
+  ) {
+    console.log('')
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h3.style.opacity = 0
+    l3.style.opacity = 0
+
+    h3.classList.remove('active')
+    l3.classList.remove('active')
+    h4.style.opacity = 0
+    l4.style.opacity = 0
+  }
+
+  if (
+    scrolledHeight >
+    page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.6
+  ) {
+    console.log('')
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h3.style.opacity = 0
+    l3.style.opacity = 0
+
+    h3.classList.remove('active')
+    l3.classList.remove('active')
+    h4.style.opacity = 0.5
+    l4.style.opacity = 0.5
+  }
+
+  if (scrolledHeight == totalHeight - page4.scrollHeight) {
     console.log('4')
     h1.classList.remove('active')
     l1.classList.remove('active')
@@ -119,6 +294,9 @@ mainDiv.addEventListener('scroll', () => {
     l2.classList.remove('active')
     h3.classList.remove('active')
     l3.classList.remove('active')
+
+    h4.style.opacity = 1
+    l4.style.opacity = 1
     h4.classList.add('active')
     l4.classList.add('active')
   }

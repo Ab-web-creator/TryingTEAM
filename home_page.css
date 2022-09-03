@@ -379,6 +379,7 @@ width: 24px;
 
 .head {
     opacity: 0;
+    transition: ease-in-out 0.5s;
     /* z-index: 1; */
 }
 
@@ -390,12 +391,14 @@ width: 24px;
 
 .head-2,.head-3,.head-4 {
     opacity: 0;
-    transition: all 1.5s;
+    /* transition: all 1.5s; */
     /* z-index: 1; */
 }
 
 .login {
     opacity: 0;
+    transition: ease-in-out 0.5s;
+
     /* z-index: 1; */
 }
 
@@ -407,14 +410,14 @@ width: 24px;
 
 .login-2,.login-3,.login-4 {
     opacity: 0;
-    transition: all 1.5s;
+    /* transition: all 1.5s; */
     /* z-index: 1; */
 }
 
 .active {
      
     opacity: 1;
-    transition: ease-in-out 1s;
+    /* transition: ease-in-out 1s; */
 }
 
 .hide {
