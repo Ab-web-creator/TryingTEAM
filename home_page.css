@@ -471,7 +471,7 @@ width: 24px;
     height: 300px;
     /* background-color: rgba(2, 2, 185, 0.581); */
     border-radius: 25px;
-    bottom: 10px;
+    bottom: 0px;
     
     background-size: 100%;
     background-repeat: no-repeat;
@@ -625,7 +625,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(227, 246, 141);
+        background-color: rgb(246, 155, 141);
         /* rang  */
     }
 /* 
