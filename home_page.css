@@ -397,7 +397,7 @@ width: 24px;
 }
 
 .login {
-    opacity: 0;
+    /* opacity: 0; */
     transition: ease-in-out 0.5s;
 
     /* z-index: 1; */
@@ -417,7 +417,7 @@ width: 24px;
 
 .active {
      
-    opacity: 1;
+    /* opacity: 1; */
     /* transition: ease-in-out 1s; */
 }
 
@@ -463,24 +463,24 @@ width: 24px;
     display: block;
 }
   
-.blueZone {
-    /* display: none; */
-    position: fixed;
+
+/* .blueZone {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
-    height: 300px;
-    /* background-color: rgba(2, 2, 185, 0.581); */
+    height: 180px;
+    background-color: rgba(2, 2, 185, 0.581);
     border-radius: 25px;
-    bottom: 0px;
+    bottom: 100px;
     
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center bottom;
-    z-index: 1;
-}
+    z-index: 100;
+} */
 
-#main_knop_clicker {
+/* #main_knop_clicker {
     position: relative;
     display: block;
     left: 50%;
@@ -515,15 +515,33 @@ width: 24px;
     border-radius: 50%;
     background-color: rgba(0, 0, 255, 0.912);
     z-index: 200;
+} */
+
+
+.bravo {
+    position: fixed;
+    width: 95%;
+    height: 180px;
+    background-color: rgba(170, 2, 185, 0.391);
+    /* border-radius: 15px; */
+    top: 200px;
+    /* bottom: 10px; */
+    
+    left: 50%;
+    transform: translate(-50%);
+
+    z-index: 111;
 }
 
 
 .links_above_mainknop {
     position: fixed;
-    /* z-index: 2; */
     text-align: center;
     line-height: 1.7rem;
-    margin-top: 46px;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2000;
     }
     
 .links_above_mainknop a {
@@ -545,9 +563,9 @@ width: 24px;
     /* background-color: green; */
     border-radius: 50%;
     z-index: 2;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 119px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    bottom: 20px;
     padding: 0px;
     left: 50%;
     transform: translate(-50%);
@@ -657,7 +675,7 @@ footer p {
         height: 90vh;
         width: 100%;
         bottom: 0;
-        z-index: 98;
+        z-index: 1198;
         background-color: rgba(252, 181, 229, 0);
         /* border: 0.2px solid red; */
     }
@@ -666,6 +684,8 @@ footer p {
         background-color: rgb(224, 224, 224);
         /* rang  */
     }
+
+
 /* 
 
 git pull
