@@ -6,12 +6,13 @@ const side = document.querySelector("aside");
 const figure = document.querySelector("figure");
 
 
+
+
 menu.addEventListener("click", () => {
-    console.log("Menu is clicked")
+    console.log("Menu is clicked");
     blurs.classList.add("active");
     side.classList.add("active");
     figure.classList.add("active");
-    
 })
 
 
