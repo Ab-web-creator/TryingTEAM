@@ -485,7 +485,7 @@ width: 24px;
     display: block;
     left: 50%;
     transform: translate(-50%);
-    bottom: 10px;
+    bottom: 60px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -497,7 +497,7 @@ width: 24px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    bottom: 10px;
+    bottom: 60px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -509,7 +509,7 @@ width: 24px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    bottom: 10px;
+    bottom: 60px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -663,7 +663,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(240, 240, 240);
+        background-color: rgb(247, 185, 185);
         /* rang  */
     }
 /* 
