@@ -537,7 +537,7 @@ width: 24px;
 .links_above_mainknop {
     position: fixed;
     text-align: center;
-    line-height: 1.7rem;
+    /* line-height: 1.7rem; */
     bottom: 100px;
     left: 50%;
     transform: translate(-50%);
@@ -550,9 +550,14 @@ width: 24px;
       letter-spacing: 0.5px;
       font-size: 14px;
       font-weight: 600;
+      
     }
+
 .links_above_mainknop a:hover {
       color: cyan;
+    }
+.links_above_mainknop ul li p {
+    margin-bottom: 10px;
     }
     
 
