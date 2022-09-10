@@ -464,9 +464,17 @@ width: 24px;
     display: block;
 }
 
+.invisible {
+    display: block;
+    width: 10px;
+    height: 10px;
+    z-index: 0;
+}
 .invisible img {
-    display: none;
-
+    /* display: none; */
+    width: 10px;
+    height: 10px;
+    z-index: 101;
     /* I need it to load these images beforehand  */
 }
 
@@ -692,7 +700,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(163, 249, 215);
+        background-color: rgb(212, 163, 249);
         /* rang  */
     }
 
