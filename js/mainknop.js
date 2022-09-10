@@ -34,7 +34,7 @@ mainKnop1_2.addEventListener("click", () => {
         bluezone1.style.backgroundImage = "url(images/1_basis.gif)";
         mainKnop1_2.style.zIndex = 200;
         mainKnop1_1.style.zIndex = 201;
-      }, 1000)
+      }, 2000)
     
 })
 
