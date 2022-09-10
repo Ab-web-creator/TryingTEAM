@@ -485,8 +485,9 @@ width: 24px;
 }
 
 #main_knop_clicker1 {
+    position: relative;
     margin: auto;
-    top: 110px;
+    top: 95px;
     position: relative;
     display: block;
     /* left: 35%;
@@ -495,7 +496,7 @@ width: 24px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: rgba(255, 0, 43, 0.947);
+    background-color: rgba(255, 0, 43, 0.863);
     z-index: 201;
 }
 
@@ -685,7 +686,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(176, 250, 186);
+        background-color: rgb(245, 250, 176);
         /* rang  */
     }
 
