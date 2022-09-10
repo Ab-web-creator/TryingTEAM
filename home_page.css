@@ -399,7 +399,7 @@ width: 24px;
 
 .login {
     opacity: 1;
-    transition: ease-in-out 0.5s;
+    /* transition: ease-in-out 0.5s; */
 
     /* z-index: 1; */
 }
@@ -418,7 +418,7 @@ width: 24px;
 
 .active {
      
-    /* opacity: 1; */
+    opacity: 1;
     /* transition: ease-in-out 1s; */
 }
 
@@ -687,7 +687,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(247, 250, 176);
+        background-color: rgb(176, 191, 250);
         /* rang  */
     }
 
