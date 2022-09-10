@@ -4,29 +4,31 @@
 //     document.getElementById("bluezones").style.backgroundImage = "url(images/1_start_menu.gif)";
 // }
 
-const mainKnop1 = document.querySelector("#main_knop_clicker1");
-const mainKnop2 = document.querySelector("#main_knop_clicker2");
+const mainKnop1_1 = document.querySelector("#main_knop_clicker1_1");
+const mainKnop1_2 = document.querySelector("#main_knop_clicker1_2");
+const mainKnop2_1 = document.querySelector("#main_knop_clicker2_1");
+const mainKnop2_2 = document.querySelector("#main_knop_clicker2_2");
 
-const bluezone2 = document.querySelector("#blueZone2");
+const bluezone1 = document.querySelector("#blueZone1");
 
 
 
-mainKnop1.addEventListener("click", () => {
+mainKnop1_1.addEventListener("click", () => {
     console.log("Menu-Big knop 1 is clicked");
-    bluezone2.style.backgroundImage = "url(images/1_start_menu.gif)";
-    mainKnop1.style.zIndex = 200;
-    mainKnop2.style.zIndex = 201;
+    bluezone1.style.backgroundImage = "url(images/1_start_menu.gif)";
+    mainKnop1_1.style.zIndex = 200;
+    mainKnop1_2.style.zIndex = 201;
 })
 
-mainKnop2.addEventListener("click", () => {
+mainKnop1_2.addEventListener("click", () => {
     console.log("Menu-Big knop 2 is clicked");
-    bluezone2.style.backgroundImage = "url(images/1_stop_menu.gif)";
-    mainKnop2.style.zIndex = 200;
+    bluezone1.style.backgroundImage = "url(images/1_stop_menu.gif)";
+    mainKnop1_1.style.zIndex = 200;
 
     setTimeout(() => {
-        bluezone2.style.backgroundImage = "url(images/1_basis.gif)";
-        mainKnop2.style.zIndex = 200;
-        mainKnop1.style.zIndex = 201;
+        bluezone1.style.backgroundImage = "url(images/1_basis.gif)";
+        mainKnop1_2.style.zIndex = 200;
+        mainKnop1_1.style.zIndex = 201;
       }, 2500)
     
 })
