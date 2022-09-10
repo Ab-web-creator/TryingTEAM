@@ -15,21 +15,21 @@ const bluezone1 = document.querySelector("#blueZone1");
 
 mainKnop1_1.addEventListener("click", () => {
     console.log("Menu-Big knop 1 is clicked");
-    bluezone1.style.backgroundImage = "url(images/1_start_menu.gif)";
+    // bluezone1.style.backgroundImage = "url(images/1_start_menu.gif)";
     mainKnop1_1.style.zIndex = 200;
     mainKnop1_2.style.zIndex = 201;
 })
 
 mainKnop1_2.addEventListener("click", () => {
     console.log("Menu-Big knop 2 is clicked");
-    bluezone1.style.backgroundImage = "url(images/1_stop_menu.gif)";
+    // bluezone1.style.backgroundImage = "url(images/1_stop_menu.gif)";
     mainKnop1_1.style.zIndex = 200;
 
     setTimeout(() => {
         bluezone1.style.backgroundImage = "url(images/1_basis.gif)";
         mainKnop1_2.style.zIndex = 200;
         mainKnop1_1.style.zIndex = 201;
-      }, 2500)
+      }, 1000)
     
 })
 
