@@ -199,7 +199,7 @@ width: 24px;
 
 .login {
     position: relative;
-    top: 350px;
+    top: 300px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -697,7 +697,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(224, 224, 224);
+        background-color: rgb(247, 172, 172);
         /* rang  */
     }
 
