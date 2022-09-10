@@ -463,7 +463,12 @@ width: 24px;
 .blur.active {
     display: block;
 }
-  
+
+.invisible img {
+    display: none;
+
+    /* I need it to load these images beforehand  */
+}
 
 .blueZone {
     position: relative;
@@ -687,7 +692,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(253, 253, 253);
+        background-color: rgb(163, 249, 215);
         /* rang  */
     }
 
