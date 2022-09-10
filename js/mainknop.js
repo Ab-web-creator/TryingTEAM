@@ -6,7 +6,7 @@
 
 const mainKnop1 = document.querySelector("#main_knop_clicker1");
 const mainKnop2 = document.querySelector("#main_knop_clicker2");
-const mainKnop3 = document.querySelector("#main_knop_clicker3");
+
 const bluezone2 = document.querySelector("#blueZone2");
 
 
@@ -21,17 +21,21 @@ mainKnop1.addEventListener("click", () => {
 mainKnop2.addEventListener("click", () => {
     console.log("Menu-Big knop 2 is clicked");
     bluezone2.style.backgroundImage = "url(images/1_stop_menu.gif)";
-    mainKnop3.style.zIndex = 201;
     mainKnop2.style.zIndex = 200;
 
+    setTimeout(() => {
+        bluezone2.style.backgroundImage = "url(images/1_basis.gif)";
+        mainKnop2.style.zIndex = 200;
+        mainKnop1.style.zIndex = 201;
+      }, 2500)
     
 })
 
-mainKnop3.addEventListener("click", () => {
-    console.log("Menu-Big knop 3 is clicked");
-    bluezone2.style.backgroundImage = "url(images/1_basis.gif)";
-    mainKnop3.style.zIndex = 200;
-    mainKnop2.style.zIndex = 200;
-    mainKnop.style.zIndex = 201;
+// mainKnop3.addEventListener("click", () => {
+//     console.log("Menu-Big knop 3 is clicked");
+//     bluezone2.style.backgroundImage = "url(images/1_basis.gif)";
+//     mainKnop3.style.zIndex = 200;
+//     mainKnop2.style.zIndex = 200;
+//     mainKnop1.style.zIndex = 201;
  
-})
+// })

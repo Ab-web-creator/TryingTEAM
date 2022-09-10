@@ -505,7 +505,7 @@ width: 24px;
     transform: translate(-50%); */
     
     margin: auto;
-    top: 50px;
+    top: 5px;
 
     width: 80px;
     height: 80px;
@@ -514,19 +514,7 @@ width: 24px;
     z-index: 200;
 }
 
-#main_knop_clicker3 {
-    position: relative;
-    /* left: 40%;
-    transform: translate(-50%); */
-    margin: auto;
-    top: 0px;
 
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 255, 0.912);
-    z-index: 200;
-}
 
 
 .bravo {
@@ -697,7 +685,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(176, 250, 186);
         /* rang  */
     }
 
