@@ -198,12 +198,12 @@ width: 24px;
  
 
 .login {
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    top: 350px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* height: 260px; */
+    height: 290px;
     justify-content: center;
     align-items: center;
 }
@@ -464,28 +464,34 @@ width: 24px;
 }
   
 
-/* .blueZone {
+.blueZone {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
-    height: 180px;
-    background-color: rgba(2, 2, 185, 0.581);
+    height: 200px;
+    /* background-color: rgba(2, 2, 185, 0.581); */
     border-radius: 25px;
-    bottom: 100px;
+    /* bottom: 100px; */
     
+    background-image: url(images/1_basis.gif);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center bottom;
     z-index: 100;
-} */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-/* #main_knop_clicker {
+#main_knop_clicker1 {
+    margin: auto;
+    top: 110px;
     position: relative;
     display: block;
-    left: 50%;
-    transform: translate(-50%);
-    top: 10px;
+    /* left: 35%;
+    transform: translate(-50%); */
+   
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -495,9 +501,12 @@ width: 24px;
 
 #main_knop_clicker2 {
     position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    top: 15px;
+    /* left: 35%;
+    transform: translate(-50%); */
+    
+    margin: auto;
+    top: 50px;
+
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -507,15 +516,17 @@ width: 24px;
 
 #main_knop_clicker3 {
     position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    top: 17px;
+    /* left: 40%;
+    transform: translate(-50%); */
+    margin: auto;
+    top: 0px;
+
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: rgba(0, 0, 255, 0.912);
     z-index: 200;
-} */
+}
 
 
 .bravo {
