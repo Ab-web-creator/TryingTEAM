@@ -23,16 +23,16 @@ const bluezone4 = document.querySelector('#blueZone4')
 // page 1 
 mainKnop1_1.addEventListener('click', () => {
   bluezone1.style.backgroundImage = `url('${startMenu}?a=${Math.random()})`
-  mainKnop1_1.style.zIndex = 200
-  mainKnop1_2.style.zIndex = 201
+  mainKnop1_1.style.zIndex = 300
+  mainKnop1_2.style.zIndex = 301
   console.log('click for start menu page 1')
 })
 
 mainKnop1_2.addEventListener('click', () => {
   bluezone1.style.backgroundImage = `url('${stopMenu}?a=${Math.random()}')`
  
-  mainKnop1_1.style.zIndex = 201
-  mainKnop1_2.style.zIndex = 200
+  mainKnop1_1.style.zIndex = 301
+  mainKnop1_2.style.zIndex = 300
 
   console.log('click for stop menu page 1')
 })
@@ -40,16 +40,16 @@ mainKnop1_2.addEventListener('click', () => {
 // page 2
 mainKnop2_1.addEventListener('click', () => {
   bluezone2.style.backgroundImage = `url('${startMenu}?a=${Math.random()})`
-  mainKnop2_1.style.zIndex = 200
-  mainKnop2_2.style.zIndex = 201
+  mainKnop2_1.style.zIndex = 300
+  mainKnop2_2.style.zIndex = 301
 
   console.log('click for start menu page 2')
 })
 
 mainKnop2_2.addEventListener('click', () => {
   bluezone2.style.backgroundImage = `url('${stopMenu}?a=${Math.random()}')`
-  mainKnop2_1.style.zIndex = 201
-  mainKnop2_2.style.zIndex = 200
+  mainKnop2_1.style.zIndex = 301
+  mainKnop2_2.style.zIndex = 300
   console.log('click for stop menu page 2')
 })
 

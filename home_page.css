@@ -475,7 +475,7 @@ a.logo{
   border-radius: 50%;
   background-color: rgba(4, 255, 0, 0.784);
 
-  z-index: 201;
+  z-index: 301;
 }
 
 .main_knop_clicker2 {
@@ -490,7 +490,7 @@ a.logo{
 
   border-radius: 50%;
   background-color: rgba(43, 0, 255, 0.863);
-  z-index: 200;
+  z-index: 300;
 }
 
 .links_above_mainknop {
@@ -622,16 +622,16 @@ footer p {
   padding: 10px 20px;
   text-align: center;
 }
-/* 
+
 .coverage {
   position: absolute;
   height: 90vh;
   width: 100%;
   bottom: 0;
-  z-index: 1198;
+  z-index: 202;
   background-color: rgba(252, 181, 229, 0);
   /* border: 0.2px solid red; */
-/* } */ 
+}
 
 .mobile_header {
   background-color: rgb(85, 245, 70);
