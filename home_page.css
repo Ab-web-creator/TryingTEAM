@@ -466,17 +466,10 @@ width: 24px;
 
 .invisible {
     display: block;
-    width: 10px;
+    width: 1px;
     height: 10px;
-    z-index: 0;
 }
-.invisible img {
-    /* display: none; */
-    width: 10px;
-    height: 10px;
-    z-index: 101;
-    /* I need it to load these images beforehand  */
-}
+
 
 .blueZone {
     position: relative;
@@ -527,24 +520,6 @@ width: 24px;
     border-radius: 50%;
     background-color: rgba(43, 0, 255, 0.863);
     z-index: 200;
-}
-
-
-
-
-.bravo {
-    position: fixed;
-    width: 95%;
-    height: 180px;
-    background-color: rgba(170, 2, 185, 0.391);
-    /* border-radius: 15px; */
-    top: 200px;
-    /* bottom: 10px; */
-    
-    left: 50%;
-    transform: translate(-50%);
-
-    z-index: 111;
 }
 
 
@@ -700,7 +675,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color: rgb(163, 249, 172);
+        background-color: rgb(255, 255, 255);
         /* rang  */
     }
 
