@@ -466,19 +466,19 @@ a.logo{
 
 
 #blueZone1 img {
-  width: 350px;
+  width: fit-content;
   height: 200px;
   visibility: visible;
   z-index: 105;
 }
 #blueZone1b img {
-  width: 350px;
+  width: fit-content;
   height: 200px;
   visibility: hidden;
   z-index: 104;
 }
 #blueZone1c img {
-  width: 350px;
+  width: fit-content;
   height: 200px;
   visibility: hidden;
   z-index: 104;
@@ -672,7 +672,7 @@ footer p {
 }
 
 .mobile_header {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(247, 140, 140);
   /* rang  */
 }
 
