@@ -27,6 +27,9 @@ const page2 = document.getElementById('page-2')
 const page3 = document.getElementById('page-3')
 const page4 = document.getElementById('page-4')
 
+m1_1.style.zIndex = 403
+m1_2.style.zIndex = 402
+
 const heightTwoToFour =
   page2.scrollHeight + page3.scrollHeight + page4.scrollHeight
 
@@ -65,16 +68,16 @@ mainDiv.addEventListener('scroll', () => {
     l3.style.zIndex = 199
     l4.style.zIndex = 199
 
-    m1_1.style.zIndex = 303
+    // mainKnopka animatsiya chaqirishi uchun kerak betda oldinga o'tishi uchun
+    m1_1.style.zIndex = 403
     m2_1.style.zIndex = 300
     m3_1.style.zIndex = 300
     m4_1.style.zIndex = 300
 
-    m1_2.style.zIndex = 302
+    m1_2.style.zIndex = 402
     m2_2.style.zIndex = 300
     m3_2.style.zIndex = 300
     m4_2.style.zIndex = 300
-
 
 
   }

@@ -475,8 +475,14 @@ a.logo{
   border-radius: 50%;
   background-color: rgba(4, 255, 0, 0.784);
 
+  z-index: 300;
+}
+
+#main_knop_clicker1 {
   z-index: 303;
 }
+
+
 
 .main_knop_clicker2 {
   position: fixed;
@@ -491,6 +497,9 @@ a.logo{
 
   border-radius: 50%;
   background-color: rgba(43, 0, 255, 0.863);
+  /* z-index: 300; */
+}
+#main_knop_clicker2 {
   z-index: 302;
 }
 
@@ -635,7 +644,7 @@ footer p {
 }
 
 .mobile_header {
-  background-color: rgb(128, 245, 70);
+  background-color: rgb(245, 216, 70);
   /* rang  */
 }
 
