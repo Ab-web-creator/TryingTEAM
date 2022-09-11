@@ -194,11 +194,11 @@ a.logo{
 .login {
   position: fixed;
   opacity: 0;
-  top: 290px;
+  top: 332px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 290px;
+  height: 200px;
   justify-content: center;
   align-items: center;
 }
@@ -466,19 +466,19 @@ a.logo{
 
 
 #blueZone1 img {
-  width: fit-content;
+  width: 350px;
   height: 200px;
   visibility: visible;
   z-index: 105;
 }
 #blueZone1b img {
-  width: fit-content;
+  width: 350px;
   height: 200px;
   visibility: hidden;
   z-index: 104;
 }
 #blueZone1c img {
-  width: fit-content;
+  width: 350px;
   height: 200px;
   visibility: hidden;
   z-index: 104;
@@ -672,7 +672,7 @@ footer p {
 }
 
 .mobile_header {
-  background-color: rgb(70, 245, 114);
+  background-color: rgb(255, 255, 255);
   /* rang  */
 }
 
