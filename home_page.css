@@ -443,7 +443,7 @@ a.logo{
 }
 
 .blueZone {
-  position: relative;
+  position: fixed;
   margin-left: auto;
   margin-right: auto;
   width: 95%;
@@ -452,15 +452,43 @@ a.logo{
   border-radius: 25px;
   /* bottom: 100px; */
 
-  background-image: url(images/1_basis.gif);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
   z-index: 100;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 }
+
+
+
+#blueZone1, #blueZone1b, #blueZone1c {
+  position: fixed;
+}
+
+
+#blueZone1 img {
+  width: fit-content;
+  height: 200px;
+  visibility: visible;
+  z-index: 105;
+}
+#blueZone1b img {
+  width: fit-content;
+  height: 200px;
+  visibility: hidden;
+  z-index: 104;
+}
+#blueZone1c img {
+  width: fit-content;
+  height: 200px;
+  visibility: hidden;
+  z-index: 104;
+}
+
+
+
+
+
+
 
 .main_knop_clicker1 {
   position: fixed;
@@ -644,7 +672,7 @@ footer p {
 }
 
 .mobile_header {
-  background-color: rgb(245, 216, 70);
+  background-color: rgb(70, 245, 114);
   /* rang  */
 }
 

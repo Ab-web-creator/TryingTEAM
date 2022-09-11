@@ -15,27 +15,57 @@ const mainKnop4_2 = document.querySelector('#main_knop_clicker4_2')
 
 
 
-const bluezone1 = document.querySelector('#blueZone1')
+const bluezone1 = document.querySelector('#gif1a')
+const bluezone1b = document.querySelector('#gif1b')
+const bluezone1c = document.querySelector('#gif1c')
+
 const bluezone2 = document.querySelector('#blueZone2')
 const bluezone3 = document.querySelector('#blueZone3')
 const bluezone4 = document.querySelector('#blueZone4')
 
 // page 1 
 mainKnop1_1.addEventListener('click', () => {
-  bluezone1.style.backgroundImage = `url('${startMenu}?a=${Math.random()})`
+  // bluezone1.style.backgroundImage = `url('${startMenu}?a=${Math.random()})`
+  
+  bluezone1.style.zIndex = 104
+  bluezone1b.style.zIndex = 105
+  bluezone1b.style.visibility = "visible"
+
   mainKnop1_1.style.zIndex = 302
   mainKnop1_2.style.zIndex = 303
   console.log('click for start menu page 1')
+
 })
 
 mainKnop1_2.addEventListener('click', () => {
-  bluezone1.style.backgroundImage = `url('${stopMenu}?a=${Math.random()}')`
+  // bluezone1.style.backgroundImage = `url('${stopMenu}?a=${Math.random()}')`
+  bluezone1.style.zIndex = 104
+  bluezone1b.style.zIndex = 105
+  bluezone1c.style.visibility = "visible"
+  bluezone1c.style.zIndex = 106
  
+  setTimeout(() => {
+    bluezone1.style.zIndex = 105
+    bluezone1b.style.zIndex = 104
+    bluezone1b.style.visibility = "hidden"
+
+    bluezone1c.style.zIndex = 104
+    bluezone1c.style.visibility = "hidden"
+  }, 2500)
+
   mainKnop1_1.style.zIndex = 303
   mainKnop1_2.style.zIndex = 302
 
   console.log('click for stop menu page 1')
 })
+
+
+
+
+
+// до этого места сделал
+
+
 
 // page 2
 mainKnop2_1.addEventListener('click', () => {
