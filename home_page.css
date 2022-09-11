@@ -194,7 +194,7 @@ a.logo{
 .login {
   position: fixed;
   opacity: 0;
-  top: 332px;
+  top: 336px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -446,7 +446,7 @@ a.logo{
   position: fixed;
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 100%;
   height: 200px;
   /* background-color: rgba(2, 2, 185, 0.581); */
   border-radius: 25px;
@@ -466,20 +466,20 @@ a.logo{
 
 
 #blueZone1 img {
-  width: fit-content;
-  height: 200px;
+  width: 347px;
+  height: 198px;
   visibility: visible;
   z-index: 105;
 }
 #blueZone1b img {
-  width: fit-content;
-  height: 200px;
+  width: 347px;
+  height: 198px;
   visibility: hidden;
   z-index: 104;
 }
 #blueZone1c img {
-  width: fit-content;
-  height: 200px;
+  width: 347px;
+  height: 198px;
   visibility: hidden;
   z-index: 104;
 }
@@ -672,7 +672,7 @@ footer p {
 }
 
 .mobile_header {
-  background-color: rgb(247, 140, 140);
+  background-color: rgb(255, 254, 182);
   /* rang  */
 }
 
