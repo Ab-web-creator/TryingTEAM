@@ -9,6 +9,19 @@ const l2 = document.querySelector('.login-2')
 const l3 = document.querySelector('.login-3')
 const l4 = document.querySelector('.login-4')
 
+
+const m1_1 = document.querySelector('#main_knop_clicker1_1')
+const m2_1 = document.querySelector('#main_knop_clicker2_1')
+const m3_1 = document.querySelector('#main_knop_clicker3_1')
+const m4_1 = document.querySelector('#main_knop_clicker4_1')
+
+const m1_2 = document.querySelector('#main_knop_clicker1_2')
+const m2_2 = document.querySelector('#main_knop_clicker2_2')
+const m3_2 = document.querySelector('#main_knop_clicker3_2')
+const m4_2 = document.querySelector('#main_knop_clicker4_2')
+
+
+
 const page1 = document.getElementById('page-1')
 const page2 = document.getElementById('page-2')
 const page3 = document.getElementById('page-3')
@@ -51,6 +64,18 @@ mainDiv.addEventListener('scroll', () => {
     l2.style.zIndex = 199
     l3.style.zIndex = 199
     l4.style.zIndex = 199
+
+    m1_1.style.zIndex = 303
+    m2_1.style.zIndex = 300
+    m3_1.style.zIndex = 300
+    m4_1.style.zIndex = 300
+
+    m1_2.style.zIndex = 302
+    m2_2.style.zIndex = 300
+    m3_2.style.zIndex = 300
+    m4_2.style.zIndex = 300
+
+
 
   }
 
@@ -144,6 +169,19 @@ mainDiv.addEventListener('scroll', () => {
     l3.style.zIndex = 199
     l4.style.zIndex = 199
 
+
+    m1_1.style.zIndex = 300
+    m2_1.style.zIndex = 303
+    m3_1.style.zIndex = 300
+    m4_1.style.zIndex = 300
+
+    m1_2.style.zIndex = 300
+    m2_2.style.zIndex = 302
+    m3_2.style.zIndex = 300
+    m4_2.style.zIndex = 300
+
+
+
   }
 
   if (
@@ -236,6 +274,18 @@ mainDiv.addEventListener('scroll', () => {
     l2.style.zIndex = 199
     l3.style.zIndex = 200
     l4.style.zIndex = 199
+
+
+    m1_1.style.zIndex = 300
+    m2_1.style.zIndex = 300
+    m3_1.style.zIndex = 303
+    m4_1.style.zIndex = 300
+
+    m1_2.style.zIndex = 300
+    m2_2.style.zIndex = 30
+    m3_2.style.zIndex = 302
+    m4_2.style.zIndex = 300
+
   }
 
   if (
@@ -331,5 +381,17 @@ mainDiv.addEventListener('scroll', () => {
     l2.style.zIndex = 199
     l3.style.zIndex = 199
     l4.style.zIndex = 200
+
+
+    m1_1.style.zIndex = 300
+    m2_1.style.zIndex = 300
+    m3_1.style.zIndex = 300
+    m4_1.style.zIndex = 303
+
+    m1_2.style.zIndex = 300
+    m2_2.style.zIndex = 300
+    m3_2.style.zIndex = 300
+    m4_2.style.zIndex = 302
+
   }
 })

@@ -475,7 +475,7 @@ a.logo{
   border-radius: 50%;
   background-color: rgba(4, 255, 0, 0.784);
 
-  z-index: 301;
+  z-index: 303;
 }
 
 .main_knop_clicker2 {
@@ -491,7 +491,7 @@ a.logo{
 
   border-radius: 50%;
   background-color: rgba(43, 0, 255, 0.863);
-  z-index: 300;
+  z-index: 302;
 }
 
 .links_above_mainknop {
@@ -635,7 +635,7 @@ footer p {
 }
 
 .mobile_header {
-  background-color: rgb(70, 160, 245);
+  background-color: rgb(128, 245, 70);
   /* rang  */
 }
 
