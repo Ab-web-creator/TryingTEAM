@@ -21,7 +21,6 @@ const m3_2 = document.querySelector('#main_knop_clicker3_2')
 const m4_2 = document.querySelector('#main_knop_clicker4_2')
 
 
-
 const page1 = document.getElementById('page-1')
 const page2 = document.getElementById('page-2')
 const page3 = document.getElementById('page-3')
@@ -182,9 +181,6 @@ mainDiv.addEventListener('scroll', () => {
     m2_2.style.zIndex = 302
     m3_2.style.zIndex = 300
     m4_2.style.zIndex = 300
-
-
-
   }
 
   if (

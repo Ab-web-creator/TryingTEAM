@@ -1,23 +1,10 @@
 const mainKnop1_1 = document.querySelector('#main_knop_clicker1_1')
 const mainKnop1_2 = document.querySelector('#main_knop_clicker1_2')
 
-// const mainKnop2_1 = document.querySelector('#main_knop_clicker2_1')
-// const mainKnop2_2 = document.querySelector('#main_knop_clicker2_2')
-
-// const mainKnop3_1 = document.querySelector('#main_knop_clicker3_1')
-// const mainKnop3_2 = document.querySelector('#main_knop_clicker3_2')
-
-// const mainKnop4_1 = document.querySelector('#main_knop_clicker4_1')
-// const mainKnop4_2 = document.querySelector('#main_knop_clicker4_2')
-
 const blueZoneImage1 = document.querySelector('#gif1a')
 
 const blueZoneContainer2 = document.querySelector('#blueZone1b')
 const blueZoneContainer3 = document.querySelector('#blueZone1c')
-
-// const bluezone2 = document.querySelector('#blueZone2')
-// const bluezone3 = document.querySelector('#blueZone3')
-// const bluezone4 = document.querySelector('#blueZone4')
 
 let startMenuImg
 let stopMenuImg
@@ -62,15 +49,19 @@ mainKnop1_2.addEventListener('click', () => {
     startMenuImg.style.visibility = 'hidden'
     stopMenuImg.style.zIndex = 104
     stopMenuImg.style.visibility = 'hidden'
+
+    if (blueZoneContainer2.hasChildNodes()) {
+      blueZoneContainer2.removeChild(startMenuImg)
+    }
+
+    
   }, 2400)
 
   mainKnop1_1.style.zIndex = 303
   mainKnop1_2.style.zIndex = 302
   console.log('click for stop menu page 1')
 
-  if (blueZoneContainer2.hasChildNodes()) {
-    blueZoneContainer2.removeChild(startMenuImg)
-  }
+ 
 })
 
 // до этого места сделал
