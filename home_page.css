@@ -136,6 +136,11 @@ section.page {
   bottom: 0;
 }
 
+.bg_fotos {
+width: 100%;
+height: 100vh;
+}
+
 .pageLogo {
   position: absolute;
   top: 42px;
@@ -148,6 +153,7 @@ section.page {
   position: absolute;
   top: 70px;
   left: 70px;
+  color: white;
 }
 
 .blueZoneContainer {
@@ -704,7 +710,7 @@ footer p {
 }
 
 .mobile_header {
-  background-color: rgb(190, 195, 250);
+  background-color: rgb(190, 250, 194);
   /* rang  */
 }
 
