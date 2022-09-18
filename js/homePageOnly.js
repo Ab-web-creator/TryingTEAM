@@ -19,17 +19,17 @@ const page3 = document.getElementById('page-3')
 const page4 = document.getElementById('page-4')
 
 let basisImageDisplay = true
-let starImageDisplay = false
-let stopImageDisplay = false
+// let starImageDisplay = false
+// let stopImageDisplay = false
 
 let sectionOneView = true
 let sectionTwoView = false
 let sectionThreeView = false
 let sectionFourView = false
 
-let basisMenuUrlPage1 = `./images/1_basis.gif?a=${Math.random()}`
-let startMenuUrlPage1 = `./images/1_start_menu.gif?a=${Math.random()}`
-let stopMenuUrlPage1
+let basisMenuUrlPage1 = `./images/1_basis.gif`
+let startMenuUrlPage1 = `./images/1_start_menu.gif`
+let stopMenuUrlPage1 = `./images/1_stop_menu.gif`
 
 let basisMenuUrlPage2 = `./images/2_basis.gif?a=${Math.random()}`
 let startMenuUrlPage2 = `./images/2_start_menu.gif?a=${Math.random()}`
@@ -48,21 +48,21 @@ mainButton.addEventListener('click', () => {
   if (sectionOneView) {
     if (basisImageDisplay) {
       blueZoneImage.src = startMenuUrlPage1
+
       basisImageDisplay = false
-      starImageDisplay = true
+      // starImageDisplay = true
       mainButton.disabled = true
       setTimeout(() => {
         mainButton.disabled = false
-      }, 2450)
-
-      stopMenuUrlPage1 = `./images/1_stop_menu.gif?a=${Math.random()}`
+      }, 2600)
     } else {
       blueZoneImage.src = stopMenuUrlPage1
+
       basisImageDisplay = true
       mainButton.disabled = true
       setTimeout(() => {
         mainButton.disabled = false
-      }, 2450)
+      }, 2600)
     }
   }
 
@@ -171,7 +171,6 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('4-5')
     dynamicContainer.style.opacity = 0.25
-    pageHeader.innerText = 'De rijopleiding'
   }
 
   if (
@@ -179,6 +178,8 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <= page1.scrollHeight * 0.55
   ) {
     dynamicContainer.style.opacity = 0
+
+    pageHeader.innerText = 'De rijopleiding'
 
     basisImageDisplay = true
     blueZoneImage.src = basisMenuUrlPage1
@@ -197,6 +198,8 @@ mainDiv.addEventListener('scroll', () => {
     dynamicContainer.style.opacity = 0
     console.log('mid bottom 1-2')
 
+    pageHeader.innerText = 'De simulator'
+
     basisImageDisplay = true
     blueZoneImage.src = basisMenuUrlPage2
 
@@ -210,7 +213,6 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight > page1.scrollHeight * 0.65 &&
     scrolledHeight <= page1.scrollHeight * 0.7
   ) {
-    pageHeader.innerText = 'De simulator'
     dynamicContainer.style.opacity = 0.25
     console.log('6-7')
   }
@@ -277,7 +279,6 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('4-5')
     dynamicContainer.style.opacity = 0.25
-    pageHeader.innerText = 'De simulator'
   }
 
   if (
@@ -285,6 +286,7 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.55
   ) {
     dynamicContainer.style.opacity = 0
+    pageHeader.innerText = 'De simulator'
     console.log('mid top 2-3')
 
     basisImageDisplay = true
@@ -301,6 +303,7 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.65
   ) {
     dynamicContainer.style.opacity = 0
+    pageHeader.innerText = 'De theorie'
 
     console.log('mid bottom 2-3')
     basisImageDisplay = true
@@ -316,7 +319,6 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.65 &&
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.7
   ) {
-    pageHeader.innerText = 'De theorie'
     dynamicContainer.style.opacity = 0.25
     console.log('6-7')
   }
@@ -392,7 +394,6 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('4-5')
     dynamicContainer.style.opacity = 0.25
-    pageHeader.innerText = 'De theorie'
   }
 
   if (
@@ -402,6 +403,7 @@ mainDiv.addEventListener('scroll', () => {
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.55
   ) {
     dynamicContainer.style.opacity = 0
+    pageHeader.innerText = 'De theorie'
     console.log('mid top 3-4')
 
     basisImageDisplay = true
@@ -420,6 +422,7 @@ mainDiv.addEventListener('scroll', () => {
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.65
   ) {
     dynamicContainer.style.opacity = 0
+    pageHeader.innerText = 'De impact'
 
     basisImageDisplay = true
     blueZoneImage.src = basisMenuUrlPage4
@@ -437,7 +440,6 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <=
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.7
   ) {
-    pageHeader.innerText = 'De impact'
     dynamicContainer.style.opacity = 0.25
     console.log('6-7')
   }
