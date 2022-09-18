@@ -179,11 +179,15 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <= page1.scrollHeight * 0.55
   ) {
     dynamicContainer.style.opacity = 0
-    console.log('mid top 1-2')
-    blueZoneImage.src = basisMenuUrlPage1
+
     basisImageDisplay = true
+    blueZoneImage.src = basisMenuUrlPage1
+
+    console.log('mid top 1-2')
     sectionOneView = true
     sectionTwoView = false
+    sectionThreeView = false
+    sectionFourView = false
   }
 
   if (
@@ -192,10 +196,14 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     dynamicContainer.style.opacity = 0
     console.log('mid bottom 1-2')
+
     basisImageDisplay = true
     blueZoneImage.src = basisMenuUrlPage2
+
     sectionOneView = false
     sectionTwoView = true
+    sectionThreeView = false
+    sectionFourView = false
   }
 
   if (
@@ -278,10 +286,14 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     dynamicContainer.style.opacity = 0
     console.log('mid top 2-3')
-    blueZoneImage.src = basisMenuUrlPage2
+
     basisImageDisplay = true
+    blueZoneImage.src = basisMenuUrlPage2
+
+    sectionOneView = false
     sectionTwoView = true
     sectionThreeView = false
+    sectionFourView = false
   }
 
   if (
@@ -289,11 +301,15 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.65
   ) {
     dynamicContainer.style.opacity = 0
+
+    console.log('mid bottom 2-3')
+    basisImageDisplay = true
+    blueZoneImage.src = basisMenuUrlPage3
+
+    sectionOneView = false
     sectionTwoView = false
     sectionThreeView = true
-    console.log('mid bottom 2-3')
-    blueZoneImage.src = basisMenuUrlPage3
-    basisImageDisplay = true
+    sectionFourView = false
   }
 
   if (
@@ -387,8 +403,12 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     dynamicContainer.style.opacity = 0
     console.log('mid top 3-4')
-    blueZoneImage.src = basisMenuUrlPage3
+
     basisImageDisplay = true
+    blueZoneImage.src = basisMenuUrlPage3
+
+    sectionOneView = false
+    sectionTwoView = false
     sectionThreeView = true
     sectionFourView = false
   }
@@ -400,11 +420,15 @@ mainDiv.addEventListener('scroll', () => {
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.65
   ) {
     dynamicContainer.style.opacity = 0
+
+    basisImageDisplay = true
+    blueZoneImage.src = basisMenuUrlPage4
+
+    sectionOneView = false
+    sectionTwoView = false
     sectionThreeView = false
     sectionFourView = true
     console.log('mid bottom 3-4')
-    blueZoneImage.src = basisMenuUrlPage4
-    basisImageDisplay = true
   }
 
   if (
