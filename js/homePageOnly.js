@@ -22,29 +22,114 @@ let basisImageDisplay = true
 let starImageDisplay = false
 let stopImageDisplay = false
 
-let basisMenuUrl = `./images/1_basis.gif?a=${Math.random()}`
-let startMenuUrl = `./images/1_start_menu.gif?a=${Math.random()}`
-let stopMenuUrl
+let sectionOneView = true
+let sectionTwoView = false
+let sectionThreeView = false
+let sectionFourView = false
+
+let basisMenuUrlPage1 = `./images/1_basis.gif?a=${Math.random()}`
+let startMenuUrlPage1 = `./images/1_start_menu.gif?a=${Math.random()}`
+let stopMenuUrlPage1
+
+let basisMenuUrlPage2 = `./images/2_basis.gif?a=${Math.random()}`
+let startMenuUrlPage2 = `./images/2_start_menu.gif?a=${Math.random()}`
+let stopMenuUrlPage2
+
+let basisMenuUrlPage3 = `./images/3_basis.gif?a=${Math.random()}`
+let startMenuUrlPage3 = `./images/3_start_menu.gif?a=${Math.random()}`
+let stopMenuUrlPage3
+
+let basisMenuUrlPage4 = `./images/4_basis.gif?a=${Math.random()}`
+let startMenuUrlPage4 = `./images/4_start_menu.gif?a=${Math.random()}`
+let stopMenuUrlPage4
 
 const mainButton = document.querySelector('.mainButton')
 mainButton.addEventListener('click', () => {
-  if (basisImageDisplay) {
-    blueZoneImage.src = startMenuUrl
-    basisImageDisplay = false
-    starImageDisplay = true
-    mainButton.disabled = true
-    setTimeout(() => {
-      mainButton.disabled = false
-    }, 2450)
+  if (sectionOneView) {
+    if (basisImageDisplay) {
+      blueZoneImage.src = startMenuUrlPage1
+      basisImageDisplay = false
+      starImageDisplay = true
+      mainButton.disabled = true
+      setTimeout(() => {
+        mainButton.disabled = false
+      }, 2450)
 
-    stopMenuUrl = `./images/1_stop_menu.gif?a=${Math.random()}`
-  } else {
-    blueZoneImage.src = stopMenuUrl
-    basisImageDisplay = true
-    mainButton.disabled = true
-    setTimeout(() => {
-      mainButton.disabled = false
-    }, 2450)
+      stopMenuUrlPage1 = `./images/1_stop_menu.gif?a=${Math.random()}`
+    } else {
+      blueZoneImage.src = stopMenuUrlPage1
+      basisImageDisplay = true
+      mainButton.disabled = true
+      setTimeout(() => {
+        mainButton.disabled = false
+      }, 2450)
+    }
+  }
+
+  if (sectionTwoView) {
+    console.log('we are clicking on section two')
+    if (basisImageDisplay) {
+      blueZoneImage.src = startMenuUrlPage2
+      basisImageDisplay = false
+      starImageDisplay = true
+      mainButton.disabled = true
+      setTimeout(() => {
+        mainButton.disabled = false
+      }, 2450)
+
+      stopMenuUrlPage2 = `./images/2_stop_menu.gif?a=${Math.random()}`
+    } else {
+      blueZoneImage.src = stopMenuUrlPage2
+      basisImageDisplay = true
+      mainButton.disabled = true
+      setTimeout(() => {
+        mainButton.disabled = false
+      }, 2450)
+    }
+  }
+
+  if (sectionThreeView) {
+    console.log('we are clicking on section three')
+    if (basisImageDisplay) {
+      blueZoneImage.src = startMenuUrlPage3
+      basisImageDisplay = false
+      starImageDisplay = true
+      mainButton.disabled = true
+      setTimeout(() => {
+        mainButton.disabled = false
+      }, 2450)
+
+      stopMenuUrlPage3 = `./images/3_stop_menu.gif?a=${Math.random()}`
+    } else {
+      blueZoneImage.src = stopMenuUrlPage3
+      basisImageDisplay = true
+      mainButton.disabled = true
+      setTimeout(() => {
+        mainButton.disabled = false
+      }, 2450)
+    }
+  }
+
+  if (sectionFourView) {
+    console.log('we are clicking on section four')
+    if (basisImageDisplay) {
+      blueZoneImage.src = startMenuUrlPage4
+      basisImageDisplay = false
+      starImageDisplay = true
+      mainButton.disabled = true
+      setTimeout(() => {
+        mainButton.disabled = false
+      }, 2450)
+
+      stopMenuUrlPage4 = `./images/4_stop_menu.gif?a=${Math.random()}`
+    } else {
+      blueZoneImage.src = stopMenuUrlPage4
+      basisImageDisplay = true
+      mainButton.disabled = true
+      setTimeout(() => {
+        mainButton.disabled = false
+      }, 2450)
+    }
   }
 })
 
@@ -91,12 +176,26 @@ mainDiv.addEventListener('scroll', () => {
 
   if (
     scrolledHeight > page1.scrollHeight * 0.45 &&
+    scrolledHeight <= page1.scrollHeight * 0.55
+  ) {
+    dynamicContainer.style.opacity = 0
+    console.log('mid top 1-2')
+    blueZoneImage.src = basisMenuUrlPage1
+    basisImageDisplay = true
+    sectionOneView = true
+    sectionTwoView = false
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight * 0.55 &&
     scrolledHeight <= page1.scrollHeight * 0.65
   ) {
     dynamicContainer.style.opacity = 0
-    console.log('mid')
-    blueZoneImage.src = basisMenuUrl
+    console.log('mid bottom 1-2')
     basisImageDisplay = true
+    blueZoneImage.src = basisMenuUrlPage2
+    sectionOneView = false
+    sectionTwoView = true
   }
 
   if (
@@ -175,11 +274,25 @@ mainDiv.addEventListener('scroll', () => {
 
   if (
     scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.45 &&
+    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.55
+  ) {
+    dynamicContainer.style.opacity = 0
+    console.log('mid top 2-3')
+    blueZoneImage.src = basisMenuUrlPage2
+    basisImageDisplay = true
+    sectionTwoView = true
+    sectionThreeView = false
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.55 &&
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.65
   ) {
     dynamicContainer.style.opacity = 0
-    console.log('mid')
-    blueZoneImage.src = basisMenuUrl
+    sectionTwoView = false
+    sectionThreeView = true
+    console.log('mid bottom 2-3')
+    blueZoneImage.src = basisMenuUrlPage3
     basisImageDisplay = true
   }
 
@@ -270,11 +383,27 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight >
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.45 &&
     scrolledHeight <=
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.55
+  ) {
+    dynamicContainer.style.opacity = 0
+    console.log('mid top 3-4')
+    blueZoneImage.src = basisMenuUrlPage3
+    basisImageDisplay = true
+    sectionThreeView = true
+    sectionFourView = false
+  }
+
+  if (
+    scrolledHeight >
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.55 &&
+    scrolledHeight <=
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.65
   ) {
     dynamicContainer.style.opacity = 0
-    console.log('mid')
-    blueZoneImage.src = basisMenuUrl
+    sectionThreeView = false
+    sectionFourView = true
+    console.log('mid bottom 3-4')
+    blueZoneImage.src = basisMenuUrlPage4
     basisImageDisplay = true
   }
 
