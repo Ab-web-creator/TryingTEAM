@@ -109,7 +109,7 @@ body {
 .section-container {
   overflow: scroll;
   height: 100vh;
-  scroll-snap-points-y: repeat(100vh);
+  
   scroll-snap-type: y mandatory;
 }
 
@@ -303,7 +303,7 @@ footer p {
  
 
 .mobile_header {
-  background-color: rgb(245, 249, 139);
+  background-color: rgb(139, 221, 249);
   /* rang  */
 }
 

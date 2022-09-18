@@ -32,11 +32,8 @@ let sectionThreeView = false
 let sectionFourView = false
 
 let basisMenuUrlPage1 = `./images/1_basis.gif?a=${Math.random()}`
-
 let basisMenuUrlPage2 = `./images/2_basis.gif?a=${Math.random()}`
-
 let basisMenuUrlPage3 = `./images/3_basis.gif?a=${Math.random()}`
-
 let basisMenuUrlPage4 = `./images/4_basis.gif?a=${Math.random()}`
 
 const mainButton = document.querySelector('.mainButton')
@@ -189,6 +186,19 @@ mainDiv.addEventListener('scroll', () => {
   if (scrolledHeight >= 0 && scrolledHeight <= page1.scrollHeight * 0.1) {
     dynamicContainer.style.opacity = 1
     console.log('Page 1')
+
+    pageHeader.innerText = 'De rijopleiding'
+
+    basisImageDisplay = true
+
+    basis.src = basisMenuUrlPage1
+    basis.style.zIndex = 2
+
+    console.log('mid top 1-2')
+    sectionOneView = true
+    sectionTwoView = false
+    sectionThreeView = false
+    sectionFourView = false
   }
 
   if (
@@ -301,6 +311,17 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('page 2')
     dynamicContainer.style.opacity = 1
+    pageHeader.innerText = 'De simulator'
+
+    basisImageDisplay = true
+
+    basis.src = basisMenuUrlPage2
+    basis.style.zIndex = 2
+
+    sectionOneView = false
+    sectionTwoView = true
+    sectionThreeView = false
+    sectionFourView = false
   }
 
   if (
@@ -412,6 +433,18 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('page 3')
     dynamicContainer.style.opacity = 1
+    pageHeader.innerText = 'De theorie'
+
+    console.log('mid bottom 2-3')
+    basisImageDisplay = true
+
+    basis.src = basisMenuUrlPage3
+    basis.style.zIndex = 2
+
+    sectionOneView = false
+    sectionTwoView = false
+    sectionThreeView = true
+    sectionFourView = false
   }
 
   if (
@@ -542,5 +575,17 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('Page 4')
     dynamicContainer.style.opacity = 1
+    pageHeader.innerText = 'De impact'
+
+    basisImageDisplay = true
+
+    basis.src = basisMenuUrlPage4
+    basis.style.zIndex = 2
+
+    sectionOneView = false
+    sectionTwoView = false
+    sectionThreeView = false
+    sectionFourView = true
+    console.log('mid bottom 3-4')
   }
 })
