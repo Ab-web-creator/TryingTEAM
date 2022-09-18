@@ -1,148 +1,135 @@
-const mainDiv = document.querySelector('.main-1')
-const h1 = document.querySelector('.head-1')
-const h2 = document.querySelector('.head-2')
-const h3 = document.querySelector('.head-3')
-const h4 = document.querySelector('.head-4')
+const mainDiv = document.querySelector('.section-container')
 
-const l1 = document.querySelector('.login-1')
-const l2 = document.querySelector('.login-2')
-const l3 = document.querySelector('.login-3')
-const l4 = document.querySelector('.login-4')
+const dynamicContainer = document.querySelector('.dynamicContainer')
+const pageLogo = document.createElement('img')
+pageLogo.setAttribute('class', 'pageLogo')
+pageLogo.src = './images/logo.png'
+const pageHeader = document.createElement('a')
+pageHeader.innerText = 'De rijopleiding'
+pageHeader.setAttribute('class', 'pageHeader')
+dynamicContainer.appendChild(pageLogo)
+dynamicContainer.appendChild(pageHeader)
 
-
-const m1_1 = document.querySelector('#main_knop_clicker1_1')
-const m2_1 = document.querySelector('#main_knop_clicker2_1')
-const m3_1 = document.querySelector('#main_knop_clicker3_1')
-const m4_1 = document.querySelector('#main_knop_clicker4_1')
-
-const m1_2 = document.querySelector('#main_knop_clicker1_2')
-const m2_2 = document.querySelector('#main_knop_clicker2_2')
-const m3_2 = document.querySelector('#main_knop_clicker3_2')
-const m4_2 = document.querySelector('#main_knop_clicker4_2')
-
+const blueZoneContainer = document.querySelector('.blueZoneContainer')
+const blueZoneImage = document.querySelector('.blueZoneImage')
 
 const page1 = document.getElementById('page-1')
 const page2 = document.getElementById('page-2')
 const page3 = document.getElementById('page-3')
 const page4 = document.getElementById('page-4')
 
-m1_1.style.zIndex = 403
-m1_2.style.zIndex = 402
+let basisImageDisplay = true
+let starImageDisplay = false
+let stopImageDisplay = false
 
-const heightTwoToFour =
-  page2.scrollHeight + page3.scrollHeight + page4.scrollHeight
+let basisMenuUrl = `./images/1_basis.gif?a=${Math.random()}`
+let startMenuUrl = `./images/1_start_menu.gif?a=${Math.random()}`
+let stopMenuUrl
 
-const heightThreeToFour = page3.scrollHeight + page4.scrollHeight
+const mainButton = document.querySelector('.mainButton')
+mainButton.addEventListener('click', () => {
+  if (basisImageDisplay) {
+    blueZoneImage.src = startMenuUrl
+    basisImageDisplay = false
+    starImageDisplay = true
+    mainButton.disabled = true
+    setTimeout(() => {
+      mainButton.disabled = false
+    }, 2450)
 
-// console.log(document.querySelector('.main-1'))
+    stopMenuUrl = `./images/1_stop_menu.gif?a=${Math.random()}`
+  } else {
+    blueZoneImage.src = stopMenuUrl
+    basisImageDisplay = true
+    mainButton.disabled = true
+    setTimeout(() => {
+      mainButton.disabled = false
+    }, 2450)
+  }
+})
+
 mainDiv.addEventListener('scroll', () => {
-  //   console.log(mainDiv.scrollHeight)
-
-  const totalHeight = mainDiv.scrollHeight
-
-  //   console.log(page1.scrollHeight)
-
-  //   console.log(page2.scrollHeight)
-
   const scrolledHeight = mainDiv.scrollTop
 
-  // console.log(scrolledHeight)
-
-  if (scrolledHeight >= 0 && scrolledHeight <= page1.scrollHeight * 0.2) {
+  if (scrolledHeight >= 0 && scrolledHeight <= page1.scrollHeight * 0.1) {
+    dynamicContainer.style.opacity = 1
     console.log('Page 1')
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-    h4.classList.remove('active')
-    l4.classList.remove('active')
+  }
 
-    h1.style.opacity = 1
-    l1.style.opacity = 1
-    h1.classList.add('active')
-    l1.classList.add('active')
-
-    l1.style.zIndex = 200
-    l2.style.zIndex = 199
-    l3.style.zIndex = 199
-    l4.style.zIndex = 199
-
-    // mainKnopka animatsiya chaqirishi uchun kerak betda oldinga o'tishi uchun
-    m1_1.style.zIndex = 403
-    m2_1.style.zIndex = 300
-    m3_1.style.zIndex = 300
-    m4_1.style.zIndex = 300
-
-    m1_2.style.zIndex = 402
-    m2_2.style.zIndex = 300
-    m3_2.style.zIndex = 300
-    m4_2.style.zIndex = 300
-
-
+  if (
+    scrolledHeight > page1.scrollHeight * 0.1 &&
+    scrolledHeight <= page1.scrollHeight * 0.2
+  ) {
+    dynamicContainer.style.opacity = 0.9
+    console.log('2-3')
   }
 
   if (
     scrolledHeight > page1.scrollHeight * 0.2 &&
+    scrolledHeight <= page1.scrollHeight * 0.3
+  ) {
+    dynamicContainer.style.opacity = 0.75
+    console.log('2-3')
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight * 0.3 &&
     scrolledHeight <= page1.scrollHeight * 0.4
   ) {
-    console.log('0.4')
-    h1.classList.remove('active')
-    l1.classList.remove('active')
-    h1.style.opacity = 0.4
-    l1.style.opacity = 0.4
-
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h2.style.opacity = 0
-    l2.style.opacity = 0
+    dynamicContainer.style.opacity = 0.5
+    console.log('3-4')
   }
 
   if (
     scrolledHeight > page1.scrollHeight * 0.4 &&
-    scrolledHeight <= page1.scrollHeight * 0.6
+    scrolledHeight <= page1.scrollHeight * 0.45
   ) {
-    console.log('0.6')
-    h1.classList.remove('active')
-    l1.classList.remove('active')
-    h1.style.opacity = 0
-    l1.style.opacity = 0
-
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h2.style.opacity = 0
-    l2.style.opacity = 0
+    console.log('4-5')
+    dynamicContainer.style.opacity = 0.25
+    pageHeader.innerText = 'De rijopleiding'
   }
 
   if (
-    scrolledHeight > page1.scrollHeight * 0.6 &&
+    scrolledHeight > page1.scrollHeight * 0.45 &&
+    scrolledHeight <= page1.scrollHeight * 0.65
+  ) {
+    dynamicContainer.style.opacity = 0
+    console.log('mid')
+    blueZoneImage.src = basisMenuUrl
+    basisImageDisplay = true
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight * 0.65 &&
+    scrolledHeight <= page1.scrollHeight * 0.7
+  ) {
+    pageHeader.innerText = 'De simulator'
+    dynamicContainer.style.opacity = 0.25
+    console.log('6-7')
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight * 0.7 &&
     scrolledHeight <= page1.scrollHeight * 0.8
   ) {
-    console.log('0.8')
-    h1.classList.remove('active')
-    l1.classList.remove('active')
-    h1.style.opacity = 0
-    l1.style.opacity = 0
-
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h2.style.opacity = 0.1
-    l2.style.opacity = 0.1
+    dynamicContainer.style.opacity = 0.5
+    console.log('7-8')
   }
 
   if (
     scrolledHeight > page1.scrollHeight * 0.8 &&
+    scrolledHeight <= page1.scrollHeight * 0.9
+  ) {
+    dynamicContainer.style.opacity = 0.75
+    console.log('8-9')
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight * 0.9 &&
     scrolledHeight < page1.scrollHeight
   ) {
-    console.log('1')
-    h1.classList.remove('active')
-    l1.classList.remove('active')
-    h1.style.opacity = 0
-    l1.style.opacity = 0
-
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h2.style.opacity = 0.6
-    l2.style.opacity = 0.6
+    dynamicContainer.style.opacity = 0.9
+    console.log('9')
   }
 
   if (
@@ -150,101 +137,83 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.2 // 500 < 500 + 100
   ) {
     console.log('page 2')
+    dynamicContainer.style.opacity = 1
+  }
 
-    h1.classList.remove('active')
-    l1.classList.remove('active')
-
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-
-    h4.classList.remove('active')
-    l4.classList.remove('active')
-
-    h2.style.opacity = 1
-    l2.style.opacity = 1
-    h2.classList.add('active')
-    l2.classList.add('active')
-
-
-    l1.style.zIndex = 199
-    l2.style.zIndex = 200
-    l3.style.zIndex = 199
-    l4.style.zIndex = 199
-
-
-    m1_1.style.zIndex = 300
-    m2_1.style.zIndex = 303
-    m3_1.style.zIndex = 300
-    m4_1.style.zIndex = 300
-
-    m1_2.style.zIndex = 300
-    m2_2.style.zIndex = 302
-    m3_2.style.zIndex = 300
-    m4_2.style.zIndex = 300
+  if (
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.1 &&
+    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.2
+  ) {
+    dynamicContainer.style.opacity = 0.9
+    console.log('2-3')
   }
 
   if (
     scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.2 &&
+    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.3
+  ) {
+    dynamicContainer.style.opacity = 0.75
+    console.log('2-3')
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.3 &&
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.4
   ) {
-    console.log('0.4')
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h2.style.opacity = 0.4
-    l2.style.opacity = 0.4
-
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-    h3.style.opacity = 0
-    l3.style.opacity = 0
+    dynamicContainer.style.opacity = 0.5
+    console.log('3-4')
   }
 
   if (
     scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.4 &&
-    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.6
+    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.45
   ) {
-    console.log('0.6')
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h2.style.opacity = 0
-    l2.style.opacity = 0
-
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-    h3.style.opacity = 0
-    l3.style.opacity = 0
+    console.log('4-5')
+    dynamicContainer.style.opacity = 0.25
+    pageHeader.innerText = 'De simulator'
   }
 
   if (
-    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.6 &&
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.45 &&
+    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.65
+  ) {
+    dynamicContainer.style.opacity = 0
+    console.log('mid')
+    blueZoneImage.src = basisMenuUrl
+    basisImageDisplay = true
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.65 &&
+    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.7
+  ) {
+    pageHeader.innerText = 'De theorie'
+    dynamicContainer.style.opacity = 0.25
+    console.log('6-7')
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.7 &&
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.8
   ) {
-    console.log('0.8')
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h2.style.opacity = 0
-    l2.style.opacity = 0
-
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-    h3.style.opacity = 0.1
-    l3.style.opacity = 0.1
+    dynamicContainer.style.opacity = 0.5
+    console.log('7-8')
   }
 
   if (
     scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.8 &&
+    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.9
+  ) {
+    dynamicContainer.style.opacity = 0.75
+    console.log('8-9')
+  }
+
+  if (
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.9 &&
     scrolledHeight < page1.scrollHeight + page2.scrollHeight
   ) {
-    console.log('1')
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h2.style.opacity = 0
-    l2.style.opacity = 0
-
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-    h3.style.opacity = 0.6
-    l3.style.opacity = 0.6
+    dynamicContainer.style.opacity = 0.9
+    console.log('9')
   }
 
   if (
@@ -252,145 +221,109 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <=
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.2
   ) {
-    // 500 < 500 + 100) {
     console.log('page 3')
-    h1.classList.remove('active')
-    l1.classList.remove('active')
+    dynamicContainer.style.opacity = 1
+  }
 
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-
-    h4.classList.remove('active')
-    l4.classList.remove('active')
-
-    h3.style.opacity = 1
-    l3.style.opacity = 1
-    h3.classList.add('active')
-    l3.classList.add('active')
-
-
-    l1.style.zIndex = 199
-    l2.style.zIndex = 199
-    l3.style.zIndex = 200
-    l4.style.zIndex = 199
-
-
-    m1_1.style.zIndex = 300
-    m2_1.style.zIndex = 300
-    m3_1.style.zIndex = 303
-    m4_1.style.zIndex = 300
-
-    m1_2.style.zIndex = 300
-    m2_2.style.zIndex = 30
-    m3_2.style.zIndex = 302
-    m4_2.style.zIndex = 300
-
+  if (
+    scrolledHeight >
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.1 &&
+    scrolledHeight <=
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.2
+  ) {
+    dynamicContainer.style.opacity = 0.9
+    console.log('2-3')
   }
 
   if (
     scrolledHeight >
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.2 &&
     scrolledHeight <=
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.3
+  ) {
+    dynamicContainer.style.opacity = 0.75
+    console.log('2-3')
+  }
+
+  if (
+    scrolledHeight >
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.3 &&
+    scrolledHeight <=
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.4
   ) {
-    console.log('0.4')
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h3.style.opacity = 0.4
-    l3.style.opacity = 0.4
-
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-    h4.style.opacity = 0
-    l4.style.opacity = 0
+    dynamicContainer.style.opacity = 0.5
+    console.log('3-4')
   }
 
   if (
     scrolledHeight >
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.4 &&
     scrolledHeight <=
-      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.6
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.45
   ) {
-    console.log('0.6')
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h3.style.opacity = 0
-    l3.style.opacity = 0
-
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-    h4.style.opacity = 0
-    l4.style.opacity = 0
+    console.log('4-5')
+    dynamicContainer.style.opacity = 0.25
+    pageHeader.innerText = 'De theorie'
   }
 
   if (
     scrolledHeight >
-      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.6 &&
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.45 &&
+    scrolledHeight <=
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.65
+  ) {
+    dynamicContainer.style.opacity = 0
+    console.log('mid')
+    blueZoneImage.src = basisMenuUrl
+    basisImageDisplay = true
+  }
+
+  if (
+    scrolledHeight >
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.65 &&
+    scrolledHeight <=
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.7
+  ) {
+    pageHeader.innerText = 'De impact'
+    dynamicContainer.style.opacity = 0.25
+    console.log('6-7')
+  }
+
+  if (
+    scrolledHeight >
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.7 &&
     scrolledHeight <=
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.8
   ) {
-    console.log('0.8')
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h3.style.opacity = 0
-    l3.style.opacity = 0
-
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-    h4.style.opacity = 0.1
-    l4.style.opacity = 0.1
+    dynamicContainer.style.opacity = 0.5
+    console.log('7-8')
   }
 
   if (
     scrolledHeight >
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.8 &&
+    scrolledHeight <=
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.9
+  ) {
+    dynamicContainer.style.opacity = 0.75
+    console.log('8-9')
+  }
+
+  if (
+    scrolledHeight >
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.9 &&
     scrolledHeight <
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight
   ) {
-    console.log('1')
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h3.style.opacity = 0
-    l3.style.opacity = 0
-
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-    h4.style.opacity = 0.5
-    l4.style.opacity = 0.5
+    dynamicContainer.style.opacity = 0.9
+    console.log('9')
   }
 
   if (
     scrolledHeight >=
     page1.scrollHeight + page2.scrollHeight + page3.scrollHeight
   ) {
-    console.log('4')
-    h1.classList.remove('active')
-    l1.classList.remove('active')
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-
-    h4.style.opacity = 1
-    l4.style.opacity = 1
-    h4.classList.add('active')
-    l4.classList.add('active')
-
-    l1.style.zIndex = 199
-    l2.style.zIndex = 199
-    l3.style.zIndex = 199
-    l4.style.zIndex = 200
-
-
-    m1_1.style.zIndex = 300
-    m2_1.style.zIndex = 300
-    m3_1.style.zIndex = 300
-    m4_1.style.zIndex = 303
-
-    m1_2.style.zIndex = 300
-    m2_2.style.zIndex = 300
-    m3_2.style.zIndex = 300
-    m4_2.style.zIndex = 302
-
+    console.log('Page 4')
+    dynamicContainer.style.opacity = 1
   }
 })
