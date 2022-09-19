@@ -162,15 +162,15 @@ section.page {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
-  width: 92%;
   
+  width: 330px;
+  height: 200px;
 }
 
 .blueZoneImage {
-  width: 100%;
+  width: 330px;
   /* width: 300px; */
-  height: fit-content;
+  height: 185;
   /* height: 170px; */
 }
 
@@ -305,7 +305,7 @@ footer p {
  
 
 .mobile_header {
-  background-color: rgb(212, 212, 212);
+  background-color: rgb(241, 252, 164);
   /* rang  */
 }
 
