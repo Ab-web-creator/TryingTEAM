@@ -142,7 +142,7 @@ section.page {
 .pageLogo {
   position: absolute;
   top: 50px;
-  left: 20px;
+  left: 10px;
   height: 35px;
   object-fit: cover;
 }
@@ -150,7 +150,7 @@ section.page {
 .pageHeader {
   position: absolute;
   top: 80px;
-  left: 70px;
+  left: 50px;
   color: white;
   font-size: 22px;
 }
@@ -163,14 +163,14 @@ section.page {
   margin-left: auto;
   margin-right: auto;
   
-  width: 300px;
-  height: 200px;
+  width: 95%;
+  height: 280px;
+  object-fit: contain;
 }
 
 .blueZoneImage {
- 
-  width: 300px;
-  height: 170px;
+  width: 100%;
+  height: 200px;
 }
 
 .mainButton {
@@ -304,7 +304,7 @@ footer p {
  
 
 .mobile_header {
-  background-color: rgb(251, 253, 208);
+  background-color: rgb(255, 255, 255);
   /* rang  */
 }
 
