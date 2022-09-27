@@ -291,6 +291,7 @@ section.page {
   width: 100%;
   height: 200px;
   object-fit: contain;
+  
 }
 
 .mainButton {
@@ -312,7 +313,7 @@ section.page {
    
 
 .mobile_header {
-  background-color: rgb(182, 218, 243);
+  background-color: rgb(255, 255, 255);
   /* rang  */
 }
 
