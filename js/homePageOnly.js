@@ -43,6 +43,7 @@ mainButton.addEventListener('click', () => {
     let stopMenuUrlPage1 = `./images/1_stop_menu.gif?a=${Math.random()}`
     if (basisImageDisplay) {
       start.src = startMenuUrlPage1
+
       setTimeout(() => {
         start.style.zIndex = 2
         stop.style.zIndex = 1
@@ -52,6 +53,7 @@ mainButton.addEventListener('click', () => {
       basisImageDisplay = false
 
       mainButton.disabled = true
+
       setTimeout(() => {
         mainButton.disabled = false
       }, 2450)
@@ -177,6 +179,7 @@ mainButton.addEventListener('click', () => {
     }
   }
 })
+
 
 mainDiv.addEventListener('scroll', () => {
   const scrolledHeight = mainDiv.scrollTop
