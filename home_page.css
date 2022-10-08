@@ -310,12 +310,50 @@ section.page {
   border-color: red;
 }
 
+
+/* Ab is adding now */
+.linkButton1 {
+  position: absolute;
+  bottom: 165px;
+  left: 14px;
+  width: 30px;
+  height: 30px;
+   
+  border-radius: 50%;
+  background-color: transparent;
+  border-color: cyan;
+}
+
+.linkButton2 {
+  position: absolute;
+  bottom: 130px;
+  left: 14px;
+  width: 30px;
+  height: 30px;
+   
+  border-radius: 50%;
+  background-color: transparent;
+  border-color: cyan;
+}
+
+.linkButton3 {
+  position: absolute;
+  bottom: 95px;
+  left: 14px;
+  width: 30px;
+  height: 30px;
+   
+  border-radius: 50%;
+  background-color: transparent;
+  border-color: cyan;
+}
+
 /* ------------------------------------ ******************* ------------------------------------ */
 
    
 
 .mobile_header {
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(255, 255, 255);
   /* rang  */
 }
 
