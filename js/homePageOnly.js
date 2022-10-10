@@ -41,11 +41,11 @@ let basisMenuUrlPage4 = `./images/4_basis.gif?a=${Math.random()}`
 const mainButton = document.querySelector('.mainButton')
 mainButton.addEventListener('click', () => {
   if (sectionOneView) {
+    console.log('we are clicking on section one')
     let startMenuUrlPage1 = `./images/1_start_menu.gif?a=${Math.random()}`
     let stopMenuUrlPage1 = `./images/1_stop_menu.gif?a=${Math.random()}`
     if (basisImageDisplay) {
       start.src = startMenuUrlPage1
-
       setTimeout(() => {
         start.style.zIndex = 2
         stop.style.zIndex = 1
@@ -91,6 +91,7 @@ mainButton.addEventListener('click', () => {
       basisImageDisplay = false
 
       mainButton.disabled = true
+
       setTimeout(() => {
         mainButton.disabled = false
       }, 2450)
@@ -126,6 +127,7 @@ mainButton.addEventListener('click', () => {
       basisImageDisplay = false
 
       mainButton.disabled = true
+
       setTimeout(() => {
         mainButton.disabled = false
       }, 2450)
@@ -161,6 +163,7 @@ mainButton.addEventListener('click', () => {
       basisImageDisplay = false
 
       mainButton.disabled = true
+
       setTimeout(() => {
         mainButton.disabled = false
       }, 2450)
@@ -190,8 +193,8 @@ mainDiv.addEventListener('scroll', () => {
   basisMenuUrlPage1 = `./images/1_basis.gif?a=${Math.random()}`
 
   if (scrolledHeight >= 0 && scrolledHeight <= page1.scrollHeight * 0.1) {
-    dynamicContainer.style.opacity = 1
     console.log('Page 1')
+    dynamicContainer.style.opacity = 1
 
     pageHeader.innerText = 'De rijopleiding'
 
@@ -367,6 +370,7 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.55
   ) {
     dynamicContainer.style.opacity = 0
+    
     pageHeader.innerText = 'De simulator'
     console.log('mid top 2-3')
 
