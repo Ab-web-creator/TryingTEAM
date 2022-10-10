@@ -322,10 +322,10 @@ section.page {
   left: 14px;
   width: 30px;
   height: 30px;
-   
+  z-index: 10;
   border-radius: 50%;
   background-color: transparent;
-  border-color: red;
+  border: 2px solid red;
 }
 
 .linkButton2 {
@@ -334,10 +334,10 @@ section.page {
   left: 14px;
   width: 30px;
   height: 30px;
-   
   border-radius: 50%;
   background-color: transparent;
-  border-color: cyan;
+  border: 2px solid red;
+  z-index: 10;
 }
 
 .linkButton3 {
@@ -346,10 +346,10 @@ section.page {
   left: 14px;
   width: 30px;
   height: 30px;
-   
+  z-index: 10;
   border-radius: 50%;
   background-color: transparent;
-  border-color: cyan;
+  border: 2px solid red;
 }
 
 /* ------------------------------------ ******************* ------------------------------------ */
@@ -357,7 +357,7 @@ section.page {
    
 
 .mobile_header {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(231, 231, 231);
   /* rang  */
 }
 

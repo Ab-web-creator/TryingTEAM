@@ -15,7 +15,8 @@ const basis = document.querySelector('.basis')
 const start = document.querySelector('.start')
 const stop = document.querySelector('.stop')
 
-const blueZoneImage = document.querySelector('.blueZoneImage')
+// Слово blueZoneImage больше нигде нет, для чего создано?
+const blueZoneImage = document.querySelector('.blueZoneImage') 
 
 const page1 = document.getElementById('page-1')
 const page2 = document.getElementById('page-2')
@@ -47,6 +48,7 @@ let stopMenuUrlPage3 = `./images/3_stop_menu.gif`
 
 let startMenuUrlPage4 = `./images/4_start_menu.gif`
 let stopMenuUrlPage4 = `./images/4_stop_menu.gif`
+
 
 const linkButton1 = document.querySelector('.linkButton1')
 const linkButton2 = document.querySelector('.linkButton2')
