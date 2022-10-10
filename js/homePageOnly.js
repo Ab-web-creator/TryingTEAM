@@ -31,19 +31,19 @@ let sectionTwoView = false
 let sectionThreeView = false
 let sectionFourView = false
 
-let basisMenuUrlPage1 = `./images/1_basis.gif?a=${Math.random()}`
-let basisMenuUrlPage2 = `./images/2_basis.gif?a=${Math.random()}`
-let basisMenuUrlPage3 = `./images/3_basis.gif?a=${Math.random()}`
-let basisMenuUrlPage4 = `./images/4_basis.gif?a=${Math.random()}`
+let basisMenuUrlPage1 = `./images/1_basis.gif`
+let basisMenuUrlPage2 = `./images/2_basis.gif`
+let basisMenuUrlPage3 = `./images/3_basis.gif`
+let basisMenuUrlPage4 = `./images/4_basis.gif`
 
-let startMenuUrlPage1 = `./images/1_start_menu.gif?a=${Math.random()}`
-let stopMenuUrlPage1 = `./images/1_stop_menu.gif?a=${Math.random()}`
-let startMenuUrlPage2 = `./images/2_start_menu.gif?a=${Math.random()}`
-let stopMenuUrlPage2 = `./images/2_stop_menu.gif?a=${Math.random()}`
-let startMenuUrlPage3 = `./images/3_start_menu.gif?a=${Math.random()}`
-let stopMenuUrlPage3 = `./images/3_stop_menu.gif?a=${Math.random()}`
-let startMenuUrlPage4 = `./images/4_start_menu.gif?a=${Math.random()}`
-let stopMenuUrlPage4 = `./images/4_stop_menu.gif?a=${Math.random()}`
+let startMenuUrlPage1 = `./images/1_start_menu.gif`
+let stopMenuUrlPage1 = `./images/1_stop_menu.gif`
+let startMenuUrlPage2 = `./images/2_start_menu.gif`
+let stopMenuUrlPage2 = `./images/2_stop_menu.gif`
+let startMenuUrlPage3 = `./images/3_start_menu.gif`
+let stopMenuUrlPage3 = `./images/3_stop_menu.gif`
+let startMenuUrlPage4 = `./images/4_start_menu.gif`
+let stopMenuUrlPage4 = `./images/4_stop_menu.gif`
 
 const mainButton = document.querySelector('.mainButton')
 mainButton.addEventListener('click', () => {
