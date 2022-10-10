@@ -38,20 +38,47 @@ let basisMenuUrlPage4 = `./images/4_basis.gif`
 
 let startMenuUrlPage1 = `./images/1_start_menu.gif`
 let stopMenuUrlPage1 = `./images/1_stop_menu.gif`
+
 let startMenuUrlPage2 = `./images/2_start_menu.gif`
 let stopMenuUrlPage2 = `./images/2_stop_menu.gif`
+
 let startMenuUrlPage3 = `./images/3_start_menu.gif`
 let stopMenuUrlPage3 = `./images/3_stop_menu.gif`
+
 let startMenuUrlPage4 = `./images/4_start_menu.gif`
 let stopMenuUrlPage4 = `./images/4_stop_menu.gif`
 
+const linkButton1 = document.querySelector('.linkButton1')
+const linkButton2 = document.querySelector('.linkButton2')
+const linkButton3 = document.querySelector('.linkButton3')
+
+function hideLinkButtons(buttonStatus) {
+  if (buttonStatus == true) {
+    linkButton1.style.zIndex = -1
+    linkButton2.style.zIndex = -1
+    linkButton3.style.zIndex = -1
+  } else {
+    linkButton1.style.zIndex = 10
+    linkButton2.style.zIndex = 10
+    linkButton3.style.zIndex = 10
+  }
+}
+
+function setRefLinks(link1, link2, link3) {
+  linkButton1.href = link1
+  linkButton2.href = link2
+  linkButton3.href = link3
+}
+
 const mainButton = document.querySelector('.mainButton')
-mainButton.addEventListener('click', () => {
+mainButton.addEventListener('click', (e) => {
   if (sectionOneView) {
-    console.log('we are clicking on section one')
-    
     if (basisImageDisplay) {
+      hideLinkButtons(true)
+
+      console.log(e.target)
       start.src = startMenuUrlPage1
+
       setTimeout(() => {
         start.style.zIndex = 2
         stop.style.zIndex = 1
@@ -78,13 +105,16 @@ mainButton.addEventListener('click', () => {
       mainButton.disabled = true
       setTimeout(() => {
         mainButton.disabled = false
-      }, 2450)
+        hideLinkButtons(false)
+      }, 2050)
     }
   }
 
   if (sectionTwoView) {
     console.log('we are clicking on section two')
+
     if (basisImageDisplay) {
+      hideLinkButtons(true)
       start.src = startMenuUrlPage2
       setTimeout(() => {
         start.style.zIndex = 2
@@ -95,7 +125,6 @@ mainButton.addEventListener('click', () => {
       basisImageDisplay = false
 
       mainButton.disabled = true
-
       setTimeout(() => {
         mainButton.disabled = false
       }, 2450)
@@ -112,14 +141,16 @@ mainButton.addEventListener('click', () => {
       mainButton.disabled = true
       setTimeout(() => {
         mainButton.disabled = false
-      }, 2450)
+        hideLinkButtons(false)
+      }, 2050)
     }
   }
 
   if (sectionThreeView) {
     console.log('we are clicking on section three')
-  
+
     if (basisImageDisplay) {
+      hideLinkButtons(true)
       start.src = startMenuUrlPage3
       setTimeout(() => {
         start.style.zIndex = 2
@@ -130,7 +161,6 @@ mainButton.addEventListener('click', () => {
       basisImageDisplay = false
 
       mainButton.disabled = true
-
       setTimeout(() => {
         mainButton.disabled = false
       }, 2450)
@@ -147,14 +177,16 @@ mainButton.addEventListener('click', () => {
       mainButton.disabled = true
       setTimeout(() => {
         mainButton.disabled = false
-      }, 2450)
+        hideLinkButtons(false)
+      }, 2050)
     }
   }
 
   if (sectionFourView) {
     console.log('we are clicking on section four')
-   
+
     if (basisImageDisplay) {
+      hideLinkButtons(true)
       start.src = startMenuUrlPage4
       setTimeout(() => {
         start.style.zIndex = 2
@@ -165,7 +197,6 @@ mainButton.addEventListener('click', () => {
       basisImageDisplay = false
 
       mainButton.disabled = true
-
       setTimeout(() => {
         mainButton.disabled = false
       }, 2450)
@@ -182,21 +213,21 @@ mainButton.addEventListener('click', () => {
       mainButton.disabled = true
       setTimeout(() => {
         mainButton.disabled = false
-      }, 2450)
+        hideLinkButtons(false)
+      }, 2050)
     }
   }
 })
 
-
-
 mainDiv.addEventListener('scroll', () => {
   const scrolledHeight = mainDiv.scrollTop
 
-  basisMenuUrlPage1 = `./images/1_basis.gif?a=${Math.random()}`
+  // basisMenuUrlPage1 = `./images/1_basis.gif?a=${Math.random()}`
 
   if (scrolledHeight >= 0 && scrolledHeight <= page1.scrollHeight * 0.1) {
-    console.log('Page 1')
     dynamicContainer.style.opacity = 1
+    console.log('Page 1')
+    hideLinkButtons(false)
 
     pageHeader.innerText = 'De rijopleiding'
 
@@ -257,6 +288,12 @@ mainDiv.addEventListener('scroll', () => {
     basis.src = basisMenuUrlPage1
     basis.style.zIndex = 2
 
+    setRefLinks(
+      'html_pages/opbouw.html',
+      'html_pages/doelen.html',
+      'html_pages/tontom.html',
+    )
+
     console.log('mid top 1-2')
     sectionOneView = true
     sectionTwoView = false
@@ -277,6 +314,12 @@ mainDiv.addEventListener('scroll', () => {
 
     basis.src = basisMenuUrlPage2
     basis.style.zIndex = 2
+
+    setRefLinks(
+      'html_pages/doelen.html',
+      'html_pages/tarieven.html',
+      'html_pages/doelen.html',
+    )
 
     sectionOneView = false
     sectionTwoView = true
@@ -313,6 +356,8 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight < page1.scrollHeight
   ) {
     dynamicContainer.style.opacity = 0.9
+    basis.style.zIndex = 2
+    hideLinkButtons(false)
     console.log('9')
   }
 
@@ -322,6 +367,7 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('page 2')
     dynamicContainer.style.opacity = 1
+    hideLinkButtons(false)
     pageHeader.innerText = 'De simulator'
 
     basisImageDisplay = true
@@ -372,7 +418,6 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.55
   ) {
     dynamicContainer.style.opacity = 0
-    
     pageHeader.innerText = 'De simulator'
     console.log('mid top 2-3')
 
@@ -380,6 +425,12 @@ mainDiv.addEventListener('scroll', () => {
 
     basis.src = basisMenuUrlPage2
     basis.style.zIndex = 2
+
+    setRefLinks(
+      'html_pages/doelen.html',
+      'html_pages/tarieven.html',
+      'html_pages/doelen.html',
+    )
 
     sectionOneView = false
     sectionTwoView = true
@@ -399,6 +450,12 @@ mainDiv.addEventListener('scroll', () => {
 
     basis.src = basisMenuUrlPage3
     basis.style.zIndex = 2
+
+    setRefLinks(
+      'html_pages/tontom.html',
+      'html_pages/tontom.html',
+      'html_pages/opbouw.html',
+    )
 
     sectionOneView = false
     sectionTwoView = false
@@ -436,6 +493,8 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     dynamicContainer.style.opacity = 0.9
     console.log('9')
+    basis.style.zIndex = 2
+    hideLinkButtons(false)
   }
 
   if (
@@ -445,9 +504,9 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('page 3')
     dynamicContainer.style.opacity = 1
+    hideLinkButtons(false)
     pageHeader.innerText = 'De theorie'
 
-    console.log('mid bottom 2-3')
     basisImageDisplay = true
 
     basis.src = basisMenuUrlPage3
@@ -514,6 +573,12 @@ mainDiv.addEventListener('scroll', () => {
     basis.src = basisMenuUrlPage3
     basis.style.zIndex = 2
 
+    setRefLinks(
+      'html_pages/tontom.html',
+      'html_pages/tontom.html',
+      'html_pages/opbouw.html',
+    )
+
     sectionOneView = false
     sectionTwoView = false
     sectionThreeView = true
@@ -533,6 +598,12 @@ mainDiv.addEventListener('scroll', () => {
 
     basis.src = basisMenuUrlPage4
     basis.style.zIndex = 2
+
+    setRefLinks(
+      'html_pages/wissers.html',
+      'html_pages/wissers.html',
+      'html_pages/wissers.html',
+    )
 
     sectionOneView = false
     sectionTwoView = false
@@ -579,6 +650,8 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     dynamicContainer.style.opacity = 0.9
     console.log('9')
+    basis.style.zIndex = 2
+    hideLinkButtons(false)
   }
 
   if (
@@ -587,6 +660,7 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('Page 4')
     dynamicContainer.style.opacity = 1
+    hideLinkButtons(false)
     pageHeader.innerText = 'De impact'
 
     basisImageDisplay = true
@@ -598,6 +672,5 @@ mainDiv.addEventListener('scroll', () => {
     sectionTwoView = false
     sectionThreeView = false
     sectionFourView = true
-    console.log('mid bottom 3-4')
   }
 })
