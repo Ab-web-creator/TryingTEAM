@@ -36,14 +36,20 @@ let basisMenuUrlPage2 = `./images/2_basis.gif?a=${Math.random()}`
 let basisMenuUrlPage3 = `./images/3_basis.gif?a=${Math.random()}`
 let basisMenuUrlPage4 = `./images/4_basis.gif?a=${Math.random()}`
 
-
+let startMenuUrlPage1 = `./images/1_start_menu.gif?a=${Math.random()}`
+let stopMenuUrlPage1 = `./images/1_stop_menu.gif?a=${Math.random()}`
+let startMenuUrlPage2 = `./images/2_start_menu.gif?a=${Math.random()}`
+let stopMenuUrlPage2 = `./images/2_stop_menu.gif?a=${Math.random()}`
+let startMenuUrlPage3 = `./images/3_start_menu.gif?a=${Math.random()}`
+let stopMenuUrlPage3 = `./images/3_stop_menu.gif?a=${Math.random()}`
+let startMenuUrlPage4 = `./images/4_start_menu.gif?a=${Math.random()}`
+let stopMenuUrlPage4 = `./images/4_stop_menu.gif?a=${Math.random()}`
 
 const mainButton = document.querySelector('.mainButton')
 mainButton.addEventListener('click', () => {
   if (sectionOneView) {
     console.log('we are clicking on section one')
-    let startMenuUrlPage1 = `./images/1_start_menu.gif?a=${Math.random()}`
-    let stopMenuUrlPage1 = `./images/1_stop_menu.gif?a=${Math.random()}`
+    
     if (basisImageDisplay) {
       start.src = startMenuUrlPage1
       setTimeout(() => {
@@ -78,8 +84,6 @@ mainButton.addEventListener('click', () => {
 
   if (sectionTwoView) {
     console.log('we are clicking on section two')
-    let startMenuUrlPage2 = `./images/2_start_menu.gif?a=${Math.random()}`
-    let stopMenuUrlPage2 = `./images/2_stop_menu.gif?a=${Math.random()}`
     if (basisImageDisplay) {
       start.src = startMenuUrlPage2
       setTimeout(() => {
@@ -114,8 +118,7 @@ mainButton.addEventListener('click', () => {
 
   if (sectionThreeView) {
     console.log('we are clicking on section three')
-    let startMenuUrlPage3 = `./images/3_start_menu.gif?a=${Math.random()}`
-    let stopMenuUrlPage3 = `./images/3_stop_menu.gif?a=${Math.random()}`
+  
     if (basisImageDisplay) {
       start.src = startMenuUrlPage3
       setTimeout(() => {
@@ -150,8 +153,7 @@ mainButton.addEventListener('click', () => {
 
   if (sectionFourView) {
     console.log('we are clicking on section four')
-    let startMenuUrlPage4 = `./images/4_start_menu.gif?a=${Math.random()}`
-    let stopMenuUrlPage4 = `./images/4_stop_menu.gif?a=${Math.random()}`
+   
     if (basisImageDisplay) {
       start.src = startMenuUrlPage4
       setTimeout(() => {
