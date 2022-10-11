@@ -91,8 +91,8 @@ function displayCurrentDescription(current, image2, image3) {
 
 let isDescOpen = false
 let linkHeight1 = 325
-let linkHeight2 = 310
-let linkHeight3 = 200
+let linkHeight2 = 303
+let linkHeight3 = 192
 
 function setLinkHeights(link1, link2, link3) {
   linkHeight1 = link1
