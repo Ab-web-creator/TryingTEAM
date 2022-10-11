@@ -298,10 +298,10 @@ section.page {
 /* Ab is adding now */
 .linkButton1 {
   position: absolute;
-  bottom: 165px;
+  bottom: 160px;
   left: 14px;
   width: 30px;
-  height: 30px;
+  height: 40px;
   z-index: 10;
   border-radius: 50%;
   background-color: red;
@@ -322,10 +322,10 @@ section.page {
 
 .linkButton3 {
   position: absolute;
-  bottom: 95px;
+  bottom: 87px;
   left: 14px;
   width: 30px;
-  height: 30px;
+  height: 40px;
   z-index: 10;
   border-radius: 50%;
   background-color: red;
@@ -334,10 +334,9 @@ section.page {
 
 .closeLink {
   position: absolute;
-  /* bottom: 205px; */
   left: 14px;
   width: 30px;
-  height: 30px;
+  height: 45px;
   border-radius: 50%;
   background-color: red;
   border: 2px solid red;
@@ -346,7 +345,7 @@ section.page {
 /* ------------------------------------ ******************* ------------------------------------ */
 
 .mobile_header {
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(181, 251, 189);
   /* rang  */
 }
 
