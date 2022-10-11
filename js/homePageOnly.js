@@ -16,7 +16,7 @@ const start = document.querySelector('.start')
 const stop = document.querySelector('.stop')
 
 // Слово blueZoneImage больше нигде нет, для чего создано?
-const blueZoneImage = document.querySelector('.blueZoneImage') 
+const blueZoneImage = document.querySelector('.blueZoneImage')
 
 const page1 = document.getElementById('page-1')
 const page2 = document.getElementById('page-2')
@@ -49,33 +49,104 @@ let stopMenuUrlPage3 = `./images/3_stop_menu.gif`
 let startMenuUrlPage4 = `./images/4_start_menu.gif`
 let stopMenuUrlPage4 = `./images/4_stop_menu.gif`
 
-
 const linkButton1 = document.querySelector('.linkButton1')
 const linkButton2 = document.querySelector('.linkButton2')
 const linkButton3 = document.querySelector('.linkButton3')
 
-function hideLinkButtons(buttonStatus) {
-  if (buttonStatus == true) {
-    linkButton1.style.zIndex = -1
-    linkButton2.style.zIndex = -1
-    linkButton3.style.zIndex = -1
-  } else {
-    linkButton1.style.zIndex = 10
-    linkButton2.style.zIndex = 10
-    linkButton3.style.zIndex = 10
-  }
+const imageResult1 = document.querySelector('.linkResult1')
+const imageResult2 = document.querySelector('.linkResult2')
+const imageResult3 = document.querySelector('.linkResult3')
+
+const linkImageResult1_1 = './images/LinkResult1_1.gif'
+const linkImageResult1_2 = './images/LinkResult1_2.gif'
+const linkImageResult1_3 = './images/LinkResult1_3.gif'
+
+const linkImageResult2_1 = './images/LinkResult2_1.gif'
+const linkImageResult2_2 = './images/LinkResult2_2.gif'
+const linkImageResult2_3 = './images/LinkResult2_3.gif'
+
+const linkImageResult3_1 = './images/LinkResult3_1.gif'
+const linkImageResult3_2 = './images/LinkResult3_2.gif'
+const linkImageResult3_3 = './images/LinkResult3_3.gif'
+
+const linkImageResult4_1 = './images/LinkResult4_1.gif'
+const linkImageResult4_2 = './images/LinkResult4_2.gif'
+const linkImageResult4_3 = './images/LinkResult4_3.gif'
+
+const closeLink = document.querySelector('.closeLink')
+closeLink.disabled = true
+
+function linkImageSource(link1, link2, link3) {
+  imageResult1.src = link1
+  imageResult2.src = link2
+  imageResult3.src = link3
 }
 
-function setRefLinks(link1, link2, link3) {
-  linkButton1.href = link1
-  linkButton2.href = link2
-  linkButton3.href = link3
+function displayCurrentDescription(current, image2, image3) {
+  current.style.opacity = 1
+  current.style.zIndex = 3
+  image2.style.opacity = 0
+  image3.style.opacity = 0
+}
+
+let isDescOpen = false
+let linkHeight1 = 340
+let linkHeight2 = 320
+let linkHeight3 = 200
+
+function setLinkHeights(link1, link2, link3) {
+  linkHeight1 = link1
+  linkHeight2 = link2
+  linkHeight3 = link3
+}
+
+function setCloseButtonHeight(height) {
+  closeLink.style.bottom = `${height}px`
+  closeLink.disabled = false
+  closeLink.style.zIndex = 3
+}
+
+closeLink.addEventListener('click', () => {
+  resetDescriptions()
+})
+
+linkButton1.addEventListener('click', (e) => {
+  displayCurrentDescription(imageResult1, imageResult2, imageResult3)
+  isDescOpen = true
+  setCloseButtonHeight(linkHeight1)
+})
+
+linkButton2.addEventListener('click', () => {
+  displayCurrentDescription(imageResult2, imageResult1, imageResult3)
+  isDescOpen = true
+  setCloseButtonHeight(linkHeight2)
+})
+
+linkButton3.addEventListener('click', () => {
+  displayCurrentDescription(imageResult3, imageResult1, imageResult2)
+  isDescOpen = true
+  setCloseButtonHeight(linkHeight3)
+})
+
+function resetDescriptions() {
+  imageResult1.style.opacity = 0
+  imageResult2.style.opacity = 0
+  imageResult3.style.opacity = 0
+  imageResult1.style.zIndex = 0
+  imageResult1.style.zIndex = 0
+  imageResult1.style.zIndex = 0
+  closeLink.disabled = false
+  closeLink.style.zIndex = -3
 }
 
 const mainButton = document.querySelector('.mainButton')
 mainButton.addEventListener('click', (e) => {
   if (sectionOneView) {
     if (basisImageDisplay) {
+      if (isDescOpen) {
+        resetDescriptions()
+      }
+
       hideLinkButtons(true)
 
       console.log(e.target)
@@ -116,6 +187,9 @@ mainButton.addEventListener('click', (e) => {
     console.log('we are clicking on section two')
 
     if (basisImageDisplay) {
+      if (isDescOpen) {
+        resetDescriptions()
+      }
       hideLinkButtons(true)
       start.src = startMenuUrlPage2
       setTimeout(() => {
@@ -149,6 +223,9 @@ mainButton.addEventListener('click', (e) => {
   }
 
   if (sectionThreeView) {
+    if (isDescOpen) {
+      resetDescriptions()
+    }
     console.log('we are clicking on section three')
 
     if (basisImageDisplay) {
@@ -185,6 +262,9 @@ mainButton.addEventListener('click', (e) => {
   }
 
   if (sectionFourView) {
+    if (isDescOpen) {
+      resetDescriptions()
+    }
     console.log('we are clicking on section four')
 
     if (basisImageDisplay) {
@@ -228,8 +308,13 @@ mainDiv.addEventListener('scroll', () => {
 
   if (scrolledHeight >= 0 && scrolledHeight <= page1.scrollHeight * 0.1) {
     dynamicContainer.style.opacity = 1
+    linkImageSource(linkImageResult1_1, linkImageResult1_2, linkImageResult1_3)
     console.log('Page 1')
+
     hideLinkButtons(false)
+
+    resetDescriptions()
+    setLinkHeights(340, 320, 200)
 
     pageHeader.innerText = 'De rijopleiding'
 
@@ -238,7 +323,6 @@ mainDiv.addEventListener('scroll', () => {
     basis.src = basisMenuUrlPage1
     basis.style.zIndex = 2
 
-    console.log('mid top 1-2')
     sectionOneView = true
     sectionTwoView = false
     sectionThreeView = false
@@ -290,12 +374,6 @@ mainDiv.addEventListener('scroll', () => {
     basis.src = basisMenuUrlPage1
     basis.style.zIndex = 2
 
-    setRefLinks(
-      'html_pages/opbouw.html',
-      'html_pages/doelen.html',
-      'html_pages/tontom.html',
-    )
-
     console.log('mid top 1-2')
     sectionOneView = true
     sectionTwoView = false
@@ -316,12 +394,6 @@ mainDiv.addEventListener('scroll', () => {
 
     basis.src = basisMenuUrlPage2
     basis.style.zIndex = 2
-
-    setRefLinks(
-      'html_pages/doelen.html',
-      'html_pages/tarieven.html',
-      'html_pages/doelen.html',
-    )
 
     sectionOneView = false
     sectionTwoView = true
@@ -358,6 +430,7 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight < page1.scrollHeight
   ) {
     dynamicContainer.style.opacity = 0.9
+    resetDescriptions()
     basis.style.zIndex = 2
     hideLinkButtons(false)
     console.log('9')
@@ -369,7 +442,10 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('page 2')
     dynamicContainer.style.opacity = 1
+    linkImageSource(linkImageResult2_1, linkImageResult2_2, linkImageResult2_3)
     hideLinkButtons(false)
+    resetDescriptions()
+    setLinkHeights(540, 520, 400)
     pageHeader.innerText = 'De simulator'
 
     basisImageDisplay = true
@@ -428,12 +504,6 @@ mainDiv.addEventListener('scroll', () => {
     basis.src = basisMenuUrlPage2
     basis.style.zIndex = 2
 
-    setRefLinks(
-      'html_pages/doelen.html',
-      'html_pages/tarieven.html',
-      'html_pages/doelen.html',
-    )
-
     sectionOneView = false
     sectionTwoView = true
     sectionThreeView = false
@@ -452,12 +522,6 @@ mainDiv.addEventListener('scroll', () => {
 
     basis.src = basisMenuUrlPage3
     basis.style.zIndex = 2
-
-    setRefLinks(
-      'html_pages/tontom.html',
-      'html_pages/tontom.html',
-      'html_pages/opbouw.html',
-    )
 
     sectionOneView = false
     sectionTwoView = false
@@ -497,6 +561,7 @@ mainDiv.addEventListener('scroll', () => {
     console.log('9')
     basis.style.zIndex = 2
     hideLinkButtons(false)
+    resetDescriptions()
   }
 
   if (
@@ -506,7 +571,10 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('page 3')
     dynamicContainer.style.opacity = 1
+    linkImageSource(linkImageResult3_1, linkImageResult3_2, linkImageResult3_3)
     hideLinkButtons(false)
+    resetDescriptions()
+    setLinkHeights(340, 320, 300)
     pageHeader.innerText = 'De theorie'
 
     basisImageDisplay = true
@@ -575,12 +643,6 @@ mainDiv.addEventListener('scroll', () => {
     basis.src = basisMenuUrlPage3
     basis.style.zIndex = 2
 
-    setRefLinks(
-      'html_pages/tontom.html',
-      'html_pages/tontom.html',
-      'html_pages/opbouw.html',
-    )
-
     sectionOneView = false
     sectionTwoView = false
     sectionThreeView = true
@@ -600,12 +662,6 @@ mainDiv.addEventListener('scroll', () => {
 
     basis.src = basisMenuUrlPage4
     basis.style.zIndex = 2
-
-    setRefLinks(
-      'html_pages/wissers.html',
-      'html_pages/wissers.html',
-      'html_pages/wissers.html',
-    )
 
     sectionOneView = false
     sectionTwoView = false
@@ -654,6 +710,7 @@ mainDiv.addEventListener('scroll', () => {
     console.log('9')
     basis.style.zIndex = 2
     hideLinkButtons(false)
+    resetDescriptions()
   }
 
   if (
@@ -662,7 +719,10 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('Page 4')
     dynamicContainer.style.opacity = 1
+    linkImageSource(linkImageResult4_1, linkImageResult4_2, linkImageResult4_3)
     hideLinkButtons(false)
+    resetDescriptions()
+    setLinkHeights(240, 220, 200)
     pageHeader.innerText = 'De impact'
 
     basisImageDisplay = true
@@ -676,3 +736,15 @@ mainDiv.addEventListener('scroll', () => {
     sectionFourView = true
   }
 })
+
+function hideLinkButtons(buttonStatus) {
+  if (buttonStatus == true) {
+    linkButton1.style.zIndex = -1
+    linkButton2.style.zIndex = -1
+    linkButton3.style.zIndex = -1
+  } else {
+    linkButton1.style.zIndex = 3
+    linkButton2.style.zIndex = 3
+    linkButton3.style.zIndex = 3
+  }
+}

@@ -51,7 +51,6 @@
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
 }
 
 img {
@@ -62,7 +61,6 @@ html,
 body {
   height: 100vh;
   overflow: hidden;
- 
 }
 
 /* Tepadagi bar  */
@@ -102,12 +100,6 @@ body {
   padding-top: 5px;
 }
 
-
-
-
-
-
-
 .active {
   opacity: 1;
   /* transition: ease-in-out 1s; */
@@ -116,7 +108,6 @@ body {
 .hide {
   opacity: 0;
 }
-   
 
 .blur {
   position: fixed;
@@ -138,8 +129,6 @@ body {
   width: 1px;
   height: 10px;
 }
- 
- 
 
 figure {
   top: 50px;
@@ -158,7 +147,6 @@ figure {
 figure.active {
   display: none;
 }
-
 
 .photo_for_each_page {
   padding-top: 20px;
@@ -202,7 +190,7 @@ figure.active {
 
 .other_pages .sarlavha_with_bg {
   background-color: #edeefd;
-  
+
   padding: 10px 10px;
   margin-bottom: 30px;
   font-size: 1.5rem;
@@ -218,8 +206,6 @@ footer p {
   padding: 10px 20px;
   text-align: center;
 }
- 
-
 
 /* a Note: Hamburger menu is in aside.css */
 
@@ -231,12 +217,11 @@ footer p {
   overflow-y: scroll;
   height: 100vh;
   scroll-snap-type: y mandatory;
-
 }
 
 section.page {
   scroll-snap-stop: always;
-  
+
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
@@ -246,8 +231,6 @@ section.page {
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   z-index: -2;
-
-
 }
 
 .dynamicContainer {
@@ -285,11 +268,10 @@ section.page {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  
+
   width: 97%;
   height: fit-content;
   /* height: 202px; */
-  
 }
 
 .blueZoneImage {
@@ -297,7 +279,6 @@ section.page {
   height: fit-content;
   /* height: 202px; */
   object-fit: contain;
-  
 }
 
 .mainButton {
@@ -313,7 +294,6 @@ section.page {
   background-color: transparent;
   border-color: red;
 }
-
 
 /* Ab is adding now */
 .linkButton1 {
@@ -352,9 +332,18 @@ section.page {
   border: 2px solid red;
 }
 
-/* ------------------------------------ ******************* ------------------------------------ */
+.closeLink {
+  position: absolute;
+  /* bottom: 205px; */
+  left: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  border: 2px solid red;
+}
 
-   
+/* ------------------------------------ ******************* ------------------------------------ */
 
 .mobile_header {
   background-color: rgb(231, 231, 231);
