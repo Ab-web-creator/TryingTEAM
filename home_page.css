@@ -301,11 +301,11 @@ section.page {
   bottom: 160px;
   left: 14px;
   width: 30px;
-  height: 40px;
-  z-index: 10;
+  height: 30px;
+  /* z-index: 10; */
   border-radius: 50%;
   background-color: red;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .linkButton2 {
@@ -316,8 +316,8 @@ section.page {
   height: 30px;
   border-radius: 50%;
   background-color: red;
-  border: 2px solid red;
-  z-index: 10;
+  /* border: 2px solid red; */
+  /* z-index: 10; */
 }
 
 .linkButton3 {
@@ -325,18 +325,18 @@ section.page {
   bottom: 87px;
   left: 14px;
   width: 30px;
-  height: 40px;
-  z-index: 10;
+  height: 30px;
+  /* z-index: 10; */
   border-radius: 50%;
   background-color: red;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .closeLink {
   position: absolute;
   left: 14px;
   width: 30px;
-  height: 45px;
+  height: 30px;
   border-radius: 50%;
   background-color: red;
   border: 2px solid red;
