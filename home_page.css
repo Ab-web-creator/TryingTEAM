@@ -377,7 +377,7 @@ section.page {
 
 .oneOfFour4 {
   position: absolute;
-  left: 234px;
+  right: 14px;
   bottom: 45px;
   width: 110px;
   height: 55px;
@@ -389,7 +389,7 @@ section.page {
 /* ------------------------------------ ******************* ------------------------------------ */
 
 .mobile_header {
-  background-color: rgb(250, 255, 215);
+  background-color: rgb(215, 248, 255);
   /* rang  */
 }
 
