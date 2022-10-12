@@ -343,24 +343,24 @@ section.page {
 
 .oneOfFour1 {
   position: absolute;
-  left: 14px;
+  left: 50px;
   bottom: 50px;
-  width: 110px;
+  width: 70px;
   height: 55px;
   border-radius: 10%;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.47);
   border-width: 0px;
   /* border: 2px solid rgb(253, 253, 253); */
 }
 
 .oneOfFour2 {
   position: absolute;
-  left: 34px;
+  left: 94px;
   bottom: 115px;
-  width: 140px;
+  width: 80px;
   height: 65px;
   border-radius: 10%;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.47);
   border-width: 0px;
 }
 
@@ -368,28 +368,28 @@ section.page {
   position: absolute;
   left: 194px;
   bottom: 115px;
-  width: 140px;
+  width: 90px;
   height: 65px;
   border-radius: 10%;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.47);
   border-width: 0px;
 }
 
 .oneOfFour4 {
   position: absolute;
-  right: 14px;
+  right: 44px;
   bottom: 45px;
-  width: 110px;
+  width: 70px;
   height: 55px;
   border-radius: 10%;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.47);
   border-width: 0px;
 }
 
 /* ------------------------------------ ******************* ------------------------------------ */
 
 .mobile_header {
-  background-color: rgb(215, 248, 255);
+  background-color: rgb(234, 255, 215);
   /* rang  */
 }
 
