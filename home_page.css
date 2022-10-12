@@ -130,6 +130,16 @@ body {
   backdrop-filter: blur(4px);
   background-color: #393c416e;
 }
+.blurCompletely {
+  position: fixed;
+  width: 100%;
+  display: none;
+  height: 100vh;
+  z-index: -29;
+  transition: all 1s;
+  backdrop-filter: blur(4px);
+  background-color: #2f77f4;
+}
 
 .blur.active {
   display: block;
@@ -400,7 +410,7 @@ section.page {
 /* ------------------------------------ ******************* ------------------------------------ */
 
 .mobile_header {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(237, 251, 203);
   /* rang  */
 }
 

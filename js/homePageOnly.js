@@ -128,7 +128,7 @@ function setCloseButtonHeight(height) {
 
 closeLink.addEventListener('click', () => {
   resetDescriptions()
-  basis.style.zIndex = 10
+  unzeroOpacityForOriginal3gifs()
   console.log("Close ,ink bu")
   blur2.style.display = 'none'
 })
@@ -136,15 +136,24 @@ closeLink.addEventListener('click', () => {
 
 const blur2 = document.querySelector('.blur2')
 
+function zeroOpacityForOriginal3gifs() {
+  basis.style.opacity = 0
+  start.style.opacity = 0
+  stop.style.opacity = 0
+}
+function unzeroOpacityForOriginal3gifs() {
+  basis.style.opacity = 10
+  start.style.opacity = 10
+  stop.style.opacity = 10
+}
+
 linkButton1.addEventListener('click', (e) => {
   blur2.style.display = 'block'
-  
+  zeroOpacityForOriginal3gifs()
   displayCurrentDescription(imageResult1, imageResult2, imageResult3)
   isDescOpen = true
   // setCloseButtonHeight(linkHeight1)
-  basis.style.zIndex = -30
-  start.style.zIndex = -30
-  stop.style.zIndex = -30
+ 
 
   setCloseButtonHeight(closeButtonHeight1)
   setExpandButtonsPosition(165, 130, 95)
@@ -152,7 +161,7 @@ linkButton1.addEventListener('click', (e) => {
 
 linkButton2.addEventListener('click', () => {
   blur2.style.display = 'block'
-
+  zeroOpacityForOriginal3gifs()
   displayCurrentDescription(imageResult2, imageResult1, imageResult3)
   isDescOpen = true
   // setCloseButtonHeight(linkHeight2)
@@ -166,6 +175,8 @@ linkButton2.addEventListener('click', () => {
 
 linkButton3.addEventListener('click', () => {
   blur2.style.display = 'block'
+  zeroOpacityForOriginal3gifs()
+
   displayCurrentDescription(imageResult3, imageResult1, imageResult2)
   isDescOpen = true
   basis.style.zIndex = -30
@@ -280,6 +291,7 @@ oneOfFour4.addEventListener('click', () => {
 const mainButton = document.querySelector('.mainButton')
 mainButton.addEventListener('click', (e) => {
   blur2.style.display = 'none'
+  unzeroOpacityForOriginal3gifs()
   if (sectionOneView) {
     if (basisImageDisplay) {
       if (isDescOpen) {
@@ -454,6 +466,7 @@ mainButton.addEventListener('click', (e) => {
 mainDiv.addEventListener('scroll', () => {
   const scrolledHeight = mainDiv.scrollTop
   hideFourLinkButtons()
+  unzeroOpacityForOriginal3gifs()
   blur2.style.display = 'none'
 
   // basisMenuUrlPage1 = `./images/1_basis.gif?a=${Math.random()}`
