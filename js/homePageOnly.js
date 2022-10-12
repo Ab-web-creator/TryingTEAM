@@ -137,6 +137,9 @@ linkButton1.addEventListener('click', (e) => {
   isDescOpen = true
   // setCloseButtonHeight(linkHeight1)
   basis.style.zIndex = -3
+  start.style.zIndex = -3
+  stop.style.zIndex = -3
+
   setCloseButtonHeight(closeButtonHeight1)
   setExpandButtonsPosition(165, 130, 95)
 })
@@ -145,15 +148,20 @@ linkButton2.addEventListener('click', () => {
   displayCurrentDescription(imageResult2, imageResult1, imageResult3)
   isDescOpen = true
   // setCloseButtonHeight(linkHeight2)
-  basis.style.zIndex = -3
+
   setCloseButtonHeight(closeButtonHeight2)
   setExpandButtonsPosition(360, 130, 95)
+  basis.style.zIndex = -3
+  start.style.zIndex = -3
+  stop.style.zIndex = -3
 })
 
 linkButton3.addEventListener('click', () => {
   displayCurrentDescription(imageResult3, imageResult1, imageResult2)
   isDescOpen = true
   basis.style.zIndex = -3
+  start.style.zIndex = -3
+  stop.style.zIndex = -3
   setCloseButtonHeight(closeButtonHeight3)
   setExpandButtonsPosition(280, 240, 95)
 })
