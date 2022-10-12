@@ -57,6 +57,8 @@ const imageResult1 = document.querySelector('.linkResult1')
 const imageResult2 = document.querySelector('.linkResult2')
 const imageResult3 = document.querySelector('.linkResult3')
 
+
+
 const linkImageResult1_1 = './images/LinkResult1_1.gif'
 const linkImageResult1_2 = './images/LinkResult1_2.gif'
 const linkImageResult1_3 = './images/LinkResult1_3.gif'
@@ -72,6 +74,8 @@ const linkImageResult3_3 = './images/LinkResult3_3.gif'
 const linkImageResult4_1 = './images/LinkResult4_1.gif'
 const linkImageResult4_2 = './images/LinkResult4_2.gif'
 const linkImageResult4_3 = './images/LinkResult4_3.gif'
+
+
 
 const closeLink = document.querySelector('.closeLink')
 closeLink.disabled = true
@@ -108,39 +112,131 @@ function setCloseButtonHeight(height) {
 
 closeLink.addEventListener('click', () => {
   resetDescriptions()
+  basis.style.zIndex = 10
 })
 
 linkButton1.addEventListener('click', (e) => {
+  
   displayCurrentDescription(imageResult1, imageResult2, imageResult3)
   isDescOpen = true
   setCloseButtonHeight(linkHeight1)
+  basis.style.zIndex = -3
 })
 
 linkButton2.addEventListener('click', () => {
   displayCurrentDescription(imageResult2, imageResult1, imageResult3)
   isDescOpen = true
   setCloseButtonHeight(linkHeight2)
+  basis.style.zIndex = -3
 })
 
 linkButton3.addEventListener('click', () => {
   displayCurrentDescription(imageResult3, imageResult1, imageResult2)
   isDescOpen = true
   setCloseButtonHeight(linkHeight3)
+  basis.style.zIndex = -3
 })
 
 function resetDescriptions() {
   imageResult1.style.opacity = 0
   imageResult2.style.opacity = 0
   imageResult3.style.opacity = 0
+
   imageResult1.style.zIndex = 0
   imageResult1.style.zIndex = 0
   imageResult1.style.zIndex = 0
+
   closeLink.disabled = false
   closeLink.style.zIndex = -3
 }
 
+// 4 knops which appear only when start button is clicked
+
+const oneOfFour1 = document.querySelector('.oneOfFour1')
+const oneOfFour2 = document.querySelector('.oneOfFour2')
+const oneOfFour3 = document.querySelector('.oneOfFour3')
+const oneOfFour4 = document.querySelector('.oneOfFour4')
+
+function hideFourLinkButtons() {
+  oneOfFour1.style.zIndex = -3
+  oneOfFour2.style.zIndex = -3
+  oneOfFour3.style.zIndex = -3
+  oneOfFour4.style.zIndex = -3
+}
+
+function unhideFourLinkButtons() {
+  oneOfFour1.style.zIndex = 10
+  oneOfFour2.style.zIndex = 10
+  oneOfFour3.style.zIndex = 10
+  oneOfFour4.style.zIndex = 10
+}
+
+
+// if we click them, they open links depending on which page they are in
+oneOfFour1.addEventListener('click', () => {
+  if (sectionOneView) {
+  window.open("./html_pages/rijles.html")
+  }
+  if (sectionTwoView) {
+  window.open("./html_pages/locatie.html")
+  }
+  if (sectionThreeView) {
+  window.open("./html_pages/theorie.html")
+  }
+  if (sectionFourView) {
+  window.open("./html_pages/waarom.html")
+  }
+})
+
+oneOfFour2.addEventListener('click', () => {
+  if (sectionOneView) {
+  window.open("./html_pages/versneller.html")
+  }
+  if (sectionTwoView) {
+  window.open("./html_pages/simulator.html")
+  }
+  if (sectionThreeView) {
+  window.open("./html_pages/reserveren.html")
+  }
+  if (sectionFourView) {
+  window.open("./html_pages/justdiggit.html")
+  }
+})
+
+oneOfFour3.addEventListener('click', () => {
+  if (sectionOneView) {
+  window.open("./html_pages/versneller.html")
+  }
+  if (sectionTwoView) {
+  window.open("./html_pages/simulator.html")
+  }
+  if (sectionThreeView) {
+  window.open("./html_pages/reserveren.html")
+  }
+  if (sectionFourView) {
+  window.open("./html_pages/justdiggit.html")
+  }
+})
+
+oneOfFour4.addEventListener('click', () => {
+  if (sectionOneView) {
+  window.open("./html_pages/versneller.html")
+  }
+  if (sectionTwoView) {
+  window.open("./html_pages/simulator.html")
+  }
+  if (sectionThreeView) {
+  window.open("./html_pages/reserveren.html")
+  }
+  if (sectionFourView) {
+  window.open("./html_pages/justdiggit.html")
+  }
+})
+
+// Mainbutton animations
 const mainButton = document.querySelector('.mainButton')
 mainButton.addEventListener('click', (e) => {
+  
   if (sectionOneView) {
     if (basisImageDisplay) {
       if (isDescOpen) {
@@ -148,6 +244,7 @@ mainButton.addEventListener('click', (e) => {
       }
 
       hideLinkButtons(true)
+      unhideFourLinkButtons()
 
       console.log(e.target)
       start.src = startMenuUrlPage1
@@ -166,6 +263,7 @@ mainButton.addEventListener('click', (e) => {
         mainButton.disabled = false
       }, 2450)
     } else {
+      hideFourLinkButtons()
       stop.src = stopMenuUrlPage1
       setTimeout(() => {
         stop.style.zIndex = 2
@@ -191,6 +289,7 @@ mainButton.addEventListener('click', (e) => {
         resetDescriptions()
       }
       hideLinkButtons(true)
+      unhideFourLinkButtons()
       start.src = startMenuUrlPage2
       setTimeout(() => {
         start.style.zIndex = 2
@@ -205,6 +304,7 @@ mainButton.addEventListener('click', (e) => {
         mainButton.disabled = false
       }, 2450)
     } else {
+      hideFourLinkButtons()
       stop.src = stopMenuUrlPage2
       setTimeout(() => {
         stop.style.zIndex = 2
@@ -218,6 +318,7 @@ mainButton.addEventListener('click', (e) => {
       setTimeout(() => {
         mainButton.disabled = false
         hideLinkButtons(false)
+        hideFourLinkButtons()
       }, 2050)
     }
   }
@@ -230,6 +331,7 @@ mainButton.addEventListener('click', (e) => {
 
     if (basisImageDisplay) {
       hideLinkButtons(true)
+      unhideFourLinkButtons()
       start.src = startMenuUrlPage3
       setTimeout(() => {
         start.style.zIndex = 2
@@ -244,6 +346,7 @@ mainButton.addEventListener('click', (e) => {
         mainButton.disabled = false
       }, 2450)
     } else {
+      hideFourLinkButtons()
       stop.src = stopMenuUrlPage3
       setTimeout(() => {
         stop.style.zIndex = 2
@@ -257,6 +360,7 @@ mainButton.addEventListener('click', (e) => {
       setTimeout(() => {
         mainButton.disabled = false
         hideLinkButtons(false)
+        hideFourLinkButtons()
       }, 2050)
     }
   }
@@ -269,6 +373,7 @@ mainButton.addEventListener('click', (e) => {
 
     if (basisImageDisplay) {
       hideLinkButtons(true)
+      unhideFourLinkButtons()
       start.src = startMenuUrlPage4
       setTimeout(() => {
         start.style.zIndex = 2
@@ -283,6 +388,7 @@ mainButton.addEventListener('click', (e) => {
         mainButton.disabled = false
       }, 2450)
     } else {
+      hideFourLinkButtons()
       stop.src = stopMenuUrlPage4
       setTimeout(() => {
         stop.style.zIndex = 2
@@ -296,6 +402,7 @@ mainButton.addEventListener('click', (e) => {
       setTimeout(() => {
         mainButton.disabled = false
         hideLinkButtons(false)
+        hideFourLinkButtons()
       }, 2050)
     }
   }
@@ -303,6 +410,7 @@ mainButton.addEventListener('click', (e) => {
 
 mainDiv.addEventListener('scroll', () => {
   const scrolledHeight = mainDiv.scrollTop
+  hideFourLinkButtons()
 
   // basisMenuUrlPage1 = `./images/1_basis.gif?a=${Math.random()}`
 
@@ -312,6 +420,7 @@ mainDiv.addEventListener('scroll', () => {
     console.log('Page 1')
 
     hideLinkButtons(false)
+  
 
     resetDescriptions()
     setLinkHeights(340, 320, 200)
