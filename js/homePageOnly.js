@@ -94,14 +94,30 @@ function displayCurrentDescription(current, image2, image3) {
 }
 
 let isDescOpen = false
-let linkHeight1 = 320
-let linkHeight2 = 297
-let linkHeight3 = 192
+let closeButtonHeight1 = 340
+let closeButtonHeight2 = 320
+let closeButtonHeight3 = 200
 
-function setLinkHeights(link1, link2, link3) {
-  linkHeight1 = link1
-  linkHeight2 = link2
-  linkHeight3 = link3
+let firstExpandButton = 165
+let secondExpandButton = 130
+let thirdExpandButton = 95
+
+function changeDefaultExpandPositions(firstValue, secondValue, thirdValue) {
+  firstExpandButton = firstValue
+  secondExpandButton = secondValue
+  thirdExpandButton = thirdValue
+}
+
+function setExpandButtonsPosition(position1, position2, position3) {
+  linkButton1.style.bottom = `${position1}px`
+  linkButton2.style.bottom = `${position2}px`
+  linkButton3.style.bottom = `${position3}px`
+}
+
+function setCloseButtonPositions(position1, position2, position3) {
+  closeButtonHeight1 = position1
+  closeButtonHeight2 = position2
+  closeButtonHeight3 = position3
 }
 
 function setCloseButtonHeight(height) {
@@ -119,22 +135,37 @@ linkButton1.addEventListener('click', (e) => {
   
   displayCurrentDescription(imageResult1, imageResult2, imageResult3)
   isDescOpen = true
+<<<<<<< HEAD
   setCloseButtonHeight(linkHeight1)
   basis.style.zIndex = -3
+=======
+  setCloseButtonHeight(closeButtonHeight1)
+  setExpandButtonsPosition(165, 130, 95)
+>>>>>>> cbc775f8d9f9253b59b2e609af3dcc8b9e0ebf6d
 })
 
 linkButton2.addEventListener('click', () => {
   displayCurrentDescription(imageResult2, imageResult1, imageResult3)
   isDescOpen = true
+<<<<<<< HEAD
   setCloseButtonHeight(linkHeight2)
   basis.style.zIndex = -3
+=======
+  setCloseButtonHeight(closeButtonHeight2)
+  setExpandButtonsPosition(360, 130, 95)
+>>>>>>> cbc775f8d9f9253b59b2e609af3dcc8b9e0ebf6d
 })
 
 linkButton3.addEventListener('click', () => {
   displayCurrentDescription(imageResult3, imageResult1, imageResult2)
   isDescOpen = true
+<<<<<<< HEAD
   setCloseButtonHeight(linkHeight3)
   basis.style.zIndex = -3
+=======
+  setCloseButtonHeight(closeButtonHeight3)
+  setExpandButtonsPosition(280, 240, 95)
+>>>>>>> cbc775f8d9f9253b59b2e609af3dcc8b9e0ebf6d
 })
 
 function resetDescriptions() {
@@ -148,6 +179,11 @@ function resetDescriptions() {
 
   closeLink.disabled = false
   closeLink.style.zIndex = -3
+  setExpandButtonsPosition(
+    firstExpandButton,
+    secondExpandButton,
+    thirdExpandButton,
+  )
 }
 
 // 4 knops which appear only when start button is clicked
@@ -423,7 +459,7 @@ mainDiv.addEventListener('scroll', () => {
   
 
     resetDescriptions()
-    setLinkHeights(340, 320, 200)
+    setCloseButtonPositions(340, 320, 200)
 
     pageHeader.innerText = 'De rijopleiding'
 
@@ -554,7 +590,7 @@ mainDiv.addEventListener('scroll', () => {
     linkImageSource(linkImageResult2_1, linkImageResult2_2, linkImageResult2_3)
     hideLinkButtons(false)
     resetDescriptions()
-    setLinkHeights(540, 520, 400)
+    setCloseButtonPositions(540, 520, 400)
     pageHeader.innerText = 'De simulator'
 
     basisImageDisplay = true
@@ -683,7 +719,7 @@ mainDiv.addEventListener('scroll', () => {
     linkImageSource(linkImageResult3_1, linkImageResult3_2, linkImageResult3_3)
     hideLinkButtons(false)
     resetDescriptions()
-    setLinkHeights(340, 320, 300)
+    setCloseButtonPositions(340, 320, 300)
     pageHeader.innerText = 'De theorie'
 
     basisImageDisplay = true
@@ -831,7 +867,7 @@ mainDiv.addEventListener('scroll', () => {
     linkImageSource(linkImageResult4_1, linkImageResult4_2, linkImageResult4_3)
     hideLinkButtons(false)
     resetDescriptions()
-    setLinkHeights(240, 220, 200)
+    setCloseButtonPositions(240, 220, 200)
     pageHeader.innerText = 'De impact'
 
     basisImageDisplay = true
