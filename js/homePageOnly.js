@@ -129,9 +129,15 @@ function setCloseButtonHeight(height) {
 closeLink.addEventListener('click', () => {
   resetDescriptions()
   basis.style.zIndex = 10
+  console.log("Close ,ink bu")
+  blur2.style.display = 'none'
 })
 
+
+const blur2 = document.querySelector('.blur2')
+
 linkButton1.addEventListener('click', (e) => {
+  blur2.style.display = 'block'
   
   displayCurrentDescription(imageResult1, imageResult2, imageResult3)
   isDescOpen = true
@@ -145,6 +151,8 @@ linkButton1.addEventListener('click', (e) => {
 })
 
 linkButton2.addEventListener('click', () => {
+  blur2.style.display = 'block'
+
   displayCurrentDescription(imageResult2, imageResult1, imageResult3)
   isDescOpen = true
   // setCloseButtonHeight(linkHeight2)
@@ -157,6 +165,7 @@ linkButton2.addEventListener('click', () => {
 })
 
 linkButton3.addEventListener('click', () => {
+  blur2.style.display = 'block'
   displayCurrentDescription(imageResult3, imageResult1, imageResult2)
   isDescOpen = true
   basis.style.zIndex = -30
@@ -270,7 +279,7 @@ oneOfFour4.addEventListener('click', () => {
 // Mainbutton animations
 const mainButton = document.querySelector('.mainButton')
 mainButton.addEventListener('click', (e) => {
-  
+  blur2.style.display = 'none'
   if (sectionOneView) {
     if (basisImageDisplay) {
       if (isDescOpen) {
@@ -445,6 +454,7 @@ mainButton.addEventListener('click', (e) => {
 mainDiv.addEventListener('scroll', () => {
   const scrolledHeight = mainDiv.scrollTop
   hideFourLinkButtons()
+  blur2.style.display = 'none'
 
   // basisMenuUrlPage1 = `./images/1_basis.gif?a=${Math.random()}`
 

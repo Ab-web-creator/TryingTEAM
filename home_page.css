@@ -114,7 +114,18 @@ body {
   width: 100%;
   display: none;
   height: 100vh;
-  z-index: 99;
+  z-index: 10;
+  transition: all 1s;
+  backdrop-filter: blur(4px);
+  background-color: #393c416e;
+}
+
+.blur2 {
+  position: fixed;
+  width: 100%;
+  display: none;
+  height: 100vh;
+  z-index: -1;
   transition: all 1s;
   backdrop-filter: blur(4px);
   background-color: #393c416e;
@@ -389,7 +400,7 @@ section.page {
 /* ------------------------------------ ******************* ------------------------------------ */
 
 .mobile_header {
-  background-color: rgb(176, 248, 199);
+  background-color: rgb(255, 255, 255);
   /* rang  */
 }
 
