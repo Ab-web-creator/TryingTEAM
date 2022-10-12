@@ -292,6 +292,7 @@ const mainButton = document.querySelector('.mainButton')
 mainButton.addEventListener('click', (e) => {
   blur2.style.display = 'none'
   unzeroOpacityForOriginal3gifs()
+  
   if (sectionOneView) {
     if (basisImageDisplay) {
       if (isDescOpen) {
