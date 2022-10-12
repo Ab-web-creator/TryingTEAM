@@ -135,37 +135,27 @@ linkButton1.addEventListener('click', (e) => {
   
   displayCurrentDescription(imageResult1, imageResult2, imageResult3)
   isDescOpen = true
-<<<<<<< HEAD
-  setCloseButtonHeight(linkHeight1)
+  // setCloseButtonHeight(linkHeight1)
   basis.style.zIndex = -3
-=======
   setCloseButtonHeight(closeButtonHeight1)
   setExpandButtonsPosition(165, 130, 95)
->>>>>>> cbc775f8d9f9253b59b2e609af3dcc8b9e0ebf6d
 })
 
 linkButton2.addEventListener('click', () => {
   displayCurrentDescription(imageResult2, imageResult1, imageResult3)
   isDescOpen = true
-<<<<<<< HEAD
-  setCloseButtonHeight(linkHeight2)
+  // setCloseButtonHeight(linkHeight2)
   basis.style.zIndex = -3
-=======
   setCloseButtonHeight(closeButtonHeight2)
   setExpandButtonsPosition(360, 130, 95)
->>>>>>> cbc775f8d9f9253b59b2e609af3dcc8b9e0ebf6d
 })
 
 linkButton3.addEventListener('click', () => {
   displayCurrentDescription(imageResult3, imageResult1, imageResult2)
   isDescOpen = true
-<<<<<<< HEAD
-  setCloseButtonHeight(linkHeight3)
   basis.style.zIndex = -3
-=======
   setCloseButtonHeight(closeButtonHeight3)
   setExpandButtonsPosition(280, 240, 95)
->>>>>>> cbc775f8d9f9253b59b2e609af3dcc8b9e0ebf6d
 })
 
 function resetDescriptions() {

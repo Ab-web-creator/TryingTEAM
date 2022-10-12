@@ -304,13 +304,8 @@ section.page {
   height: 30px;
   /* z-index: 10; */
   border-radius: 50%;
-<<<<<<< HEAD
   background-color: transparent;
   border-width: 0px;
-=======
-  background-color: red;
-  /* border: 2px solid red; */
->>>>>>> cbc775f8d9f9253b59b2e609af3dcc8b9e0ebf6d
 }
 
 .linkButton2 {
@@ -320,14 +315,8 @@ section.page {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-<<<<<<< HEAD
   background-color: transparent;
   border-width: 0px;
-=======
-  background-color: red;
-  /* border: 2px solid red; */
-  /* z-index: 10; */
->>>>>>> cbc775f8d9f9253b59b2e609af3dcc8b9e0ebf6d
 }
 
 .linkButton3 {
@@ -338,13 +327,8 @@ section.page {
   height: 30px;
   /* z-index: 10; */
   border-radius: 50%;
-<<<<<<< HEAD
   background-color: transparent;
   border-width: 0px;
-=======
-  background-color: red;
-  /* border: 2px solid red; */
->>>>>>> cbc775f8d9f9253b59b2e609af3dcc8b9e0ebf6d
 }
 
 .closeLink {
