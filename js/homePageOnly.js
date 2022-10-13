@@ -1,12 +1,15 @@
+// We are creating 
 const mainDiv = document.querySelector('.section-container')
-
 const dynamicContainer = document.querySelector('.dynamicContainer')
+
 const pageLogo = document.createElement('img')
 pageLogo.setAttribute('class', 'pageLogo')
 pageLogo.src = './images/logo.png'
+
 const pageHeader = document.createElement('a')
 pageHeader.innerText = 'De rijopleiding'
 pageHeader.setAttribute('class', 'pageHeader')
+
 dynamicContainer.appendChild(pageLogo)
 dynamicContainer.appendChild(pageHeader)
 
@@ -16,7 +19,7 @@ const start = document.querySelector('.start')
 const stop = document.querySelector('.stop')
 
 // Слово blueZoneImage больше нигде нет, для чего создано?
-const blueZoneImage = document.querySelector('.blueZoneImage')
+// const blueZoneImage = document.querySelector('.blueZoneImage')
 
 const page1 = document.getElementById('page-1')
 const page2 = document.getElementById('page-2')
@@ -24,7 +27,7 @@ const page3 = document.getElementById('page-3')
 const page4 = document.getElementById('page-4')
 
 let basisImageDisplay = true
-// let starImageDisplay = false
+// let startImageDisplay = false
 // let stopImageDisplay = false
 
 let sectionOneView = true
@@ -49,6 +52,7 @@ let stopMenuUrlPage3 = `./images/3_stop_menu.gif`
 let startMenuUrlPage4 = `./images/4_start_menu.gif`
 let stopMenuUrlPage4 = `./images/4_stop_menu.gif`
 
+// Pseudo-buttons and gif images
 const linkButton1 = document.querySelector('.linkButton1')
 const linkButton2 = document.querySelector('.linkButton2')
 const linkButton3 = document.querySelector('.linkButton3')
@@ -56,8 +60,6 @@ const linkButton3 = document.querySelector('.linkButton3')
 const imageResult1 = document.querySelector('.linkResult1')
 const imageResult2 = document.querySelector('.linkResult2')
 const imageResult3 = document.querySelector('.linkResult3')
-
-
 
 const linkImageResult1_1 = './images/LinkResult1_1.gif'
 const linkImageResult1_2 = './images/LinkResult1_2.gif'
@@ -74,8 +76,6 @@ const linkImageResult3_3 = './images/LinkResult3_3.gif'
 const linkImageResult4_1 = './images/LinkResult4_1.gif'
 const linkImageResult4_2 = './images/LinkResult4_2.gif'
 const linkImageResult4_3 = './images/LinkResult4_3.gif'
-
-
 
 const closeLink = document.querySelector('.closeLink')
 closeLink.disabled = true
@@ -463,6 +463,8 @@ mainButton.addEventListener('click', (e) => {
     }
   }
 })
+
+// Scrolling
 
 mainDiv.addEventListener('scroll', () => {
   const scrolledHeight = mainDiv.scrollTop

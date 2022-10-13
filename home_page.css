@@ -63,7 +63,7 @@ body {
   overflow: hidden;
 }
 
-/* Tepadagi bar  */
+/* The top-bar  */
 
 .mobile_header {
   opacity: 1;
@@ -151,85 +151,6 @@ body {
   height: 10px;
 }
 
-figure {
-  top: 50px;
-  right: -62px;
-  position: fixed;
-  content: '';
-  width: 70px;
-  height: 93%;
-  border-radius: 50px;
-
-  /* transition: right 0.4s ease; */
-  background-color: #120587;
-  z-index: 300;
-}
-
-figure.active {
-  display: none;
-}
-
-.photo_for_each_page {
-  padding-top: 20px;
-  background-color: #ffffff;
-}
-
-.photo_for_each_page img {
-  padding: 20px 0px;
-  position: relative;
-  width: 100%;
-}
-
-.other_pages h4 {
-  text-align: center;
-  padding: 40px 20px;
-  font-weight: 700;
-}
-
-.other_pages h6 {
-  padding: 10px 20px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.other_pages p {
-  padding: 10px 20px;
-  font-size: 18px;
-  line-height: 1.6rem;
-  font-weight: 600;
-}
-
-.other_pages .white_bg {
-  background-color: #ffffff;
-  padding: 10px 0px;
-}
-
-.other_pages .gray_bg {
-  background-color: #ffffff;
-  padding: 10px 0px;
-}
-
-.other_pages .sarlavha_with_bg {
-  background-color: #edeefd;
-
-  padding: 10px 10px;
-  margin-bottom: 30px;
-  font-size: 1.5rem;
-  letter-spacing: 1.7px;
-  border-top: 4px double #818bf91a;
-  /* border-bottom: 4px double #050e72; */
-}
-
-footer p {
-  font-size: 8px;
-  background-color: #8f8f8f;
-  color: #17028a;
-  padding: 10px 20px;
-  text-align: center;
-}
-
-/* a Note: Hamburger menu is in aside.css */
-
 /* main section */
 
 /* ------------------------------------ ******************* ------------------------------------ */
@@ -241,14 +162,11 @@ footer p {
 }
 
 section.page {
+  position: relative;
   scroll-snap-stop: always;
-
   height: 100vh;
   scroll-snap-align: center;
-  position: relative;
   pointer-events: none;
-  /* background-color: #8f8f8f; */
-
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   z-index: -2;
@@ -302,6 +220,7 @@ section.page {
   object-fit: contain;
 }
 
+/* Pseudo-buttons  */
 .mainButton {
   position: absolute;
   left: 0;
@@ -316,16 +235,14 @@ section.page {
   border-width: 0px;
 }
 
-/* Ab is adding now */
 .linkButton1 {
   position: absolute;
   bottom: 160px;
   left: 14px;
   width: 30px;
   height: 30px;
-  /* z-index: 10; */
   border-radius: 50%;
-  background-color: transparent;
+  background-color: red;
   border-width: 0px;
 }
 
@@ -336,7 +253,7 @@ section.page {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: red;
   border-width: 0px;
 }
 
@@ -346,9 +263,8 @@ section.page {
   left: 14px;
   width: 30px;
   height: 30px;
-  /* z-index: 10; */
   border-radius: 50%;
-  background-color: transparent;
+  background-color: red;
   border-width: 0px;
 }
 
@@ -358,7 +274,7 @@ section.page {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: yellow;
   border-width: 0px;
 }
 
@@ -369,7 +285,7 @@ section.page {
   width: 90px;
   height: 55px;
   border-radius: 10%;
-  background-color: transparent;
+  background-color: white;
   border-width: 0px;
   /* border: 2px solid rgb(253, 253, 253); */
 }
@@ -381,7 +297,7 @@ section.page {
   width: 100px;
   height: 65px;
   border-radius: 10%;
-  background-color: transparent;
+  background-color: white;
   border-width: 0px;
 }
 
@@ -392,7 +308,7 @@ section.page {
   width: 90px;
   height: 65px;
   border-radius: 10%;
-  background-color: transparent;
+  background-color: white;
   border-width: 0px;
 }
 
@@ -403,15 +319,91 @@ section.page {
   width: 70px;
   height: 55px;
   border-radius: 10%;
-  background-color: transparent;
+  background-color: white;
   border-width: 0px;
 }
+
+
+/* For other pages  */
+figure {
+  top: 50px;
+  right: -62px;
+  position: fixed;
+  content: '';
+  width: 70px;
+  height: 93%;
+  border-radius: 50px;
+  background-color: #120587;
+  z-index: 300;
+}
+
+figure.active {
+  display: none;
+}
+
+.photo_for_each_page {
+  padding-top: 20px;
+  background-color: #ffffff;
+}
+
+.photo_for_each_page img {
+  padding: 20px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.other_pages h4 {
+  text-align: center;
+  padding: 40px 20px;
+  font-weight: 700;
+}
+
+.other_pages h6 {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.other_pages p {
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 1.6rem;
+  font-weight: 600;
+}
+
+.other_pages .white_bg {
+  background-color: #ffffff;
+  padding: 10px 0px;
+}
+
+.other_pages .gray_bg {
+  background-color: #ffffff;
+  padding: 10px 0px;
+}
+
+.other_pages .sarlavha_with_bg {
+  background-color: #edeefd;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  letter-spacing: 1.7px;
+  border-top: 4px double #818bf91a;
+}
+
+footer p {
+  font-size: 8px;
+  background-color: #8f8f8f;
+  color: #17028a;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* a Note: Hamburger menu is in aside.css */
 
 /* ------------------------------------ ******************* ------------------------------------ */
 
 .mobile_header {
   background-color: rgb(249, 249, 249);
-  /* rang  */
 }
 
 /* 
