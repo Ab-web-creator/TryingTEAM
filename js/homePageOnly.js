@@ -94,8 +94,8 @@ function displayCurrentDescription(current, image2, image3) {
 }
 
 let isDescOpen = false
-let closeButtonHeight1 = 340
-let closeButtonHeight2 = 320
+let closeButtonHeight1 = 315
+let closeButtonHeight2 = 300
 let closeButtonHeight3 = 200
 
 let firstExpandButton = 165
@@ -167,7 +167,7 @@ linkButton2.addEventListener('click', () => {
   // setCloseButtonHeight(linkHeight2)
 
   setCloseButtonHeight(closeButtonHeight2)
-  setExpandButtonsPosition(360, 130, 95)
+  setExpandButtonsPosition(350, 130, 90)
   basis.style.zIndex = -30
   start.style.zIndex = -30
   stop.style.zIndex = -30
