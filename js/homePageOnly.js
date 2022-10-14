@@ -94,8 +94,8 @@ function displayCurrentDescription(current, image2, image3) {
 }
 
 let isDescOpen = false
-let closeButtonHeight1 = 315
-let closeButtonHeight2 = 300
+let closeButtonHeight1 = 323
+let closeButtonHeight2 = 315
 let closeButtonHeight3 = 200
 
 let firstExpandButton = 165
