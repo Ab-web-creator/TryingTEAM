@@ -1,7 +1,5 @@
 // this js opens/closes the sidemenu when swiping the screen left and right
 
-
-
 var startingX , startingY , movingX , movingY ;
 function touchStart(evt){
 startingX = evt.touches[0].clientX ;
