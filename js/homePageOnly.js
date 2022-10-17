@@ -230,8 +230,8 @@ linkButton3.addEventListener('click', () => {
     setExpandButtonsPosition(206, 175, 58)
     }
     if (sectionFourView) {
-    setCloseButtonHeight(335)
-    setExpandButtonsPosition(405, 377, 88)
+    setCloseButtonHeight(330)
+    setExpandButtonsPosition(401, 372, 88)
     }
 
 })
