@@ -94,8 +94,8 @@ function displayCurrentDescription(current, image2, image3) {
 }
 
 let isDescOpen = false
-let closeButtonHeight1 = 323
-let closeButtonHeight2 = 315
+let closeButtonHeight1 = 223
+let closeButtonHeight2 = 215
 let closeButtonHeight3 = 200
 
 let firstExpandButton = 165
@@ -152,22 +152,52 @@ linkButton1.addEventListener('click', (e) => {
   zeroOpacityForOriginal3gifs()
   displayCurrentDescription(imageResult1, imageResult2, imageResult3)
   isDescOpen = true
-  // setCloseButtonHeight(linkHeight1)
- 
-
-  setCloseButtonHeight(closeButtonHeight1)
-  setExpandButtonsPosition(165, 130, 95)
+  
+  if (sectionOneView) {
+  setCloseButtonHeight(350)
+  }
+  if (sectionTwoView) {
+  setCloseButtonHeight(325)
+  }
+  if (sectionThreeView) {
+  setCloseButtonHeight(265)
+  }
+  if (sectionFourView) {
+  setCloseButtonHeight(330)
+  }
+  setExpandButtonsPosition(165, 130, 93)
 })
+
+
 
 linkButton2.addEventListener('click', () => {
   blur2.style.display = 'block'
   zeroOpacityForOriginal3gifs()
   displayCurrentDescription(imageResult2, imageResult1, imageResult3)
   isDescOpen = true
-  // setCloseButtonHeight(linkHeight2)
 
-  setCloseButtonHeight(closeButtonHeight2)
-  setExpandButtonsPosition(358, 145, 102)
+  if (sectionOneView) {
+    setCloseButtonHeight(327)
+    setExpandButtonsPosition(368, 145, 98)
+    }
+    if (sectionTwoView) {
+    setCloseButtonHeight(210)
+    setExpandButtonsPosition(250, 145, 91)
+    }
+    if (sectionThreeView) {
+    setCloseButtonHeight(238)
+    setExpandButtonsPosition(276, 145, 88)
+    }
+    if (sectionFourView) {
+    setCloseButtonHeight(280)
+    setExpandButtonsPosition(317, 145, 88)
+    }
+
+  // setCloseButtonHeight(linkHeight2)
+  // setCloseButtonHeight(closeButtonHeight2)
+  // closeButtonHeight2 = 350
+  // setExpandButtonsPosition(368, 145, 98)
+
   basis.style.zIndex = -30
   start.style.zIndex = -30
   stop.style.zIndex = -30
@@ -182,8 +212,24 @@ linkButton3.addEventListener('click', () => {
   basis.style.zIndex = -30
   start.style.zIndex = -30
   stop.style.zIndex = -30
-  setCloseButtonHeight(closeButtonHeight3)
-  setExpandButtonsPosition(280, 240, 95)
+  
+  if (sectionOneView) {
+    setCloseButtonHeight(157)
+    setExpandButtonsPosition(228, 197, 18)
+    }
+    if (sectionTwoView) {
+    setCloseButtonHeight(180)
+    setExpandButtonsPosition(250, 220, 91)
+    }
+    if (sectionThreeView) {
+    setCloseButtonHeight(136)
+    setExpandButtonsPosition(206, 175, 58)
+    }
+    if (sectionFourView) {
+    setCloseButtonHeight(335)
+    setExpandButtonsPosition(405, 377, 88)
+    }
+
 })
 
 function resetDescriptions() {

@@ -237,7 +237,7 @@ section.page {
 
 .linkButton1 {
   position: absolute;
-  bottom: 160px;
+  bottom: 154px;
   left: 14px;
   width: 30px;
   height: 40px;
@@ -250,7 +250,7 @@ section.page {
 
 .linkButton2 {
   position: absolute;
-  bottom: 130px;
+  bottom: 125px;
   left: 14px;
   width: 30px;
   height: 30px;
@@ -264,11 +264,11 @@ section.page {
 
 .linkButton3 {
   position: absolute;
-  bottom: 87px;
+  bottom: 80px;
   left: 14px;
   width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  height: 40px;
+  border-radius: 10%;
 /* 
   background-color: transparent;
   border-width: 0px; */
@@ -431,7 +431,7 @@ footer p {
 /* ------------------------------------ ******************* ------------------------------------ */
 
 .mobile_header {
-  background-color: rgb(253, 232, 232);
+  background-color: rgb(255, 255, 255);
 }
 
 /* 
