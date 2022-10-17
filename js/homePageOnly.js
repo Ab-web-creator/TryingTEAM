@@ -98,9 +98,9 @@ let closeButtonHeight1 = 223
 let closeButtonHeight2 = 215
 let closeButtonHeight3 = 200
 
-let firstExpandButton = 165
-let secondExpandButton = 130
-let thirdExpandButton = 95
+let firstExpandButton = 154
+let secondExpandButton = 125
+let thirdExpandButton = 80
 
 function changeDefaultExpandPositions(firstValue, secondValue, thirdValue) {
   firstExpandButton = firstValue
@@ -154,19 +154,19 @@ linkButton1.addEventListener('click', (e) => {
   isDescOpen = true
   
   if (sectionOneView) {
-  setCloseButtonHeight(338)
+  setCloseButtonHeight(332)
   setExpandButtonsPosition(165, 130, 93)
   }
   if (sectionTwoView) {
-  setCloseButtonHeight(325)
+  setCloseButtonHeight(310)
   setExpandButtonsPosition(165, 130, 93)
   }
   if (sectionThreeView) {
-  setCloseButtonHeight(265)
+  setCloseButtonHeight(250)
   setExpandButtonsPosition(165, 130, 93)
   }
   if (sectionFourView) {
-  setCloseButtonHeight(330)
+  setCloseButtonHeight(315)
   setExpandButtonsPosition(165, 130, 93)
   }
   
