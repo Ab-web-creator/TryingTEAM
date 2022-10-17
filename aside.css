@@ -5,14 +5,13 @@
   justify-content: space-between;
   padding: 8px 10px;
   background-color: #09024a;
+  border-radius: 35px 0 0 0;
  
   /* right: 0; */
   z-index: 101;
   margin-bottom: 500px;
  
 }
-
-
 
 #mark a span {
   text-align: left;
@@ -41,7 +40,7 @@
 }
 
 aside {
-  top: 0px;
+  top: 42px;
   position: fixed;
   transition: right 0.4s ease;
   right: -461px;
@@ -56,7 +55,7 @@ aside {
   height: fit-content;
   max-height: 100vh;
   overflow-y: auto;
-  border-radius: 0 0 0 35px;
+  border-radius: 35px 0 0 35px;
 }
 
 aside.active {

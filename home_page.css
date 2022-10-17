@@ -242,10 +242,10 @@ section.page {
   width: 30px;
   height: 40px;
   border-radius: 20%;
-  /* background-color: red; */
-  background-color: rgba(255, 0, 0, 0.3);
-  /* border-width: 0px; */
-  border: 2px solid red;
+  
+  background-color: transparent;
+  border-width: 0px;
+  /* border: 2px solid red; */
 }
 
 .linkButton2 {
@@ -255,11 +255,11 @@ section.page {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  /* background-color: transparent;
-  border-width: 0px; */
-
+  background-color: transparent;
+  border-width: 0px;
+/* 
   background-color: rgba(255, 0, 0, 0.3);
-  border: 2px solid red;
+  border: 2px solid red; */
 }
 
 .linkButton3 {
@@ -269,12 +269,12 @@ section.page {
   width: 30px;
   height: 40px;
   border-radius: 10%;
-/* 
-  background-color: transparent;
-  border-width: 0px; */
 
+  background-color: transparent;
+  border-width: 0px;
+/* 
   background-color: rgba(255, 0, 0, 0.3);
-  border: 2px solid red;
+  border: 2px solid red; */
 }
 
 .closeLink {
@@ -283,12 +283,12 @@ section.page {
   width: 30px;
   height: 40px;
   border-radius: 20%;
-  background-color: yellow;
+  /* background-color: yellow; */
   background-color: transparent;
-  border-width: 2px;
-  background-color: rgba(238, 255, 0, 0.3);
-  /* border-width: 0px; */
-  border: 2px solid rgb(238, 255, 0);
+  /* border-width: 2px; */
+  /* background-color: rgba(238, 255, 0, 0.3); */
+  border-width: 0px;
+  /* border: 2px solid rgb(238, 255, 0); */
 }
 
 .oneOfFour1 {
