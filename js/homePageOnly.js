@@ -167,7 +167,7 @@ linkButton2.addEventListener('click', () => {
   // setCloseButtonHeight(linkHeight2)
 
   setCloseButtonHeight(closeButtonHeight2)
-  setExpandButtonsPosition(350, 130, 90)
+  setExpandButtonsPosition(358, 145, 102)
   basis.style.zIndex = -30
   start.style.zIndex = -30
   stop.style.zIndex = -30
