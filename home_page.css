@@ -231,7 +231,7 @@ section.page {
   height: 50px;
   bottom: 27px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: rgba(0, 128, 0, 0.225);
   border-width: 0px;
 }
 
@@ -243,8 +243,9 @@ section.page {
   height: 40px;
   border-radius: 20%;
   /* background-color: red; */
-  background-color: transparent;
-  border-width: 0px;
+  background-color: rgba(255, 0, 0, 0.3);
+  /* border-width: 0px; */
+  border: 2px solid red;
 }
 
 .linkButton2 {
@@ -254,9 +255,11 @@ section.page {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  /* background-color: red; */
-  background-color: transparent;
-  border-width: 0px;
+  /* background-color: transparent;
+  border-width: 0px; */
+
+  background-color: rgba(255, 0, 0, 0.3);
+  border: 2px solid red;
 }
 
 .linkButton3 {
@@ -266,9 +269,12 @@ section.page {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  /* background-color: red; */
+/* 
   background-color: transparent;
-  border-width: 0px;
+  border-width: 0px; */
+
+  background-color: rgba(255, 0, 0, 0.3);
+  border: 2px solid red;
 }
 
 .closeLink {
@@ -277,9 +283,12 @@ section.page {
   width: 30px;
   height: 40px;
   border-radius: 20%;
-  /* background-color: yellow; */
+  background-color: yellow;
   background-color: transparent;
-  border-width: 0px;
+  border-width: 2px;
+  background-color: rgba(238, 255, 0, 0.3);
+  /* border-width: 0px; */
+  border: 2px solid rgb(238, 255, 0);
 }
 
 .oneOfFour1 {
@@ -289,9 +298,13 @@ section.page {
   width: 90px;
   height: 55px;
   border-radius: 10%;
-  background-color: transparent;
+    /* background-color: transparent;
+  border-width: 0px; */
   border-width: 0px;
-  /* border: 2px solid rgb(253, 253, 253); */
+  background-color: rgba(255, 255, 255, 0.32);
+  
+  border: 2px solid rgb(253, 253, 253);
+
 }
 
 .oneOfFour2 {
@@ -301,8 +314,12 @@ section.page {
   width: 100px;
   height: 65px;
   border-radius: 10%;
-  background-color: transparent;
   border-width: 0px;
+  /* background-color: transparent;
+  border-width: 0px; */
+
+  background-color: rgba(255, 255, 255, 0.32);
+  border: 2px solid rgb(253, 253, 253);
 }
 
 .oneOfFour3 {
@@ -311,9 +328,13 @@ section.page {
   bottom: 110px;
   width: 90px;
   height: 65px;
+
   border-radius: 10%;
-  background-color: transparent;
-  border-width: 0px;
+  /* background-color: transparent;
+  border-width: 0px; */
+
+  background-color: rgba(255, 255, 255, 0.32);
+  border: 2px solid rgb(253, 253, 253);
 }
 
 .oneOfFour4 {
@@ -325,6 +346,9 @@ section.page {
   border-radius: 10%;
   background-color: transparent;
   border-width: 0px;
+
+  background-color: rgba(255, 255, 255, 0.32);
+  border: 2px solid rgb(253, 253, 253);
 }
 
 
@@ -407,7 +431,7 @@ footer p {
 /* ------------------------------------ ******************* ------------------------------------ */
 
 .mobile_header {
-  background-color: rgb(249, 249, 249);
+  background-color: rgb(253, 232, 232);
 }
 
 /* 
