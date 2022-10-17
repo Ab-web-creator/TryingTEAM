@@ -154,18 +154,22 @@ linkButton1.addEventListener('click', (e) => {
   isDescOpen = true
   
   if (sectionOneView) {
-  setCloseButtonHeight(350)
+  setCloseButtonHeight(338)
+  setExpandButtonsPosition(165, 130, 93)
   }
   if (sectionTwoView) {
   setCloseButtonHeight(325)
+  setExpandButtonsPosition(165, 130, 93)
   }
   if (sectionThreeView) {
   setCloseButtonHeight(265)
+  setExpandButtonsPosition(165, 130, 93)
   }
   if (sectionFourView) {
   setCloseButtonHeight(330)
-  }
   setExpandButtonsPosition(165, 130, 93)
+  }
+  
 })
 
 
