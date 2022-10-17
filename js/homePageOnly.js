@@ -185,8 +185,8 @@ linkButton2.addEventListener('click', () => {
     setExpandButtonsPosition(368, 145, 98)
     }
     if (sectionTwoView) {
-    setCloseButtonHeight(210)
-    setExpandButtonsPosition(250, 145, 91)
+    setCloseButtonHeight(200)
+    setExpandButtonsPosition(238, 145, 91)
     }
     if (sectionThreeView) {
     setCloseButtonHeight(238)
