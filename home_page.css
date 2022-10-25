@@ -172,6 +172,23 @@ section.page {
   z-index: -2;
 }
 
+#page-1 {
+  background-image: url(images/mainpage_1_mobile.jpg);
+  background-size: cover;
+}
+#page-2 {
+  background-image: url(images/mainpage_2_mobile.jpg);
+  background-size: cover;
+}
+#page-3 {
+  background-image: url(images/mainpage_3_mobile.jpg);
+  background-size: cover;
+}
+#page-4 {
+  background-image: url(images/mainpage_4_mobile.jpg);
+  background-size: cover;
+}
+
 .dynamicContainer {
   position: absolute;
   height: 100%;
@@ -416,10 +433,45 @@ footer p {
 
 /* a Note: Hamburger menu is in aside.css */
 
+/* For the desktop version  */
+
+
+
 /* ------------------------------------ ******************* ------------------------------------ */
 
+
+@media only screen and (min-width: 600px) {
+  .pageHeader, .pageLogo {
+    display: none;
+  }
+
+  .blueZoneContainer {
+    width: 30%;
+  }
+
+  #page-1 {
+    background-image: url(images/mainpage_1_desktop.jpg);
+  }
+  #page-2 {
+    background-image: url(images/mainpage_2_desktop.jpg);
+  }
+  #page-3 {
+    background-image: url(images/mainpage_3_desktop.jpg);
+  }
+  #page-4 {
+    background-image: url(images/mainpage_4_desktop.jpg);
+  }
+}
+
+
+
+
+
+
+
+
 .mobile_header {
-  background-color: rgb(251, 251, 251);
+  background-color: rgb(249, 251, 204);
 }
 
 /* 
