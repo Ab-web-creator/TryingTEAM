@@ -85,9 +85,9 @@ body {
 }
 
 .nav_question a {
-  font-size: 1.5rem;
+  font-size: 22px;
   font-weight: 600;
-  color: rgb(4, 23, 132);
+  color: rgb(1, 6, 39);
 }
 
 .phone_icon a img {
@@ -431,6 +431,9 @@ footer p {
   text-align: center;
 }
 
+.phone_number {
+  display: none;
+}
 /* a Note: Hamburger menu is in aside.css */
 
 /* For the desktop version  */
@@ -443,6 +446,17 @@ footer p {
 @media only screen and (min-width: 600px) {
   .pageHeader, .pageLogo {
     display: none;
+  }
+  .phone_icon {
+    display: none;
+  }
+
+  .phone_number {
+    margin-top: 3px;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(2, 7, 40);
   }
 
   .blueZoneContainer {
