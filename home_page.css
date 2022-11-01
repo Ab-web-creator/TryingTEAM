@@ -151,6 +151,10 @@ body {
   height: 10px;
 }
 
+.hide_in_mobile_version {
+  display: none;
+}
+
 /* main section */
 
 /* ------------------------------------ ******************* ------------------------------------ */
@@ -175,6 +179,7 @@ section.page {
 #page-1 {
   background-image: url(images/mainpage_1_mobile.jpg);
   background-size: cover;
+
 }
 #page-2 {
   background-image: url(images/mainpage_2_mobile.jpg);
@@ -434,6 +439,10 @@ footer p {
 .phone_number {
   display: none;
 }
+header {
+  display: none;
+}
+
 /* a Note: Hamburger menu is in aside.css */
 
 /* For the desktop version  */
@@ -444,27 +453,25 @@ footer p {
 
 
 @media only screen and (min-width: 600px) {
+
+  .reveal_in_desktop {
+    display: block;
+  }
+  .mobile_header {
+    display: none;
+  }
   .pageHeader, .pageLogo {
     display: none;
   }
-  .phone_icon {
+ 
+  .blueZoneContainer {
     display: none;
   }
 
-  .phone_number {
-    margin-top: 3px;
-    display: block;
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(2, 7, 40);
-  }
-
-  .blueZoneContainer {
-    width: 30%;
-  }
 
   #page-1 {
     background-image: url(images/mainpage_1_desktop.jpg);
+    background-position: center;
   }
   #page-2 {
     background-image: url(images/mainpage_2_desktop.jpg);
@@ -475,6 +482,148 @@ footer p {
   #page-4 {
     background-image: url(images/mainpage_4_desktop.jpg);
   }
+
+  body {
+    /* overflow: scroll */
+  }
+
+  #page-1 .conntainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(250, 253, 228);
+    font-size: 52px;
+    font-weight: 300;
+    position: fixed;
+    /* top: 35%; */
+    left: 50%;
+    transform: translate(-50%);
+    letter-spacing: 5px;
+    background-color: #0c0c0d7b;
+    padding: 30px 50px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .conntainer .desktop_heading {
+    position: absolute;
+    top: 35%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .conntainer h5 {
+    font-family: fantasy;
+    text-align: center;
+    position: absolute;
+    top: 53%;
+  }
+
+  header {
+    padding: 5px 0px;
+    /* background-color: #013e5f6b; */
+    background-color: #424343e6;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    position: fixed;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 99;
+    
+    border-width: none;
+    filter: grayscale(0);
+}
+
+  header .desktop_logo {
+   align-self: left;
+  }
+
+  .desktop_logo img {
+    width: 90px;
+    height: 30px;
+    
+}
+
+.fancy-link li a {
+    display: block;
+    /* margin: 10px 0; */
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.fancy-link li a.active,
+.fancy-link li a:hover {
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    background-color: #ff4d00;
+    transition: all 500ms ease-in-out;
+    
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    font-size: 16px;
+}
+
+header nav ul li {
+    margin-right: 0px;
+}
+
+header ul li a {
+    color: inherit;
+}
+
+header ul li a.active {
+    background: #056f87;
+    color: #120587;
+    transition: 0.5s;
+}
+
+header .end {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    padding: 15px 0px;
+    /* text-align: right; */
+}
+
+.end a span {
+ color: #fff701;
+ font-weight: 600;
+ text-transform: uppercase;
+ /* padding: 10px 20px; */
+ margin-right: 10px;
+}
+
+.end a:nth-child(2) {
+    color: white;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    margin-right: 3px;
+}
+
+.end a span:hover  {
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: #ff4d00;
+    transition: all 500ms ease-in-out;
+}
+
+header .end a i {
+    font-size: 1.5rem; 
+    color: white;
+    margin-left: 5px;
+    
+}
+
+
 }
 
 
@@ -485,7 +634,7 @@ footer p {
 
 
 .mobile_header {
-  background-color: rgb(249, 251, 204);
+  background-color: rgb(255, 255, 255);
 }
 
 /* 
