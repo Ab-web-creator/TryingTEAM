@@ -516,8 +516,9 @@ header {
     font-family: fantasy;
     text-align: center;
     position: absolute;
-    top: 53%;
+    top: 48%;
   }
+
 
   header {
     padding: 5px 0px;
@@ -543,6 +544,7 @@ header {
   }
 
   .desktop_logo img {
+    margin-top: 5px;
     width: 90px;
     height: 30px;
     
@@ -561,8 +563,8 @@ header {
     border-radius: 30px;
     background-color: #ff4d00;
     transition: all 500ms ease-in-out;
-    
 }
+
 
 header nav ul {
     display: flex;
@@ -598,7 +600,7 @@ header .end {
  color: #fff701;
  font-weight: 600;
  text-transform: uppercase;
- /* padding: 10px 20px; */
+ padding: 10px 20px;
  margin-right: 10px;
 }
 
