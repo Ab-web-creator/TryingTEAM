@@ -478,6 +478,7 @@ header {
 
   body {
     overflow: scroll;
+    font-size: 32px;
   }
 
   .conntainer {
@@ -486,7 +487,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     color: rgb(253, 255, 241);
-    font-size: 32px;
+   
     font-weight: 300;
     position: relative;
     /* top: 35%; */
@@ -532,19 +533,32 @@ header {
 
   .round_buttons_container {
     position: relative;
-    margin-top: -80px;
+    margin-top: -60px;
     color: #17028a;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0px 200px;
   }
 
   .round_buttons_container p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
-    font-size: 33px;
-    text-align: center;
+    
+    margin: auto;
     letter-spacing: normal;
+  }
+
+  .round_buttons_container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .round_buttons_container img {
+    width: 100px;
+    margin: auto;
   }
 
 .firstSection {
@@ -559,18 +573,11 @@ header {
     letter-spacing: 1.2px;
     margin-top: 100px;
     padding: 0px 50px;
-    margin-bottom: 70px;
+    margin-bottom: 120px;
 }
 
 .firstSection img {
   border-radius: 25px;
-}
-
-.belt {
-   margin: 80px 0px;
-  width: 100%;
-  height: 20px;
-  border-bottom: 23px double rgb(161, 145, 64); 
 }
 
 .secondSection {
@@ -581,8 +588,9 @@ header {
   justify-content: space-around;
   letter-spacing: 1.2px;
   margin-top: 0px;
-  padding: 0px 50px;
+  padding: 100px 50px;
 }
+ 
 
 .secondSection img {
   width: 200px;
@@ -602,19 +610,12 @@ header {
   height: fit-content;
 }
 
-.secondSection  {
-  padding: 100px 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  justify-content: space-around;
-}
 
-.container {
-  margin-top: 50px;
+.secondSection .container {
+  margin-top: 0px;
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 150px;
   justify-content: space-around;
 }
 
@@ -740,6 +741,7 @@ header .end {
 
 .end a span {
  color: #fff701;
+ font-size: 18px;
  font-weight: 600;
  text-transform: uppercase;
  padding: 10px 20px;
