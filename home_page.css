@@ -825,6 +825,61 @@ background-color: #1005e5;
 
 
 
+
+.active-gif {
+  z-index: 300;
+}
+
+
+#arrow img {
+  /* position: absolute; */
+  
+  width: 28px;
+  height: 25px;  
+  z-index: 2;
+}
+
+.arrow {
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  left: 46%;
+  transform: translate(-50%);
+  height: 50px;
+  font-size: 25px;
+
+  color: rgb(33, 3, 234);
+  animation: updown 1.5s ease infinite;
+}
+
+@keyframes updown {
+  0% {
+      transform: translateY(0);
+  }
+  10% {
+      transform: translateY(5px);
+  }
+  20% {
+      transform: translateY(0);
+  }
+  30% {
+      transform: translateY(5px);
+  }
+  40% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(5px);
+  }
+  80% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+
 .mobile_header {
   background-color: rgb(255, 255, 255);
 }
@@ -840,7 +895,3 @@ git commit -m "lyuboe sobwenie"
 git push
 
 */
-
-.active-gif {
-  z-index: 300;
-}
