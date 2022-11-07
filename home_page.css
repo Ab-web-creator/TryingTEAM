@@ -409,21 +409,14 @@ figure.active {
   font-weight: 600;
 }
 
-.other_pages .white_bg {
-  background-color: #ffffff;
-  padding: 10px 0px;
-}
-
-.other_pages .gray_bg {
-  background-color: #ffffff;
-  padding: 10px 0px;
-}
+ 
 
 .other_pages .sarlavha_with_bg {
   background-color: #edeefd;
+  margin-top: 55px;
   padding: 10px 10px;
-  margin-bottom: 30px;
-  font-size: 1.5rem;
+  /* margin-bottom: 30px; */
+  font-size: 33px;
   letter-spacing: 1.7px;
   border-top: 4px double #818bf91a;
 }
@@ -664,6 +657,7 @@ header {
 
 
   header {
+    
     padding: 5px 0px;
     /* background-color: #013e5f6b; */
     background-color: #424343a3;
@@ -680,6 +674,12 @@ header {
     
     border-width: none;
     filter: grayscale(0);
+
+    
+}
+
+header div:first-child {
+  margin-top: 10px;
 }
 
   header .desktop_logo {
@@ -694,6 +694,7 @@ header {
 }
 
 .fancy-link li a {
+  margin-top: 10px;
     display: block;
     /* margin: 10px 0; */
     padding: 10px 20px;
@@ -733,26 +734,34 @@ header ul li a.active {
 header .end {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     color: white;
     align-items: center;
     padding: 15px 0px;
     /* text-align: right; */
+
+    
 }
 
-.end a span {
+.end a:nth-child(1) {
  color: #fff701;
- font-size: 18px;
+ font-size: 16px;
  font-weight: 600;
  text-transform: uppercase;
  padding: 10px 20px;
+
  margin-right: 10px;
+
 }
 
 .end a:nth-child(2) {
+   
     color: white;
     text-transform: uppercase;
     padding: 0px 10px;
+    margin: auto;
     margin-right: 3px;
+   
 }
 
 .end a span:hover  {
@@ -766,9 +775,46 @@ header .end a i {
     font-size: 1.5rem; 
     color: white;
     margin-left: 5px;
-    
+    margin-top: 15px;
 }
 
+
+/* other-pages in desktup version  */
+
+.other_pages .sarlavha_with_bg  {
+  margin-top: 120px;
+}
+
+.flex_container {
+  position: relative;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 200px;
+}
+
+.sarlavha_with_bg h4 {
+  font-size: 50px;
+}
+
+.photo_for_each_page img {
+  max-width: 400px;
+  text-align: left;
+}
+ 
+.flex_text { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.middle_text {
+padding: 70px 50px;
+color: #edeefd;
+background-color: #1005e5;
+}
 
 }
 
