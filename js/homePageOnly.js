@@ -1,4 +1,5 @@
 // We are creating 
+const arrowcha = document.querySelector('.arrow')
 const mainDiv = document.querySelector('.section-container')
 const dynamicContainer = document.querySelector('.dynamicContainer')
 
@@ -660,6 +661,7 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.2 // 500 < 500 + 100
   ) {
     console.log('page 2')
+
     dynamicContainer.style.opacity = 1
     linkImageSource(linkImageResult2_1, linkImageResult2_2, linkImageResult2_3)
     hideLinkButtons(false)
@@ -788,6 +790,7 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <=
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.2
   ) {
+    arrowcha.style.display = 'block'
     console.log('page 3')
     dynamicContainer.style.opacity = 1
     linkImageSource(linkImageResult3_1, linkImageResult3_2, linkImageResult3_3)
@@ -936,6 +939,7 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight >=
     page1.scrollHeight + page2.scrollHeight + page3.scrollHeight
   ) {
+    arrowcha.style.display = 'none'
     console.log('Page 4')
     dynamicContainer.style.opacity = 1
     linkImageSource(linkImageResult4_1, linkImageResult4_2, linkImageResult4_3)
