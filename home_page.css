@@ -451,6 +451,10 @@ header {
 
 @media only screen and (min-width: 600px) {
 
+  .arrow {
+    opacity: 0;
+  }
+
   .reveal_in_desktop {
     display: block;
   }
@@ -469,6 +473,7 @@ header {
     display: none;
   }
 
+  
   body {
     overflow: scroll;
     font-size: 32px;
@@ -849,7 +854,7 @@ background-color: #1005e5;
   font-size: 25px;
 
   color: rgb(33, 3, 234);
-  animation: updown 1.5s ease infinite;
+  animation: updown 4s ease infinite;
 }
 
 @keyframes updown {
