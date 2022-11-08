@@ -711,17 +711,71 @@ header {
 
 
 .seventhSection {
-  background-color: #21201d;
+ 
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-color: #0325a2dd;
   color: white ;
   display: flex;
-  flex-direction: row;
-  gap: 180px;
+  flex-direction: column;
+  gap: 90px;
   justify-content: space-around;
   letter-spacing: 1.2px;
   padding: 100px 150px;
+
+  
 }
 
+.seventhSection .menu_container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between;
+ 
+}
 
+.seventhSection .menu_container ul {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-left: 1px solid cyan;
+  line-height: 30px;
+}
+
+.seventhSection .menu_container ul li a {
+  color: white;
+} 
+
+.seventhSection .menu_container ul li:first-child {
+  color: cyan;
+} 
+
+.seventhSection .contact_ons {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.seventhSection .contact_ons .rowFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  justify-content: space-between;
+}
+
+.seventhSection .contact_ons img {
+  width: 250px;
+  margin-left: -30px;
+  margin-bottom: 20px;
+}
+
+.contact_ons .direct_contact {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  justify-content: space-between;
+}
 
 
 
