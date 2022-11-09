@@ -530,7 +530,7 @@ header {
 
   .round_buttons_container {
     position: relative;
-    margin-top: -60px;
+    margin-top: -80px;
     color: #17028a;
     display: flex;
     flex-direction: row;
@@ -540,8 +540,8 @@ header {
 
   .round_buttons_container p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    
+    font-weight: 600;
+    font-size: 22px;
     margin: auto;
     letter-spacing: normal;
   }
@@ -550,12 +550,17 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    padding: 20px;
+    border-radius: 25px;
   }
 
   .round_buttons_container img {
     width: 100px;
     margin: auto;
+  }
+
+  .round_buttons_container div:hover {
+    background-color: #f5e683;
   }
 
 .firstSection {
@@ -686,12 +691,16 @@ header {
   color: #17028a;
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  gap: 180px;
   justify-content: space-around;
   letter-spacing: 1.2px;
   padding: 100px 150px;
 }
 
+.fifthSection img {
+  width: 800px;
+  border-radius: 25px;
+}
 
 .sixthSection {
   background-color: rgb(233, 233, 233);
@@ -714,7 +723,7 @@ header {
  
   overflow: hidden;
   background-repeat: no-repeat;
-  background-color: #0325a2dd;
+  background-color: #102f9ddd;
   color: white ;
   display: flex;
   flex-direction: column;
@@ -737,7 +746,7 @@ header {
 .seventhSection .menu_container ul {
   padding: 10px 20px;
   font-size: 16px;
-  border-left: 1px solid cyan;
+  border-left: 0.05px solid rgba(0, 255, 255, 0.532);
   line-height: 30px;
 }
 
@@ -747,6 +756,7 @@ header {
 
 .seventhSection .menu_container ul li:first-child {
   color: cyan;
+  font-weight: 600;
 } 
 
 .seventhSection .contact_ons {
@@ -773,11 +783,33 @@ header {
 .contact_ons .direct_contact {
   display: flex;
   flex-direction: row;
-  gap: 3px;
-  justify-content: space-between;
+  gap: 100px;
+  /* justify-content: space-between; */
+   
 }
 
+.direct_contact h6 {
 
+  padding: 7px 12px;
+  /* background-color: #056f87; */
+}
+.social_network_icons {
+  margin-top: -7px;
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+
+.social_network_icons i {
+  padding: 7px 12px;
+}
+.social_network_icons i:hover {
+  background-color: #056f87;
+  border-radius: 10px;
+}
 
 
   header {
@@ -877,7 +909,7 @@ header .end {
     margin-right: 3px;
 }
 
-.end a span:hover  {
+.end a:nth-child(1):hover  {
     color: rgb(255, 255, 255);
     border-radius: 20px;
     background-color: #ff4d00;
