@@ -560,7 +560,7 @@ header {
   }
 
   .round_buttons_container div:hover {
-    background-color: #f5e683;
+    background-color: #c0a91189;
   }
 
 .firstSection {
@@ -738,13 +738,13 @@ header {
 .seventhSection .menu_container {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 10px;
   justify-content: space-between;
  
 }
 
 .seventhSection .menu_container ul {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   font-size: 16px;
   border-left: 0.05px solid rgba(0, 255, 255, 0.532);
   line-height: 30px;
@@ -753,10 +753,28 @@ header {
 .seventhSection .menu_container ul li a {
   color: white;
 } 
+ 
+
+.seventhSection .menu_container ul li a {
+  padding: 10px 20px;
+
+}
+.seventhSection .menu_container ul li a:hover {
+  /* letter-spacing: 0.12rem;
+  transition:  letter-spacing 0.4s ease-in-out; */
+  color: rgb(0, 0, 0) !important;
+  background: #e1f791 !important;
+} 
 
 .seventhSection .menu_container ul li:first-child {
-  color: cyan;
+  color: rgb(254, 243, 141);
   font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 20px;
+} 
+
+.seventhSection .menu_container ul:first-child:hover {
+  background-color: none;
 } 
 
 .seventhSection .contact_ons {
@@ -785,11 +803,11 @@ header {
   flex-direction: row;
   gap: 100px;
   /* justify-content: space-between; */
-   
 }
 
-.direct_contact h6 {
 
+.direct_contact h6 {
+  font-weight: 400;
   padding: 7px 12px;
   /* background-color: #056f87; */
 }
@@ -799,7 +817,7 @@ header {
   font-size: 30px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 2px;
   
 }
 
@@ -807,7 +825,7 @@ header {
   padding: 7px 12px;
 }
 .social_network_icons i:hover {
-  background-color: #056f87;
+  background-color: #f7950b;
   border-radius: 10px;
 }
 
@@ -815,7 +833,7 @@ header {
   header {
     padding: 5px 0px;
     /* background-color: #013e5f6b; */
-    background-color: #424343a3;
+    background-color: #102f9ddd;
     align-self: center;
     align-items: center;
     width: 100%;
