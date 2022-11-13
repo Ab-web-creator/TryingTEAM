@@ -1005,7 +1005,7 @@ background-color: #1005e5;
 .arrow {
   position: absolute;
   display: block;
-  bottom: -15px;
+  bottom: -25px;
   left: 46%;
   transform: translate(-50%);
   height: 50px;
