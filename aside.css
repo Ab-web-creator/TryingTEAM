@@ -255,7 +255,7 @@ aside button.close_sideMenuBar {
     display: flex;
     justify-content: space-between;
     padding: 8px 10px;
-    background-color: rgb(70, 64, 2);   
+    background-color: #09024a;   
     border-radius: 0 0 0 0;
    
     /* right: 0; */
@@ -294,7 +294,7 @@ aside button.close_sideMenuBar {
     top: 0px;
     width: 400px;
   
-    background-color: rgb(70, 64, 2);   
+    background-color: #09024a;   
     padding-top: 0px;
     /* padding-left: 30px;
     padding-right: 20px; */
