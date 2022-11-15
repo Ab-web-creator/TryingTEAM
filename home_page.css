@@ -851,8 +851,25 @@ text-align: center;
   padding: 100px 100px;
 }
 
-.secondSection .heading {
+.desktop_headings {
   text-align: center;
+  /* font-weight: 600; */
+  /* font-size: 70px; */
+  text-transform: uppercase;
+
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid rgb(180, 2, 2); 
+  border-top: 1px solid rgb(180, 2, 2); 
+
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+
+}
+
+.desktop_headings span {
+  background: white; 
+  padding: 0 10px; 
 }
 
 .secondSection .container {
