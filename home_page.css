@@ -860,7 +860,7 @@ text-align: center;
   width: 100%; 
   text-align: center; 
   border-bottom: 1px solid rgb(180, 2, 2); 
-  border-top: 1px solid rgb(180, 2, 2); 
+  /* border-top: 1px solid rgb(180, 2, 2);  */
 
   line-height: 0.1em;
   margin: 10px 0 20px; 
@@ -1019,9 +1019,13 @@ margin: auto;
 
 .seventhSection .menu_container ul {
   /* padding: 10px 20px; */
-  border-left: 0.05px solid rgba(0, 255, 255, 0.532);
+  /* border-left: 0.05px solid rgba(0, 255, 255, 0.532); */
   line-height: 25px;
   font-size: 12px;
+}
+
+.seventhSection .menu_container ul li {
+  border-left: 0.05px solid rgba(0, 255, 255, 0.532);
 }
 
 .seventhSection .menu_container ul li a {
@@ -1046,8 +1050,8 @@ margin: auto;
 .seventhSection .menu_container ul p {
   color: rgb(254, 243, 141);
   font-weight: 600;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 0.05px solid rgba(0, 255, 255, 0.532);
 } 
 
 .seventhSection .menu_container ul:first-child:hover {
@@ -1183,9 +1187,6 @@ background-color: #1005e5;
     margin-top: -80px;
     padding: 0px 50px;
   }
-
-
-
 }
 
 @media only screen and (min-width: 992px) {
@@ -1195,11 +1196,6 @@ background-color: #1005e5;
 @media only screen and (min-width: 1200px) {
 
 }
-
-
-
-
-
 
 
 .mobile_header {
