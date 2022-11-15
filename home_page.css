@@ -531,20 +531,19 @@ header {
   }
 
   .desktop_logo img {
-    
     width: 0px;
     /* height: 30px; */
 }
-
-.fancy-link .proefless {
-padding-left: 20px;
-}
+ 
 
 .fancy-link li {
 justify-content: center;
 padding: 0px 15px;
 padding-right: 35px;
-
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-right: 10px;
 }
 
 .fancy-link li a {
@@ -562,13 +561,7 @@ padding-right: 35px;
     transition: all 500ms ease-in-out;
 }
 
-.fancy-link li {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  margin-right: 20px;
-}
+ 
 
 .fancy-link li a i {
   position: absolute;
@@ -577,11 +570,10 @@ padding-right: 35px;
   
 }
 
-
 header nav ul {
     display: flex;
     flex-direction: row;
-    margin: auto;
+    /* margin: auto; */
     font-size: 14px;
 }
 
@@ -749,6 +741,10 @@ ol > li::before {
     text-align: center;
     top: 200px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  a {
+    color: #17028a;
   }
 
   .round_buttons_container {
@@ -991,7 +987,7 @@ margin: auto;
   justify-content: space-around;
   letter-spacing: 1.2px;
   line-height: 12px;
-  padding: 100px 100px;
+  padding: 100px 30px;
 
   
 }
@@ -1006,10 +1002,9 @@ margin: auto;
 
 .seventhSection .menu_container ul {
   /* padding: 10px 20px; */
-  font-size: 16px;
   border-left: 0.05px solid rgba(0, 255, 255, 0.532);
   line-height: 15px;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .seventhSection .menu_container ul li a {
