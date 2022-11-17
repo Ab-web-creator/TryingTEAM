@@ -1,3 +1,180 @@
+
+@media only screen and (min-width: 768px) {
+  .desktop_logo img {
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+
+  .firstBG {
+    height: 500px;
+  }
+
+  .firstBG img {
+    display: block;
+    top: 220px;
+  }
+
+  .round_buttons_container img {
+    width: 100px;
+  }
+
+  .round_buttons_container {
+    margin-top: -80px;
+    padding: 0px 50px;
+    margin-bottom: 50px;
+  }
+
+  .firstSection {
+   
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+  
+      padding: 0px 50px;
+      margin-bottom: 70px;
+  }
+
+  .next_to_eachOther {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+  }
+
+  .firstSection .img_container {
+    width: 45%;
+  }
+  .firstSection .img_container img {
+    border-radius: 25px;
+    /* width: 45%; */
+  }
+
+  .text_container1 {
+    margin-bottom: 30px;
+    width: 45%;
+  }
+
+  .firstSection ol > li {
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .can_removed {
+    display: none;
+  }
+
+  .text_container2 {
+    font-size: 24px;
+  }
+
+  .secondSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    /* margin: auto; */
+    padding: 100px 50px;
+  }
+
+  .desktop_headings {
+    font-size: 26px;
+  }
+
+  .secondSection ol li {
+    font-size: 16px;
+  }
+
+  .next_to_eachOther_reversed {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    justify-content: space-around;
+  }
+
+  .secondSection .img_container {
+    margin-top: 0px;
+    width: 45%;
+  }
+
+  .secondSection .img_container img {
+    margin-top: 0px;
+  }
+
+  .secondSection ol > li {
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .twoColumnText {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    width: 45%;
+  }
+
+  .container_2 {
+    font-size: 16px;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  .container_2 .first_col {
+    width: 45%;
+    
+  }
+
+  .container_2 .second_col {
+    width: 45%;
+    
+    float: right;
+  }
+
+
+
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  .firstSection .desktop_headings span {
+    background-color: #a6d10b;
+  }
+
+  .can_removed {
+    display: block;
+  }
+
+  .text_container1, .text_container2 {
+    font-size: 26px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 1643px) {
 
     .arrow {
