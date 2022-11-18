@@ -205,6 +205,11 @@
           <p> <span>TEAM Rijopleiding</span></p>
         </div>
 
+        <div id="container_delete">
+          <div id="first_words">Width of the page:</div>
+          <div id="screen_width">Kur</div>
+        </div>
+       
       <div class="next_to_eachOther">
       <div class="text_container1">
         <ol> 
@@ -504,6 +509,16 @@
   <script src="js/homePageOnly.js"></script>
   <script src="js/expand_submenus.js"></script>
   <script src="js/openAndClose_sidemenu.js"></script> 
+
+  <script>
+
+  const display = document.querySelector("#screen_width");
+
+  window.onresize = function reportWindowSize() {
+    display.textContent = `${window.innerWidth} px`;
+    };
+
+  </script>
     
 </body>
 </html>
