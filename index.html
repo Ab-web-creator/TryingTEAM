@@ -155,7 +155,7 @@
 
 <header>
   <div class="desktop_logo">
-    <li ><img src="images/logo.png" alt=""></li>
+    <li > <a href="index.html"> <img src="./images/logo.png" alt=""></a></li>
   </div>
  
   <nav class="fancy-link">
@@ -204,8 +204,7 @@
         </div>
 
         <div id="container_delete">
-          <div id="first_words">Width of the page:</div>
-          <div id="screen_width">Nota Bene</div>
+          <div id="screen_width">resize for result</div>
         </div>
        
       <div class="next_to_eachOther">
@@ -235,7 +234,7 @@
 
         <div class="text_container2">
           <li>Gratis proefles? </li> 
-          <li style="cursor: pointer;"><a href="tel:+31638666193">Bel of App nu: 06 - 15 07 49 40  </a></li>
+          <li><a href="tel:+31638666193">Bel of App nu: 06 - 15 07 49 40  </a></li>
         </div>
     </section>
 
@@ -296,7 +295,7 @@
                   Vind je dingen moeilijk of heel spannend, dan kun je  alles op je gemak leren en stap je met veel meer vertrouwen in de lesauto.
               </li><br>
               <li> Nu al interesse? <br>
-                <a href="tel:+31638666193" style="color: white;">Klik <span style="color: rgb(238, 238, 238);">hier</span>  voor de proefles!</a>
+                <a href="tel:+31638666193" style="color: white;">Klik  hier voor de proefles!</a>
             </li>
             </div>
       </div>
@@ -320,7 +319,7 @@
           <li>  2 Apps, 1 voor de training van de voorrangsregels en 1 voor de verkeersborden.</li>
         </ol>
         <li> Begin meteen! </li>
-        <li> Klik hier voor de proefles!</li>
+        <li> <a href="tel:+31638666193">Klik hier voor de proefles!</a></li>
       </div>
 
       <div class="img_container">
@@ -355,7 +354,8 @@
     <div class="put_it_center">
       <li>Team is hiermee de groenste rijschool van Nederland.</li>
       <li> Verbeter jezelf én de wereld!</li>
-      <li>Klik hier voor de proefles!</li>
+      <li> <a href="tel:+31638666193">Klik hier voor de proefles!</a></li>
+
     </div>
   </div>
   </section>
@@ -385,7 +385,7 @@
 
       <div class="put_it_center">
         <li> Voor meer informatie over de rijles klik hier.</li>
-         <li> Óf klik hier voor de proefles!</li>
+        <li> <a href="tel:+31638666193">Klik hier voor de proefles!</a></li>
       </div>
     </div>
     </section>
@@ -394,7 +394,7 @@
     <section class="sixthSection"  >
       <div class="will_it_work">
       <div class="desktop_headings">
-        <p> <span style="background-color: rgb(233, 233, 233);">AD(H)D of angst? </span> </p>
+        <p> <span style="background-color: rgb(218, 218, 218);">AD(H)D of angst? </span> </p>
       </div>
 
       <div class="next_to_eachOther_reversed">
@@ -409,7 +409,7 @@
               <li>Autisme<br></li>
               <li>Psychoses</li>
             </ol>
-          <li class="add_margin_top"> Klik hier voor de proefles! </li>
+          <li class="add_margin_top"> <a href="tel:+31638666193"> Klik hier voor de proefles! </a></li>
         </div>
       
         <div class="img_container">
@@ -482,14 +482,14 @@
 
         <div class="gegevens">
           <div class="direct_contact">
-            <li class="direct_contact_with">Direct contact!  <a href="tel:+31638666193">Whatsapp: 06-15074940,  </a>  <a href="tel:+31638666193"> bel: 06-15074940, </a> 
-              <br> <a href="mailto:diederickv@gmail.com"> email: info@team-rijopleiding.nl </a></li>
+            <li class="direct_contact_with">Direct contact! <a href="tel:+31638666193">Whatsapp: 06-15074940,  </a>  <a href="tel:+31638666193"> bel: 06-15074940, </a> </li>
+            <li>email: <a href="mailto:diederickv@gmail.com">info@team-rijopleiding.nl</a></li>
           </div>
 
-          <div class="direct_contact">
-            <li>Uiterdijksehof 39<br>
-              1394JL<br>
-              Nederhorst den Berg
+          <div class="direct_contact address">
+            <li>Uiterdijksehof 39</li>
+             <li> 1394JL </li>
+             <li> Nederhorst den Berg
             </li>
           </div>
       </div>
@@ -519,12 +519,13 @@
 
   <script>
 
-  const display = document.querySelector("#screen_width");
-
+  const pageWidth = document.querySelector("#screen_width");
+  
   window.onresize = function reportWindowSize() {
-    display.textContent = `${window.innerWidth} px`;
+    pageWidth.textContent = `${window.innerWidth} px`;
     };
 
+  
   </script>
     
 </body>

@@ -511,7 +511,7 @@ header {
     left: 100px;
     width: 200px;
     height: 100px;
-    background-color: #e1f7913e;
+    /* background-color: #e1f7913e; */
     z-index: 10000;
     display: flex;
     flex-direction: column;
@@ -519,19 +519,15 @@ header {
     font-size: 18px;
     color:#1005e5;
     border-radius: 10px;
-    border: 3px solid red;
+    /* border: 3px solid rgba(255, 0, 0, 0.23); */
   }
-  #first_words {
-    text-align: center;
-    padding: 10px 10px;
-    font-size: 14px;
-  }
+
   #screen_width {
     color: rgb(2, 19, 255);
     margin: auto;
     margin-top: 20px;
     padding: 10px 10px;
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.395);
     border-radius: 10px;
   }
 
@@ -572,7 +568,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
 }
 
 .fancy-link li {
@@ -692,6 +687,11 @@ header .end a i {
     font-size: 24px;
   }
   
+  .desktop_logo:hover  {
+    border-radius: 30px;
+    background-color: #ff4d00;
+    transition: all 500ms ease-in-out;
+  }
 
 ol {
   /* counter-reset: foo; */
@@ -929,7 +929,7 @@ margin-right: auto;
 }
 
 .sixthSection {
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(218, 218, 218);
   font-size: 20px;
   font-weight: 600;
 }
@@ -995,11 +995,14 @@ margin-right: auto;
 .seventhSection .menu_container ul li:hover {
   color: rgb(0, 0, 0) !important;
   background: #e1f791 !important;
+  transition:  all 0.4s ease-in-out;
+  border-radius: 0px 5px 5px 0px;
 } 
-.seventhSection .menu_container ul li a:hover {
+
+/* .seventhSection .menu_container ul li a:hover {
   transition:  color 0.4s ease-in-out;
   color: rgb(0, 0, 0) !important;
-} 
+}  */
 
 .seventhSection .menu_container ul p {
   color: rgb(254, 243, 141);
@@ -1020,7 +1023,7 @@ margin-right: auto;
 }
 
 .seventhSection .contacting_part li {
-  line-height: 20px;
+  line-height: 5px;
 }
 
 /* .contacting_part {
@@ -1040,29 +1043,59 @@ margin-right: auto;
 .direct_contact a {
   color: white;
   cursor: pointer;
+  padding: 4px 6px;
 }
 
-.contacting_part {
-
+.direct_contact a:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0) !important;
+  background: #e1f791 !important;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
 }
 
+.conntainer li a:hover {
+  cursor: pointer;
+  color: rgb(88, 59, 1);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.firstSection li a:hover, .thirdSection li a:hover,
+.fifthSection li a:hover,
+.sixthSection li a:hover {
+  color: rgb(35, 68, 234) !important;
+  text-shadow: 2px 2px 4px #f8b816;
+  transition: all 0.4s ease-in-out;
+}
+
+.conntainer .secondSection li a:hover {
+  color: rgb(255, 205, 107) !important;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.conntainer .fourthSection li a:hover {
+  color: rgb(255, 205, 107) !important;
+}
+
+.gegevens {
+  border-left: 0.05px solid rgba(0, 255, 255, 0.532);
+}
 
 .direct_contact {
-  line-height: 14px;
   font-size: 12px;
   padding-left: 10px;
   color: white;
-
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-
-  border-left: 0.05px solid rgba(0, 255, 255, 0.532);
+ 
 }
 
 .direct_contact li {
   font-weight: 400;
   padding: 7px 0px;
+}
+
+
+.address {
+  margin-top: 35px;
 }
 
 .social_network_icons {
@@ -1174,6 +1207,15 @@ section img {
     line-height: 20px;
     font-size: 16px;
   }
+
+  .gegevens {
+    margin-top: 80px;
+  }
+
+  .gegevens .direct_contact li {
+    line-height: 15px;
+  }
+
 }
 
 @media only screen and (min-width: 802px) {
