@@ -105,12 +105,6 @@
   <div class="blur2"></div>
   <!-- <figure class="active"></figure> -->
 
-  <div class="delete_laterrr">
-    <button>Click to get the sizes</button>
-    <div id="windowSize"></div>
-    <div id="contentSize"></div>
-    <div id="screenSize"></div>
-  </div>
 
   <div id="arrow" class="arrow"><img src="images/arrow-icon-white.png" alt=""></div>
 </div>   
@@ -541,18 +535,6 @@
   </script>
 
 
-  <script>
-    let btn = document.querySelector('button');
-    let screenSize = document.querySelector('#screenSize');
-    let windowSize = document.querySelector('#windowSize');
-    let contentSize = document.querySelector('#contentSize');
-
-    btn.addEventListener('click', () => {
-      screenSize.innerText = `Screen height: ${screen.height}. Screen width: ${screen.width}.`
-      windowSize.innerText = `window height: ${window.outerHeight}. window width: ${window.outerWidth}.`
-      contentSize.innerText = `content height: ${window.innerHeight}. Content width: ${window.innerWidth}.`
-    })
-  </script>
 
     
 </body>
