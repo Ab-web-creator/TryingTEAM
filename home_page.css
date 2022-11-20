@@ -67,14 +67,13 @@ body {
 /* The top-bar  */
 
 .mobile_header {
+  position: fixed;
   opacity: 1;
   padding: 5px 0px;
-  position: fixed;
   top: 0;
-  height: 40px;
-
-  z-index: 10;
   width: 100%;
+  height: 40px;
+  z-index: 10;
 
   display: flex;
   flex-direction: row;
@@ -131,6 +130,7 @@ body {
   backdrop-filter: blur(4px);
   background-color: #393c416e;
 }
+
 .blurCompletely {
   position: fixed;
   width: 100%;
@@ -152,20 +152,8 @@ body {
   height: 10px;
 }
 
-
-
-
 .active-gif {
   z-index: 300;
-}
-
-
-#arrow img {
-  /* position: absolute; */
-  
-  width: 28px;
-  height: 25px;  
-  z-index: 2;
 }
 
 .arrow {
@@ -179,6 +167,12 @@ body {
 
   color: rgb(33, 3, 234);
   animation: updown 4s ease infinite;
+}
+
+#arrow img {
+  width: 28px;
+  height: 25px;  
+  z-index: 2;
 }
 
 @keyframes updown {
@@ -790,15 +784,18 @@ ol > li::before {
     padding: 20px;
     border-radius: 25px;
   }
+ 
 
   .round_buttons_container img {
     width: 50px;
     margin: auto;
+   
   }
 
   .round_buttons_container div:hover {
     /* background-color: #c0a91189; */
-    cursor:  e-resize;
+    color: red;
+    /* cursor:  e-resize; */
   }
 
   section {
@@ -998,17 +995,18 @@ margin-right: auto;
 .seventhSection .menu_container ul li a {
   padding: 5px 10px;
 }
+
 .seventhSection .menu_container ul li:hover {
-  color: rgb(0, 0, 0) !important;
+  color: rgb(3, 32, 107) !important;
   background: #e1f791 !important;
   transition:  all 0.4s ease-in-out;
   border-radius: 0px 5px 5px 0px;
 } 
 
-/* .seventhSection .menu_container ul li a:hover {
-  transition:  color 0.4s ease-in-out;
-  color: rgb(0, 0, 0) !important;
-}  */
+.seventhSection .menu_container ul li a:hover {
+  color: rgb(3, 32, 107);
+  transition:  all 0.4s ease-in-out;
+} 
 
 .seventhSection .menu_container ul p {
   color: rgb(254, 243, 141);
@@ -1063,14 +1061,13 @@ margin-right: auto;
 .conntainer li a:hover {
   cursor: pointer;
   color: rgb(88, 59, 1);
-  text-shadow: 2px 2px 4px #000000;
 }
 
 .firstSection li a:hover, .thirdSection li a:hover,
 .fifthSection li a:hover,
 .sixthSection li a:hover {
-  color: rgb(35, 68, 234) !important;
-  text-shadow: 2px 2px 4px #f8b816;
+  color: rgb(88, 59, 1) !important;
+  text-shadow: 2px 2px 4px #f6f6c2;
   transition: all 0.4s ease-in-out;
 }
 
@@ -1081,6 +1078,7 @@ margin-right: auto;
 
 .conntainer .fourthSection li a:hover {
   color: rgb(255, 205, 107) !important;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .gegevens {
