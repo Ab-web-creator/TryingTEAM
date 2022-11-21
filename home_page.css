@@ -74,6 +74,7 @@ body {
   width: 100%;
   height: 40px;
   z-index: 10;
+  background-color: rgb(255, 255, 255);
 
   display: flex;
   flex-direction: row;
@@ -414,7 +415,7 @@ section.page {
 
 
 /* For other pages  */
-figure {
+/* figure {
   top: 50px;
   right: -62px;
   position: fixed;
@@ -462,21 +463,26 @@ figure.active {
 
 .other_pages .sarlavha_with_bg {
   background-color: #edeefd;
-  margin-top: 55px;
   padding: 10px 10px;
   /* margin-bottom: 30px; */
-  font-size: 33px;
+  /* font-size: 33px;
   letter-spacing: 1.7px;
   border-top: 4px double #818bf91a;
-}
-
+} */
+/* 
 footer p {
   font-size: 8px;
   background-color: #8f8f8f;
   color: #17028a;
   padding: 10px 20px;
   text-align: center;
-}
+}  */
+
+
+
+
+
+
 
 .phone_number {
   display: none;
@@ -1741,8 +1747,12 @@ header {
 
 /* other-pages in desktup version  */
 
-.other_pages .sarlavha_with_bg  {
-  margin-top: 120px;
+
+/* 
+.other_pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .flex_container {
@@ -1751,16 +1761,19 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 200px;
+  gap: 100px;
 }
 
 .sarlavha_with_bg h4 {
   font-size: 50px;
 }
 
+.photo_for_each_page {
+  margin: auto;
+  padding: 50px 50px;
+}
 .photo_for_each_page img {
   max-width: 400px;
-  text-align: left;
 }
  
 .flex_text { 
@@ -1775,15 +1788,11 @@ padding: 70px 50px;
 color: #edeefd;
 background-color: #1005e5;
 }
+ */
 
 
 
 
-
-
-.mobile_header {
-  background-color: rgb(255, 255, 255);
-}
 
 /* 
 
