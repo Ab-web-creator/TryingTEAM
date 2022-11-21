@@ -101,20 +101,16 @@ header {
 
 /* a Note: Hamburger menu is in aside.css */
 
+
+
+
 /* For the desktop version  */
-
-
-
-/* ------------------------------------ ******************* ------------------------------------ */
-
 
 @media only screen and (min-width: 600px) {
   figure {
     display: none;
   }
 }
-
-
 
 @media only screen and (min-width: 726px) {
 }
@@ -162,8 +158,6 @@ header {
     display: flex;
     flex-direction: column;
   }
-  
-   
 }
 
 @media only screen and (min-width: 1000px) {
