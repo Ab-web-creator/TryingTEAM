@@ -1123,16 +1123,22 @@ margin-right: auto;
   color: rgb(122, 120, 120);
   background-color: rgb(27, 27, 27);
   width: 100%;
-  height: 40px;
+  height: fit-content;
+  font-size: 14px;
+
   display: flex;
   justify-content: center;
 }
 
 .black p {
   margin: auto;
-  font-size: 9px;
+ 
   text-align: center;
-  padding: 5px;
+  padding: 20px 50px;
+}
+
+.black a {
+  color: rgb(122, 120, 120);
 }
 
 }
@@ -1352,6 +1358,10 @@ section img {
     margin-top: 0px;
   }
 
+  .secondSection .twoColumnText ol {
+    padding: 10px 0px;
+  }
+
   .secondSection ol > li {
     padding-left: 30px;
     font-size: 22px;
@@ -1549,7 +1559,14 @@ section img {
 
   .secondSection .twoColumnText {
     width: 450px;
-    line-height: 40px;
+    line-height: 30px;
+  }
+  .secondSection .twoColumnText li {
+    line-height: 30px;
+  }
+
+  .secondSection .twoColumnText ol {
+    padding: 20px 0px;
   }
 
   .secondSection .first_col {
@@ -1664,6 +1681,10 @@ header {
 .secondSection .img_container {
   width: 430px;
   margin-top: 0px;
+}
+
+.secondSection .twoColumnText ol {
+  padding: 15px 0px;
 }
 
 .thirdSection .will_it_work {

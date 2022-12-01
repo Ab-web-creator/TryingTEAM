@@ -22,6 +22,7 @@ figure.active {
 
 .photo_for_each_page {
   /* background-color: #b95e5e; */
+  width: 100%;
   margin: auto;
   margin-top: 80px;
 }
@@ -30,6 +31,7 @@ figure.active {
   padding: 20px 0px;
   position: relative;
   margin: auto;
+  width: 100%;
 }
 
 .sarlavha_with_bg {
@@ -111,7 +113,6 @@ header {
     display: none;
   }
 
-
 .photo_for_each_page {
   /* background-color: #b95e5e; */
   width: 400px;
@@ -122,7 +123,6 @@ header {
 .photo_for_each_page img {
   padding: 20px 0px;
   position: relative;
-  width: 100%;
 }
 }
 
@@ -138,7 +138,7 @@ header {
 @media only screen and (min-width: 880px) {
 
   .photo_for_each_page {
-    width: 70%;
+    width: 50%;
     margin: auto;
     margin-top: 80px;
   }
