@@ -861,6 +861,7 @@ ol > li::before {
 .text_container1 li {
   font-size: 20px;
   margin-bottom: 8px;
+  /* font-weight: 600; */
 }
 
 .text_container2 {
