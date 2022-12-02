@@ -61,7 +61,6 @@ html,
 body {
   height: 100vh;
   overflow: hidden;
-  
 }
 
 
@@ -164,7 +163,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  bottom: -11px;
+  bottom: -9px;
 }
 
 .arrow {
