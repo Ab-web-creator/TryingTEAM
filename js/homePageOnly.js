@@ -28,6 +28,7 @@ const page4 = document.getElementById('page-4')
 const page5 = document.getElementById('page-5')
 const page6 = document.getElementById('page-6')
 
+
 let basisImageDisplay = true
 // let startImageDisplay = false
 // let stopImageDisplay = false
@@ -517,6 +518,7 @@ mainButton.addEventListener('click', (e) => {
       }, 2050)
     }
   }
+
 })
 
 
@@ -965,8 +967,85 @@ mainDiv.addEventListener('scroll', () => {
     sectionTwoView = false
     sectionThreeView = false
     sectionFourView = true
+
+    //pastda qo'shadigan joyga qo'sh
+    dynamicContainer.style.display = 'block'
+    mainButton.style.display = 'block'
+    blueZoneContainer.style.display = 'block'
   }
+
+
+
+
+  if (
+    scrolledHeight >=
+    page1.scrollHeight + page2.scrollHeight + page3.scrollHeight + page4.scrollHeight
+  ) {
+    arrowcha.style.display = 'none'
+    console.log('Page 5')
+    dynamicContainer.style.display = 'block'
+
+    blueZoneContainer.style.display = 'none'
+    mainButton.style.display = 'none'
+
+    linkImageSource(linkImageResult4_1, linkImageResult4_2, linkImageResult4_3)
+    hideLinkButtons(false)
+    resetDescriptions()
+    setCloseButtonPositions(-240, -220, -200)
+    pageHeader.innerText = 'Wie ben ik?'
+
+    basisImageDisplay = false
+
+    basis.src = basisMenuUrlPage4
+    basis.style.zIndex = 2
+
+    sectionOneView = false
+    sectionTwoView = false
+    sectionThreeView = false
+    sectionFourView = false
+    sectionFiveView = true
+  }
+
+
+
+  if (
+    scrolledHeight >=
+    page1.scrollHeight + page2.scrollHeight + page3.scrollHeight + page4.scrollHeight + page5.scrollHeight
+  ) {
+    arrowcha.style.display = 'none'
+    console.log('Page 6')
+    dynamicContainer.style.display = 'none'
+    mainButton.style.display = 'none'
+
+    linkImageSource(linkImageResult4_1, linkImageResult4_2, linkImageResult4_3)
+    hideLinkButtons(false)
+    resetDescriptions()
+    setCloseButtonPositions(-240, -220, -200)
+    
+
+    basisImageDisplay = false
+
+    basis.src = basisMenuUrlPage4
+    basis.style.zIndex = 2
+
+    sectionOneView = false
+    sectionTwoView = false
+    sectionThreeView = false
+    sectionFourView = false
+    sectionFiveView = false
+    sectionSixView = true
+  }
+
+
+
+
 })
+
+
+
+
+
+
 
 
 function hideLinkButtons(buttonStatus) {

@@ -248,6 +248,33 @@ section.page {
   background-size: cover;
 }
 
+#page-4 {
+  background-image: url(images/mainpage_4_mobile.jpg);
+  background-size: cover;
+}
+
+#page-6 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#page-6 h1 {
+  position: absolute;
+  margin: auto;
+  top: 200px;
+  color: white;
+}
+
+#page-6 p {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  top: 300px;
+  color: white;
+}
+
 .dynamicContainer {
   position: absolute;
   height: 100%;
