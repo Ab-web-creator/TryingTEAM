@@ -19,13 +19,14 @@ const basis = document.querySelector('.basis')
 const start = document.querySelector('.start')
 const stop = document.querySelector('.stop')
 
-// Слово blueZoneImage больше нигде нет, для чего создано?
-// const blueZoneImage = document.querySelector('.blueZoneImage')
-
 const page1 = document.getElementById('page-1')
 const page2 = document.getElementById('page-2')
 const page3 = document.getElementById('page-3')
 const page4 = document.getElementById('page-4')
+
+//adding
+const page5 = document.getElementById('page-5')
+const page6 = document.getElementById('page-6')
 
 let basisImageDisplay = true
 // let startImageDisplay = false
@@ -35,6 +36,11 @@ let sectionOneView = true
 let sectionTwoView = false
 let sectionThreeView = false
 let sectionFourView = false
+
+//adding
+let sectionFiveView = false
+let sectionSixView = false
+
 
 let basisMenuUrlPage1 = `./images/1_basis.gif`
 let basisMenuUrlPage2 = `./images/2_basis.gif`
@@ -172,8 +178,6 @@ linkButton1.addEventListener('click', (e) => {
   }
   
 })
-
-
 
 linkButton2.addEventListener('click', () => {
   blur2.style.display = 'block'
@@ -515,6 +519,7 @@ mainButton.addEventListener('click', (e) => {
   }
 })
 
+
 // Scrolling
 
 mainDiv.addEventListener('scroll', () => {
@@ -656,11 +661,12 @@ mainDiv.addEventListener('scroll', () => {
     console.log('9')
   }
 
+
   if (
     scrolledHeight >= page1.scrollHeight &&
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.2 // 500 < 500 + 100
   ) {
-    console.log('page 2')
+    console.log('Page 2')
 
     dynamicContainer.style.opacity = 1
     linkImageSource(linkImageResult2_1, linkImageResult2_2, linkImageResult2_3)
@@ -785,13 +791,15 @@ mainDiv.addEventListener('scroll', () => {
     resetDescriptions()
   }
 
+
+  
   if (
     scrolledHeight >= page1.scrollHeight + page2.scrollHeight &&
     scrolledHeight <=
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.2
   ) {
     arrowcha.style.display = 'block'
-    console.log('page 3')
+    console.log('Page 3')
     dynamicContainer.style.opacity = 1
     linkImageSource(linkImageResult3_1, linkImageResult3_2, linkImageResult3_3)
     hideLinkButtons(false)
@@ -959,6 +967,7 @@ mainDiv.addEventListener('scroll', () => {
     sectionFourView = true
   }
 })
+
 
 function hideLinkButtons(buttonStatus) {
   if (buttonStatus == true) {

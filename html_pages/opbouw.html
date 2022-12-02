@@ -124,6 +124,13 @@ ontouchend="touchEnd()">
 
 <div class="other_pages">
 
+  <div id="container_delete">
+    <div class="first"><p ></p></div>
+    <div id="screen_width">resize for result</div>
+    <!-- <div class="first"><p >Screen Height</p></div>
+    <div id="screen_height"></div> -->
+  </div>
+
   <div class="photo_for_each_page">
     <img src="../images/opbouw.gif" /> 
   </div>
@@ -240,6 +247,15 @@ ontouchend="touchEnd()">
     <script src="../js/swipeLeftToOpenSidemenu.js"></script>
     <script src="../js/openAndClose_sidemenu.js"></script>
    
+    <script>
+
+      const pageWidth = document.querySelector("#screen_width");
+      
+      window.onresize = function reportWindowSize() {
+        pageWidth.textContent = `${window.innerWidth} px`;
+        };
+      
+      </script>
     
 </body>
 </html>

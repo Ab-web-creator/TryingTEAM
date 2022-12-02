@@ -61,6 +61,7 @@ html,
 body {
   height: 100vh;
   overflow: hidden;
+  
 }
 
 
@@ -75,7 +76,7 @@ body {
   height: 40px;
   z-index: 10;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 3px #f0f0f08b;
+  box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
 
   display: flex;
   flex-direction: row;
@@ -158,23 +159,24 @@ body {
   z-index: 300;
 }
 
-.arrow {
+.arrow_container {
   position: absolute;
-  display: block;
-  bottom: -25px;
-  left: 46%;
-  transform: translate(-50%);
-  height: 50px;
-  font-size: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: -11px;
+}
 
+.arrow {
+  margin: auto;
+  width: 28px;
+  z-index: 2;
   color: rgb(33, 3, 234);
   animation: updown 4s ease infinite;
 }
 
 #arrow img {
-  width: 28px;
-  height: 25px;  
-  z-index: 2;
+
 }
 
 @keyframes updown {
@@ -549,7 +551,7 @@ header {
     width: 100%;
     color: white;
     position: fixed;
-    box-shadow: 0px 3px #e1e6f9d9;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
     
     display: flex;
     flex-direction: row;
@@ -871,7 +873,8 @@ ol > li::before {
 }
 
 .secondSection {
-  background-color:rgb(61, 69, 155);
+  background: linear-gradient(to right top, #005c97, #363795);
+  /* background-color:rgb(61, 69, 155); */
   color: #eeeeee;
   letter-spacing: 1.2px;
   font-size: 20px;
@@ -1000,39 +1003,57 @@ position: relative;
 .seventhSection .menu_container ul {
   /* padding: 10px 20px; */
   /* border-left: 0.05px solid rgba(0, 255, 255, 0.532); */
-  line-height: 25px;
+ 
   font-size: 12px;
+  width: 23%;
 }
 
 .seventhSection .menu_container ul li {
+  /* line-height: 45px; */
+  border: 1px solid transparent;
   border-left: 0.05px solid rgba(0, 255, 255, 0.532);
+  line-height: 26px;
+  transition: all 0.4s ease-in-out;
 }
 
 .seventhSection .menu_container ul li a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: white;
+  padding: 10px 10px;
 } 
 
-.seventhSection .menu_container ul li a {
-  padding: 5px 10px;
-}
+.seventhSection .menu_container ul li:hover {
+  /* color: rgb(3, 32, 107) !important; */
+  background: cyan !important;
+  
+} 
 
 .seventhSection .menu_container ul li:hover {
-  color: rgb(3, 32, 107) !important;
-  background: #e1f791 !important;
-  transition:  all 0.4s ease-in-out;
+  /* color: rgb(3, 32, 107) !important; */
   border-radius: 0px 5px 5px 0px;
+  letter-spacing: 2px;
+  transition:  letter-spacing 0.6s ease-in-out;
+  border: 1px solid rgb(4, 95, 95);
+  transition:  border 0.4s ease-in-out;
 } 
 
 .seventhSection .menu_container ul li a:hover {
-  color: rgb(3, 32, 107);
-  transition:  all 0.4s ease-in-out;
+  color: rgb(21, 5, 201) !important;
+
+
+  transition:  color 1.4s ease-in-out;
 } 
 
 .seventhSection .menu_container ul p {
   color: rgb(254, 243, 141);
-  font-weight: 600;
+  /* text-transform: uppercase; */
+  font-weight: 500;
   padding-left: 10px;
+  padding-bottom: 10px;
   border-left: 0.05px solid rgba(0, 255, 255, 0.532);
+  
 } 
 
 .seventhSection .menu_container ul:first-child:hover {
@@ -1236,7 +1257,11 @@ section img {
   }
 
   .seventhSection .menu_container ul {
-    line-height: 25px;
+    font-size: 16px;
+  }
+
+  .seventhSection .menu_container ul li {
+    line-height: 35px;
     font-size: 16px;
   }
 
@@ -1559,6 +1584,8 @@ section img {
     line-height: 35px;
     font-size: 18px;
   }
+
+ 
 
   .seventhSection .direct_contact {
     margin-bottom: 15px;
