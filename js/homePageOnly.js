@@ -1035,16 +1035,10 @@ mainDiv.addEventListener('scroll', () => {
     sectionFiveView = false
     sectionSixView = true
   }
-
-
-
-
+ 
 })
 
-
-
-
-
+ 
 
 
 

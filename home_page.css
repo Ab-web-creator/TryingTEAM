@@ -205,9 +205,9 @@ body {
   }
 }
 
-.hide_in_mobile_version {
+/* .hide_in_mobile_version {
   display: none;
-}
+} */
 
 /* main section */
 
@@ -317,10 +317,16 @@ section.page {
 }
 
 .blueZoneImage {
-  width: 100%;
-  height: fit-content;
-  /* height: 202px; */
+  position: absolute;
+  bottom: 0;
+  opacity: 0.0001;
+  /* width: 100%;
+  height: fit-content; */
   object-fit: contain;
+}
+
+.first_page_images .basis {
+  opacity: 1;
 }
 
 /* Pseudo-buttons  */
