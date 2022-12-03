@@ -1,14 +1,24 @@
 // This js makes SUBmenus expand
 
 $('.feat-btn').click(function () {
+  setTimeout(() => {
   if ($('.serv-show').hasClass('show_submenus')) {
     $('.serv-show').toggleClass('show_submenus')
+    $('.serv-show').toggleClass('feat-btn')
+
   }
   if ($('.theory-show').hasClass('show_submenus')) {
     $('.theory-show').toggleClass('show_submenus')
+    $('.theory-show').toggleClass('feat-btn')
+
   }
+
   $('.feat-show').toggleClass('show_submenus')
+  $('.feat-show').toggleClass('feat-btn')
+
   $('.firstMenuPackOpener').toggleClass('rotate')
+  $('').classList.add("active")
+  }, 0)
 })
 
 $('.serv-btn').click(function () {

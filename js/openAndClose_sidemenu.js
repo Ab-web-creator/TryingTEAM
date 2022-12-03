@@ -15,18 +15,28 @@ menu.addEventListener("click", () => {
     side.classList.add("active");
     figure.classList.add("active");
 })
-menu2.addEventListener("click", () => {
-    console.log("Menu2 is clicked");
-    blurs.classList.add("active");
-    side.classList.add("active");
-    figure.classList.add("active");
+
+
+
+menu2.addEventListener("mouseover", () => {
+    setTimeout(() => {
+        side.classList.add("active");
+        figure.classList.add("active");
+    }, 500)
+
+    setTimeout(() => {
+        blurs.classList.add("active");
+    }, 1000)
+
 })
 
 
-blurs.addEventListener("click", () => {
+blurs.addEventListener("mouseover", () => {
+    setTimeout(() => {
     blurs.classList.remove("active");
     side.classList.remove("active");
     figure.className = '';
+    }, 100)
 })
 
 cross.addEventListener("click", () => {
