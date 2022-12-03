@@ -579,7 +579,7 @@ header {
     padding: 5px 0px;
     
     /* background-color: #013e5f6b; */
-    background-color: #102f9ddd;
+    background-color: #00007E;
     align-self: center;
     align-items: left;
     width: 100%;
@@ -637,7 +637,8 @@ margin-left: 0px;
 .fancy-link li:hover {
     color: rgb(255, 255, 255);
     border-radius: 30px;
-    background-color: #ff4d00;
+    background-color: #0000CB;
+    /* background-color: #ff4d00; */
     transition: all 500ms ease-in-out;
 }
 
@@ -692,7 +693,7 @@ header .end {
 .end a i:hover  {
     color: rgb(255, 255, 255);
     border-radius: 20px;
-    background-color: #ff4d00;
+    background-color: #0000CB;
     transition: all 500ms ease-in-out;
 }
 
@@ -733,7 +734,7 @@ header .end a i {
   
   .desktop_logo:hover  {
     border-radius: 30px;
-    background-color: #ff4d00;
+    background-color: #0000CB;
     transition: all 500ms ease-in-out;
   }
 
