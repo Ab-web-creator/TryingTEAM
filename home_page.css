@@ -618,10 +618,6 @@ header {
   margin-left: 0px;
 }
 
-.fancy-link li:first-child {
-  padding-left: 0px;
-}
-
 .fancy-link li a {
     display: block;
     padding: 10px 0px;
@@ -678,7 +674,7 @@ header .end li a i {
 
 #dmenuBtn i {
   color: white;
-  padding: 10px 0px;
+  padding: 10px 10px;
 }
 
 .end a i:hover  {
@@ -1352,7 +1348,7 @@ section img {
 
   header {
     padding-left: 52px;
-    padding-right: 52px;
+    padding-right: 42px;
   }
 
   .desktop_headings {
@@ -1820,7 +1816,7 @@ header {
 
   header {
     padding-left: 120px;
-    padding-right: 120px;
+    padding-right: 110px;
   }
 }
 
@@ -1828,7 +1824,7 @@ header {
 @media only screen and (min-width: 1300px) {
   header {
     padding-left: 150px;
-    padding-right: 150px;
+    padding-right: 140px;
   }
 }
 
@@ -1836,14 +1832,14 @@ header {
 @media only screen and (min-width: 1350px) {
   header {
     padding-left: 180px;
-    padding-right: 180px;
+    padding-right: 170px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   header {
     padding-left: 200px;
-    padding-right: 200px;
+    padding-right: 190px;
   }
 
   .seventhSection .nl_bg_container {
@@ -1855,7 +1851,7 @@ header {
 @media only screen and (min-width: 1475px) {
   header {
     padding-left: 240px;
-    padding-right: 240px;
+    padding-right: 230px;
   }
 
   .seventhSection .nl_bg_container {
@@ -1868,7 +1864,7 @@ header {
 @media only screen and (min-width: 1550px) {
   header {
     padding-left: 280px;
-    padding-right: 280px;
+    padding-right: 270px;
   }
 }
 
@@ -1876,14 +1872,14 @@ header {
 @media only screen and (min-width: 1600px) {
   header {
     padding-left: 300px;
-    padding-right: 300px;
+    padding-right: 290px;
   }
 }
 
 @media only screen and (min-width: 1700px) {
   header {
     padding-left: 350px;
-    padding-right: 350px;
+    padding-right: 340px;
   }
 
   .seventhSection .nl_bg_container img {
@@ -1898,14 +1894,14 @@ header {
 @media only screen and (min-width: 1800px) {
   header {
     padding-left: 400px;
-    padding-right: 400px;
+    padding-right: 390px;
   }
 }
 
 @media only screen and (min-width: 1900px) {
   header {
     padding-left: 450px;
-    padding-right: 450px;
+    padding-right: 440px;
   }
 
   .seventhSection .nl_bg_container {
@@ -1917,7 +1913,7 @@ header {
 @media only screen and (min-width: 2000px) {
   header {
     padding-left: 500px;
-    padding-right: 500px;
+    padding-right: 490px;
   }
   .seventhSection .nl_bg_container {
     right: 560px;
@@ -1927,14 +1923,14 @@ header {
 @media only screen and (min-width: 2100px) {
   header {
     padding-left: 550px;
-    padding-right: 550px;
+    padding-right: 540px;
   }
 }
 
 @media only screen and (min-width: 2300px) {
   header {
     padding-left: 750px;
-    padding-right: 750px;
+    padding-right: 740px;
   }
 }
 
