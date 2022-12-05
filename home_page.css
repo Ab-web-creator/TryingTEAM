@@ -853,7 +853,7 @@ margin-bottom: 40px;
 }
 
 .sixthSection {
-  background-color: rgb(112, 3, 8);
+  background-color: rgb(94, 3, 8);
   font-size: 20px;
   font-weight: 600;
   color: #eee;
@@ -871,7 +871,7 @@ margin-bottom: 40px;
   border-bottom: 1px solid rgba(240, 240, 240, 0.612); 
 }
 .sixthSection .desktop_headings span {
-  background-color: rgb(112, 3, 8);
+  background-color: rgb(94, 3, 8);
 }
 .sixthSection .put_it_center {
   margin-top: 50px;
@@ -933,13 +933,13 @@ margin-bottom: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
   color: white;
-  padding: 10px 10px;
+  padding: 3px 10px;
 } 
 
 .seventhSection .menu_container ul li a:hover {
   background: rgb(20, 18, 133) !important;
   border-radius: 0px 10px 10px 0px;
-  padding: 7px 10px;
+  padding-right: 17px;
   border-right: 3px solid red;
   color: rgb(245, 232, 51) !important;
   transition:  all 0.5s ease-in-out;
@@ -1144,13 +1144,17 @@ section img {
     font-size: 16px;
   }
 
+  .seventhSection .menu_container ul li a {
+    padding: 8px 10px;
+  } 
+
   .direct_contact {
     line-height: 20px;
     font-size: 16px;
   }
 
   .gegevens {
-    margin-top: 80px;
+    margin-top: 60px;
   }
 
   .gegevens .direct_contact li {
@@ -1180,6 +1184,10 @@ section img {
   header {
     padding-left: 52px;
     padding-right: 42px;
+  }
+
+  section {
+    font-size: 20;
   }
 
   .desktop_headings {
@@ -1263,10 +1271,6 @@ section img {
     border-bottom: 1px solid rgba(235, 235, 235, 0.34); 
   }
 
-  .secondSection ol li {
-    font-size: 22px;
-  }
-
   .next_to_eachOther_reversed {
     margin-top: 50px;
 
@@ -1291,20 +1295,17 @@ section img {
 
   .secondSection ol > li {
     padding-left: 30px;
-    font-size: 22px;
-    line-height: 24px;
+    line-height: 30px;
     font-weight: 500;
   }
 
   .twoColumnText {
-    font-size: 22px;
     font-weight: 500;
     width: 400px;
     line-height: 24px;
   }
 
   .container_2 {
-    font-size: 22px;
     font-weight: 500;
 
     display: flex;
@@ -1377,7 +1378,6 @@ section img {
     margin-left: auto;
     margin-right: auto;
 
-    font-size: 22px;
     line-height: 32px;
     font-weight: 500;
   }
@@ -1429,14 +1429,12 @@ section img {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 22px;
     line-height: 24px;
     font-weight: 500;
   }
 
   .sixthSection ol > li {
     padding-left: 30px;
-    font-size: 22px;
     line-height: 24px;
     font-weight: 500;
   }
@@ -1450,21 +1448,6 @@ section img {
     padding: 70px 70px;
 
     gap: 90px;
-  }
-
-  .seventhSection .menu_container ul {
-    line-height: 35px;
-    font-size: 18px;
-  }
-
-  .seventhSection .direct_contact {
-    margin-bottom: 15px;
-    line-height: 26px;
-    font-size: 18px;
-  }
-
-  .seventhSection .gegevens {
-    margin-bottom: 35px;
   }
 
   .desktop_headings {
@@ -1610,7 +1593,7 @@ header {
 }
 
 .seventhSection .contacting_part {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .seventhSection .nl_bg_container {
