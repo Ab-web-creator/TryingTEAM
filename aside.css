@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   padding: 8px 10px;
-  background-color: #09024a;
+  background-color: #010662;
   border-radius: 35px 0 0 0;
  
   /* right: 0; */
@@ -254,7 +254,7 @@ aside button.close_sideMenuBar {
     display: flex;
     justify-content: space-between;
     padding: 8px 10px;
-    background-color: #09024a;   
+    background-color: #070a36;   
     border-radius: 0 0 0 0;
    
     /* right: 0; */
@@ -274,18 +274,10 @@ aside button.close_sideMenuBar {
     padding: 8px 5px;
     transition: all 0.5s;
     cursor: pointer;
-    color: white;
-    
+    color: white; 
   }
   
-  /* #mark a:hover {
-    background-color: rgb(233, 233, 233);
-    border-radius: 5%;
-    color: #120587;
-  } */
-  
   .hdn-cont {
-    /* position: fixed; */
     margin-top: 80px;
   }
   
@@ -293,10 +285,8 @@ aside button.close_sideMenuBar {
     top: 0px;
     width: 400px;
   
-    background-color: #09024a;   
+    background-color: #010662;   
     padding-top: 0px;
-    /* padding-left: 30px;
-    padding-right: 20px; */
     padding-bottom: 50px;
     z-index: 100;
     height: fit-content;
