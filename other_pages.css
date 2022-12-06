@@ -68,7 +68,7 @@ p {
 
 footer p {
   font-size: 8px;
-  background-color: #8f8f8f;
+  background-color: #e41b1b;
   color: #17028a;
   padding: 10px 20px;
   text-align: center;
@@ -91,41 +91,17 @@ footer p {
 }
 
 
-/* 
-.phone_number {
-  display: none;
-}
-header {
-  display: none;
-}
+/* The rest is for the desktop version  */
 
-.conntainer {
-  display: none;
-} */
-
-/* a Note: Hamburger menu is in aside.css */
-
-
-
-
-/* For the desktop version  */
-
+/* why we need min-width: 360px ?  */
 @media only screen and (min-width: 360px) {
-
-
-
-
-
-
-  
-
   .flex_container {
     position: relative;
     margin-bottom: 80px;
     padding: 0px 0px 0px 30px;
     margin-left: auto;
-	margin-right: auto;
-	max-width: 1200px;
+  	margin-right: auto;
+	  max-width: 1200px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -139,6 +115,11 @@ header {
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .aside0 {
+    display: none;
+  }
+}
 
 @media only screen and (min-width: 880px) {
 

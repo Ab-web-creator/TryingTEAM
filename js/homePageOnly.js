@@ -285,61 +285,61 @@ function unhideFourLinkButtons() {
 // if we click them, they open links depending on which page they are in
 oneOfFour1.addEventListener('click', () => {
   if (sectionOneView) {
-  window.open("./html_pages/rijles.html")
+  window.open("./html_pages/opbouw.html", "_self")
   }
   if (sectionTwoView) {
-  window.open("./html_pages/locatie.html")
+  window.open("./html_pages/locatie.html", "_self")
   }
   if (sectionThreeView) {
-  window.open("./html_pages/theorie.html")
+  window.open("./html_pages/theorie.html", "_self")
   }
   if (sectionFourView) {
-  window.open("./html_pages/waarom.html")
+  window.open("./html_pages/waarom.html", "_self")
   }
 })
 
 oneOfFour2.addEventListener('click', () => {
   if (sectionOneView) {
-  window.open("./html_pages/versneller.html")
+  window.open("./html_pages/versneller.html", "_self")
   }
   if (sectionTwoView) {
-  window.open("./html_pages/simulator.html")
+  window.open("./html_pages/simulator.html", "_self")
   }
   if (sectionThreeView) {
-  window.open("./html_pages/reserveren.html")
+  window.open("./html_pages/reserveren.html", "_self")
   }
   if (sectionFourView) {
-  window.open("./html_pages/justdiggit.html")
+  window.open("./html_pages/justdiggit.html", "_self")
   }
 })
 
 oneOfFour3.addEventListener('click', () => {
   if (sectionOneView) {
-  window.open("./html_pages/versneller.html")
+  window.open("./html_pages/versneller.html", "_self")
   }
   if (sectionTwoView) {
-  window.open("./html_pages/simulator.html")
+  window.open("./html_pages/simulator.html", "_self")
   }
   if (sectionThreeView) {
-  window.open("./html_pages/reserveren.html")
+  window.open("./html_pages/reserveren.html", "_self")
   }
   if (sectionFourView) {
-  window.open("./html_pages/justdiggit.html")
+  window.open("./html_pages/justdiggit.html", "_self")
   }
 })
 
 oneOfFour4.addEventListener('click', () => {
   if (sectionOneView) {
-  window.open("./html_pages/versneller.html")
+  window.open("./html_pages/versneller.html", "_self")
   }
   if (sectionTwoView) {
-  window.open("./html_pages/simulator.html")
+  window.open("./html_pages/simulator.html", "_self")
   }
   if (sectionThreeView) {
-  window.open("./html_pages/reserveren.html")
+  window.open("./html_pages/reserveren.html", "_self")
   }
   if (sectionFourView) {
-  window.open("./html_pages/justdiggit.html")
+  window.open("./html_pages/justdiggit.html", "_self")
   }
 })
 
