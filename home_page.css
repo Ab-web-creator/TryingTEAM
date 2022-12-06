@@ -439,6 +439,14 @@ header {
 
 @media only screen and (min-width: 600px) {
 
+  #header_extra {
+    display: none;
+  }
+
+  .fancy-link .header_extra2 {
+    display: none;
+  }
+
   #container_delete {
     position: fixed;
     bottom: 10px;
@@ -500,7 +508,7 @@ header {
 }
 
 .fancy-link li {
-  padding-left: 15px;
+  padding-left: 15px;    
   padding-right: 35px;
   margin: auto;
   display: flex;
@@ -1093,10 +1101,6 @@ section img {
     padding-right: 47px;
   }
 
-  header .desktop_logo {
-    display: block;
-  }
-
   .desktop_logo img {
     width: 100px;
     margin-top: 10px;
@@ -1168,6 +1172,42 @@ section img {
 }
 
 @media only screen and (min-width: 802px) {
+
+  .fancy-link .header_old_elements a {
+    display: none;
+  }
+
+  #header_extra2 {
+    display: none;
+  }
+
+  .fancy-link .proefless {
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor:default;
+  }
+
+  #header_extra {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .fancy-link .header_extra2 {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .fancy-link {
+    padding-left: 0px;
+    margin-right: 0px;}
+
+  .fancy-link li {
+    padding-left: 0px;    
+    padding-right: 10px;
+  }
+
   .fifthSection .put_it_center {
     width: 600px;
   }
@@ -1179,7 +1219,16 @@ section img {
   }
 }
 
+@media only screen and (min-width: 970px) {
+  header .desktop_logo {
+    display: block;
+    margin-right: 30px;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
+
+
 
   header {
     padding-left: 52px;
