@@ -608,12 +608,7 @@ header .end a i {
     overflow: scroll;
     font-size: 20px;
     line-height: 30px;
-  }
-  
-  .desktop_logo:hover  {
-    border-radius: 30px;
-    background-color: #0000CB;
-    transition: all 500ms ease-in-out;
+    font-weight: 500;
   }
 
 ol {
@@ -628,8 +623,8 @@ ol > li {
   position: relative;
 
   letter-spacing: 1.2px;
-  font-size: 20px;
-  font-weight: 600;
+  
+ 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
@@ -647,7 +642,6 @@ ol > li::before {
     flex-direction: column;
     justify-content: space-around;
     color: rgb(253, 255, 241);
-    font-weight: 300;
     letter-spacing: 1.2px;
   }
 
@@ -722,7 +716,7 @@ ol > li::before {
     line-height: 30px;
     color: #17028a;
     padding: 70px var(--hor_padding);
-    font-weight: 500;
+    
 
     display: flex;
     flex-direction: column;
@@ -751,9 +745,16 @@ ol > li::before {
   width: 100%;
   border-bottom: 1px solid rgb(180, 2, 2); 
   line-height: 0.1em;
-  margin: 40px 0px;
+  margin: auto;
   margin-bottom: 80px;
 }
+
+.secondSection .desktop_headings,
+.fourthSection .desktop_headings,
+.sixthSection .desktop_headings {
+  border-bottom: 1px solid rgba(240, 240, 240, 0.612); 
+}
+
 
 .desktop_headings span {
   background: white; 
@@ -761,9 +762,7 @@ ol > li::before {
 }
 
 .firstSection .desktop_headings {
-  margin: auto;
   margin-top: 20px;
-  margin-bottom: 80px;
 }
 
 .text_container1 {
@@ -771,30 +770,20 @@ ol > li::before {
 }
 
 .text_container1 li {
-  font-size: 20px;
+  
   margin-bottom: 8px;
 }
 
 .text_container2 {
-  font-size: 20px;
-  font-weight: 600;
+  
+ 
   text-align: center;
 }
 
 .secondSection {
   background-color: #010662;
   color: #eeeeee;
-  letter-spacing: 1.2px;
-  font-size: 20px;
-}
-
-.secondSection .desktop_headings {
-  font-weight: 500;
-}
-
-.secondSection ol li {
-  font-size: 20px;
-  font-weight: 500;
+  letter-spacing: 1.2px; 
 }
 
 .twoColumnText {
@@ -812,7 +801,7 @@ margin-bottom: 40px;
 .thirdSection li {
   line-height: 30px;
   margin-bottom: 10px;
-  font-weight: 600;
+ 
 }
 
 .put_it_center {
@@ -838,35 +827,32 @@ margin-bottom: 40px;
 .fifthSection {
   background-color: rgb(249, 249, 249);
   justify-content: space-around;
-  font-size: 20px;
-  font-weight: 600;
+  
+ 
 }
 .fifthSection .img_container {
   width: 350px;
   margin: auto;
 }
-.fifthSection .desktop_headings {
-  font-weight: 500;
-}
 .fifthSection .twoColumnText {
   margin-bottom: 50px;
-  font-weight: 600;
+ 
 }
 .fifthSection ol {
   margin: 20px 0px;
 }
 .fifthSection ol li {
-  font-size: 20px;
+  
   margin-left: 40px;
   line-height: 25px;
 }
 
 .sixthSection {
   background-color: #4956fd;
-  font-size: 20px;
-  font-weight: 600;
+  
+ 
   color: #eee;
-  font-weight: 500;
+  
 }
 .sixthSection li {
   line-height: 28px;
@@ -876,8 +862,6 @@ margin-bottom: 40px;
 }
 .sixthSection .desktop_headings {
   color: #eee;
-  font-weight: 500;
-  border-bottom: 1px solid rgba(240, 240, 240, 0.612); 
 }
 .sixthSection .desktop_headings span {
   background-color: #4956fd;
@@ -952,7 +936,7 @@ margin-bottom: 40px;
 .seventhSection .menu_container ul p {
   border-left: 0.05px dotted rgba(0, 255, 255, 0.532);
   color: rgb(254, 243, 141);
-  font-weight: 500;
+  
   padding-left: 10px;
   padding-bottom: 10px;  
 } 
@@ -1222,10 +1206,23 @@ section img {
 }
 
 @media only screen and (min-width: 970px) {
+
   header .desktop_logo {
+    position: relative;
     display: block;
     width: 100px;
-    margin-top: 10px;
+  }
+
+  header .desktop_logo img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+  }
+
+  .desktop_logo:hover  {
+    border-radius: 30px;
+    background-color: #0000CB;
+    transition: all 500ms ease-in-out;
   }
 
   header .end {
@@ -1262,10 +1259,6 @@ section img {
   }
   
   .firstSection .desktop_headings  {
-    padding-left: 145px;
-    padding-right: 145px;
- 
-    margin: auto;
     margin-top: 20px;
     margin-bottom: 120px;
   }
@@ -1313,7 +1306,7 @@ section img {
 
   .firstSection ol > li {
     padding-left: 30px;
-    font-size: 20px;
+    
     line-height: 21px;
   }
 
@@ -1323,7 +1316,7 @@ section img {
 
   .text_container2 {
     margin-top: 50px;
-    font-size: 20px;
+    
     text-align: center;
   }
 
@@ -1338,7 +1331,6 @@ section img {
   }
 
   .secondSection  .desktop_headings {
-    font-weight: 500;
     border-bottom: 1px solid rgba(235, 235, 235, 0.34); 
   }
 
@@ -1363,17 +1355,17 @@ section img {
   .secondSection ol > li {
     padding-left: 30px;
     line-height: 30px;
-    font-weight: 500;
+    
   }
 
   .twoColumnText {
-    font-weight: 500;
+    
     width: 400px;
     line-height: 24px;
   }
 
   .container_2 {
-    font-weight: 500;
+    
 
     display: flex;
     flex-direction: row;
@@ -1405,12 +1397,12 @@ section img {
 
   .thirdSection ol > li {
     padding-left: 30px;
-    font-size: 20px;
+    
     line-height: 21px;
   }
 
   .thirdSection li {
-    font-size: 20px;
+    
     line-height: 21px;
   }
 
@@ -1425,8 +1417,6 @@ section img {
   }
 
   .fourthSection .desktop_headings {
-    font-weight: 500;
-    font-size: 26px;
     border-bottom: 1px solid rgba(235, 235, 235, 0.34); 
   }
 
@@ -1448,7 +1438,7 @@ section img {
   }
 
   .fifthSection li {
-    font-size: 20px;
+    
     line-height: 22px;
   }
 
@@ -1462,11 +1452,6 @@ section img {
     padding: 100px 50px;
   }
 
-  .sixthSection .desktop_headings {
-    font-weight: 500;
-    font-size: 26px;
-  }
-
   .sixthSection .img_container {
     margin-top: 0px;
     width: 400px;
@@ -1475,7 +1460,7 @@ section img {
   .sixthSection ol > li {
     padding-left: 30px;
     line-height: 24px;
-    font-weight: 500;
+    
   }
 
   .add_margin_top {
@@ -1492,10 +1477,6 @@ section img {
   .seventhSection .will_it_work {
     background-size: 60%;
     width: 900px;
-  }
-
-  .desktop_headings {
-    font-weight: 500;
   }
 }
 
