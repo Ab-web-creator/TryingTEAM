@@ -476,8 +476,10 @@ header {
 
   header {
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: #010662;
-    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 20px rgba(176, 176, 176, 0.548);
     width: 100%;
     color: white;
     z-index: 3;
@@ -492,12 +494,8 @@ header {
 
   header .desktop_logo {
     display: none;
-    align-self: left;
   }
-
-  .desktop_logo img {
-    width: 40px;
-  }
+ 
 
 .fancy-link {
   padding-left: 0px;
@@ -535,7 +533,7 @@ header {
 
 .fancy-link li a i {
   position: absolute;
-  margin-top: 4px;
+  margin-top: 7px;
   margin-left: 5px;
   font-size: 18px;
 }
@@ -1107,10 +1105,7 @@ section img {
     padding-right: 47px;
   }
 
-  .desktop_logo img {
-    width: 100px;
-    margin-top: 10px;
-  }
+
 
   .firstBG {
     height: 500px;
@@ -1229,7 +1224,16 @@ section img {
 @media only screen and (min-width: 970px) {
   header .desktop_logo {
     display: block;
-    margin-right: 30px;
+    width: 100px;
+    margin-top: 10px;
+  }
+
+  header .end {
+    width: 100px;
+  }
+
+  header .end a {
+   margin-left: auto;
   }
 
   .header_old_elements {

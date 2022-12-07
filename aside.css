@@ -1,36 +1,41 @@
-#mark {
+.mark_container {
   position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 10px;
-  background-color: #010662;
+  top: 42px;
+  width: 200px;
+  background-color: #120587;
   border-radius: 35px 0 0 0;
- 
-  /* right: 0; */
   z-index: 101;
   margin-bottom: 500px;
- 
 }
 
-#mark a span {
-  text-align: left;
+#mark {
+  margin-top: 40px;
+  width: 100%;
+  padding: 8px 10px;
+  background-color: #010662;
   font-size: 15px;
-  margin-right: 110px;
-  cursor: default;
-}
-#mark a {
-  font-size: 20px;
-  padding: 8px 5px;
-  transition: all 0.5s;
-  cursor: pointer;
   color: white;
-  
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home_sidemenu {
+  padding-left: 5px;
+  width: 45%;
+}
+
+.close_sidemenu {
+  width: 35%;
+  font-size: 20px;
+  text-align: right;
+  margin-right: 10px;
 }
 
 .hdn-cont {
-  /* position: fixed; */
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 aside {
@@ -248,38 +253,54 @@ aside button.close_sideMenuBar {
  
 
 @media only screen and (min-width: 600px) {
-  #mark {
+
+  .mark_container {
     position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 10px;
-    background-color: #070a36;   
+    top: 0px;
+    width: 420px;
+    background-color: #010662;
+    /* background-color: #120587; */
     border-radius: 0 0 0 0;
-   
-    /* right: 0; */
     z-index: 101;
     margin-bottom: 500px;
-   
   }
   
-  #mark a span {
-    text-align: left;
+  #mark {
+    margin-top: 0px;
+    width: 95%;
+    padding: 8px 10px;
+    background-color: #1b0297;
     font-size: 15px;
-    margin-right: 300px;
-    cursor: default;
+    color: white;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
   #mark a {
-    font-size: 20px;
-    padding: 8px 5px;
-    transition: all 0.5s;
-    cursor: pointer;
-    color: white; 
+    color: white;
+  }
+  
+  .home_sidemenu {
+    width: 350px;
+    padding-left: 5px;
+    width: 45%;
+  }
+  
+  .close_sidemenu {
+    display:  none;
   }
   
   .hdn-cont {
-    margin-top: 80px;
+    margin-top: 100px;
   }
+
+
+
+
+
+
   
   aside {
     top: 0px;

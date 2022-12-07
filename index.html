@@ -42,8 +42,11 @@
 
 <!-- Start of side-menu  -->
   <aside class="hdn-side">
-      <div id="mark" >
-          <a  class="close_sidemenu"><span>Menu</span> &times;</a>
+      <div class="mark_container">
+        <div id="mark" >
+          <div class="home_sidemenu"><a> Home </a></div>
+          <div class="close_sidemenu"><a> &times; </a></div>
+        </div>
       </div>
       <div class="hdn-cont">
           <ul>
@@ -86,9 +89,6 @@
               </li>
               <li> <a href="tarieven.html">De tarieven </a></li>
               <li>  <a href="contact.html">Contact</a> </li>
-              <br><br>
-              <li>  <a href="index.html">home-page</a> </li>
-              
           </ul>
       </div>
   </aside>
@@ -156,7 +156,6 @@
     <div class="desktop_logo">
       <li > <a href="index.html"> <img src="./images/logo.png" alt=""></a></li>
     </div>
-  
     <nav class="fancy-link">
             <li class="proefless"><a href="tel:+31615074940" >Proefles? <span id="header_extra2"><i class='bx bx-car'></i></span></a></li>
             <li id="header_extra" class="proefless"><a href="tel:+31615074940" >Bel/app: 06-15074940</a></li>
@@ -164,13 +163,11 @@
             <li class="header_old_elements"><a href="https://api.whatsapp.com/send?phone=31615074940">Whatsapp <span><i class='bx bxl-whatsapp'></i></span></a></li>
             <li class="simulator_menu header_old_elements" ><a href="tel:+31615074940">Bellen <span><i class='bx bx-phone-call' ></i></span></a></li>
             <li class="header_old_elements"><a href="mailto:diederickv@gmail.com">Email <span><i class='bx bx-envelope' ></i></span></a></li>
-           
     </nav>
-
-    
     <div class="end">
         <a href="#" id="dmenuBtn"><i class='bx bx-menu-alt-right'></i></a>
     </div>
+
 </header>
 
   <div class="conntainer">
@@ -499,6 +496,7 @@
   <script src="js/homePageOnly.js"></script>
   <script src="js/expand_submenus.js"></script>
   <script src="js/openAndClose_sidemenu.js"></script> 
+  <script src="js/stickyNavBar.js"></script> 
 
   <script>
       const pageWidth = document.querySelector("#screen_width");
