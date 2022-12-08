@@ -261,7 +261,7 @@ aside button.close_sideMenuBar {
     background-color: #010662;
     /* background-color: #120587; */
     border-radius: 0 0 0 0;
-    z-index: 101;
+    z-index: 400;
     margin-bottom: 500px;
   }
   
