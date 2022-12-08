@@ -116,8 +116,8 @@ footer p {
 }
 
 @media only screen and (min-width: 600px) {
-  .aside0 {
-    display: none;
+  figure {
+    right: -1162px;
   }
 }
 
