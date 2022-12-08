@@ -1055,7 +1055,7 @@ margin-bottom: 40px;
 }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 604px) {
   .fancy-link li a i {
     opacity: 1;
   }
@@ -1320,8 +1320,7 @@ section img {
 
   .firstSection ol > li {
     padding-left: 30px;
-    
-    line-height: 21px;
+    line-height: 22.5px;
   }
 
   .can_removed {
@@ -1411,13 +1410,11 @@ section img {
 
   .thirdSection ol > li {
     padding-left: 30px;
-    
-    line-height: 21px;
   }
 
   .thirdSection li {
     
-    line-height: 21px;
+    line-height: 24px;
   }
 
   .fourthSection {
