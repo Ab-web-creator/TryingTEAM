@@ -540,6 +540,10 @@ header {
   font-size: 18px;
 }
 
+.fancy-link li a i {
+  opacity: 0;
+}
+
 header nav ul {
   display: flex;
   flex-direction: row;
@@ -1049,6 +1053,12 @@ margin-bottom: 40px;
 .black a:hover {
   color: rgb(255, 255, 255);
 }
+}
+
+@media only screen and (min-width: 601px) {
+  .fancy-link li a i {
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 675px) {
