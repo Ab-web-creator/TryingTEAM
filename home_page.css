@@ -243,25 +243,6 @@ section.page {
   background-image: url(images/mainpage_4_mobile.jpg);
   background-size: cover;
 }
-#page-6 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-#page-6 h1 {
-  position: absolute;
-  margin: auto;
-  top: 200px;
-  color: white;
-}
-#page-6 p {
-  position: absolute;
-  width: 80%;
-  text-align: center;
-  margin: auto;
-  top: 300px;
-  color: white;
-}
 
 .dynamicContainer {
   position: absolute;
@@ -440,11 +421,7 @@ header {
 
 @media only screen and (min-width: 600px) {
 
-  #header_extra {
-    display: none;
-  }
-
-  .fancy-link .header_extra2 {
+  .fancy-link .startsAt_880 {
     display: none;
   }
 
@@ -518,47 +495,6 @@ header {
   margin-left: 0px;
 }
 
-.fancy-link li a {
-    display: block;
-    padding: 10px 0px;
-    text-align: left;
-    color: white;
-    font-size: 16px;
-}
-
-.fancy-link li:hover {
-    color: rgb(255, 255, 255);
-    border-radius: 30px;
-    background-color: #0000CB;
-    transition: all 500ms ease-in-out;
-}
-
-.fancy-link li a i {
-  position: absolute;
-  margin-top: 7px;
-  margin-left: 5px;
-  font-size: 18px;
-}
-
-.fancy-link li a i {
-  opacity: 0;
-}
-
-header nav ul {
-  display: flex;
-  flex-direction: row;
-  font-size: 14px;
-}
-
-header nav ul li {
-    margin-right: 0px;
-}
-
-header ul li a.active {
-    background: #056f87;
-    color: #120587;
-    transition: 0.5s;
-}
 
 header .end {
     display: flex;
@@ -627,10 +563,7 @@ ol > li {
   list-style-position: inside;
   padding-left: 40px;
   position: relative;
-
   letter-spacing: 1.2px;
-  
- 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
@@ -967,8 +900,7 @@ margin-bottom: 40px;
 }
 .direct_contact a:hover {
   cursor: pointer;
-  color: rgb(245, 232, 51) !important;
-  /* background: rgb(20, 18, 133) !important; */
+  color: white !important;
   border-radius: 5px;
   transition: all 1s ease-in-out;
 }
@@ -1177,28 +1109,7 @@ section img {
 
 @media only screen and (min-width: 802px) {
 
-  .fancy-link .header_old_elements a {
-    display: none;
-  }
-
-  #header_extra2 {
-    display: none;
-  }
-
   .fancy-link .proefless {
-    padding-left: 15px;
-    padding-right: 15px;
-    cursor:default;
-  }
-
-  #header_extra {
-    display: block;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .fancy-link .header_extra2 {
-    display: block;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1214,12 +1125,34 @@ section img {
 }
 
 @media only screen and (min-width: 880px) {
+
+  .fancy-link .startsAt_880 {
+    display: block;
+  }
+
   section img {
     width: 850px;
   }
 }
 
 @media only screen and (min-width: 970px) {
+
+ 
+
+  header .end {
+    width: 100px;
+  }
+
+  header .end a {
+   margin-left: auto;
+  }
+
+  .header_old_elements {
+    position: fixed;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
 
   header .desktop_logo {
     position: relative;
@@ -1238,21 +1171,6 @@ section img {
     background-color: #0000CB;
     transition: all 500ms ease-in-out;
   }
-
-  header .end {
-    width: 100px;
-  }
-
-  header .end a {
-   margin-left: auto;
-  }
-
-  .header_old_elements {
-    position: fixed;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
 
   header {
     padding-left: 52px;
