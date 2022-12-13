@@ -24,7 +24,7 @@
 
 .mark.active {
   color: #ffffff;
-  background: #010662;
+  background: #000095;
 }
 
 .mark a {
@@ -34,12 +34,12 @@
 .home_sidemenu {
   padding-left: 0px;
   width: 80%;
-  background-color: #010662;
+  background-color: #000095;
 }
 
 .close_sidemenu {
   width: 20%;
-  background-color: #010662;
+  background-color: #000095;
  
 }
 
@@ -136,7 +136,7 @@ aside ul li a:hover {
   letter-spacing: 0.08rem;
   transition:  letter-spacing 0.4s ease-in-out;
   color: rgb(0, 0, 0) !important;
-  background: #91ebf7 !important;
+  background: #2323ff !important;
 }
 
 aside ul li.active a:hover {
@@ -144,9 +144,8 @@ aside ul li.active a:hover {
   letter-spacing: 0.08rem;
   transition:  letter-spacing 0.4s ease-in-out;
   color: rgb(236, 236, 236) !important;
-  background: #7f72f6 !important;
+  background: #000095 !important;
 }
-
 
 aside ul ul {
   position: static;
@@ -204,25 +203,20 @@ aside ul li.active ul li a {
 aside ul ul li a:hover {
   letter-spacing: 0.02rem;
   color: rgb(0, 0, 0) !important;
-  background: #91ebf7 !important;
+  background: #000095 !important;
 }
 
 aside ul li:last-child {
   border-bottom: none;
 }
 
-aside ul  ul {
-  /* background: rgb(79, 62, 235); */
-}
 
 /* ochish-yopish expanding  */
-
 
 .show_submenus {
   display: block;
   transition: all ease-in-out 4s;
 }
-
 
 
 /* close x button and backdrop */
@@ -244,7 +238,7 @@ aside button.close_sideMenuBar {
 }
 
 .close_sideMenuBar:hover {
-  color: cyan;
+  color: #2323ff;
 }
  
 
@@ -259,7 +253,7 @@ aside button.close_sideMenuBar {
     top: 0px;
     width: 400px;
   
-    background-color: #010662;   
+    background-color: #000095;   
     padding-top: 0px;
     padding-bottom: 50px;
     z-index: 100;
@@ -329,7 +323,7 @@ aside button.close_sideMenuBar {
     letter-spacing: 0.08rem;
     transition:  letter-spacing 0.4s ease-in-out;
     color: rgb(0, 0, 0) !important;
-    background: #91ebf7 !important;
+    background: #2323ff !important;
   }
   
   aside ul li:hover {
@@ -399,7 +393,7 @@ aside button.close_sideMenuBar {
   aside ul ul li a:hover {
     letter-spacing: 0.02rem;
     color: rgb(0, 0, 0) !important;
-    background: #91ebf7 !important;
+    background: #000095 !important;
   }
   
   aside ul li:last-child {
@@ -462,7 +456,7 @@ aside button.close_sideMenuBar {
   .mark {
     margin-top: 0px;
     padding: 8px 0px;
-    background-color: #010662;
+    background-color: #000095;
     font-size: 15px;
     color: white;
     z-index: 400;
