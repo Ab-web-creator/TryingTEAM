@@ -840,7 +840,7 @@ margin-bottom: 40px;
 } 
 
 .seventhSection .menu_container ul li a:hover {
-  background: rgb(20, 18, 133) !important;
+  background: #2323ff !important;
   border-radius: 0px 10px 10px 0px;
   padding-right: 17px;
   border-right: 3px solid red;
