@@ -1,104 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>TEAM-rijopleiding</title>
-        
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Yeseva+One&display=swap"
-          rel="stylesheet"
-        />
-    
-        <!-- Box icons -->
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-        />
-        <!-- Javascript links. I have two more on the bottom of the page -->
-        <script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
-        <script src="js/scroll&disappear.js" type="module" defer></script> 
-    
-        <!-- CSS links -->
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="aside.css" />
-        <link rel="stylesheet" href="hamburger.css" />
-        <!-- <link rel="stylesheet" href="tesla.css" /> -->
-    
-      </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoeveel lessen</title>
 
-<body ontouchstart="touchStart(event)"
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../home_page.css">
+    <link rel="stylesheet" href="../aside.css">
+    <link rel="stylesheet" href="../other_pages.css">
+  
+</head>
+
+<body style="overflow: scroll; color: rgb(7, 7, 182)"
+ontouchstart="touchStart(event)"
 ontouchmove="touchMove(event)"
 ontouchend="touchEnd()">
 
-    <div class="main"  style="display: grid;">
-      <div class="main-1">
-        <div class="main-2">
-          <div style="background-image: url(images/mainpage_2_mobile.jpg) ; height: 100vh;
-            background-size: cover;
-            overflow: hidden;" class="photo_for_each_page"></div>
-          <h1 style="color: red; margin: auto; padding: 40px 0px;">Hoeveel ?</h1>
-          
-          <p style="width: 60%; margin-bottom: 40px; text-align: center; margin-left: auto; margin-right: auto;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quo est, a quam omnis excepturi quis fugiat, in dolorem temporibus qui et quos porro. Ut?</p>
+<!-- Copy in EVERY additional pages everything from here till "the main part" (line 137 ?) -->
 
-          <button style="margin: auto; width: 300px; background: rgb(134, 145, 239); border: none; height: 50px; border-radius: 10px; font-size: 16px; color: #e1e1e1; padding: 20px; padding-bottom: 40px; font-weight: 500; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><a href="index.html">back to Home page </a></button>
+<div class="mobile_header">
+  <li id="proefles" class="nav_question">
+    <a href="#">Proefles?</a></li>
+  <li class="nav_icons phone_icon">
+    <a href="tel:+31615074940"> <img src="../images/phone_icon.png" /></a></li>
+  <li class="nav_icons whatsapp_icon">
+    <a href="https://api.whatsapp.com/send?phone=31615074940" target="_blank"> <img src="../images/whatsapp_icon.png" /></a></li>
 
-          <div class="login login-1">
-            <div class="blueZone">
-                <div class="katta_knopka"></div>
-                <div class="links_above_mainknop">
-                    <span>  
-                      
-                        <li><a href="#">Rijles volgens de nieuwste inzichten </a></li>
-                    </span>
-                </div>
-            </div>
-
-          <div class="blank"></div>
-    
-        </div>
-      </div>
-
-      <div class="main-2">
-        <p>Lorem ipsum dolor  Quidem numquam, et vero accusantium, assumenda dolores harum repudiandae consequatur quod rerum obcaecati sit iure temporibus a! D m illum et inventore quaerat error reprehenderit alias, accusantium fugiat reiciendis m</p>
-
-      </div>
-
-      <div class="main-2">
-        <p>Lorem ipsum dolor  Quidem numquam, et vero accusantium, assumenda dolores harum repudiandae consequatur quod rerum obcaecati sit iure temporibus a! D m illum et inventore quaerat error reprehenderit alias, accusantium fugiat reiciendis m</p>
-
-      </div>
-
-      <div class="main-2">
-        <p>Lorem ipsum dolor  Quidem numquam, et vero accusantium, assumenda dolores harum repudiandae consequatur quod rerum obcaecati sit iure temporibus a! D m illum et inventore quaerat error reprehenderit alias, accusantium fugiat reiciendis m</p>
-
-      </div>
-
-     
-  </main-1>
+  <li class="nav_icons email_icon">
+    <a href="mailto:diederickv@gmail.com"><img src="../images/email_icon.png" /></a></li>
+  <li class="nav_icons">
+    <a href="#" id="menuBtn"><img src="../images/hamburger_menu.png" /></i></a></li>
 </div>
-    <script src="js/hamburger.js"></script>
-    <script src="js/expand_submenus.js"></script>
+
+<!-- Start of side-menu  -->
+<aside class="hdn-side">
+  <div class="hdn-cont">
+      <ul>
+          <li class="mark" > 
+              <span class="home_sidemenu"><a> Home </a></span>
+              <span class="close_sidemenu"><a> &times; </a></span>
+          </li>
+          <li class="ulLi">
+              <a href="#" class="feat-btn">De rijles <span class="firstMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              <ul class="feat-show">
+                <li><a href="html_pages/opbouw.html"> Opbouw </a></li>
+                <li><a href="html_pages/hoeveel_lessen.html"> Hoeveel lessen </a></li>
+                <li><a href="html_pages/doelen.html"> Doelen </a></li>
+                <li><a href="html_pages/deeltoets.html"> Deeltoets </a></li>
+                <li><a href="html_pages/examen.html"> Examen </a></li>
+                <li><a href="html_pages/RIS.html"> R.I.S. </a></li>
+              </ul>
+          </li>
+          <li><a href="html_pages/RIS.html"> De simulator </a></li>
+          <li class="ulLi"> 
+              <a href="#" class="serv-btn">De lesversneller <span class="secondMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              
+              <ul class="serv-show">
+                <li><a href="documenten.html">Documenten </a></i></li>
+                <li><a href="dashboard.html">Dashboard </a></li>
+                <li><a href="dashboard.html">Interieur </a></li>
+                <li><a href="dashboard.html">verlichting </a></li>
+                <li><a href="wissers.html">Wissers </a></li>
+                <li><a href="buiten_de_auto.html"> Spiegels </a></li>
+                <li><a href="tontom.html"> TomTom </a></li>
+                <li><a href="dashboard.html">Banden </a></li>
+                <li><a href="dashboard.html">De motor </a></li>
+              </ul>
+          </li>
+
+          <li class="ulLi"> 
+              <a href="#" class="theory-btn">Theorie <span class="thirdMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              
+              <ul class="theory-show">
+                <li><a href="boeken.html"> Boeken</a></li>
+                <li><a href="examen_training.html"> Examen training  </a></li>
+                <li><a href="dashboard.html">Reserveren </a></li>
+              </ul>
+          </li>
+          <li> <a href="tarieven.html">De tarieven </a></li>
+          <li>  <a href="contact.html">Contact</a> </li>
+      </ul>
+  </div>
+</aside>
+
+<!-- End of side-menu  -->
+
+<!-- Additional layers  -->
+<div class="blurCompletely"></div>
+<div class="blur"></div>
+<div class="blur2"></div>
+
+<figure class="aside0"></figure>
+
+<!-- topBar for desktop  -->
+
+<header>
+  <div class="desktop_logo">
+    <li > <a href="index.html"> <img src="../images/logo.png" alt=""></a></li>
+  </div>
+  <nav class="fancy-link">
+          <li class="proefless">Proefles?</li>
+          <li class="proefless">Bel/app: 06-15074940</li>
+          <li class="startsAt_880">Of mail: info@team-rijopleiding.nl</li>
+  </nav>
+  <div class="end">
+      <a href="#" id="dmenuBtn"><i class='bx bx-menu-alt-right'></i></a>
+  </div>
+</header>
+
+<div id="container_delete">
+  <div class="first"><p ></p></div>
+  <div id="screen_width">resize page</div>
+</div>
+
+<!-- The main_part  -->
+
+<div class="other_pages">
+
+  <div class="photo_for_each_page">
+    <img src="../images/hoeveel.gif" /> 
+  </div>
+
+  <div class="sarlavha_with_bg">
+    <h4 >Tijdsduur van de rijopleiding&nbsp;</h4>
+  </div>
+
+<div class="flex_container">
+ <div class="flex_text">
+	 <h6>Aantal lessen</h6>
+  <p>Hoeveel lessen een leerling nodig heeft verschilt enorm, wat voor de een als logisch wordt gezien is voor de ander iets heel bijzonders.<br>
+ <br>
+  Net als op school en bij sport zijn de verschillen groot, de een oefent jaren om een bal goed weg te kunnen slaan en de ander doet het in 1 keer.<br>
+  <br>
+  Wat ervoor zorgt dat de één vlotter zijn of haar rijbewijs haalt dan de ander zit hem o.a. in de volgende zaken.<br>
+  <br>
+          * Wil ik leren autorijden?<br>
+          * Kan ik goed samen werken?<br>
+          * Ben ik handig?<br>
+          * Ben ik assertief?<br>
+          * Vang ik fouten van anderen makkelijk op?<br>
+          * Leer ik makkenlijk? 
+       <br>
+<br>
+Bovenaan staat de intrinsieke motivatie, als jij het wilt kun je alles!
+      <br>
+		
+	
+	</p>   
+    </div>
+	
+	 <div class="flex_text">
+   <h6>Jouw examen</h6>
+<p>
+Het examen begint en eindigt in Eemnes.<br>
+Tijdens je examen rijd je naar een of meerdere omringende dorpen waar de bijzondere verrichtingen worden getoetst om vervolgens weer terug te rijden naar het CBR.
+			
+<br>
+Je examen wordt daardoor als volgt opgebouwd:<br>
+Snelweg berijden: <br>
+(+/- 5 minuten)<br>
+Invoegen<br>
+Inhalen<br>
+Knooppunt<br>
+Tapers/Ritsstroken<br>
+Uitrijden<br>
+
+<br>
+Bubeko:<br>
+(+/- 3 minuten)<br>
+Complexe Kruispunten<br>
+Complexe rotondes<br>
+Rijstrook kiezen<br>
+<br>
+
+Bibeko:<br>
+(+/- 4minuten)<br>
+Kruispunten<br>
+Rotondes<br>
+Bijzondere kruispunten<br>
+<br>
+
+30Zone<br>
+(+/- 20minuten)<br>
+Voorrangregelen<br>
+Voorbijrijden<br>
+Samenwerken<br>
+Parkeren<br>
+Omkeren<br>
+
+<br>
+Vervolgens rijd je terug via de 30 zone, bibeko, bubeko en snelweg.
+	
+	
+	<br>
+Rijd zelf eens een route op basis van deze criteria (nog niet écht zelf ;-) zodat je inzicht krijgt in het examenniveau.<br>	</p>
+  
+		
+		
+    </div>
+	
+    </div>
+  
+
+
+</div>
+
+  <!-- copy everything from here till the end of script tags  -->
+  
+ 
+
+  <div class="black">
+    <p>@Copyright belongs to Shym-Tech, 2022. Contact email: abekeasian@gmail.com</p>
+  </div>
+
+    <script src="../js/expand_submenus.js"></script>
+    <script src="../js/swipeLeftToOpenSidemenu.js"></script>
+    <script src="../js/openAndClose_sidemenu.js"></script>
+   
+    <script>
+      const pageWidth = document.querySelector("#screen_width");
+      window.onresize = function reportWindowSize() {
+        pageWidth.textContent = `${window.innerWidth} px`;
+        };
+    </script>
     
-
-<script>
-  var divs = $('.blueZone'),
-  limit = 300;  /* scrolltop value when opacity should be 0 */
-
-  $(window).on('scroll', function() {
-      var st = $(this).scrollTop();
-
-  /* avoid unnecessary call to jQuery function */
-  if (st <= limit) {
-      divs.css({ 'opacity' : (1 - st/limit)});
-  }
-  });
-</script> 
-
 </body>
 </html>
-

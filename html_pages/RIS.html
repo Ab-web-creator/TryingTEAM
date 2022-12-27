@@ -1,123 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>TEAM-rijopleiding</title>
-        
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Yeseva+One&display=swap"
-          rel="stylesheet"
-        />
-    
-        <!-- Box icons -->
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-        />
-        <!-- Javascript links. I have two more on the bottom of the page -->
-        <script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
-        <script src="js/scroll&disappear.js" type="module" defer></script> 
-    
-        <!-- CSS links -->
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="aside.css" />
-    
-      </head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rijopleiding in stappen</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
-      <!-- Header -->
-      <header>
-        <div class="nav_container">
-          <li class="nav_icons grid-col-span-2"><a href="#">Proefles?</a></li>
-          <li class="nav_icons phone_icon">
-            <a href="#"> <img src="img/phone_icon.png" /></a>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../home_page.css">
+    <link rel="stylesheet" href="../aside.css">
+    <link rel="stylesheet" href="../other_pages.css">
+  
+</head>
+
+<body style="overflow: scroll; color: rgb(7, 7, 182)"
+ontouchstart="touchStart(event)"
+ontouchmove="touchMove(event)"
+ontouchend="touchEnd()">
+
+<!-- Copy in EVERY additional pages everything from here till "the main part" (line 137 ?) -->
+
+<div class="mobile_header">
+  <li id="proefles" class="nav_question">
+    <a href="#">Proefles?</a></li>
+  <li class="nav_icons phone_icon">
+    <a href="tel:+31615074940"> <img src="../images/phone_icon.png" /></a></li>
+  <li class="nav_icons whatsapp_icon">
+    <a href="https://api.whatsapp.com/send?phone=31615074940" target="_blank"> <img src="../images/whatsapp_icon.png" /></a></li>
+
+  <li class="nav_icons email_icon">
+    <a href="mailto:diederickv@gmail.com"><img src="../images/email_icon.png" /></a></li>
+  <li class="nav_icons">
+    <a href="#" id="menuBtn"><img src="../images/hamburger_menu.png" /></i></a></li>
+</div>
+
+<!-- Start of side-menu  -->
+<aside class="hdn-side">
+  <div class="hdn-cont">
+      <ul>
+          <li class="mark" > 
+              <span class="home_sidemenu"><a> Home </a></span>
+              <span class="close_sidemenu"><a> &times; </a></span>
           </li>
-          <li class="nav_icons whatsapp_icon">
-            <a href="#"> <img src="img/whatsapp_icon.png" /></a>
+          <li class="ulLi">
+              <a href="#" class="feat-btn">De rijles <span class="firstMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              <ul class="feat-show">
+                <li><a href="html_pages/opbouw.html"> Opbouw </a></li>
+                <li><a href="html_pages/hoeveel_lessen.html"> Hoeveel lessen </a></li>
+                <li><a href="html_pages/doelen.html"> Doelen </a></li>
+                <li><a href="html_pages/deeltoets.html"> Deeltoets </a></li>
+                <li><a href="html_pages/examen.html"> Examen </a></li>
+                <li><a href="html_pages/RIS.html"> R.I.S. </a></li>
+              </ul>
           </li>
-          <li class="nav_icons email_icon">
-            <a href="#"><img src="img/email_icon.png" /></a>
-          </li>
-          <li class="nav_icons">
-            <a href="#" id="menuBtn"><i class="bx bx-menu"></i></a>
-          </li>
-        </div>
-      </header>
-
-
-      <!-- Aside menu bar -->
-
-      <div class="backdrop"></div>
-
-      <aside class="sidebar">
-        <div class="sidebar_top">
-          <a href="index.html"><i class='bx bx-home-heart'></i> Home</a> <button class="close_sideMenuBar">&times;</button>
-        </div>
-        <ul>
-          <li>
-            <a href="#" class="feat-btn">De rijles <span class="firstMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
-            <ul class="feat-show">
-              <li><a href="opbouw.html"> Opbouw </a></i></li>
-              <li><a href="hoeveel_lessen.html"> Hoeveel lessen </a></i></li>
-              <li><a href="doelen.html"> Doelen </a></i></li>
-              <li><a href="deeltoets.html"> Deeltoets </a></i></li>
-              <li><a href="examen.html"> Examen </a></i></li>
-              <li><a href="RIS.html"> R.I.S. </a></i></li>
-
+          <li><a href="html_pages/RIS.html"> De simulator </a></li>
+          <li class="ulLi"> 
+              <a href="#" class="serv-btn">De lesversneller <span class="secondMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
               
-            </ul>
-          </li>
-          
-          <li> 
-            <a href="#" class="serv-btn">De lesversneller <span class="secondMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
-            
-            <ul class="serv-show">
-              <li><a href="documenten.html">Documenten </a></i></li>
-              <li><a href="dashboard.html">Dashboard & instrumenten </a></i></li>
-              <li><a href="wissers.html">Wissers & verlichting </a></i></li>
-              <li><a href="buiten_de_auto.html"> Buiten de auto </a></i></li>
-              <li><a href="tontom.html"> TonTom </a></i></li>
-            </ul>
+              <ul class="serv-show">
+                <li><a href="documenten.html">Documenten </a></i></li>
+                <li><a href="dashboard.html">Dashboard </a></li>
+                <li><a href="dashboard.html">Interieur </a></li>
+                <li><a href="dashboard.html">verlichting </a></li>
+                <li><a href="wissers.html">Wissers </a></li>
+                <li><a href="buiten_de_auto.html"> Spiegels </a></li>
+                <li><a href="tontom.html"> TomTom </a></li>
+                <li><a href="dashboard.html">Banden </a></li>
+                <li><a href="dashboard.html">De motor </a></li>
+              </ul>
           </li>
 
-          <li> 
-            <a href="#" class="theory-btn">Theorie <span class="thirdMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
-            
-            <ul class="theory-show">
-              <li><a href="boeken.html"> Boeken</a></i></li>
-              <li><a href="examen_training.html"> Examen training  </a></i></li>
-            </ul>
+          <li class="ulLi"> 
+              <a href="#" class="theory-btn">Theorie <span class="thirdMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              
+              <ul class="theory-show">
+                <li><a href="boeken.html"> Boeken</a></li>
+                <li><a href="examen_training.html"> Examen training  </a></li>
+                <li><a href="dashboard.html">Reserveren </a></li>
+              </ul>
           </li>
+          <li> <a href="tarieven.html">De tarieven </a></li>
+          <li>  <a href="contact.html">Contact</a> </li>
+      </ul>
+  </div>
+</aside>
 
-         
-          <li><a href="#">De simulator </a></i></li>
-          <li>
-            <a href="tarieven.html">De tarieven </a>
-          </li>
-        <li>
-          <a href="contact.html">Contact</a></li>
-        </ul>
-       
-      </aside>
+<!-- End of side-menu  -->
+
+<!-- Additional layers  -->
+<div class="blurCompletely"></div>
+<div class="blur"></div>
+<div class="blur2"></div>
+
+<figure class="aside0"></figure>
+
+<!-- topBar for desktop  -->
+
+<header>
+  <div class="desktop_logo">
+    <li > <a href="index.html"> <img src="../images/logo.png" alt=""></a></li>
+  </div>
+  <nav class="fancy-link">
+          <li class="proefless">Proefles?</li>
+          <li class="proefless">Bel/app: 06-15074940</li>
+          <li class="startsAt_880">Of mail: info@team-rijopleiding.nl</li>
+  </nav>
+  <div class="end">
+      <a href="#" id="dmenuBtn"><i class='bx bx-menu-alt-right'></i></a>
+  </div>
+</header>
+
+<div id="container_delete">
+  <div class="first"><p ></p></div>
+  <div id="screen_width">resize page</div>
+</div>
+
+<!-- The main_part  -->
+
+<div class="other_pages">
+
+  <div class="photo_for_each_page">
+    <img src="../images/ristap.gif" /> 
+  </div>
+
+  <div class="sarlavha_with_bg">
+    <h4 >Rijopleiding in stappen</h4>
+  </div>
+
+<div class="flex_container">
+ <div class="flex_text">
+	<h6>R.I.S. en het Team trainingsprotocol</h6>
+<p>
+De Rijopleiding in Stappen is een opleidingsmethodiek waarbij je wordt opgeleid op basis van competenties. Deze competenties worden stap voor stap doorlopen, vandaar de naam Rijopleiding In Stappen.<br>
+<br>
 
 
-    <main style="display: grid;">
-    <div class="photo_for_each_page"></div>
-    <h1 style="color: red; margin: auto; padding: 40px 0px;">RIS</h1>
+De RIS opleiding bestaat uit 4 modules, deze modules bestaan weer uit gemiddeld 15 scripts en de scripts bestaan uit gemiddeld 7 stappen.<br>
+
+Vanaf module 2 krijg je te maken met gecombineerde scripts d.w.z. dat een script een samenvoeging is van (m)eerdere scripts.<br>
+
+Voorbeeld: In module 1 leer je bij script 10 het scannen. Wanneer je bij module 2 het ruimtekussen behandeld, begint deze met 'scan' dan 'volgafstand' etc. Het scannen is al bekend, de rest zijn dan nieuw aan te leren stappen.<br>
+<br>
+
+
+Tijdens je opleiding lees je voor de rijles eerst het hoofdstuk van het script zodat je weet waar de les over gaat en je de stappen kent. In de rijles krijg je verdere uitleg en een demonstratie. Na de demonstratie volgt de training op basis van de stappen die je hebt geleerd bij het script.<br>
+<br>
+Mocht lezen moeilijk zijn of het lukt door tijdgebrek niet, geen probleem! De instructeur behandeld het uiteraard óók in de rijles :-)<br>
+<br>
+<br>
+	 </p>
+
+<h6>
+De fasen die je doorloopt bij het aanleren van een script zijn:</h6>
+<p> 
+
+Fase 1 Kennismaken met het script<br>
+
+1 Je krijgt een huiswerk opdracht<br>
+
+2 Er wordt gemotiveerd en gedemonstreerd<br>
+
+3 Je doet met de instructeur mee<br>
+<br>
+
+
+Fase 2 Het eigenmaken van het script<br>
+
+4 Je werkt op aanwijzing<br>
+
+5 Je hebt nog beperkt hulp nodig<br>
+
+6 Je doet het zelfstandig<br>
+<br>
+
+
+Fase 3 Veralgemenisering van het script<br>
+
+7 Je kan het ook als de situatie wijzigt<br>
+
+8 Je past het overal goed toe.<br>
+<br>
+
+
+Elke module wordt afgesloten met een toets, module 1 en 2 worden getoetst door je instructeur en module 3 en 4 door het CBR.<br>
+
+Doordat je voor je eindexamen nu al meerdere keren getoetst bent wen je er aan en weet je goed wat je kunt en wat er van je wordt verwacht.<br>
+<br>
+
+
+Deze tabel laat zien waar de modules uit bestaan. Ter verduidelijking, het is niet zo dat deze 1-voor-1 worden afgewerkt, als je kijkt bij de opbouw van de rijles zie je hoe deze methode vorm krijgt binnen de rijopleiding.<br><br>
+<br>
+<h6>Team training protocol:</h6>
+<p>
+
+
+Als je bij de opbouw van de rijles kijkt, dan zie je daar de inhoud en opbouw van je rijopleiding.<br>
+
+Deze lijkt te verschillen van de opbouw van de scripts die je bij R.I.S ziet staan.<br>
+
+Dit komt omdat R.I.S. niet een opleiding is maar een schematische weergave van de competenties die je tijdens het rijden ontwikkeld.<br>
+<br>
+
+
+Je kunt b.v. de snelweg gebruiken voor het trainen van de volgafstand, het voorbij rijden, gas doseren, scannen, etc. maar deze scripts kun je ook in een 30zone doen of een provinciale weg. R.I.S. zegt daar niets over, het is aan de instructeur om daar op de juiste wijze invulling aan te geven.<br>
+<br>
+
+
+Team heeft het examengebied uitgebreid geanalyseerd, de best mogelijke trainingslocaties samengesteld en deze in een optimaal schema gezet.<br>
+
+Hoe dat gaat ontdek je tijdens de rijopleiding!</p>	
+		
+	</div>
+	
+	 <div class="flex_text">
+   
+  
+
+		 
+ <h6>Module 01 Voertuig beheersing </h6>
+		 <p>
+
+Script 01 Controle buiten de auto<br>
+Script 02 Controle in de auto<br>
+Script 03 Instappen<br>
+Script 04 Uitstappen<br>
+Script 05 Zithouding<br>
+Script 06 Stuurhouding<br>
+Script 07 Afstellen spiegels<br>
+Script 08 Starten en Afzetten<br>
+Script 09 Gas doceren<br>
+Script 10 Scannen<br>
+Script 11 Sturen<br>
+Script 12 Positie<br>
+Script 13 Remmen<br>
+Script 14 Ontkoppelen<br>
+Script 15 Stoppen<br>
+Script 16 Koppelen<br>
+Script 17 Schakelen<br>
+Script 18 Technische wijze van wegrijden
+		 <br>
+<br>
+</p>
+<h6>
+Module 02 Beheersing van eenvoudige verkeersmanoeuvres en verkeersituaties</h6><p>
+
+Script 19 Wegrijden en Stoppen<br>
+Script 20 Volgafstand<br>
+Script 21 Ruimtekussen<br>
+Script 22 Tegemoet komen<br>
+Script 23 Ingehaald worden<br>
+Script 24 Kruispunten<br>
+Script 25 Afslaan<br>
+Script 26 Hellingproef<br>
+Script 27a Achteruit rijden in een rechte lijn<br>
+Script 27b Achteruit rijden aangegeven bocht<br>
+Script 28 Parkeren op aangegeven plaats<br>
+1 Vooruit in file<br>
+2 Achteruit in file<br>
+3 Vooruit in vak zowel haaks als schuin<br>
+4 Achteruit in vak zowel haaks als schuin<br>
+5 Op stijgende helling<br>
+6 Op dalende helling<br>
+Script 29a Keren d.m.v halve draai<br>
+Script 29b Keren d.m.v. steken<br>
+<br>
+</p>
+<h6>
+Module 03 Complexe voertuig bediening, beheersing van complexe manoeuvres en situaties</h6><p>
+
+Herhaling Kruispunten<br>
+Herhaling Afslaan<br>
+Herhaling Bijzondere verrichtingen met sannen<br>
+Script 30 Rijstrook wisselen en zijdelings verplaatsen<br>
+Script 31 Voorbij gaan<br>
+Script 32 Inhalen<br>
+Script 33 Invoegen<br>
+Script 34 Uitrijden<br>
+Script 35 Rotondes<br>
+Script 36 Erven<br>
+Script 37 Spoorwegovergang<br>
+Script 38 VOP zebra<br>
+Script 39 Tram en bushaltes<br>
+<br>
+</p>
+<h6>
+Module 04 Veilig en verantwoorde verkeersdeelname</h6><p>
+
+
+Script 40 Nacht en moeilijke omstandigheden<br>
+Script 41 Ritvoorbereiding en zelfstandig route rijden<br>
+Script 42 Rijden onder specifieke omstandigheden<br>
+Script 43 Milieuverantwoord rijden<br>
+Script 44 Defensief rijden<br>
+Script 45 Aangepast en besluitvaardig rijden<br>
+Script 46 Mentaliteit en verantwoordelijkheid<br>
+<br>
+Bij het begin van de rijopleiding krijg je het RIS boek, daar wordt alles uitgebreid uitgelegd.<br>
+<br>
+</p>
+
+
+		
+		 
+    </div>
+	
+    </div>
+	
+
+
+
+
+  
+
+
+</div>
+
+  <!-- copy everything from here till the end of script tags  -->
+  
+ 
+
+  <div class="black">
+    <p>@Copyright belongs to Shym-Tech, 2022. Contact email: abekeasian@gmail.com</p>
+  </div>
+
+    <script src="../js/expand_submenus.js"></script>
+    <script src="../js/swipeLeftToOpenSidemenu.js"></script>
+    <script src="../js/openAndClose_sidemenu.js"></script>
+   
+    <script>
+      const pageWidth = document.querySelector("#screen_width");
+      window.onresize = function reportWindowSize() {
+        pageWidth.textContent = `${window.innerWidth} px`;
+        };
+    </script>
     
-    <p style="width: 60%; margin-bottom: 40px; text-align: center; margin-left: auto; margin-right: auto;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quo est, a quam omnis excepturi quis fugiat, in dolorem temporibus qui et quos porro. Ut?</p>
-
-    <button style="margin: auto; width: 300px; background: rgb(134, 145, 239); border: none; height: 50px; border-radius: 10px; font-size: 16px; color: #e1e1e1; padding: 20px; padding-bottom: 40px; font-weight: 500; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><a href="index.html">back to Home page </a></button>
-
-
-    <script src="js/hamburger.js"></script>
-    <script src="js/expand_submenus.js"></script>
-    </main>
 </body>
 </html>

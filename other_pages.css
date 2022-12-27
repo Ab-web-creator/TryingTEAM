@@ -16,9 +16,15 @@ figure {
   z-index: 300;
 }
 
+
+
+
 figure.active {
   display: none;
 }
+#textintext{
+		margin-left:50px;	
+	}
 
 .photo_for_each_page {
   /* background-color: #b95e5e; */
@@ -36,10 +42,11 @@ figure.active {
 
 .sarlavha_with_bg {
   /* background-color: #f0f0f4; */
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background: #B7C4FF
 	  ;
+	margin-bottom: 50px;
   /* margin-bottom: 30px; */
   font-size: 33px;
   letter-spacing: 1.7px;
@@ -89,6 +96,7 @@ footer p {
   text-align: center;
   padding: 5px;
 }
+	
 
 
 /* The rest is for the desktop version  */
@@ -176,3 +184,11 @@ git commit -m "lyuboe sobwenie"
 git push
 
 */
+
+
+#video1 {
+	
+	width: 100%;
+	max-width: 1000px;
+	
+}
