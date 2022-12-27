@@ -16,15 +16,13 @@ figure {
   z-index: 300;
 }
 
-
-
-
 figure.active {
   display: none;
 }
-#textintext{
-		margin-left:50px;	
-	}
+
+#textintext {
+    margin-left:50px;	
+}
 
 .photo_for_each_page {
   /* background-color: #b95e5e; */
