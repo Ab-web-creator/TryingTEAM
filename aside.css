@@ -53,7 +53,7 @@
 }
 
 aside {
-  top: 0px;
+  top: 40px;
   position: fixed;
   transition: right 0.4s ease;
   right: -461px;
@@ -250,7 +250,7 @@ aside button.close_sideMenuBar {
 
   
   aside {
-    top: 0px;
+    top: 57px;
     width: 400px;
   
     background-color: #000095;   

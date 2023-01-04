@@ -28,7 +28,7 @@ goHome.addEventListener("click", () => {
     window.open("../index.html", "_self")
 })
 
-menu2.addEventListener("mouseover", () => {
+menu2.addEventListener("click", () => {
     setTimeout(() => {
         side.classList.add("active");
         figure.classList.add("active");
@@ -37,11 +37,10 @@ menu2.addEventListener("mouseover", () => {
     setTimeout(() => {
         blurs.classList.add("active");
     }, 1000)
-
 })
 
 
-blurs.addEventListener("mouseover", () => {
+blurs.addEventListener("click", () => {
     setTimeout(() => {
     blurs.classList.remove("active");
     side.classList.remove("active");
