@@ -26,10 +26,11 @@ figure.active {
 
 .photo_for_each_page {
   /* background-color: #b95e5e; */
-  /* width: 90%; */
+  width: 90%;
+  height: 60vh;
   margin: auto;
   margin-top: 10px;
-  /* height: fit-content; */
+
 }
 
 .photo_for_each_page img {
@@ -38,8 +39,8 @@ figure.active {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  height: fit-content;
+  width: 100%;
+  /* height: fit-content; */
 }
 
 .sarlavha_with_bg {
