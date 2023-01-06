@@ -122,8 +122,6 @@ footer p {
   background-repeat: no-repeat; */
 }
 
-/* The rest is for the desktop version  */
-
 /* why we need min-width: 360px ?  */
 @media only screen and (min-width: 500px) {
   .flex_container {
