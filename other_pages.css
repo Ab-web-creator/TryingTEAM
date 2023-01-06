@@ -110,7 +110,7 @@ footer p {
 /* The rest is for the desktop version  */
 
 /* why we need min-width: 360px ?  */
-@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 500px) {
   .flex_container {
     position: relative;
     margin-bottom: 80px;
