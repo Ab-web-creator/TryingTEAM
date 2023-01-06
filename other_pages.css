@@ -105,7 +105,15 @@ footer p {
   color: white;
 }
 	
+.video_div {
+  margin: auto;
+  width: 90%;
+}
 
+.video1 {
+  width: 100%;
+  max-width: 1000px;
+}
 
 /* The rest is for the desktop version  */
 
@@ -134,10 +142,6 @@ footer p {
     width: 90%;
   }
 
-  .video_div {
-    margin: auto;
-    width: 90%;
-  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -188,8 +192,6 @@ footer p {
 }
 
 
-
-
 /* 
 
 git pull
@@ -202,10 +204,3 @@ git push
 
 */
 
-
-#video1 {
-	
-	width: 100%;
-	max-width: 1000px;
-	
-}

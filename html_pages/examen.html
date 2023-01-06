@@ -260,17 +260,14 @@ Als het tenminste 1 maand is voor de examendatum kan dit meestal kosteloos (dit 
 <div style="text-align:center" class="video_div"> 
   <button onclick="playPause()">Play/Pause</button> 
 
-
-  
-  <video id="video1">
+  <video class="video1">
   <source src="../Video/praktijkexamen.mp4" type="video/mp4" controls>
-
   </video>
 </div> 
 <br><br><br>
 
 <script> 
-var myVideo = document.getElementById("video1"); 
+var myVideo = document.querySelector(".video1"); 
 
 function playPause() { 
   if (myVideo.paused) 

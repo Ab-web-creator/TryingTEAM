@@ -216,13 +216,13 @@ Uiteraard wordt de toets in overleg gepland zodat het geen agenda problemen ople
   <button onclick="playPause()">Play/Pause</button>
  
 
-  <video id="video1">
+  <video class="video1">
   <source src="../Video/tussentijdsetoets.mp4" type="video/mp4" controls>
   </video>
 </div> 
 <br><br> <br>
 <script> 
-var myVideo = document.getElementById("video1"); 
+var myVideo = document.querySelector(".video1"); 
 
 function playPause() { 
   if (myVideo.paused) 
