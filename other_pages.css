@@ -37,7 +37,7 @@ figure.active {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 90%;
   height: fit-content;
 }
 
@@ -137,11 +137,6 @@ footer p {
     display: flex;
     flex-direction: column;
   }
-
-  .photo_for_each_page img {
-    width: 90%;
-  }
-
 }
 
 @media only screen and (min-width: 600px) {
