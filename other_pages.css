@@ -26,7 +26,7 @@ figure.active {
 
 .photo_for_each_page {
   /* background-color: #b95e5e; */
-  /* width: 100%; */
+  width: 90%;
   margin: auto;
   margin-top: 10px;
 }
@@ -37,7 +37,7 @@ figure.active {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
   height: fit-content;
 }
 
