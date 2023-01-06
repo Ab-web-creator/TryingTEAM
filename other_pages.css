@@ -110,13 +110,16 @@ footer p {
 .video_div {
   margin: auto;
   width: 90%;
-
 }
 
 .video1 {
   width: 100%;
   max-width: 1000px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+
+  background-image: url(./images/mainpage_1_mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* The rest is for the desktop version  */
