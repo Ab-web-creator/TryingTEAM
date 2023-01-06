@@ -110,11 +110,13 @@ footer p {
 .video_div {
   margin: auto;
   width: 90%;
+
 }
 
 .video1 {
   width: 100%;
   max-width: 1000px;
+  border: 2px solid blue;
 }
 
 /* The rest is for the desktop version  */
