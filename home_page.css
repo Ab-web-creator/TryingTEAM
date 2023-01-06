@@ -281,6 +281,7 @@ section.page {
   margin-right: auto;
   width: 97%;
   height: fit-content;
+  opacity: 0.95;
 }
 
 .blueZoneImage {
@@ -291,7 +292,7 @@ section.page {
 }
 
 .first_page_images .basis {
-  opacity: 1;
+  opacity: 0.95;
 }
 
 /* Pseudo-buttons  */

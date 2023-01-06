@@ -150,9 +150,9 @@ function zeroOpacityForOriginal3gifs() {
   stop.style.opacity = 0
 }
 function unzeroOpacityForOriginal3gifs() {
-  basis.style.opacity = 10
-  start.style.opacity = 10
-  stop.style.opacity = 10
+  basis.style.opacity = 1
+  start.style.opacity = 1
+  stop.style.opacity = 1
 }
 
 linkButton1.addEventListener('click', (e) => {
@@ -533,7 +533,7 @@ mainDiv.addEventListener('scroll', () => {
   // basisMenuUrlPage1 = `./images/1_basis.gif?a=${Math.random()}`
 
   if (scrolledHeight >= 0 && scrolledHeight <= page1.scrollHeight * 0.1) {
-    dynamicContainer.style.opacity = 1
+    dynamicContainer.style.opacity = .95
     linkImageSource(linkImageResult1_1, linkImageResult1_2, linkImageResult1_3)
     console.log('Page 1')
 
@@ -670,7 +670,7 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('Page 2')
 
-    dynamicContainer.style.opacity = 1
+    dynamicContainer.style.opacity = 0.95
     linkImageSource(linkImageResult2_1, linkImageResult2_2, linkImageResult2_3)
     hideLinkButtons(false)
     resetDescriptions()
@@ -802,7 +802,7 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     arrowcha.style.display = 'block'
     console.log('Page 3')
-    dynamicContainer.style.opacity = 1
+    dynamicContainer.style.opacity = 0.95
     linkImageSource(linkImageResult3_1, linkImageResult3_2, linkImageResult3_3)
     hideLinkButtons(false)
     resetDescriptions()
@@ -951,7 +951,7 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     arrowcha.style.display = 'none'
     console.log('Page 4')
-    dynamicContainer.style.opacity = 1
+    dynamicContainer.style.opacity = 0.95
     linkImageSource(linkImageResult4_1, linkImageResult4_2, linkImageResult4_3)
     hideLinkButtons(false)
     resetDescriptions()
