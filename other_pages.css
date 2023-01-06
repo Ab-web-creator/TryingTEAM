@@ -29,6 +29,7 @@ figure.active {
   width: 90%;
   margin: auto;
   margin-top: 10px;
+  height: fit-content;
 }
 
 .photo_for_each_page img {
