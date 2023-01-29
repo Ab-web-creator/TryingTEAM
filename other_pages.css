@@ -28,8 +28,8 @@ figure.active {
   /* background-color: #b95e5e; */
   margin: auto;
   margin-top: 10px;
-  width: 90%;
-  height: 65vh;
+  margin-right: 2%;
+  width: 96%;
 }
 
 .photo_for_each_page img {
@@ -48,18 +48,30 @@ figure.active {
   /* background-color: #f0f0f4; */
   padding-top: 0px;
   padding-bottom: 0px;
-  background: #B7C4FF
-	  ;
-	margin-bottom: 50px;
+  background: #B7C4FF;
+  border-radius: 25px;
+  margin-bottom: 30px;
+	margin-left: 9PX;
   /* margin-bottom: 30px; */
-  font-size: 33px;
+  font-size: 30px;
   letter-spacing: 1.7px;
   /* border-top: 4px double #818bf91a; */
+	
+	
 }
+
+  .flex_text { 
+    margin-left: 15px;	
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
 
 h4 {
   text-align: center;
-  padding: 40px 20px;
+  padding: 15px 0px;
+
   font-weight: 700;
 }
 
@@ -128,6 +140,7 @@ footer p {
   .flex_container {
     position: relative;
     margin-bottom: 80px;
+	
     padding: 0px 0px 0px 30px;
     margin-left: auto;
   	margin-right: auto;
@@ -138,8 +151,8 @@ footer p {
   }
 
   .flex_text { 
-    margin: 0px;	
-    width: 100%;
+    margin-left: 15px;	
+    width: 90%;
     display: flex;
     flex-direction: column;
   }
@@ -177,6 +190,7 @@ footer p {
   .flex_container {
     position: relative;
     margin-bottom: 80px;
+	
     padding: 0px 0px 0px 100px;
     margin-left: auto;
 	margin-right: auto;
@@ -188,6 +202,7 @@ footer p {
 
   .flex_text { 
     margin-top: 0px;
+	margin-left: 15px;
     width: 45%;
     display: flex;
     flex-direction: column;
