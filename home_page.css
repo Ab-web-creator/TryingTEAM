@@ -274,14 +274,32 @@ section.page {
 
 .blueZoneContainer {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 97%;
+  width: 90%;
   height: fit-content;
   opacity: 0.95;
+}
+
+.first_page_images {
+  /* position: relative; */
+}
+
+.flex_ber {
+  background-color: #ffffff;
+  position: relative;
+  padding: 5px 5px;
+  padding-left: 20px;
+  
+  border-radius: 10px;
+  margin-bottom: 7px;
+
+  display: flex;
+  gap: 20px;
+
 }
 
 .blueZoneImage {
@@ -290,10 +308,64 @@ section.page {
   /* bottom: 0;
   opacity: 0;
   object-fit: contain; */
+  color: rgb(40, 40, 255);
+  
+  /* padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px; */
+  height: fit-content;
 }
 
-.first_page_images .basis {
-  opacity: 0.95;
+.cutoff-text {
+  --max-lines: 1;
+  --line-height: 1.4;
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  line-height: var(--line-height);
+  overflow: hidden;
+  position: relative;
+}
+
+.check_mark {
+  position: absolute;
+  display: inline-block;
+  width: 0px;
+  top: 15px;
+}
+
+.expand-btn {
+  appearance: none;
+  /* border: 1px solid blue; */
+  padding: .5em;
+  border-radius: .25em;
+  cursor: pointer;
+}
+.expand-btn:hover {
+  background-color: transparent
+}
+.expand-btn::before {
+  content: "1-link Lorem ipsum";
+  display: inline-block;
+  border-width: 0px;
+  color: #291eff;
+  width: 100%;
+  height: 15px;
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.expand-btn:checked::before {
+  content: " 1-link Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab placeat architecto quam aliquid officia magni ipsa nemo delectus quo sunt dolores non nobis voluptatibus, dolorum aspernatur mollitia et? Doloribus totam accusantium numquam ut dicta!";
+  display: inline-block;
+  border-width: 0px;
+  color: #291eff;
+  width: 100%;
+  height: 15px;
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.cutoff-text:has(+ .expand-btn:checked) {
+  max-height: none;
 }
 
 /* Pseudo-buttons  */
@@ -1411,9 +1483,3 @@ git push
 
 */
 
-.cutoff-text {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}
