@@ -274,102 +274,29 @@ section.page {
 
 .blueZoneContainer {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 97%;
   height: fit-content;
   opacity: 0.95;
 }
 
-.first_page_images {
-  /* position: relative; */
-}
-
-.flex_ber {
-  background-color: #ffffff;
-  position: relative;
-  padding: 5px 5px;
-  padding-left: 20px;
-  
-  border-radius: 10px;
-  margin-bottom: 7px;
-
-  display: flex;
-  gap: 20px;
-
-}
-
 .blueZoneImage {
-  /* position: absolute; */
-  position: relative;
-  /* bottom: 0;
-  opacity: 0;
-  object-fit: contain; */
-  color: rgb(40, 40, 255);
-  
-  /* padding: 15px 20px;
-  border-radius: 10px;
-  margin-bottom: 10px; */
-  height: fit-content;
-}
-
-.cutoff-text {
-  --max-lines: 1;
-  --line-height: 1.4;
-  max-height: calc(var(--max-lines) * 1em * var(--line-height));
-  line-height: var(--line-height);
-  overflow: hidden;
-  position: relative;
-}
-
-.check_mark {
   position: absolute;
-  display: inline-block;
-  width: 0px;
-  top: 15px;
+  bottom: 0;
+  opacity: 0;
+  object-fit: contain;
 }
 
-.expand-btn {
-  appearance: none;
-  /* border: 1px solid blue; */
-  padding: .5em;
-  border-radius: .25em;
-  cursor: pointer;
-}
-.expand-btn:hover {
-  background-color: transparent
-}
-.expand-btn::before {
-  content: "1-link Lorem ipsum";
-  display: inline-block;
-  border-width: 0px;
-  color: #291eff;
-  width: 100%;
-  height: 15px;
-  margin-right: 5px;
-  font-size: 1.2rem;
-}
-
-.expand-btn:checked::before {
-  content: " 1-link Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab placeat architecto quam aliquid officia magni ipsa nemo delectus quo sunt dolores non nobis voluptatibus, dolorum aspernatur mollitia et? Doloribus totam accusantium numquam ut dicta!";
-  display: inline-block;
-  border-width: 0px;
-  color: #291eff;
-  width: 100%;
-  height: 15px;
-  margin-right: 5px;
-  font-size: 1.2rem;
-}
-
-.cutoff-text:has(+ .expand-btn:checked) {
-  max-height: none;
+.first_page_images .basis {
+  opacity: 0.95;
 }
 
 /* Pseudo-buttons  */
-/* 
+
 .mainButton {
   position: absolute;
   left: 0;
@@ -382,8 +309,8 @@ section.page {
   border-radius: 50%;
   background-color: transparent;
   border-width: 0px;
-} */
-/* 
+}
+
 .linkButton1 {
   position: absolute;
   bottom: 154px;
@@ -394,8 +321,8 @@ section.page {
   
   background-color: transparent;
   border-width: 0px;
-} */
-/* 
+}
+
 .linkButton2 {
   position: absolute;
   bottom: 125px;
@@ -405,8 +332,8 @@ section.page {
   border-radius: 50%;
   background-color: transparent;
   border-width: 0px;
-} */
-/* 
+}
+
 .linkButton3 {
   position: absolute;
   bottom: 80px;
@@ -427,8 +354,8 @@ section.page {
   border-radius: 20%;
   background-color: transparent;
   border-width: 0px;
-} */
-/* 
+}
+
 .oneOfFour1 {
   position: absolute;
   left: 30px;
@@ -472,7 +399,7 @@ section.page {
   border-radius: 10%;
   background-color: transparent;
   border-width: 0px;
-} */
+}
 
 .phone_number {
   display: none;
@@ -612,6 +539,9 @@ body::-webkit-scrollbar {
   /* Hide scrollbar for Chrome, Safari and Opera */
   display: none;
 }
+
+
+
 
 ol {
   margin: 0;
@@ -825,7 +755,7 @@ margin-bottom: 40px;
   color: white;
 }
 
-/* .fifthSection {
+.fifthSection {
   background-color: rgb(249, 249, 249);
   justify-content: space-around;
   
@@ -952,7 +882,7 @@ margin-bottom: 40px;
 }
 .seventhSection .contacting_part li {
   line-height: 5px;
-} */
+}
 .direct_contact a {
   color: white;
   cursor: pointer;
@@ -1482,4 +1412,3 @@ git commit -m "lyuboe sobwenie"
 git push
 
 */
-
