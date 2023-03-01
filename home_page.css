@@ -274,7 +274,7 @@ section.page {
 
 .blueZoneContainer {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -291,119 +291,42 @@ section.page {
   object-fit: contain;
 }
 
+.flex_for_link {
+  background-color: rgba(255, 255, 255, 0.939);
+  color: blue;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: -1;
+
+  display: flex;
+  gap: 10px;
+}
 .first_page_images .basis {
   opacity: 0.95;
 }
-
-/* Pseudo-buttons  */
-
-.mainButton {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50px;
-  height: 50px;
-  bottom: 27px;
-  border-radius: 50%;
-  background-color: transparent;
-  border-width: 0px;
-}
-
-.linkButton1 {
-  position: absolute;
-  bottom: 154px;
-  left: 14px;
+.plus_sign {
+  text-align: center;
+  font-weight: 900;
   width: 30px;
-  height: 40px;
-  border-radius: 20%;
+  margin-left: 5px;
+  margin-right: 5px;
+  /* background-color: rgba(255, 255, 255, 0.854); */
+  z-index: 1000;
+}
+.linklar {
+  height: 20px;
+  overflow: hidden;
+  text-align: left;
+  /* background-color: rgba(255, 255, 255, 0.854); */
+  z-index: 10000;
+}
+.expanded {
+  height: fit-content;
+  /* z-index: 10000; */
+}
   
-  background-color: transparent;
-  border-width: 0px;
-}
-
-.linkButton2 {
-  position: absolute;
-  bottom: 125px;
-  left: 14px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: transparent;
-  border-width: 0px;
-}
-
-.linkButton3 {
-  position: absolute;
-  bottom: 80px;
-  left: 14px;
-  width: 30px;
-  height: 40px;
-  border-radius: 10%;
-
-  background-color: transparent;
-  border-width: 0px;
-}
-
-.closeLink {
-  position: absolute;
-  left: 14px;
-  width: 30px;
-  height: 40px;
-  border-radius: 20%;
-  background-color: transparent;
-  border-width: 0px;
-}
-
-.oneOfFour1 {
-  position: absolute;
-  left: 30px;
-  bottom: 50px;
-  width: 90px;
-  height: 55px;
-  border-radius: 10%;
-  background-color: transparent;
-  border-width: 0px;
-}
-
-.oneOfFour2 {
-  position: absolute;
-  left: 68px;
-  bottom: 115px;
-  width: 100px;
-  height: 65px;
-  border-radius: 10%;
-  border-width: 0px;
-  background-color: transparent;
-  border-width: 0px;
-}
-
-.oneOfFour3 {
-  position: absolute;
-  left: 178px;
-  bottom: 110px;
-  width: 90px;
-  height: 65px;
-  border-radius: 10%;
-  background-color: transparent;
-  border-width: 0px;
-}
-
-.oneOfFour4 {
-  position: absolute;
-  right: 44px;
-  bottom: 45px;
-  width: 70px;
-  height: 55px;
-  border-radius: 10%;
-  background-color: transparent;
-  border-width: 0px;
-}
-
-.phone_number {
-  display: none;
-}
+ 
 header {
   display: none;
 }
