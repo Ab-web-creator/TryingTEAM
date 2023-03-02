@@ -274,7 +274,7 @@ section.page {
 
 .blueZoneContainer {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -291,42 +291,175 @@ section.page {
   object-fit: contain;
 }
 
+.first_page_images .basis {
+  opacity: 0.95;
+}
+
+
 .flex_for_link {
   background-color: rgba(255, 255, 255, 0.939);
   color: blue;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 10px;
-  z-index: -1;
 
   display: flex;
+  flex-direction: row;
   gap: 10px;
 }
 .first_page_images .basis {
   opacity: 0.95;
 }
 .plus_sign {
+  /* position: fixed; */
   text-align: center;
   font-weight: 900;
   width: 30px;
   margin-left: 5px;
   margin-right: 5px;
+
   /* background-color: rgba(255, 255, 255, 0.854); */
-  z-index: 1000;
 }
+.plus_sign3 {
+  /* position: relative; */
+  bottom: 10px;
+  left: 10px;
+  text-align: center;
+  font-weight: 900;
+  width: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  z-index: 100000;
+  /* background-color: rgba(255, 255, 255, 0.854); */
+}
+
 .linklar {
   height: 20px;
   overflow: hidden;
   text-align: left;
   /* background-color: rgba(255, 255, 255, 0.854); */
-  z-index: 10000;
+
 }
 .expanded {
   height: fit-content;
-  /* z-index: 10000; */
+  /* transition: all 0.2s ease-in-out; */
+  
 }
   
- 
+/* Pseudo-buttons  */
+
+/* .mainButton {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  bottom: 27px;
+  border-radius: 50%;
+  background-color: transparent;
+  border-width: 0px;
+} */
+
+.linkButton1 {
+  position: absolute;
+  bottom: 110px;
+  left: 10px;
+  width: 60px;
+  height: 40px;
+  border-radius: 20%;
+  
+  background-color: rgba(255, 0, 0, 0.306);
+  background-color: transparent;
+  border-width: 0px;
+}
+
+.linkButton2 {
+  position: absolute;
+  bottom: 60px;
+  left: 10px;
+  width: 60px;
+  height: 40px;
+  border-radius: 20%;
+  background-color: rgba(255, 255, 0, 0.4);
+  background-color: transparent;
+
+  border-width: 0px;
+}
+
+.linkButton3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 60px;
+  height: 40px;
+  border-radius: 10%;
+
+  background-color: rgba(0, 128, 0, 0.328);
+  background-color: transparent;
+
+  border-width: 0px;
+}
+
+.closeLink {
+  position: absolute;
+  left: 5px;
+  width: 100px;
+  height: 140px;
+  border-radius: 10%;
+  background-color: rgba(128, 128, 128, 0.38);
+  background-color: transparent;
+
+  border-width: 0px;
+}
+/* 
+.oneOfFour1 {
+  position: absolute;
+  left: 30px;
+  bottom: 50px;
+  width: 90px;
+  height: 55px;
+  border-radius: 10%;
+  background-color: transparent;
+  border-width: 0px;
+}
+
+.oneOfFour2 {
+  position: absolute;
+  left: 68px;
+  bottom: 115px;
+  width: 100px;
+  height: 65px;
+  border-radius: 10%;
+  border-width: 0px;
+  background-color: transparent;
+  border-width: 0px;
+}
+
+.oneOfFour3 {
+  position: absolute;
+  left: 178px;
+  bottom: 110px;
+  width: 90px;
+  height: 65px;
+  border-radius: 10%;
+  background-color: transparent;
+  border-width: 0px;
+}
+
+.oneOfFour4 {
+  position: absolute;
+  right: 44px;
+  bottom: 45px;
+  width: 70px;
+  height: 55px;
+  border-radius: 10%;
+  background-color: transparent;
+  border-width: 0px;
+}
+ */
+
 header {
   display: none;
 }

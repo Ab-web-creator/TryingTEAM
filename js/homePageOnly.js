@@ -1,7 +1,5 @@
 // We are creating 
 const arrowcha = document.querySelector('.arrow')
-
-
 const mainDiv = document.querySelector('.section-container')
 const dynamicContainer = document.querySelector('.dynamicContainer')
 
@@ -18,20 +16,31 @@ dynamicContainer.appendChild(pageHeader)
 
 const blueZoneContainer = document.querySelector('.blueZoneContainer')
 const basis = document.querySelector('.basis')
-
+const start = document.querySelector('.start')
+const stop = document.querySelector('.stop')
 
 const page1 = document.getElementById('page-1')
 const page2 = document.getElementById('page-2')
 const page3 = document.getElementById('page-3')
 const page4 = document.getElementById('page-4')
 
-let basisImageDisplay = true
+//adding
+// const page5 = document.getElementById('page-5')
+// const page6 = document.getElementById('page-6')
 
+
+let basisImageDisplay = true
+// let startImageDisplay = false
+// let stopImageDisplay = false
 
 let sectionOneView = true
 let sectionTwoView = false
 let sectionThreeView = false
 let sectionFourView = false
+
+//adding
+// let sectionFiveView = false
+// let sectionSixView = false
 
 
 let basisMenuUrlPage1 = `./images/1_basis.gif`
@@ -39,9 +48,526 @@ let basisMenuUrlPage2 = `./images/2_basis.gif`
 let basisMenuUrlPage3 = `./images/3_basis.gif`
 let basisMenuUrlPage4 = `./images/4_basis.gif`
 
+let startMenuUrlPage1 = `./images/1_start_menu.gif`
+let stopMenuUrlPage1 = `./images/1_stop_menu.gif`
+
+let startMenuUrlPage2 = `./images/2_start_menu.gif`
+let stopMenuUrlPage2 = `./images/2_stop_menu.gif`
+
+let startMenuUrlPage3 = `./images/3_start_menu.gif`
+let stopMenuUrlPage3 = `./images/3_stop_menu.gif`
+
+let startMenuUrlPage4 = `./images/4_start_menu.gif`
+let stopMenuUrlPage4 = `./images/4_stop_menu.gif`
+
+// Pseudo-buttons and gif images
+const linkButton1 = document.querySelector('.linkButton1')
+const linkButton2 = document.querySelector('.linkButton2')
+const linkButton3 = document.querySelector('.linkButton3')
+
+const imageResult1 = document.querySelector('.linkResult1')
+const imageResult2 = document.querySelector('.linkResult2')
+const imageResult3 = document.querySelector('.linkResult3')
+
+
+
+
+// const linkImageResult1_1 = './images/LinkResult1_1.gif'
+// const linkImageResult1_2 = './images/LinkResult1_2.gif'
+// const linkImageResult1_3 = './images/LinkResult1_3.gif'
+
+// const linkImageResult2_1 = './images/LinkResult2_1.gif'
+// const linkImageResult2_2 = './images/LinkResult2_2.gif'
+// const linkImageResult2_3 = './images/LinkResult2_3.gif'
+
+// const linkImageResult3_1 = './images/LinkResult3_1.gif'
+// const linkImageResult3_2 = './images/LinkResult3_2.gif'
+// const linkImageResult3_3 = './images/LinkResult3_3.gif'
+
+// const linkImageResult4_1 = './images/LinkResult4_1.gif'
+// const linkImageResult4_2 = './images/LinkResult4_2.gif'
+// const linkImageResult4_3 = './images/LinkResult4_3.gif'
+
+const closeLink = document.querySelector('.closeLink')
+closeLink.disabled = true
+
+function linkImageSource(link1, link2, link3) {
+  imageResult1.src = link1
+  imageResult2.src = link2
+  imageResult3.src = link3
+}
+
+// function displayCurrentDescription(current, image2, image3) {
+//   current.style.opacity = 1
+//   current.style.zIndex = 3
+//   image2.style.opacity = 0
+//   image3.style.opacity = 0
+// }
+
+let isDescOpen = false
+let closeButtonHeight1 = 223
+let closeButtonHeight2 = 215
+let closeButtonHeight3 = 200
+
+let firstExpandButton = 110
+let secondExpandButton = 60
+let thirdExpandButton = 10
+
+function changeDefaultExpandPositions(firstValue, secondValue, thirdValue) {
+  firstExpandButton = firstValue
+  secondExpandButton = secondValue
+  thirdExpandButton = thirdValue
+}
+
+function setExpandButtonsPosition(position1, position2, position3) {
+  linkButton1.style.bottom = `${position1}px`
+  linkButton2.style.bottom = `${position2}px`
+  linkButton3.style.bottom = `${position3}px`
+}
+
+function setCloseButtonPositions(position1, position2, position3) {
+  closeButtonHeight1 = position1
+  closeButtonHeight2 = position2
+  closeButtonHeight3 = position3
+}
+
+function setCloseButtonHeight(height) {
+  closeLink.style.bottom = `${height}px`
+  closeLink.disabled = false
+  closeLink.style.zIndex = 3
+}
+
+closeLink.addEventListener('click', () => {
+  resetDescriptions()
+  // unzeroOpacityForOriginal3gifs()
+  console.log("Close ,ink bu")
+  blur2.style.display = 'none'
+
+  // link1.classList.remove("expanded")
+  // link2.classList.remove("expanded")
+  // link3.classList.remove("expanded")
+})
 
 
 const blur2 = document.querySelector('.blur2')
+
+// function zeroOpacityForOriginal3gifs() {
+//   basis.style.opacity = 0
+//   start.style.opacity = 0
+//   stop.style.opacity = 0
+// }
+// function unzeroOpacityForOriginal3gifs() {
+//   basis.style.opacity = 1
+//   start.style.opacity = 1
+//   stop.style.opacity = 1
+// }
+
+const link1 = document.querySelector('.link_1_1')
+const link2 = document.querySelector('.link_1_2')
+const link3 = document.querySelector('.link_1_3')
+
+const plus_sign = document.querySelector('.plus_sign')
+const plus_sign1 = document.querySelector('.plus_sign1')
+const plus_sign2 = document.querySelector('.plus_sign2')
+const plus_sign3 = document.querySelector('.plus_sign3')
+
+
+
+linkButton1.addEventListener('click', (e) => {
+  blur2.style.display = 'block'
+  // zeroOpacityForOriginal3gifs()
+  // displayCurrentDescription(imageResult1, imageResult2, imageResult3)
+  isDescOpen = true
+  
+  resetDescriptions()
+  console.log("Birinci link")
+  link1.classList.add("expanded")
+  plus_sign1.innerHTML = "—"
+ 
+  // remove later if 
+  setCloseButtonHeight(140)
+  setExpandButtonsPosition(345, 60, 10)
+  
+  // make these active again if needed 
+  // if (sectionOneView) {
+  // setCloseButtonHeight(140)
+  // setExpandButtonsPosition(345, 60, 10)
+  // }
+  // if (sectionTwoView) {
+  // setCloseButtonHeight(310)
+  // setExpandButtonsPosition(165, 130, 93)
+  // }
+  // if (sectionThreeView) {
+  // setCloseButtonHeight(250)
+  // setExpandButtonsPosition(165, 130, 93)
+  // }
+  // if (sectionFourView) {
+  // setCloseButtonHeight(315)
+  // setExpandButtonsPosition(165, 130, 93)
+  // }
+  
+})
+
+linkButton2.addEventListener('click', () => {
+  blur2.style.display = 'block'
+  // zeroOpacityForOriginal3gifs()
+  // displayCurrentDescription(imageResult2, imageResult1, imageResult3)
+  isDescOpen = true
+
+  resetDescriptions()
+  console.log("Ikkiinci link")
+  link2.classList.add("expanded")
+  plus_sign2.innerHTML = "—"
+
+    // remove later if 
+    setCloseButtonHeight(140)
+    setExpandButtonsPosition(345, 60, 10)
+    
+    // make these active again if needed 
+    // if (sectionOneView) {
+    // setCloseButtonHeight(140)
+    // setExpandButtonsPosition(345, 60, 10)
+    // }
+    // if (sectionTwoView) {
+    // setCloseButtonHeight(310)
+    // setExpandButtonsPosition(165, 130, 93)
+    // }
+    // if (sectionThreeView) {
+    // setCloseButtonHeight(250)
+    // setExpandButtonsPosition(165, 130, 93)
+    // }
+    // if (sectionFourView) {
+    // setCloseButtonHeight(315)
+    // setExpandButtonsPosition(165, 130, 93)
+    // }
+
+})
+
+linkButton3.addEventListener('click', () => {
+  blur2.style.display = 'block'
+  // zeroOpacityForOriginal3gifs()
+
+  // displayCurrentDescription(imageResult3, imageResult1, imageResult2)
+  isDescOpen = true
+
+  resetDescriptions()
+  console.log("Uchinci link")
+  link3.classList.add("expanded")
+  plus_sign3.innerHTML = "—"
+  // basis.style.zIndex = -30
+  // start.style.zIndex = -30
+  // stop.style.zIndex = -30
+  
+    // remove later if 
+  setCloseButtonHeight(140)
+  setExpandButtonsPosition(345, 60, 10)
+  
+  // make these active again if needed 
+  // if (sectionOneView) {
+  // setCloseButtonHeight(140)
+  // setExpandButtonsPosition(345, 60, 10)
+  // }
+  // if (sectionTwoView) {
+  // setCloseButtonHeight(310)
+  // setExpandButtonsPosition(165, 130, 93)
+  // }
+  // if (sectionThreeView) {
+  // setCloseButtonHeight(250)
+  // setExpandButtonsPosition(165, 130, 93)
+  // }
+  // if (sectionFourView) {
+  // setCloseButtonHeight(315)
+  // setExpandButtonsPosition(165, 130, 93)
+  // }
+})
+
+function resetDescriptions() {
+  // imageResult1.style.opacity = 0
+  // imageResult2.style.opacity = 0
+  // imageResult3.style.opacity = 0
+
+  // imageResult1.style.zIndex = 0
+  // imageResult1.style.zIndex = 0
+  // imageResult1.style.zIndex = 0
+
+  link1.classList.remove("expanded")
+  link2.classList.remove("expanded")
+  link3.classList.remove("expanded")
+  plus_sign.innerHTML = "+"
+  plus_sign1.innerHTML = "+"
+  plus_sign2.innerHTML = "+"
+  plus_sign3.innerHTML = "+"
+
+  closeLink.disabled = false
+  closeLink.style.zIndex = -3
+  setExpandButtonsPosition(
+    firstExpandButton,
+    secondExpandButton,
+    thirdExpandButton,
+  )
+}
+
+// 4 knops which appear only when start button is clicked
+
+// const oneOfFour1 = document.querySelector('.oneOfFour1')
+// const oneOfFour2 = document.querySelector('.oneOfFour2')
+// const oneOfFour3 = document.querySelector('.oneOfFour3')
+// const oneOfFour4 = document.querySelector('.oneOfFour4')
+
+// function hideFourLinkButtons() {
+//   oneOfFour1.style.zIndex = -3
+//   oneOfFour2.style.zIndex = -3
+//   oneOfFour3.style.zIndex = -3
+//   oneOfFour4.style.zIndex = -3
+// }
+
+// function unhideFourLinkButtons() {
+//   oneOfFour1.style.zIndex = 10
+//   oneOfFour2.style.zIndex = 10
+//   oneOfFour3.style.zIndex = 10
+//   oneOfFour4.style.zIndex = 10
+// }
+
+
+// if we click them, they open links depending on which page they are in
+// oneOfFour1.addEventListener('click', () => {
+//   if (sectionOneView) {
+//   window.open("./html_pages/opbouw.html", "_self")
+//   }
+//   if (sectionTwoView) {
+//   window.open("./html_pages/locatie.html", "_self")
+//   }
+//   if (sectionThreeView) {
+//   window.open("./html_pages/theorie.html", "_self")
+//   }
+//   if (sectionFourView) {
+//   window.open("./html_pages/waarom.html", "_self")
+//   }
+// })
+
+// oneOfFour2.addEventListener('click', () => {
+//   if (sectionOneView) {
+//   window.open("./html_pages/versneller.html", "_self")
+//   }
+//   if (sectionTwoView) {
+//   window.open("./html_pages/simulator.html", "_self")
+//   }
+//   if (sectionThreeView) {
+//   window.open("./html_pages/reserveren.html", "_self")
+//   }
+//   if (sectionFourView) {
+//   window.open("./html_pages/justdiggit.html", "_self")
+//   }
+// })
+
+// oneOfFour3.addEventListener('click', () => {
+//   if (sectionOneView) {
+//   window.open("./html_pages/versneller.html", "_self")
+//   }
+//   if (sectionTwoView) {
+//   window.open("./html_pages/simulator.html", "_self")
+//   }
+//   if (sectionThreeView) {
+//   window.open("./html_pages/reserveren.html", "_self")
+//   }
+//   if (sectionFourView) {
+//   window.open("./html_pages/justdiggit.html", "_self")
+//   }
+// })
+
+// oneOfFour4.addEventListener('click', () => {
+//   if (sectionOneView) {
+//   window.open("./html_pages/versneller.html", "_self")
+//   }
+//   if (sectionTwoView) {
+//   window.open("./html_pages/simulator.html", "_self")
+//   }
+//   if (sectionThreeView) {
+//   window.open("./html_pages/reserveren.html", "_self")
+//   }
+//   if (sectionFourView) {
+//   window.open("./html_pages/justdiggit.html", "_self")
+//   }
+// })
+
+// Mainbutton animations
+// const mainButton = document.querySelector('.mainButton')
+// mainButton.addEventListener('click', (e) => {
+//   blur2.style.display = 'none'
+//   unzeroOpacityForOriginal3gifs()
+  
+//   if (sectionOneView) {
+//     if (basisImageDisplay) {
+//       if (isDescOpen) {
+//         resetDescriptions()
+//       }
+
+//       hideLinkButtons(true)
+//       unhideFourLinkButtons()
+
+//       console.log(e.target)
+//       start.src = startMenuUrlPage1
+
+//       setTimeout(() => {
+//         start.style.zIndex = 2
+//         stop.style.zIndex = 1
+//         basis.style.zIndex = 0
+//       }, 300)
+
+//       basisImageDisplay = false
+
+//       mainButton.disabled = true
+
+//       setTimeout(() => {
+//         mainButton.disabled = false
+//       }, 2450)
+//     } else {
+//       hideFourLinkButtons()
+//       stop.src = stopMenuUrlPage1
+//       setTimeout(() => {
+//         stop.style.zIndex = 2
+//         start.style.zIndex = 1
+//         basis.style.zIndex = 0
+//       }, 500)
+
+//       basisImageDisplay = true
+
+//       mainButton.disabled = true
+//       setTimeout(() => {
+//         mainButton.disabled = false
+//         hideLinkButtons(false)
+//       }, 2050)
+//     }
+//   }
+
+//   if (sectionTwoView) {
+//     console.log('we are clicking on section two')
+
+//     if (basisImageDisplay) {
+//       if (isDescOpen) {
+//         resetDescriptions()
+//       }
+//       hideLinkButtons(true)
+//       unhideFourLinkButtons()
+//       start.src = startMenuUrlPage2
+//       setTimeout(() => {
+//         start.style.zIndex = 2
+//         stop.style.zIndex = 1
+//         basis.style.zIndex = 0
+//       }, 300)
+
+//       basisImageDisplay = false
+
+//       mainButton.disabled = true
+//       setTimeout(() => {
+//         mainButton.disabled = false
+//       }, 2450)
+//     } else {
+//       hideFourLinkButtons()
+//       stop.src = stopMenuUrlPage2
+//       setTimeout(() => {
+//         stop.style.zIndex = 2
+//         start.style.zIndex = 1
+//         basis.style.zIndex = 0
+//       }, 500)
+
+//       basisImageDisplay = true
+
+//       mainButton.disabled = true
+//       setTimeout(() => {
+//         mainButton.disabled = false
+//         hideLinkButtons(false)
+//         hideFourLinkButtons()
+//       }, 2050)
+//     }
+//   }
+
+//   if (sectionThreeView) {
+//     if (isDescOpen) {
+//       resetDescriptions()
+//     }
+//     console.log('we are clicking on section three')
+
+//     if (basisImageDisplay) {
+//       hideLinkButtons(true)
+//       unhideFourLinkButtons()
+//       start.src = startMenuUrlPage3
+//       setTimeout(() => {
+//         start.style.zIndex = 2
+//         stop.style.zIndex = 1
+//         basis.style.zIndex = 0
+//       }, 300)
+
+//       basisImageDisplay = false
+
+//       mainButton.disabled = true
+//       setTimeout(() => {
+//         mainButton.disabled = false
+//       }, 2450)
+//     } else {
+//       hideFourLinkButtons()
+//       stop.src = stopMenuUrlPage3
+//       setTimeout(() => {
+//         stop.style.zIndex = 2
+//         start.style.zIndex = 1
+//         basis.style.zIndex = 0
+//       }, 500)
+
+//       basisImageDisplay = true
+
+//       mainButton.disabled = true
+//       setTimeout(() => {
+//         mainButton.disabled = false
+//         hideLinkButtons(false)
+//         hideFourLinkButtons()
+//       }, 2050)
+//     }
+//   }
+
+//   if (sectionFourView) {
+//     if (isDescOpen) {
+//       resetDescriptions()
+//     }
+//     console.log('we are clicking on section four')
+
+//     if (basisImageDisplay) {
+//       hideLinkButtons(true)
+//       unhideFourLinkButtons()
+//       start.src = startMenuUrlPage4
+//       setTimeout(() => {
+//         start.style.zIndex = 2
+//         stop.style.zIndex = 1
+//         basis.style.zIndex = 0
+//       }, 300)
+
+//       basisImageDisplay = false
+
+//       mainButton.disabled = true
+//       setTimeout(() => {
+//         mainButton.disabled = false
+//       }, 2450)
+//     } else {
+//       hideFourLinkButtons()
+//       stop.src = stopMenuUrlPage4
+//       setTimeout(() => {
+//         stop.style.zIndex = 2
+//         start.style.zIndex = 1
+//         basis.style.zIndex = 0
+//       }, 500)
+
+//       basisImageDisplay = true
+
+//       mainButton.disabled = true
+//       setTimeout(() => {
+//         mainButton.disabled = false
+//         hideLinkButtons(false)
+//         hideFourLinkButtons()
+//       }, 2050)
+//     }
+//   }
+
+// })
+
 
 // Scrolling
 
@@ -57,6 +583,12 @@ mainDiv.addEventListener('scroll', () => {
     dynamicContainer.style.opacity = .95
     // linkImageSource(linkImageResult1_1, linkImageResult1_2, linkImageResult1_3)
     console.log('Page 1')
+
+    hideLinkButtons(false)
+  
+
+    resetDescriptions()
+    setCloseButtonPositions(340, 320, 200)
 
     pageHeader.innerText = 'De rijopleiding'
 
@@ -172,9 +704,9 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight < page1.scrollHeight
   ) {
     dynamicContainer.style.opacity = 0.9
-     
+    resetDescriptions()
     // basis.style.zIndex = 2
-    // hideLinkButtons(false)
+    hideLinkButtons(false)
     console.log('9')
   }
 
@@ -187,7 +719,9 @@ mainDiv.addEventListener('scroll', () => {
 
     dynamicContainer.style.opacity = 0.95
     // linkImageSource(linkImageResult2_1, linkImageResult2_2, linkImageResult2_3)
-
+    hideLinkButtons(false)
+    resetDescriptions()
+    setCloseButtonPositions(540, 520, 400)
     pageHeader.innerText = 'De simulator'
 
     basisImageDisplay = true
@@ -302,8 +836,8 @@ mainDiv.addEventListener('scroll', () => {
     dynamicContainer.style.opacity = 0.9
     console.log('9')
     // basis.style.zIndex = 2
-    // hideLinkButtons(false)
-     
+    hideLinkButtons(false)
+    resetDescriptions()
   }
 
 
@@ -317,7 +851,9 @@ mainDiv.addEventListener('scroll', () => {
     console.log('Page 3')
     dynamicContainer.style.opacity = 0.95
     // linkImageSource(linkImageResult3_1, linkImageResult3_2, linkImageResult3_3)
-    
+    hideLinkButtons(false)
+    resetDescriptions()
+    setCloseButtonPositions(340, 320, 300)
     pageHeader.innerText = 'De theorie'
 
     basisImageDisplay = true
@@ -452,8 +988,8 @@ mainDiv.addEventListener('scroll', () => {
     dynamicContainer.style.opacity = 0.9
     console.log('9')
     // basis.style.zIndex = 2
-    // hideLinkButtons(false)
-     
+    hideLinkButtons(false)
+    resetDescriptions()
   }
 
   if (
@@ -464,8 +1000,9 @@ mainDiv.addEventListener('scroll', () => {
     console.log('Page 4')
     dynamicContainer.style.opacity = 0.95
     // linkImageSource(linkImageResult4_1, linkImageResult4_2, linkImageResult4_3)
-  
-    
+    hideLinkButtons(false)
+    resetDescriptions()
+    setCloseButtonPositions(240, 220, 200)
     pageHeader.innerText = 'De impact'
 
     basisImageDisplay = true
@@ -480,19 +1017,20 @@ mainDiv.addEventListener('scroll', () => {
 
     //pastda qo'shadigan joyga qo'sh
     dynamicContainer.style.display = 'block'
+    // mainButton.style.display = 'block'
     blueZoneContainer.style.display = 'block'
   }
 })
 
 
-// function hideLinkButtons(buttonStatus) {
-//   if (buttonStatus == true) {
-//     linkButton1.style.zIndex = -1
-//     linkButton2.style.zIndex = -1
-//     linkButton3.style.zIndex = -1
-//   } else {
-//     linkButton1.style.zIndex = 3
-//     linkButton2.style.zIndex = 3
-//     linkButton3.style.zIndex = 3
-//   }
-// }
+function hideLinkButtons(buttonStatus) {
+  if (buttonStatus == true) {
+    linkButton1.style.zIndex = -1
+    linkButton2.style.zIndex = -1
+    linkButton3.style.zIndex = -1
+  } else {
+    linkButton1.style.zIndex = 3
+    linkButton2.style.zIndex = 3
+    linkButton3.style.zIndex = 3
+  }
+}
