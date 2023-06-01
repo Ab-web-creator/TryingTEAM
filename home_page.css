@@ -111,12 +111,6 @@ body {
   opacity: 0;
 }
 
-.background {
-
-	
-	
-}
-
 .blur {
   position: fixed;
   width: 100%;
@@ -124,7 +118,7 @@ body {
   height: 100vh;
   z-index: 10;
   transition: all 1s;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
   background-color: #393c416e;
 }
 
@@ -135,7 +129,7 @@ body {
   height: 100vh;
   z-index: -1;
   transition: all 1s;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
   background-color: #393c416e;
 }
 
@@ -212,11 +206,6 @@ body {
 
 /* ------------------------------------ main section ------------------------------------ */
 
-h9 {text-align: center;
-	text-decoration-color: #01006C;
-	
-	
-}
 .section-container {
   overflow-y: scroll;
   height: 100vh;
@@ -308,66 +297,7 @@ section.page {
 
 /* Pseudo-buttons  */
 
-
-.flex_for_link {
-  background-color: rgba(255, 255, 255, 0.939);
-  color: #FFFFFF;
-  margin-bottom: 10px;
-  margin-right: 20px;
-  padding: 10px;
-  border-radius: 25px;
-  border: solid;
-	border-color: #2C326A;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-	
-}
-.first_page_images .basis {
-  opacity: 0.95;
-}
-.plus_sign {
-  /* position: fixed; */
-  text-align: center;
-  font-weight: 900;
-  width: 30px;
-  margin-left: 5px;
-  margin-right: 5px;
-  /* z-index: 10000; */
-  color: rgb(0, 81, 255);
-  /* background-color: rgba(255, 255, 255, 0.854); */
-}
-.plus_sign3 {
-  /* position: relative; */
-  bottom: 10px;
-  left: 10px;
-  text-align: center;
-  font-weight: 900;
-  width: 30px;
-  margin-left: 5px;
-  margin-right: 5px;
-  z-index: 100000;
-  /* background-color: rgba(255, 255, 255, 0.854); */
-}
-
-.linklar {
-  height: 20px;
-  overflow: hidden;
-	color: #000C94;
-	font-weight: 800;
-	margin-right: 30px;
-  /* background-color: rgba(255, 255, 255, 0.854); */
-
-}
-.expanded {
-  height: fit-content;
-  /* transition: all 0.2s ease-in-out; */
-  
-}
-  
-/* Pseudo-buttons  */
-
-/* .mainButton {
+.mainButton {
   position: absolute;
   left: 0;
   right: 0;
@@ -379,68 +309,97 @@ section.page {
   border-radius: 50%;
   background-color: transparent;
   border-width: 0px;
-} */
+}
 
 .linkButton1 {
   position: absolute;
-  bottom: 128px;
-  left: 10px;
-  width: 60px;
+  bottom: 154px;
+  left: 14px;
+  width: 30px;
   height: 40px;
   border-radius: 20%;
   
-  background-color: rgba(255, 0, 0, 0.306);
-  /* background-color: transparent; */
+  background-color: transparent;
   border-width: 0px;
 }
 
 .linkButton2 {
   position: absolute;
-  bottom: 70px;
-  left: 10px;
-  width: 60px;
-  height: 40px;
-  border-radius: 20%;
-  background-color: rgba(255, 255, 0, 0.4);
-  /* background-color: transparent; */
-
+  bottom: 125px;
+  left: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
   border-width: 0px;
 }
 
 .linkButton3 {
   position: absolute;
-  bottom: 15px;
-  left: 10px;
-  width: 60px;
+  bottom: 80px;
+  left: 14px;
+  width: 30px;
   height: 40px;
   border-radius: 10%;
 
-  background-color: rgba(0, 128, 0, 0.328);
-  /* background-color: transparent; */
-
+  background-color: transparent;
   border-width: 0px;
 }
 
 .closeLink {
   position: absolute;
-  left: 5px;
-  width: 100px;
-  height: 50px;
-  border-radius: 10%;
-  background-color: rgba(128, 128, 128, 0.38);
-  /* background-color: transparent; */
-
+  left: 14px;
+  width: 30px;
+  height: 40px;
+  border-radius: 20%;
+  background-color: transparent;
   border-width: 0px;
 }
 
+.oneOfFour1 {
+  position: absolute;
+  left: 30px;
+  bottom: 50px;
+  width: 90px;
+  height: 55px;
+  border-radius: 10%;
+  background-color: transparent;
+  border-width: 0px;
+}
 
+.oneOfFour2 {
+  position: absolute;
+  left: 68px;
+  bottom: 115px;
+  width: 100px;
+  height: 65px;
+  border-radius: 10%;
+  border-width: 0px;
+  background-color: transparent;
+  border-width: 0px;
+}
 
+.oneOfFour3 {
+  position: absolute;
+  left: 178px;
+  bottom: 110px;
+  width: 90px;
+  height: 65px;
+  border-radius: 10%;
+  background-color: transparent;
+  border-width: 0px;
+}
 
-
-
-
-
-
+.oneOfFour4 {
+  position: absolute;
+  right: 44px;
+  bottom: 45px;
+  width: 70px;
+  height: 55px;
+  border-radius: 10%;
+  background-color: transparent;
+  border-width: 0px;
+}
 
 .phone_number {
   display: none;
@@ -471,10 +430,10 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #000072;
+    background-color: #000095;
     box-shadow: 0px 3px 20px rgba(176, 176, 176, 0.548);
     width: 100%;
-    height: 40px;
+    height: 60px;
     color: white;
     z-index: 3;
     border-width: none;
@@ -515,7 +474,7 @@ header .end {
     display: flex;
     flex-direction: row;
     color: white;
-    margin-right: -40px;
+    margin-right: 0px;
 }
 
 header .end li a i {

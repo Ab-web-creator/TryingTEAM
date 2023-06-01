@@ -5,14 +5,14 @@
 }
 
 figure {
-  top: 40px;
-  bottom: 30px;
-  right: -64px;
+  top: 50px;
+  right: -62px;
   position: fixed;
   content: '';
-  width: 80px;
-  border-radius: 25px;
-  background-color: #000072;
+  width: 70px;
+  height: 93%;
+  border-radius: 50px;
+  background-color: #120587;
   z-index: 300;
 }
 
@@ -24,23 +24,12 @@ figure.active {
     margin-left:50px;	
 }
 
-.ronddetabel{
-	padding-top: 5px;
-	border: 2px;
-	border-style: solid;
-	border-color: #000072;
-	border-radius: 25px;
-	margin-bottom: 20px;
-	margin-right: 20px;
-	
-}
-
 .photo_for_each_page {
   /* background-color: #b95e5e; */
   margin: auto;
-  margin-top: 25px;
-  margin-bottom: 00px;
-  width: 100%;	
+  margin-top: 10px;
+  margin-right: 2%;
+  width: 96%;
 }
 
 .photo_for_each_page img {
@@ -54,77 +43,20 @@ figure.active {
   
   /* height: fit-content; */
 }
-.backgroundphoto {
-	background-color: #DBDAFF;
-}
-
-.backgroundphotosim {
-	background-image: url("images/backgroundsim.jpg");
-		background-position: center;
-	background-size: cover;
-}
-
-
-.backgroundverlichting {
-	background-image: url("images/backgroundverlichting.jpg");
-		background-position: center;
-	background-size: cover;
-}
-
-.backgroundversneller {
-	background-image: url("images/backgroundversneller.jpg");
-		background-position: center;
-	background-size: cover;
-}
-
-.backgroundspiegels {
-	background-image: url("images/backgroundspiegels.jpg");
-	background-position: center;
-	background-size: cover;
-}
-
-
-.backgroundtomtom {
-	background-image: url("images/backgroundspiegels.jpg");
-	background-position: center;
-	background-size: cover;
-}
-
-.backgroundbanden {
-	background-image: url("images/Achtergrondbanden.jpg");
-	background-position: center;
-	background-size: cover;
-}
-
-.achtermotor {
-	background-image: url("images/achtergrondmotor.jpg");
-	background-position: center;
-	background-size: cover;
-}
-
-.achtertarieven {
-	background-image: url("images/Achtergrondtarieven.jpg");
-	background-position: center;
-	background-size: cover;
-}
-
 
 .sarlavha_with_bg {
   /* background-color: #f0f0f4; */
-
-  background: #000072;
-  border: #8F8F8F;
-  border-style: solid;
-  border-left: #000072;
-  border-width: 2px;
-  border-radius: 0px;
-  margin: -20px 0px 30px 0px;
-  ;	
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: #B7C4FF;
+  border-radius: 25px;
+  margin-bottom: 30px;
+	margin-left: 9PX;
   /* margin-bottom: 30px; */
   font-size: 30px;
   letter-spacing: 1.7px;
   /* border-top: 4px double #818bf91a; */
-	width: 100%;
+	
 	
 }
 
@@ -143,25 +75,10 @@ h4 {
   font-weight: 700;
 }
 
-
-h5 {
-  text-align: center;
-  padding: 10px;
-  color: #FFFFFF;
-  font-weight: 700;
-	
-}
-
-
 h6 {
   padding: 0px 10px;
   font-size: 23px;
   font-weight: 700;
-}
-h7 {
-	font-size: 20px;
-	
-	
 }
 
 p {
@@ -218,79 +135,66 @@ footer p {
   background-repeat: no-repeat; */
 }
 
-.alleteksten3
-{ margin-top: 5px;
+/* why we need min-width: 360px ?  */
+@media only screen and (min-width: 500px) {
+  .flex_container {
+    position: relative;
+    margin-bottom: 80px;
+	
+    padding: 0px 0px 0px 30px;
+    margin-left: auto;
+  	margin-right: auto;
+	  max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .flex_text { 
+    margin-left: 15px;	
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-
-.volgende {
-	height: 40px;
-	background-image: url("images/volgende mobiel.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: right;
-	margin-right: 10px;
+@media only screen and (min-width: 600px) {
+  figure {
+    right: -1162px;
+  }
 }
 
-.vorige {
-	height: 40px;
-	background-image: url("images/vorige mobiel.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: left;
-	margin-left: 10px;
-}
 @media only screen and (min-width: 880px) {
 
-.volgende {
-	height: 40px;
-	background-image: url("images/volgende.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: right;
-	margin-right: 15px;
-}
-
-.vorige {
-	height: 40px;
-	background-image: url("images/vorige.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: left;
-	margin-left: 0px;
-}
-	
-.photo_for_each_page {
-    max-width: 650px;
+  .photo_for_each_page {
+    width: 650px;
     height: fit-content;
     margin: auto;
-    margin-top: 35px;
-    margin-bottom: 0px;
-	width: 100%;
-
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
-.photo_for_each_page img {
+  .photo_for_each_page img {
     margin: auto;
     padding: 0px 0px;
   }
 
-.sarlavha_with_bg {
+  .sarlavha_with_bg {
     /* background-color: #f0f0f4; */
     padding: 0px 0px;
     /* margin-bottom: 30px; */
-    font-size: 30px;
+    font-size: 44px;
     letter-spacing: 1.7px;
-	 margin: -10px 0px 30px 0px;
     /* border-top: 4px double #818bf91a; */
   }
 
   .flex_container {
     position: relative;
     margin-bottom: 80px;
-    padding: 0px 0px 0px 0px;
+	
+    padding: 0px 0px 0px 100px;
     margin-left: auto;
 	margin-right: auto;
-	max-width: 1000px;
+	max-width: 1200px;
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -317,36 +221,4 @@ git commit -m "lyuboe sobwenie"
 git push
 
 */
-
-
-.imageintable { width:  25px;	
-}
-
-.alleteksten {
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.alleteksten2 {
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	align-content: center;
-}
-
-.alleteksten3 {
-	max-width: 950px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0px;
-	}
-
-#dmenuBtn {
-	height: 1000px;
-	width: 60px;
-	margin-top: -7px;
-}
-
 
