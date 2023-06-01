@@ -1,154 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>TEAM-rijopleiding</title>
-        
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Yeseva+One&display=swap"
-          rel="stylesheet"
-        />
-    
-        <!-- Box icons -->
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-        />
-        <!-- Javascript links. I have two more on the bottom of the page -->
-        <script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
-        <script src="js/scroll&disappear.js" type="module" defer></script> 
-    
-        <!-- CSS links -->
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="aside.css" />
-    
-      </head>
-      
-      <body ontouchstart="touchStart(event)"
-      ontouchmove="touchMove(event)"
-      ontouchend="touchEnd()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarieven</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
-      <!-- Header -->
-      <header>
-        <div class="nav_container">
-          <li class="nav_icons grid-col-span-2"><a href="#">Proefles?</a></li>
-          <li class="nav_icons phone_icon">
-            <a href="#"> <img src="img/phone_icon.png" /></a>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../home_page.css">
+    <link rel="stylesheet" href="../aside.css">
+    <link rel="stylesheet" href="../other_pages.css">
+  
+</head>
+
+<body style="overflow: scroll; color: rgb(7, 7, 182)"
+ontouchstart="touchStart(event)"
+ontouchmove="touchMove(event)"
+ontouchend="touchEnd()">
+
+<!-- Copy in EVERY additional pages everything from here till "the main part" (line 137 ?) -->
+
+<div class="mobile_header">
+  <li id="proefles" class="nav_question">
+    <a href="#">Proefles?</a></li>
+  <li class="nav_icons phone_icon">
+    <a href="tel:+31615074940"> <img src="../images/phone_icon.png" /></a></li>
+  <li class="nav_icons whatsapp_icon">
+    <a href="https://api.whatsapp.com/send?phone=31615074940" target="_blank"> <img src="../images/whatsapp_icon.png" /></a></li>
+
+  <li class="nav_icons email_icon">
+    <a href="mailto:diederickv@gmail.com"><img src="../images/email_icon.png" /></a></li>
+  <li class="nav_icons">
+    <a href="#" id="menuBtn"><img src="../images/hamburger_menu.png" /></i></a></li>
+</div>
+
+<!-- Start of side-menu  -->
+<aside class="hdn-side">
+  
+	<div class="hdn-cont">
+      <ul>
+          <li class="mark" > 
+              <span class="home_sidemenu"><a> Home </a></span>
+              <span class="close_sidemenu"><a> &times; </a></span>
           </li>
-          <li class="nav_icons whatsapp_icon">
-            <a href="#"> <img src="img/whatsapp_icon.png" /></a>
+          <li class="ulLi">
+              <a href="#" class="feat-btn">De rijles <span class="firstMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              <ul class="feat-show">
+                <li><a href="../html_pages/opbouw.html"> Opbouw </a></li>
+                <li><a href="../html_pages/hoeveel_lessen.html"> Hoeveel lessen </a></li>
+                <li><a href="../html_pages/doelen.html"> Doelen </a></li>
+                <li><a href="../html_pages/deeltoets.html"> Deeltoets </a></li>
+                <li><a href="../html_pages/examen.html"> Examen </a></li>
+                <li><a href="../html_pages/RIS.html"> R.I.S. </a></li>
+              </ul>
           </li>
-          <li class="nav_icons email_icon">
-            <a href="#"><img src="img/email_icon.png" /></a>
-          </li>
-          <li class="nav_icons">
-            <a href="#" id="menuBtn"><i class="bx bx-menu"></i></a>
-          </li>
-        </div>
-      </header>
-
-
-      <!-- Aside menu bar -->
-
-      <div class="backdrop"></div>
-      <figure class="aside0"></figure>
-
-      <aside class="sidebar">
-        <div class="sidebar_top">
-          <a href="index.html"><i class='bx bx-home-heart'></i> Home</a> <button class="close_sideMenuBar">&times;</button>
-        </div>
-        <ul>
-          <li>
-            <a href="#" class="feat-btn">De rijles <span class="firstMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
-            <ul class="feat-show">
-              <li><a href="opbouw.html"> Opbouw </a></i></li>
-              <li><a href="hoeveel_lessen.html"> Hoeveel lessen </a></i></li>
-              <li><a href="doelen.html"> Doelen </a></i></li>
-              <li><a href="deeltoets.html"> Deeltoets </a></i></li>
-              <li><a href="examen.html"> Examen </a></i></li>
-              <li><a href="RIS.html"> R.I.S. </a></i></li>
-
+          <li><a href="../html_pages/simulator.html"> De simulator </a></li>
+          <li class="ulLi"> 
+              <a href="#" class="serv-btn">De lesversneller <span class="secondMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
               
-            </ul>
-          </li>
-          
-          <li> 
-            <a href="#" class="serv-btn">De lesversneller <span class="secondMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
-            
-            <ul class="serv-show">
-              <li><a href="documenten.html">Documenten </a></i></li>
-              <li><a href="dashboard.html">Dashboard & instrumenten </a></i></li>
-              <li><a href="wissers.html">Wissers & verlichting </a></i></li>
-              <li><a href="buiten_de_auto.html"> Buiten de auto </a></i></li>
-              <li><a href="tontom.html"> TonTom </a></i></li>
-            </ul>
+              <ul class="serv-show">
+                <li><a href="../html_pages/versneller.html">Documenten </a></i></li>
+                <li><a href="../html_pages/dashboard.html">Dashboard </a></li>
+                <li><a href="../html_pages/interieur.html">Interieur </a></li>
+                <li><a href="../html_pages/verlichting.html">verlichting </a></li>
+                <li><a href="../html_pages/wissers.html">Wissers </a></li>
+                <li><a href="../html_pages/Spiegels.html"> Spiegels </a></li>
+                <li><a href="../html_pages/Tomtom.html"> TomTom </a></li>
+                <li><a href="../html_pages/Banden.html">Banden </a></li>
+                <li><a href="../html_pages/motorkap.html">De motor </a></li>
+              </ul>
           </li>
 
-          <li> 
-            <a href="#" class="theory-btn">Theorie <span class="thirdMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
-            
-            <ul class="theory-show">
-              <li><a href="boeken.html"> Boeken</a></i></li>
-              <li><a href="examen_training.html"> Examen training  </a></i></li>
-            </ul>
+          <li class="ulLi"> 
+              <a href="#" class="theory-btn">Theorie <span class="thirdMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              
+              <ul class="theory-show">
+                <li><a href="boeken.html"> Boeken</a></li>
+                
+                <li><a href="https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr.htm?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%2Freserveren.htm">Reserveren </a></li>
+              </ul>
           </li>
+          <li> <a href="../html_pages/tarieven.html">De tarieven </a></li>
+          <li>  <a href="../html_pages/contact.html">Contact</a> </li>
+      </ul>
+  </div>
+</aside>
 
-         
-          <li><a href="simulator.html">De simulator </a></i></li>
-          <li>
-            <a href="tarieven.html">De tarieven </a>
-          </li>
-        <li>
-          <a href="contact.html">Contact</a></li>
-        </ul>
-       
-      </aside>
+<!-- End of side-menu  -->
+
+<!-- Additional layers  -->
+<div class="blurCompletely"></div>
+<div class="blur"></div>
+<div class="blur2"></div>
+
+<figure class="aside0"></figure>
+
+<!-- topBar for desktop  -->
+
+<header>
+  <div class="desktop_logo">
+    <li > <a href="index.html"> <img src="../images/logo.png" alt=""></a></li>
+  </div>
+  <nav class="fancy-link">
+          <li class="proefless">Proefles?</li>
+          <li class="proefless">Bel/app: 06-15074940</li>
+          <li class="startsAt_880">Of mail: info@team-rijopleiding.nl</li>
+  </nav>
+  <div class="end">
+      <a href="#" id="dmenuBtn"><i class='bx bx-menu-alt-right'></i></a>
+  </div>
+</header>
+
+<style type="text/css">
+	.photo_for_each_page {
+		margin-bottom: 30px;
+		
+	}
 
 
-    <main style="display: grid;">
-    <div class="photo_for_each_page"></div>
-    <h1 style="color: red; margin: auto; padding: 40px 0px;">Tarieven</h1>
+	
+
+</style>
+
+<div class="other_pages">
+
+<div class="achtertarieven">
+  <div class="photo_for_each_page">
+    <img src="../images/Pakketten.png" /> 
+  </div></div>
+
+  <div class="sarlavha_with_bg">
+    <h5 >Tarieven</h5>
+	  
+  </div>
+	
+	
+  <div class="flex_container">
+    <div class="flex_text"> 
+
+	  <h6> Tarieven/Pakketten</h6>
+<p>
+Rijles is nooit goedkoop maar team maakt je keuze wel een stuk gemakkelijker!
+	<br><br>
+
+Bij vrijwel alle rijscholen moet je een groot pakket afnemen van een paar duizend euro's in de hoop dat het genoeg is. <br>
+
+<br>
+Naast dat het vervelend in om zomaar zoveel geld over te maken, zit je ook nog eens vast aan de rijschool. <br>
+Als halverwege je rijopleiding blijkt dat je liever bij een andere rijschool had willen lessen dan kan dat niet meer.<br>
+<br>
+Natuurlijk lijkt een pakket aantrekkelijk, "je weet waar je aan toe bent" en er is een korting.<br>
+Helaas blijkt in de praktijk dat je altijd lessen moet bijkopen om je examen te krijgen.<br>
+<br>
+Bij team zit nooit ergens aan vast en krijg jij toch gewoon je korting!<br>
+	<br>
+
+
+Wij zijn niet bang dat je halverwege weggaat en geven jouw je korting alvast bij het begin:<br>
+<br>
+	
+
+
+</p>
+
+
+</div> 	 
+
+    <div class="flex_text">
+<h6>1:</h6>
+		<p>
+Wij gebruiken jou niet als taxi chauffer waardoor je rijles bestaat uit ophalen en wegbrengen van leerlingen maar investeren wij onze tijd in jou en rijden wij zelf van leerling naar leerling zodat je rijles begint met rijles!<br>
+</p>
+<h6>2:</h6>	<p>
+Je krijgt een gratis boekenpakket te leen inclusief examen trainingen voor je theorie.<br>
+</p>
+
+<h6>3:</h6>	
+ <p>
+Én de eerste 10 uur rijles 49 euro per uur!
+<br></p>
+
+<h6>4:</h6>	
+<p>
+Daarna is de standaard lesprijs 55 euro per uur (60 minuten)
+<br>
+Hiermee is TEAM ruim 20% goedkoper dan de A.N.W.B.<br>
+</p>
+<h6>5:</h6>	<p>
+Betaal per 5 lessen zodat je controle hebt over de finacien.<br>
+<br>
+		
+<h6>6:</h6>	
+<p>
+Geen "lesuur" van 45 minuten, geen verplichtingen, geen verstopte tarieven, geen "gratis" herexamens die je stiekem zelf betaald.<br>
+<br>
+Overige tarieven: <br>
+Praktijk examen 225,-<br>
+
+Tussentijdse toets 175,-<br>
+
+Individueel theorie examen 150,-<br>
+
+Boekenpakket 120,-<br>
+Rijtest 0,-<br>
+
+Faalangst examen 250,-<br>
+BNOR 250,-
+	 <br>
+ <br>
+</p>
+
+	
+<h6>Pakket</h6>
+<p>
+	Een "standaard pakket" zou dus uitkomen met 180 euro korting op 1815 euro met daarin:<br>
+30 uur rijles<br>
+Praktijk examen<br>
+Boeken en training<br>
+Van 1995 voor 1815 euro<br>		
+		</p>
+
+ </div>
+ </div>
+		 
+<br>
+<br>
+<br>
+
+
+
+
+
+</div>
+
+  <!-- copy everything from here till the end of script tags  -->
+  
+ 
+
+  <div class="black">
+    <p>@Copyright belongs to Shym-Tech, 2022. 
+      <a href="mailto:abekeasian@gmail.com">Contact email: abekeasian@gmail.com</a>
+    </p>
+  </div>
+
+    <script src="../js/expand_submenus.js"></script>
+    <script src="../js/swipeLeftToOpenSidemenu.js"></script>
+    <script src="../js/openAndClose_sidemenu.js"></script>
+   
+    <!-- <script>
+      const pageWidth = document.querySelector("#screen_width");
+      window.onresize = function reportWindowSize() {
+        pageWidth.textContent = `${window.innerWidth} px`;
+        };
+    </script> -->
     
-    <p style="width: 60%; margin-bottom: 40px; text-align: center; margin-left: auto; margin-right: auto;">Do not worry about payment, we do not charge too much...Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quo est, a quam omnis excepturi quis fugiat, in dolorem temporibus qui et quos porro. Ut?</p>
-
-    <button style="margin: auto; width: 300px; background: rgb(134, 145, 239); border: none; height: 50px; border-radius: 10px; font-size: 16px; color: #e1e1e1; padding: 20px; padding-bottom: 40px; font-weight: 500; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><a href="index.html">back to Home page </a></button>
-
-
-    <script src="js/hamburger.js"></script>
-    <script src="js/expand_submenus.js"></script>
-    </main>
-
-    <script>
-      var startingX , startingY , movingX , movingY ;
-      function touchStart(evt){
-      startingX = evt.touches[0].clientX ;
-      startingY = evt.touches[0].clientY ;
-      }
-      function touchMove(evt){
-      movingX = evt.touches[0].clientX ;
-      movingY = evt.touches[0].clientY ;
-      }
-      function touchEnd(){
-      if(startingX+100 < movingX){
-                  console.log('right');
-                  document.querySelector('aside').className = '';
-      } else if(startingX-100 > movingX){
-                  console.log('left');
-                  document.querySelector('aside').className = 'active';
-                  }
-     
-     if(startingY+100 < movingY){
-                 console.log('down');
-     } else if(startingY-100 > movingY){
-                 console.log('up');
-                 }
-      }
-      </script>
 </body>
 </html>

@@ -111,6 +111,12 @@ body {
   opacity: 0;
 }
 
+.background {
+
+	
+	
+}
+
 .blur {
   position: fixed;
   width: 100%;
@@ -118,7 +124,7 @@ body {
   height: 100vh;
   z-index: 10;
   transition: all 1s;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
   background-color: #393c416e;
 }
 
@@ -129,7 +135,7 @@ body {
   height: 100vh;
   z-index: -1;
   transition: all 1s;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
   background-color: #393c416e;
 }
 
@@ -206,6 +212,11 @@ body {
 
 /* ------------------------------------ main section ------------------------------------ */
 
+h9 {text-align: center;
+	text-decoration-color: #01006C;
+	
+	
+}
 .section-container {
   overflow-y: scroll;
   height: 100vh;
@@ -295,17 +306,22 @@ section.page {
   opacity: 0.95;
 }
 
+/* Pseudo-buttons  */
+
 
 .flex_for_link {
   background-color: rgba(255, 255, 255, 0.939);
-  color: blue;
+  color: #FFFFFF;
   margin-bottom: 10px;
+  margin-right: 20px;
   padding: 10px;
-  border-radius: 10px;
-
+  border-radius: 25px;
+  border: solid;
+	border-color: #2C326A;
   display: flex;
   flex-direction: row;
   gap: 10px;
+	
 }
 .first_page_images .basis {
   opacity: 0.95;
@@ -317,7 +333,8 @@ section.page {
   width: 30px;
   margin-left: 5px;
   margin-right: 5px;
-
+  /* z-index: 10000; */
+  color: rgb(0, 81, 255);
   /* background-color: rgba(255, 255, 255, 0.854); */
 }
 .plus_sign3 {
@@ -336,7 +353,9 @@ section.page {
 .linklar {
   height: 20px;
   overflow: hidden;
-  text-align: left;
+	color: #000C94;
+	font-weight: 800;
+	margin-right: 30px;
   /* background-color: rgba(255, 255, 255, 0.854); */
 
 }
@@ -364,7 +383,7 @@ section.page {
 
 .linkButton1 {
   position: absolute;
-  bottom: 110px;
+  bottom: 128px;
   left: 10px;
   width: 60px;
   height: 40px;
@@ -377,7 +396,7 @@ section.page {
 
 .linkButton2 {
   position: absolute;
-  bottom: 60px;
+  bottom: 70px;
   left: 10px;
   width: 60px;
   height: 40px;
@@ -390,7 +409,7 @@ section.page {
 
 .linkButton3 {
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   left: 10px;
   width: 60px;
   height: 40px;
@@ -406,60 +425,26 @@ section.page {
   position: absolute;
   left: 5px;
   width: 100px;
-  height: 140px;
+  height: 50px;
   border-radius: 10%;
   background-color: rgba(128, 128, 128, 0.38);
   /* background-color: transparent; */
 
   border-width: 0px;
 }
-/* 
-.oneOfFour1 {
-  position: absolute;
-  left: 30px;
-  bottom: 50px;
-  width: 90px;
-  height: 55px;
-  border-radius: 10%;
-  background-color: transparent;
-  border-width: 0px;
-}
 
-.oneOfFour2 {
-  position: absolute;
-  left: 68px;
-  bottom: 115px;
-  width: 100px;
-  height: 65px;
-  border-radius: 10%;
-  border-width: 0px;
-  background-color: transparent;
-  border-width: 0px;
-}
 
-.oneOfFour3 {
-  position: absolute;
-  left: 178px;
-  bottom: 110px;
-  width: 90px;
-  height: 65px;
-  border-radius: 10%;
-  background-color: transparent;
-  border-width: 0px;
-}
 
-.oneOfFour4 {
-  position: absolute;
-  right: 44px;
-  bottom: 45px;
-  width: 70px;
-  height: 55px;
-  border-radius: 10%;
-  background-color: transparent;
-  border-width: 0px;
-}
- */
 
+
+
+
+
+
+
+.phone_number {
+  display: none;
+}
 header {
   display: none;
 }
@@ -486,10 +471,10 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #000095;
+    background-color: #000072;
     box-shadow: 0px 3px 20px rgba(176, 176, 176, 0.548);
     width: 100%;
-    height: 60px;
+    height: 40px;
     color: white;
     z-index: 3;
     border-width: none;
@@ -530,7 +515,7 @@ header .end {
     display: flex;
     flex-direction: row;
     color: white;
-    margin-right: 0px;
+    margin-right: -40px;
 }
 
 header .end li a i {

@@ -5,19 +5,20 @@ const dynamicContainer = document.querySelector('.dynamicContainer')
 
 const pageLogo = document.createElement('img')
 pageLogo.setAttribute('class', 'pageLogo')
-pageLogo.src = './images/logo.png'
+pageLogo.src = './images/logoRijopleiding.png'
 
-const pageHeader = document.createElement('a')
-pageHeader.innerText = 'De rijopleiding'
-pageHeader.setAttribute('class', 'pageHeader')
+
+// const pageHeader = document.createElement('a')
+// pageHeader.innerText = 'De rijopleiding'
+// pageHeader.setAttribute('class', 'pageHeader')
 
 dynamicContainer.appendChild(pageLogo)
-dynamicContainer.appendChild(pageHeader)
+// dynamicContainer.appendChild(pageHeader)
 
 const blueZoneContainer = document.querySelector('.blueZoneContainer')
-const basis = document.querySelector('.basis')
-const start = document.querySelector('.start')
-const stop = document.querySelector('.stop')
+// const basis = document.querySelector('.basis')
+// const start = document.querySelector('.start')
+// const stop = document.querySelector('.stop')
 
 const page1 = document.getElementById('page-1')
 const page2 = document.getElementById('page-2')
@@ -29,7 +30,7 @@ const page4 = document.getElementById('page-4')
 // const page6 = document.getElementById('page-6')
 
 
-let basisImageDisplay = true
+// let basisImageDisplay = true
 // let startImageDisplay = false
 // let stopImageDisplay = false
 
@@ -43,22 +44,22 @@ let sectionFourView = false
 // let sectionSixView = false
 
 
-let basisMenuUrlPage1 = `./images/1_basis.gif`
-let basisMenuUrlPage2 = `./images/2_basis.gif`
-let basisMenuUrlPage3 = `./images/3_basis.gif`
-let basisMenuUrlPage4 = `./images/4_basis.gif`
+// let basisMenuUrlPage1 = `./images/1_basis.gif`
+// let basisMenuUrlPage2 = `./images/2_basis.gif`
+// let basisMenuUrlPage3 = `./images/3_basis.gif`
+// let basisMenuUrlPage4 = `./images/4_basis.gif`
 
-let startMenuUrlPage1 = `./images/1_start_menu.gif`
-let stopMenuUrlPage1 = `./images/1_stop_menu.gif`
+// let startMenuUrlPage1 = `./images/1_start_menu.gif`
+// let stopMenuUrlPage1 = `./images/1_stop_menu.gif`
 
-let startMenuUrlPage2 = `./images/2_start_menu.gif`
-let stopMenuUrlPage2 = `./images/2_stop_menu.gif`
+// let startMenuUrlPage2 = `./images/2_start_menu.gif`
+// let stopMenuUrlPage2 = `./images/2_stop_menu.gif`
 
-let startMenuUrlPage3 = `./images/3_start_menu.gif`
-let stopMenuUrlPage3 = `./images/3_stop_menu.gif`
+// let startMenuUrlPage3 = `./images/3_start_menu.gif`
+// let stopMenuUrlPage3 = `./images/3_stop_menu.gif`
 
-let startMenuUrlPage4 = `./images/4_start_menu.gif`
-let stopMenuUrlPage4 = `./images/4_stop_menu.gif`
+// let startMenuUrlPage4 = `./images/4_start_menu.gif`
+// let stopMenuUrlPage4 = `./images/4_stop_menu.gif`
 
 // Pseudo-buttons and gif images
 const linkButton1 = document.querySelector('.linkButton1')
@@ -109,9 +110,9 @@ let closeButtonHeight1 = 223
 let closeButtonHeight2 = 215
 let closeButtonHeight3 = 200
 
-let firstExpandButton = 110
-let secondExpandButton = 60
-let thirdExpandButton = 10
+let firstExpandButton = 128
+let secondExpandButton = 70
+let thirdExpandButton =  15
 
 function changeDefaultExpandPositions(firstValue, secondValue, thirdValue) {
   firstExpandButton = firstValue
@@ -186,7 +187,7 @@ linkButton1.addEventListener('click', (e) => {
  
   // remove later if 
   setCloseButtonHeight(140)
-  setExpandButtonsPosition(345, 60, 10)
+  setExpandButtonsPosition(400, 70, 15)
   
   // make these active again if needed 
   // if (sectionOneView) {
@@ -220,8 +221,8 @@ linkButton2.addEventListener('click', () => {
   plus_sign2.innerHTML = "—"
 
     // remove later if 
-    setCloseButtonHeight(140)
-    setExpandButtonsPosition(345, 60, 10)
+    setCloseButtonHeight(70)
+    setExpandButtonsPosition(280, 200, 15)
     
     // make these active again if needed 
     // if (sectionOneView) {
@@ -259,8 +260,8 @@ linkButton3.addEventListener('click', () => {
   // stop.style.zIndex = -30
   
     // remove later if 
-  setCloseButtonHeight(140)
-  setExpandButtonsPosition(345, 60, 10)
+  setCloseButtonHeight(20)
+  setExpandButtonsPosition(250, 200, 150)
   
   // make these active again if needed 
   // if (sectionOneView) {
@@ -590,9 +591,9 @@ mainDiv.addEventListener('scroll', () => {
     resetDescriptions()
     setCloseButtonPositions(340, 320, 200)
 
-    pageHeader.innerText = 'De rijopleiding'
+    // pageHeader.innerText = 'De rijopleiding'
 
-    basisImageDisplay = true
+    // basisImageDisplay = true
 
     // basis.src = basisMenuUrlPage1
     // basis.style.zIndex = 2
@@ -641,9 +642,10 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     dynamicContainer.style.opacity = 0
 
-    pageHeader.innerText = 'De rijopleiding'
+    // pageHeader.innerText = 'De rijopleiding'
+    pageLogo.src = './images/logoRijopleiding.png'
 
-    basisImageDisplay = true
+    // basisImageDisplay = true
 
     // basis.src = basisMenuUrlPage1
     // basis.style.zIndex = 2
@@ -662,9 +664,11 @@ mainDiv.addEventListener('scroll', () => {
     dynamicContainer.style.opacity = 0
     console.log('mid bottom 1-2')
 
-    pageHeader.innerText = 'De simulator'
+    // pageHeader.innerText = 'De simulator'
+    pageLogo.src = './images/logoSimulator.png'
+    
 
-    basisImageDisplay = true
+    // basisImageDisplay = true
 
     // basis.src = basisMenuUrlPage2
     // basis.style.zIndex = 2
@@ -722,9 +726,9 @@ mainDiv.addEventListener('scroll', () => {
     hideLinkButtons(false)
     resetDescriptions()
     setCloseButtonPositions(540, 520, 400)
-    pageHeader.innerText = 'De simulator'
+    // pageHeader.innerText = 'De simulator'
 
-    basisImageDisplay = true
+    // basisImageDisplay = true
 
     // basis.src = basisMenuUrlPage2
     // basis.style.zIndex = 2
@@ -765,6 +769,7 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('4-5')
     dynamicContainer.style.opacity = 0.25
+    pageLogo.src = './images/logoSimulator.png'
   }
 
   if (
@@ -772,10 +777,11 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.55
   ) {
     dynamicContainer.style.opacity = 0
-    pageHeader.innerText = 'De simulator'
+    // pageHeader.innerText = 'De simulator'
     console.log('mid top 2-3')
+   
 
-    basisImageDisplay = true
+    // basisImageDisplay = true
 
     // basis.src = basisMenuUrlPage2
     // basis.style.zIndex = 2
@@ -791,7 +797,8 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.65
   ) {
     dynamicContainer.style.opacity = 0
-    pageHeader.innerText = 'De theorie'
+    // pageHeader.innerText = 'De theorie'
+    pageLogo.src = './images/logoTheorie.png'
 
     console.log('mid bottom 2-3')
     basisImageDisplay = true
@@ -839,8 +846,6 @@ mainDiv.addEventListener('scroll', () => {
     hideLinkButtons(false)
     resetDescriptions()
   }
-
-
   
   if (
     scrolledHeight >= page1.scrollHeight + page2.scrollHeight &&
@@ -854,9 +859,9 @@ mainDiv.addEventListener('scroll', () => {
     hideLinkButtons(false)
     resetDescriptions()
     setCloseButtonPositions(340, 320, 300)
-    pageHeader.innerText = 'De theorie'
+    // pageHeader.innerText = 'De theorie'
 
-    basisImageDisplay = true
+    // basisImageDisplay = true
 
     // basis.src = basisMenuUrlPage3
     // basis.style.zIndex = 2
@@ -905,6 +910,7 @@ mainDiv.addEventListener('scroll', () => {
   ) {
     console.log('4-5')
     dynamicContainer.style.opacity = 0.25
+    pageLogo.src = './images/logoTheorie.png'
   }
 
   if (
@@ -914,10 +920,11 @@ mainDiv.addEventListener('scroll', () => {
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.55
   ) {
     dynamicContainer.style.opacity = 0
-    pageHeader.innerText = 'De theorie'
+    // pageHeader.innerText = 'De theorie'
     console.log('mid top 3-4')
+    pageLogo.src = './images/logoImpact.png'
 
-    basisImageDisplay = true
+    // basisImageDisplay = true
 
     // basis.src = basisMenuUrlPage3
     // basis.style.zIndex = 2
@@ -935,9 +942,9 @@ mainDiv.addEventListener('scroll', () => {
       page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.65
   ) {
     dynamicContainer.style.opacity = 0
-    pageHeader.innerText = 'De impact'
+    // pageHeader.innerText = 'De impact'
 
-    basisImageDisplay = true
+    // basisImageDisplay = true
 
     // basis.src = basisMenuUrlPage4
     // basis.style.zIndex = 2
@@ -1003,9 +1010,9 @@ mainDiv.addEventListener('scroll', () => {
     hideLinkButtons(false)
     resetDescriptions()
     setCloseButtonPositions(240, 220, 200)
-    pageHeader.innerText = 'De impact'
+    // pageHeader.innerText = 'De impact'
 
-    basisImageDisplay = true
+    // basisImageDisplay = true
 
     // basis.src = basisMenuUrlPage4
     // basis.style.zIndex = 2

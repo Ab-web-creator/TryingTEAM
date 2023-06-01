@@ -1,123 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>TEAM-rijopleiding</title>
-        
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Yeseva+One&display=swap"
-          rel="stylesheet"
-        />
-    
-        <!-- Box icons -->
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-        />
-        <!-- Javascript links. I have two more on the bottom of the page -->
-        <script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
-        <script src="js/scroll&disappear.js" type="module" defer></script> 
-    
-        <!-- CSS links -->
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="aside.css" />
-    
-      </head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wissers</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
-      <!-- Header -->
-      <header>
-        <div class="nav_container">
-          <li class="nav_icons grid-col-span-2"><a href="#">Proefles?</a></li>
-          <li class="nav_icons phone_icon">
-            <a href="#"> <img src="img/phone_icon.png" /></a>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../home_page.css">
+    <link rel="stylesheet" href="../aside.css">
+    <link rel="stylesheet" href="../other_pages.css">
+  
+</head>
+
+<body style="overflow: scroll; color: rgb(7, 7, 182)"
+ontouchstart="touchStart(event)"
+ontouchmove="touchMove(event)"
+ontouchend="touchEnd()">
+
+<!-- Copy in EVERY additional pages everything from here till "the main part" (line 137 ?) -->
+
+<div class="mobile_header">
+  <li id="proefles" class="nav_question">
+    <a href="#">Proefles?</a></li>
+  <li class="nav_icons phone_icon">
+    <a href="tel:+31615074940"> <img src="../images/phone_icon.png" /></a></li>
+  <li class="nav_icons whatsapp_icon">
+    <a href="https://api.whatsapp.com/send?phone=31615074940" target="_blank"> <img src="../images/whatsapp_icon.png" /></a></li>
+
+  <li class="nav_icons email_icon">
+    <a href="mailto:diederickv@gmail.com"><img src="../images/email_icon.png" /></a></li>
+  <li class="nav_icons">
+    <a href="#" id="menuBtn"><img src="../images/hamburger_menu.png" /></i></a></li>
+</div>
+
+<!-- Start of side-menu  -->
+<aside class="hdn-side">
+  
+	<div class="hdn-cont">
+      <ul>
+          <li class="mark" > 
+              <span class="home_sidemenu"><a> Home </a></span>
+              <span class="close_sidemenu"><a> &times; </a></span>
           </li>
-          <li class="nav_icons whatsapp_icon">
-            <a href="#"> <img src="img/whatsapp_icon.png" /></a>
+          <li class="ulLi">
+              <a href="#" class="feat-btn">De rijles <span class="firstMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              <ul class="feat-show">
+                <li><a href="../html_pages/opbouw.html"> Opbouw </a></li>
+                <li><a href="../html_pages/hoeveel_lessen.html"> Hoeveel lessen </a></li>
+                <li><a href="../html_pages/doelen.html"> Doelen </a></li>
+                <li><a href="../html_pages/deeltoets.html"> Deeltoets </a></li>
+                <li><a href="../html_pages/examen.html"> Examen </a></li>
+                <li><a href="../html_pages/RIS.html"> R.I.S. </a></li>
+              </ul>
           </li>
-          <li class="nav_icons email_icon">
-            <a href="#"><img src="img/email_icon.png" /></a>
-          </li>
-          <li class="nav_icons">
-            <a href="#" id="menuBtn"><i class="bx bx-menu"></i></a>
-          </li>
-        </div>
-      </header>
-
-
-      <!-- Aside menu bar -->
-
-      <div class="backdrop"></div>
-
-      <aside class="sidebar">
-        <div class="sidebar_top">
-          <a href="index.html"><i class='bx bx-home-heart'></i> Home</a> <button class="close_sideMenuBar">&times;</button>
-        </div>
-        <ul>
-          <li>
-            <a href="#" class="feat-btn">De rijles <span class="firstMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
-            <ul class="feat-show">
-              <li><a href="opbouw.html"> Opbouw </a></i></li>
-              <li><a href="hoeveel_lessen.html"> Hoeveel lessen </a></i></li>
-              <li><a href="doelen.html"> Doelen </a></i></li>
-              <li><a href="deeltoets.html"> Deeltoets </a></i></li>
-              <li><a href="examen.html"> Examen </a></i></li>
-              <li><a href="RIS.html"> R.I.S. </a></i></li>
-
+          <li><a href="../html_pages/simulator.html"> De simulator </a></li>
+          <li class="ulLi"> 
+              <a href="#" class="serv-btn">De lesversneller <span class="secondMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
               
-            </ul>
-          </li>
-          
-          <li> 
-            <a href="#" class="serv-btn">De lesversneller <span class="secondMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
-            
-            <ul class="serv-show">
-              <li><a href="documenten.html">Documenten </a></i></li>
-              <li><a href="dashboard.html">Dashboard & instrumenten </a></i></li>
-              <li><a href="wissers.html">Wissers & verlichting </a></i></li>
-              <li><a href="buiten_de_auto.html"> Buiten de auto </a></i></li>
-              <li><a href="tontom.html"> TonTom </a></i></li>
-            </ul>
+              <ul class="serv-show">
+                <li><a href="../html_pages/versneller.html">Documenten </a></i></li>
+                <li><a href="../html_pages/dashboard.html">Dashboard </a></li>
+                <li><a href="../html_pages/interieur.html">Interieur </a></li>
+                <li><a href="../html_pages/verlichting.html">verlichting </a></li>
+                <li><a href="../html_pages/wissers.html">Wissers </a></li>
+                <li><a href="../html_pages/Spiegels.html"> Spiegels </a></li>
+                <li><a href="../html_pages/Tomtom.html"> TomTom </a></li>
+                <li><a href="../html_pages/Banden.html">Banden </a></li>
+                <li><a href="../html_pages/motorkap.html">De motor </a></li>
+              </ul>
           </li>
 
-          <li> 
-            <a href="#" class="theory-btn">Theorie <span class="thirdMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
-            
-            <ul class="theory-show">
-              <li><a href="boeken.html"> Boeken</a></i></li>
-              <li><a href="examen_training.html"> Examen training  </a></i></li>
-            </ul>
+          <li class="ulLi"> 
+              <a href="#" class="theory-btn">Theorie <span class="thirdMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              
+              <ul class="theory-show">
+                <li><a href="boeken.html"> Boeken</a></li>
+                
+                <li><a href="https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr.htm?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%2Freserveren.htm">Reserveren </a></li>
+              </ul>
           </li>
+          <li> <a href="../html_pages/tarieven.html">De tarieven </a></li>
+          <li>  <a href="../html_pages/contact.html">Contact</a> </li>
+      </ul>
+  </div>
+</aside>
 
-         
-          <li><a href="simulator.html">De simulator </a></i></li>
-          <li>
-            <a href="tarieven.html">De tarieven </a>
-          </li>
-        <li>
-          <a href="contact.html">Contact</a></li>
-        </ul>
-       
-      </aside>
+<!-- End of side-menu  -->
 
+<!-- Additional layers  -->
+<div class="blurCompletely"></div>
+<div class="blur"></div>
+<div class="blur2"></div>
 
-    <main style="display: grid;">
-    <div class="photo_for_each_page"></div>
-    <h1 style="color: red; margin: auto; padding: 40px 0px;">Wissers</h1>
+<figure class="aside0"></figure>
+
+<!-- topBar for desktop  -->
+
+<header>
+  <div class="desktop_logo">
+    <li > <a href="index.html"> <img src="../images/logo.png" alt=""></a></li>
+  </div>
+  <nav class="fancy-link">
+          <li class="proefless">Proefles?</li>
+          <li class="proefless">Bel/app: 06-15074940</li>
+          <li class="startsAt_880">Of mail: info@team-rijopleiding.nl</li>
+  </nav>
+  <div class="end">
+      <a href="#" id="dmenuBtn"><i class='bx bx-menu-alt-right'></i></a>
+  </div>
+</header>
+
+<style type="text/css">
+.backgroundphoto {
+	background-color: #000072;
+}
+.achtertabel {
+	background-color: #7777FF;	
+	padding: 20px;
+	}
+
+.alleteksten {
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 25px;
+	padding: 10px;
+	max-width: 960px;
+	border-color: #000000;
+	color: #FFFFFF;
+	background:#000072;
+	}	
+</style>
+
+<div class="other_pages">
+
+	<div class="backgroundverlichting">
+      <div class="photo_for_each_page"> <img src="../images/wissers.png" /> 
+    </div>
+  </div>
+
+ <div class="sarlavha_with_bg">
+  <div class="alleteksten3">
+	<table width="100%" border="0px" cellpadding="0" cellspacing="0"> <tr>
+      <td width="30%" align="left" valign="middle"><a href="verlichting.html"> <div class="vorige" > </div></a> </td>
+      <td width="40%" valign="middle" align="center"><h5>Wissers</h5></td>
+      <td width="30%"  valign="middle" align="right"> <a href="Spiegels.html"> <div class="volgende" > </div></a> 
+	</td>
+   </tr>
+ </table>
+</div>
+</div>
+	
+	
+	
+<div class="flex_container">
+ <div class="flex_text"> 
+	  
+<h6>De ruitenwissers</h6>
+<p>	 
+Goed zicht is natuurlijk erg belangrijk, Je gebruikt hiervoor de kachel zodat er geen mist op het raam zit en voor de buitenkant heb je ruitenwissers aan de voor en meestal ook aan de achterkant.<br>
+<br>
+Sommige auto's hebben vanwege het 'milieu/gewichtsbesparing' geen ruitenwisser meer aan de achterkant wat mijn inziens een vreemde keuze is, deze auto's wegen vaak rond de 2000 kilo dus konden zij bete niet op de veiligheid besparen.<br>
+<br>
+Om de ruitenwisssers te bedienen kun je de hendel 1 x omhoog doen, deze springt dan weer terug naar de uit positie en de wisser aan de voorzijde zal 1 x vegen.<br>
+Dit doe je wanneer er ineens heel veel water op het raam komt of tijdens onregelmatige miezer.<br>
+<br></p>
+	 	
+ </div>	
+	
+	 <div class="flex_text"> 
+		 <p>
+1x omlaag is 'Auto'	de wissers vegen wanneer er water wordt gedetecteerd.<br>
+Om de gevoeligheid van de regensensor teregelen kun je de ring draaien.<br>
+<br>
+2 x omlaag is continu en 3 x omlaag is continu snel.
+	<br><br>
+De wisser aan de achterkant bedien je door de buitneste knop te draaien, net als het licht, en heeft 2 standen.<br>
+1 draai is interval, de 2de is continu.<br>
+Doordat er weinig water op de achterkant valt, zal deze minder gebruikt worden.<br>
+<br>
+Om de ramen schoon te houden kun je besproeien met ruitenwisservloeistof en ze schoonvegen. Dit doe je door de ruitenwisser naar je toe te trekken voor de voorkant en van je af te duwen voor de achterkant.
+
+</p>		 
+		 
+</div></div>
+	
+	
+	
+<div class="achtertabel">		
+  <div class="alleteksten">
+	  
+<table width="100%" border="0" align="center">
+  <tbody>
+    <tr>
+      <td width="16%" align="center"><h4>Symbol</h4></td>
+      <td width="29%" align="center"><h4>Functie</h4></td>
+      <td width="45%" align="center"><h4>Doel</h4></td>
+    </tr>
+  </tbody>
+</table>
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+ 
+    <tr>
+      <td width="70px" valign=""><div align="center"><img src="../indicatoren/ruitenwisser voor.png" alt="" width="68%" height=""  /></div></td>
+      <td width="40%" align="center" valign="middle"><h4 align="center">Ruitenwisser    voor</h4></td>
+      <td width="45%" align="center" valign="middle"><h4 align="center">Wegvegen    van vocht en vuil van het voorraam</h4></td>
+    </tr>
+    <tr>
+      <td width="70px" valign=""><p align="center"><img src="../indicatoren/ruitenwisser achter.png" alt="" width="100%"  /></p></td>
+      <td width="40%" align="center" valign="middle"><h4 align="center">Ruitenwisser    achter</h4></td>
+      <td width="45%" align="center" valign="middle"><h4 align="center">Wegvegen    van vocht envuil van het achterraam</h4></td>
+    </tr>
+    <tr>
+      <td width="70px" valign=""><p align="center"><img src="../indicatoren/ruitensproeing voor.png" alt="" width="100%" /></p></td>
+      <td width="40%" align="center" valign="middle"><h4 align="center">Ruitensproeing    voor</h4></td>
+      <td width="45%" align="center" valign="middle"><h4 align="center">Aanbrengen    van reinigings vloeistof</h4></td>
+    </tr>
+    <tr>
+      <td width="70px" valign=""><p align="center"><img src="../indicatoren/ruitensproeing achter.png" alt="" width="100%" /></p></td>
+      <td width="40%" align="center" valign="middle"><h4 align="center">Ruitensproeing    achter</h4></td>
+      <td width="45%" align="center" valign="middle"><h4 align="center">Aanbrengen    van reinigings vloeistof</h4></td>
+    </tr>
+    <tr>
+      <td width="70px" valign=""><p align="center"><img src="../indicatoren/Actief schoonmaken voor.png" alt="" width="100%" /></p></td>
+      <td width="40%" align="center" valign="middle"><h4 align="center">Actief    schoon maken van de voorruit</h4></td>
+      <td width="45%" align="center" valign="middle"><h4 align="center">Schoon maken    van de voorruit</h4></td>
+    </tr>
+    <tr>
+      <td width="70px" valign=""><p align="center"><img src="../indicatoren/Actief schoonmaken achter.png" alt="" width="100%" /></p></td>
+      <td width="40%" align="center" valign="middle"><h4 align="center">Actief    schoon maken van de achterruit</h4></td>
+      <td width="45%" align="center" valign="middle"><h4 align="center">Schoon maken    van de achterruit</h4></td>
+    </tr>
+    <tr>
+      <td valign=""><div align="center"><img src="../indicatoren/1keer.png" alt="" width="80%" align="middle" /></div></td>
+      <td align="center" valign="middle"><div align="center">
+        <h4>Aanzetten rijtenwisser voor</h4>
+      </div></td>
+      <td align="center" valign="middle"><div align="center">
+        <h4>1 x vegen</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td valign=""><div align="center"><img src="../indicatoren/uit.png" alt="" width="80%" /></div></td>
+      <td align="center" valign="middle"><div align="center">
+        <h4> Uitstand</h4>
+      </div></td>
+      <td align="center" valign="middle"><div align="center">
+        <h4>Uitzetten van de ruitenwissers</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td width="70px" valign="top"><p align="center"><img src="../indicatoren/auto.png" alt="" width="80%" /></p></td>
+      <td width="40%" align="center" valign="middle"><h4 align="center">Automatisch</h4></td>
+      <td width="45%" align="center" valign="middle"><h4 align="center">Reageerd automatisch op de regenval</h4></td>
+    </tr>
+    <tr>
+      <td valign=""><div align="center"><img src="../indicatoren/continu.png" alt="" width="80%" /></div></td>
+      <td align="center" valign="middle"><div align="center">
+        <h4>Continu aan</h4>
+      </div></td>
+      <td align="center" valign="middle"><div align="center">
+        <h4>Constand schoon houden van het voorraam</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td valign=""><div align="center"><img src="../indicatoren/continu snel.png" alt="" width="80%" align="middle" /></div></td>
+      <td align="center" valign="middle"><div align="center">
+        <h4>Continu aan snel</h4>
+      </div></td>
+      <td align="center" valign="middle"><div align="center">
+        <h4>Constand schoon houden van het voorraam bij zware regenval</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td width="70px" valign=""><strong>-</strong><img src="../indicatoren/auto.png" alt="" width="70%" /></td>
+      <td width="40%" align="center" valign="middle"><h4 align="center">Gevoeligheid sensor</h4></td>
+      <td width="45%" align="center" valign="middle"><h4 align="center">Reactie op de regenval</h4></td>
+    </tr>
+  </table>
+
+</div>
+</div>
+
+  <!-- copy everything from here till the end of script tags  -->
+  
+ 
+
+  <div class="black">
+    <p>@Copyright belongs to Shym-Tech, 2022. 
+      <a href="mailto:abekeasian@gmail.com">Contact email: abekeasian@gmail.com</a>
+    </p>
+  </div>
+
+    <script src="../js/expand_submenus.js"></script>
+    <script src="../js/swipeLeftToOpenSidemenu.js"></script>
+    <script src="../js/openAndClose_sidemenu.js"></script>
+   
+    <!-- <script>
+      const pageWidth = document.querySelector("#screen_width");
+      window.onresize = function reportWindowSize() {
+        pageWidth.textContent = `${window.innerWidth} px`;
+        };
+    </script> -->
     
-    <p style="width: 60%; margin-bottom: 40px; text-align: center; margin-left: auto; margin-right: auto;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quo est, a quam omnis excepturi quis fugiat, in dolorem temporibus qui et quos porro. Ut?</p>
-
-    <button style="margin: auto; width: 300px; background: rgb(134, 145, 239); border: none; height: 50px; border-radius: 10px; font-size: 16px; color: #e1e1e1; padding: 20px; padding-bottom: 40px; font-weight: 500; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><a href="index.html">back to Home page </a></button>
-
-
-    <script src="js/hamburger.js"></script>
-    <script src="js/expand_submenus.js"></script>
-    </main>
 </body>
 </html>

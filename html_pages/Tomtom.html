@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigatie</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../home_page.css">
+    <link rel="stylesheet" href="../aside.css">
+    <link rel="stylesheet" href="../other_pages.css">
+  
+</head>
+
+<body style="overflow: scroll; color: rgb(7, 7, 182)"
+ontouchstart="touchStart(event)"
+ontouchmove="touchMove(event)"
+ontouchend="touchEnd()">
+
+<!-- Copy in EVERY additional pages everything from here till "the main part" (line 137 ?) -->
+
+<div class="mobile_header">
+  <li id="proefles" class="nav_question">
+    <a href="#">Proefles?</a></li>
+  <li class="nav_icons phone_icon">
+    <a href="tel:+31615074940"> <img src="../images/phone_icon.png" /></a></li>
+  <li class="nav_icons whatsapp_icon">
+    <a href="https://api.whatsapp.com/send?phone=31615074940" target="_blank"> <img src="../images/whatsapp_icon.png" /></a></li>
+
+  <li class="nav_icons email_icon">
+    <a href="mailto:diederickv@gmail.com"><img src="../images/email_icon.png" /></a></li>
+  <li class="nav_icons">
+    <a href="#" id="menuBtn"><img src="../images/hamburger_menu.png" /></i></a></li>
+</div>
+
+<!-- Start of side-menu  -->
+<aside class="hdn-side">
+  
+	<div class="hdn-cont">
+      <ul>
+          <li class="mark" > 
+              <span class="home_sidemenu"><a> Home </a></span>
+              <span class="close_sidemenu"><a> &times; </a></span>
+          </li>
+          <li class="ulLi">
+              <a href="#" class="feat-btn">De rijles <span class="firstMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              <ul class="feat-show">
+                <li><a href="../html_pages/opbouw.html"> Opbouw </a></li>
+                <li><a href="../html_pages/hoeveel_lessen.html"> Hoeveel lessen </a></li>
+                <li><a href="../html_pages/doelen.html"> Doelen </a></li>
+                <li><a href="../html_pages/deeltoets.html"> Deeltoets </a></li>
+                <li><a href="../html_pages/examen.html"> Examen </a></li>
+                <li><a href="../html_pages/RIS.html"> R.I.S. </a></li>
+              </ul>
+          </li>
+          <li><a href="../html_pages/simulator.html"> De simulator </a></li>
+          <li class="ulLi"> 
+              <a href="#" class="serv-btn">De lesversneller <span class="secondMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              
+              <ul class="serv-show">
+                <li><a href="../html_pages/versneller.html">Documenten </a></i></li>
+                <li><a href="../html_pages/dashboard.html">Dashboard </a></li>
+                <li><a href="../html_pages/interieur.html">Interieur </a></li>
+                <li><a href="../html_pages/verlichting.html">verlichting </a></li>
+                <li><a href="../html_pages/wissers.html">Wissers </a></li>
+                <li><a href="../html_pages/Spiegels.html"> Spiegels </a></li>
+                <li><a href="../html_pages/Tomtom.html"> TomTom </a></li>
+                <li><a href="../html_pages/Banden.html">Banden </a></li>
+                <li><a href="../html_pages/motorkap.html">De motor </a></li>
+              </ul>
+          </li>
+
+          <li class="ulLi"> 
+              <a href="#" class="theory-btn">Theorie <span class="thirdMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              
+              <ul class="theory-show">
+                <li><a href="boeken.html"> Boeken</a></li>
+                
+                <li><a href="https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr.htm?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%2Freserveren.htm">Reserveren </a></li>
+              </ul>
+          </li>
+          <li> <a href="../html_pages/tarieven.html">De tarieven </a></li>
+          <li>  <a href="../html_pages/contact.html">Contact</a> </li>
+      </ul>
+  </div>
+</aside>
+
+<!-- End of side-menu  -->
+
+<!-- Additional layers  -->
+<div class="blurCompletely"></div>
+<div class="blur"></div>
+<div class="blur2"></div>
+
+<figure class="aside0"></figure>
+
+<!-- topBar for desktop  -->
+
+<header>
+  <div class="desktop_logo">
+    <li > <a href="index.html"> <img src="../images/logo.png" alt=""></a></li>
+  </div>
+  <nav class="fancy-link">
+          <li class="proefless">Proefles?</li>
+          <li class="proefless">Bel/app: 06-15074940</li>
+          <li class="startsAt_880">Of mail: info@team-rijopleiding.nl</li>
+  </nav>
+  <div class="end">
+      <a href="#" id="dmenuBtn"><i class='bx bx-menu-alt-right'></i></a>
+  </div>
+</header>
+
+<style type="text/css">
+.backgroundphoto {
+	background-color: #DBDAFF;
+}
+.achtertabel {
+	background-color: #848484;	
+	padding: 20px;
+	}
+
+.alleteksten {
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 25px;
+	padding: 10px;
+	max-width: 960px;
+	border-color: #B0B0B0;
+	color: #FFFFFF;
+	background:#104A00;
+	}	
+
+
+	
+
+</style>
+<!-- The main_part  -->
+
+<div class="other_pages">
+
+	<div class="backgroundtomtom">
+      <div class="photo_for_each_page"> <img src="../images/tomtom.png" /> 
+    </div>
+  </div>
+
+ <div class="sarlavha_with_bg">
+  <div class="alleteksten3">
+	<table width="100%" border="0px" cellpadding="0" cellspacing="0"> <tr>
+      <td width="30%" align="left" valign="middle"><a href="Spiegels.html"> <div class="vorige" > </div></a> </td>
+      <td width="40%" valign="middle" align="center"><h5>TomTom</h5></td>
+      <td width="30%"  valign="middle" align="right"> <a href="Banden.html"> <div class="volgende" > </div></a> 
+	</td>
+   </tr>
+ </table>
+</div>
+</div>
+	<br>
+<br>
+<br>
+<br>
+<br>
+
+  <div class="alleteksten">
+	   <table width="100%" border="0" align="center" cellpadding="5" cellspacing="5">
+    <tr>
+      <td width="40%"><h4>Aanwijzing:</h4></td>
+      <td width="60%"><div align="center">
+        <h4>Betekenis:</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Verderop links af</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Vooraankondiging, waarschijnlijk moet er een rijstrook gekozen worden</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Verderop rechts af</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Vooraankondiging, waarschijnlijk moet er een rijstrook gekozen worden</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td height="14"><div align="left">
+        <h4>Over ...meter links af slaan</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Vooraankondiging in meters</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Over ...meter rechts af slaan</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Vooraankondiging in meters</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Links af slaan</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Directe actie/kan ook een buiging zijn</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Rechts af slaan</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Directe actie/kan ook een buiging zijn</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Scherpe bocht naar links</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Vertraag</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Aan het einde van de weg links af slaan</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>...</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Aan het einde van de weg rechts af slaan</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>...</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Scherpe bocht naar rechts</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Vertraag</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Links afbuigen</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Dit lijkt op een afslag/kan wel degelijk een afslag zijn</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Rechts afbuigen</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Dit lijkt op een afslag/kan wel degelijk een afslag zijn</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Houd links aan</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Neem niet de afslag</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Houd rechts aan</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Neem niet de afslag</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Neem de afslag, ga vervolgens de snelweg op</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Je bevindt je op een knooppunt en gaat van een A-weg naar een andere A-weg en blijft dus op de snelweg</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Neem de 2de afslag links</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Sorteer links voor, er zijn waarschijnlijk meerdere rijstroken</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Neem de 2de afslag rechts</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Sorteer rechts voor, er zijn waarschijnlijk meerdere rijstroken</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Neem verderop de afslag</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Aanwijzing voor op de snelweg en buiten de bebouwde kom</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Neen de afslag</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Aanwijzing voor op de snelweg en buiten de bebouwde kom</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">
+        <h4>Ga rechts af op de rotonde 1ste afslag</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Standaard vierpoots rotonde</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td height="17"><div align="left">
+        <h4>Ga rechtdoor op de rotonde 2de afslag</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Standaard  vierpoots rotonde</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td height="17"><div align="left">
+        <h4>Ga links af op de rotonde 3de afslag</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Standaard vierpoots rotonde</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td height="17"><div align="left">
+        <h4>Ga de rotonde rond 4de afslag</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Standaard vierpoots rotonde</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td height="17"><div align="left">
+        <h4>Ga rechtdoor 1ste afslag</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Hoewel het de eerste afslag is, behandel je hem alsof het een standaard mini-rotonde is.</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td height="17"><div align="left">
+        <h4>Ga links af 2de afslag</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Hier zal sprake zijn van drie poots rotonde, de eerste poot is rechts en de tweede poot is links.</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td height="17"><div align="left">
+        <h4>Ga rechtdoor over de rotonde 3de afslag</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Dit zal een turbo of dubbele rotonde zijn, het is de 3de dus behandel je hem alsof je naar links gaat.</h4>
+      </div></td>
+    </tr>
+    <tr>
+      <td height="17"><div align="left">
+        <h4>Ga rechts/rechtdoor/links af dan/daarna/verderop rechts/rechtdoor/links</h4>
+      </div></td>
+      <td><div align="left">
+        <h4>Wanneer je dubbele aanwijzingen krijgt van Tomtom zal je bij het oplossen van de eerste verkeersopgave rekening moeten houden met de tweede verkeersopgave.</h4>
+      </div></td>
+    </tr>
+  </table>
+
+		<p> 
+	  Naast deze audio aanwijzingen geeft TomTom ook visuele aanwijzingen zoals de afstand tot de afslag, je snelheid, de maximaal toegestane snelheid, tijd van aankomst, de kaart, reistijd. <br>
+Zeer belangrijk zijn de aanwijzingen bovenin het scherm. <br>
+Daar staan de aanwijzingen die je nodig hebt voor het berijden van de snelweg.<br>
+			
+			</p>
+		  </div>
+		  
+		  <h5>
+<br>all rights reserved to Team-rijopleiding</h5>
+
+
+
+
+</div>
+
+  <!-- copy everything from here till the end of script tags  -->
+  
+ 
+
+  <div class="black">
+    <p>@Copyright belongs to Shym-Tech, 2022. 
+      <a href="mailto:abekeasian@gmail.com">Contact email: abekeasian@gmail.com</a>
+    </p>
+  </div>
+
+    <script src="../js/expand_submenus.js"></script>
+    <script src="../js/swipeLeftToOpenSidemenu.js"></script>
+    <script src="../js/openAndClose_sidemenu.js"></script>
+   
+    <!-- <script>
+      const pageWidth = document.querySelector("#screen_width");
+      window.onresize = function reportWindowSize() {
+        pageWidth.textContent = `${window.innerWidth} px`;
+        };
+    </script> -->
+    
+</body>
+</html>

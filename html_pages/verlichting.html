@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verlichting</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../home_page.css">
+    <link rel="stylesheet" href="../aside.css">
+    <link rel="stylesheet" href="../other_pages.css">
+    <style type="text/css">
+    </style>
+</head>
+
+<body style="overflow: scroll; color: rgb(7, 7, 182)"
+ontouchstart="touchStart(event)"
+ontouchmove="touchMove(event)"
+ontouchend="touchEnd()">
+
+<!-- Copy in EVERY additional pages everything from here till "the main part" (line 137 ?) -->
+
+<div class="mobile_header">
+  <li id="proefles" class="nav_question">
+    <a href="#">Proefles?</a></li>
+  <li class="nav_icons phone_icon">
+    <a href="tel:+31616074940"> <img src="../images/phone_icon.png" /></a></li>
+  <li class="nav_icons whatsapp_icon">
+    <a href="https://api.whatsapp.com/send?phone=31616074940" target="_blank"> <img src="../images/whatsapp_icon.png" /></a></li>
+
+  <li class="nav_icons email_icon">
+    <a href="mailto:diederickv@gmail.com"><img src="../images/email_icon.png" /></a></li>
+  <li class="nav_icons">
+    <a href="#" id="menuBtn"><img src="../images/hamburger_menu.png" /></i></a></li>
+</div>
+
+<!-- Start of side-menu  -->
+<aside class="hdn-side">
+  
+	<div class="hdn-cont">
+      <ul>
+          <li class="mark" > 
+              <span class="home_sidemenu"><a> Home </a></span>
+              <span class="close_sidemenu"><a> &times; </a></span>
+          </li>
+          <li class="ulLi"> <a href="#" class="feat-btn">De rijles <span class="firstMenuPackOpener">
+			                                         <i class='bx bxs-down-arrow' ></i></span></a>
+              <ul class="feat-show">
+                <li><a href="../html_pages/opbouw.html"> Opbouw </a></li>
+                <li><a href="../html_pages/hoeveel_lessen.html"> Hoeveel lessen </a></li>
+                <li><a href="../html_pages/doelen.html"> Doelen </a></li>
+                <li><a href="../html_pages/deeltoets.html"> Deeltoets </a></li>
+                <li><a href="../html_pages/examen.html"> Examen </a></li>
+                <li><a href="../html_pages/RIS.html"> R.I.S. </a></li>
+              </ul>
+          </li>
+          <li><a href="../html_pages/simulator.html"> De simulator </a></li>
+          <li class="ulLi"> 
+              <a href="#" class="serv-btn">De lesversneller <span class="secondMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              
+              <ul class="serv-show">
+                <li><a href="../html_pages/versneller.html">Documenten </a></i></li>
+                <li><a href="../html_pages/dashboard.html">Dashboard </a></li>
+                <li><a href="../html_pages/interieur.html">Interieur </a></li>
+                <li><a href="../html_pages/verlichting.html">verlichting </a></li>
+                <li><a href="../html_pages/wissers.html">Wissers </a></li>
+                <li><a href="../html_pages/Spiegels.html"> Spiegels </a></li>
+                <li><a href="../html_pages/Tomtom.html"> TomTom </a></li>
+                <li><a href="../html_pages/Banden.html">Banden </a></li>
+                <li><a href="../html_pages/motorkap.html">De motor </a></li>
+              </ul>
+          </li>
+
+          <li class="ulLi"> 
+              <a href="#" class="theory-btn">Theorie <span class="thirdMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              
+              <ul class="theory-show">
+                <li><a href="boeken.html"> Boeken</a></li>
+                
+                <li><a href="https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr.htm?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%2Freserveren.htm">Reserveren </a></li>
+              </ul>
+          </li>
+          <li> <a href="../html_pages/tarieven.html">De tarieven </a></li>
+          <li>  <a href="../html_pages/contact.html">Contact</a> </li>
+      </ul>
+  </div>
+</aside>
+
+<!-- End of side-menu  -->
+
+<!-- Additional layers  -->
+<div class="blurCompletely"></div>
+<div class="blur"></div>
+<div class="blur2"></div>
+
+<figure class="aside0"></figure>
+
+<!-- middleBar for deskmiddle  -->
+
+<header>
+  <div class="desktop_logo">
+    <li > <a href="index.html"> <img src="../images/logo.png" alt=""></a></li>
+  </div>
+  <nav class="fancy-link">
+          <li class="proefless">Proefles?</li>
+          <li class="proefless">Bel/app: 06-16074940</li>
+          <li class="startsAt_880">Of mail: info@team-rijopleiding.nl</li>
+  </nav>
+  <div class="end">
+      <a href="#" id="dmenuBtn"><i class='bx bx-menu-alt-right'></i></a>
+	  
+  </div>
+</header>
+
+<!-- <div id="container_delete">
+  <div class="first"><p ></p></div>
+  <div id="screen_width">resize page</div>
+</div> -->
+
+<!-- The main_part  -->
+<style type="text/css">
+.backgroundphoto {
+	background-color: #DBDAFF;
+}
+.achtertabel {
+	background-color: #FF6900;	
+	padding: 20px;
+	}
+
+.alleteksten {
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 25px;
+	padding: 10px;
+	max-width: 960px;
+	border-color: #000000;
+	color: #FF8607;
+	background:#000000;
+	}	
+
+
+	
+
+</style>
+
+<div class="other_pages">
+	<div class="backgroundverlichting">
+      <div class="photo_for_each_page"> <img src="../images/verlichting2.png" /> 
+    </div>
+  </div>
+	
+	
+ <div class="sarlavha_with_bg">
+  <div class="alleteksten3">
+	<table width="100%" border="0px" cellpadding="0" cellspacing="0"> <tr>
+      <td width="30%" align="left" valign="middle"><a href="interieur.html"> <div class="vorige" > </div></a> </td>
+      <td width="40%" valign="middle" align="center"><h5>Verlichting</h5></td>
+      <td width="30%"  valign="middle" align="right"> <a href="wissers.html"> <div class="volgende" > </div></a> 
+	</td>
+   </tr>
+ </table>
+</div>
+</div>
+</div>
+ <div class="flex_container">
+    <div class="flex_text"> 
+
+			<h6> Verlichting</h6>
+	  
+		<p>
+De auto heeft meerdere vormen van verlichting die  wisselend gebruikt worden.<br><br>
+
+
+  De parkeerlichten zijn kleine, zeer energiezuinige lampjes zowel aan de voor als achterzijde die er voor zorgen dat je bij het parkeren in het donker zichtbaar bent. <br>
+<br>
+
+    Bij sommige auto's is het mogelijk om ze alleen links of rechts in te schakelen om nog meer energie te besparen. Dit is belangrijk omdat er tijdens het parkeren geen stroom word geproduceerd. Als je dimlicht zou voeren dan is de accu vrij snel leeg en kan de auto niet meer starten.<br>
+<br>
+	 Stadsverlichting is parkeerverlichting hoewel er ook auto's zijn met extra parkeerlicht.
+  Dagrijlicht is "luxe" uitgevoerd stads/parkeerlicht. Meestal als LED uitgevoerd.<br>
+	
+		</p>
+	   </div>
+	   
+  <div class="flex_text"> 
+	  
+	  <p>
+ 
+
+  Dimlichten zijn je "gewone" lampen die je gebruikt om te zien waar je rijdt.
+  Grootlicht zijn de meest felle lampen die je hebt. Je gebruikt ze alleen in het donker en wanneer er geen tegemoetkomers zijn of andere weggebruikers met spiegels omdat deze lichten sterk verblinden.<br>
+<br>
+
+  Mistlichten zijn aan de voorzijde 2 lampen die laag en schuin schijnen om de berm zichtbaar te maken, aan de achterzijde is het een felle rode lamp.<br>
+<br>
+Bediening:<br>
+Buitenste draaiknop; uit, autmatisch, parkeerlicht, dimlicht.<br>
+Ring; Mistlicht,<br>
+Naar voren (van je af) duwen; grootlicht.<br>
+Naar je toe; sijnen.
+		 
+
+
+</p>
+	 </div>
+		
+	
+	</div>
+	<div class="achtertabel">
+	 <div class="alleteksten">
+	   
+		   
+ <table width="100%" border="0px" cellpadding="0" cellspacing="10">
+		<tr>
+      <td width="10%" align="left" valign="middle"><img src="../indicatoren/mistachterlicht.jpg" alt="" width="80" /></td>
+      <td width="30%" valign="middle"><h7 align="left">Mistlamp achter</h7></td>
+      <td width="60%"  valign="middle"><h7 align="left">Alleen inschakelen bij zicht tot 60meter.</h7></td>
+    </tr>
+    <tr>
+      <td width="10%" align="left" valign="middle"><img src="../indicatoren/mistlichtvoor.jpg" alt="" width="80" /></td>
+      <td width="30%" valign="middle"><h7 align="left">Mistlamp voor</h7></td>
+      <td width="60%"  valign="middle"><h7 align="left">Alleen inschakelen bij zicht tot 200meter.</h7></td>
+    </tr>
+    <tr>
+      <td width="10%" align="left" valign="middle"><img src="../indicatoren/stadslicht.jpg" alt="" width="80" /></td>
+      <td width="30%"  valign="middle"><h7 align="left">Stadslichten</h7></td>
+      <td width="60%"  valign="middle"><h7 align="left">Inschakelen tijdens het rijden</h7></td>
+    </tr>
+    <tr>
+      <td width="10%" align="left" valign="middle"><img src="../indicatoren/Dimlicht.jpg" alt="" width="80" /></td>
+      <td width="30%"  valign="middle"><h7 align="left">Dimlicht</h7></td>
+      <td width="60%"  valign="middle"><h7 align="left">Verplicht inschakelen tijdens schemer, slecht zicht en nacht</h7></td>
+    </tr>
+    <tr>
+      <td width="10%" align="left" valign="middle"><img src="../indicatoren/Grootlicht.jpg" alt="" width="80" /></td>
+      <td width="30%"  valign="middle"><h7 align="left">Grootlicht</h7></td>
+      <td width="60%"  valign="middle"><h7 align="left">Aan:beperkt zicht. Uit: bij volgen/naderend verkeer.</h7></td>
+    </tr>
+    <tr>
+      <td width="10%" align="left" valign="middle"><img src="../indicatoren/Richtingaanwijzer naar rechts.jpg" alt="" width="80" /></td>
+      <td width="30%"  valign="middle"><h7 align="left">Richting aawijzen naar rechts</h7></td>
+      <td width="60%"  valign="middle"><h7 align="left">Aan/uitzetten bij afslaan</h7></td>
+    </tr>
+    <tr>
+      <td width="10%" align="left" valign="middle"><img src="../indicatoren/Richtingaanwijzer naar links.jpg" alt="" width="80" /></td>
+      <td width="30%"  valign="middle"><h7 align="left">Richting aawijzen naar links</h7></td>
+      <td width="60%"  valign="middle"><h7 align="left">Aan/uitzetten bij afslaan</h7></td>
+    </tr>
+	 		<tr>
+      <td width="10%" align="left" valign="middle"><img src="../indicatoren/auto.png" alt="" width="80" /></td>
+      <td width="30%" valign="middle"><h7 align="left">Automatische lichtstand</h7></td>
+      <td width="60%"  valign="middle"><h7 align="left">Niet wenselijk, dimlicht voeren is veiliger</h7></td>
+    </tr>
+	 		<tr>
+      <td width="10%" align="left" valign="middle"><img src="../indicatoren/uit.png" alt="" width="80" /></td>
+      <td width="30%" valign="middle"><h7 align="left">Uit</h7></td>
+      <td width="60%"  valign="middle"><h7 align="left"></h7></td>
+    </tr>
+		</table>
+   </div>
+  </div>
+</div>
+
+  <!-- copy everything from here till the end of script tags  -->
+  
+ 
+
+  <div class="black">
+    <p>@Copyright belongs to Shym-Tech, 2022. 
+      <a href="mailto:abekeasian@gmail.com">Contact email: abekeasian@gmail.com</a>
+    </p>
+  </div>
+
+    <script src="../js/expand_submenus.js"></script>
+    <script src="../js/swipeLeftToOpenSidemenu.js"></script>
+    <script src="../js/openAndClose_sidemenu.js"></script>
+   
+    <!-- <script>
+      const pageWidth = document.querySelector("#screen_width");
+      window.onresize = function reportWindowSize() {
+        pageWidth.textContent = `${window.innerWidth} px`;
+        };
+    </script> -->
+    
+</body>
+</html>

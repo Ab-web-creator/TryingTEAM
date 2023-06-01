@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spiegels</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../home_page.css">
+    <link rel="stylesheet" href="../aside.css">
+    <link rel="stylesheet" href="../other_pages.css">
+  
+</head>
+
+<body style="overflow: scroll; color: rgb(7, 7, 182)"
+ontouchstart="touchStart(event)"
+ontouchmove="touchMove(event)"
+ontouchend="touchEnd()">
+
+<!-- Copy in EVERY additional pages everything from here till "the main part" (line 137 ?) -->
+
+<div class="mobile_header">
+  <li id="proefles" class="nav_question">
+    <a href="#">Proefles?</a></li>
+  <li class="nav_icons phone_icon">
+    <a href="tel:+31615074940"> <img src="../images/phone_icon.png" /></a></li>
+  <li class="nav_icons whatsapp_icon">
+    <a href="https://api.whatsapp.com/send?phone=31615074940" target="_blank"> <img src="../images/whatsapp_icon.png" /></a></li>
+
+  <li class="nav_icons email_icon">
+    <a href="mailto:diederickv@gmail.com"><img src="../images/email_icon.png" /></a></li>
+  <li class="nav_icons">
+    <a href="#" id="menuBtn"><img src="../images/hamburger_menu.png" /></i></a></li>
+</div>
+
+<!-- Start of side-menu  -->
+<aside class="hdn-side">
+  
+	<div class="hdn-cont">
+      <ul>
+          <li class="mark" > 
+              <span class="home_sidemenu"><a> Home </a></span>
+              <span class="close_sidemenu"><a> &times; </a></span>
+          </li>
+          <li class="ulLi">
+              <a href="#" class="feat-btn">De rijles <span class="firstMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              <ul class="feat-show">
+                <li><a href="../html_pages/opbouw.html"> Opbouw </a></li>
+                <li><a href="../html_pages/hoeveel_lessen.html"> Hoeveel lessen </a></li>
+                <li><a href="../html_pages/doelen.html"> Doelen </a></li>
+                <li><a href="../html_pages/deeltoets.html"> Deeltoets </a></li>
+                <li><a href="../html_pages/examen.html"> Examen </a></li>
+                <li><a href="../html_pages/RIS.html"> R.I.S. </a></li>
+              </ul>
+          </li>
+          <li><a href="../html_pages/simulator.html"> De simulator </a></li>
+          <li class="ulLi"> 
+              <a href="#" class="serv-btn">De lesversneller <span class="secondMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              
+              <ul class="serv-show">
+                <li><a href="../html_pages/versneller.html">Documenten </a></i></li>
+                <li><a href="../html_pages/dashboard.html">Dashboard </a></li>
+                <li><a href="../html_pages/interieur.html">Interieur </a></li>
+                <li><a href="../html_pages/verlichting.html">verlichting </a></li>
+                <li><a href="../html_pages/wissers.html">Wissers </a></li>
+                <li><a href="../html_pages/Spiegels.html"> Spiegels </a></li>
+                <li><a href="../html_pages/Tomtom.html"> TomTom </a></li>
+                <li><a href="../html_pages/Banden.html">Banden </a></li>
+                <li><a href="../html_pages/motorkap.html">De motor </a></li>
+              </ul>
+          </li>
+
+          <li class="ulLi"> 
+              <a href="#" class="theory-btn">Theorie <span class="thirdMenuPackOpener"><i class='bx bxs-down-arrow' ></i></span></a>
+              
+              <ul class="theory-show">
+                <li><a href="boeken.html"> Boeken</a></li>
+                
+                <li><a href="https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr.htm?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%2Freserveren.htm">Reserveren </a></li>
+              </ul>
+          </li>
+          <li> <a href="../html_pages/tarieven.html">De tarieven </a></li>
+          <li>  <a href="../html_pages/contact.html">Contact</a> </li>
+      </ul>
+  </div>
+</aside>
+
+<!-- End of side-menu  -->
+
+<!-- Additional layers  -->
+<div class="blurCompletely"></div>
+<div class="blur"></div>
+<div class="blur2"></div>
+
+<figure class="aside0"></figure>
+
+<!-- topBar for desktop  -->
+
+<header>
+  <div class="desktop_logo">
+    <li > <a href="index.html"> <img src="../images/logo.png" alt=""></a></li>
+  </div>
+  <nav class="fancy-link">
+          <li class="proefless">Proefles?</li>
+          <li class="proefless">Bel/app: 06-15074940</li>
+          <li class="startsAt_880">Of mail: info@team-rijopleiding.nl</li>
+  </nav>
+  <div class="end">
+      <a href="#" id="dmenuBtn"><i class='bx bx-menu-alt-right'></i></a>
+  </div>
+</header>
+
+<style type="text/css">
+.backgroundphoto {
+	background-color: #000072;
+}
+.achtertabel {
+	background-color: #7777FF;	
+	padding: 20px;
+	}
+
+.alleteksten {
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 25px;
+	padding: 10px;
+	max-width: 960px;
+	border-color: #000000;
+	color: #FFFFFF;
+	background:#000072;
+	}	
+	
+
+</style>
+
+<div class="other_pages">
+
+	<div class="backgroundspiegels">
+      <div class="photo_for_each_page"> <img src="../images/Spiegels2.png" /> 
+    </div>
+  </div>
+
+ <div class="sarlavha_with_bg">
+  <div class="alleteksten3">
+	<table width="100%" border="0px" cellpadding="0" cellspacing="0"> <tr>
+      <td width="30%" align="left" valign="middle"><a href="wissers.html"> <div class="vorige" > </div></a> </td>
+      <td width="40%" valign="middle" align="center"><h5>Spiegels</h5></td>
+      <td width="30%"  valign="middle" align="right"> <a href="Tomtom.html"> <div class="volgende" > </div></a> 
+	</td>
+   </tr>
+ </table>
+</div>
+</div>
+	
+  <div class="flex_container">
+    <div class="flex_text"> 
+	<h6> Buitenspiegels:</h6>
+<P>
+    Bij het afstellen van de buitenspiegels houdt je rekening met 2 dingen: de positie van de horizon en de hoek
+    ten op zichte van de auto.<br>
+
+   De horizon zit tussen 1/4 en 1/3 van boven (blauwe lijn).<br>
+
+    Door deze afstelling heb je maximaal zicht op de weg en het verkeer dat daar op rijd.
+  <br>
+    De hoek ten op zichte van de auto is zo dat je nog slechts een streepje van de auto ziet (rode lijn).<br>
+
+    Dit is nodig om de verhouding in te kunnen schatten tussen het object dat je in de spiegel ziet en de afstand tot de auto.<br></P>
+
+  <br></div> 	 
+
+    <div class="flex_text">
+
+  <h6> Binnenspiegel:</h6>
+		<p>
+    Voor de binnenspiegel geldt dat de horizon in het midden moet zitten en je recht naar achteren moet kunnen kijken (blauwe lijn). Indien goed afgesteld kun je het hendeltje dat in het midden aan de onderzijde zit gebruiken om de spiegel te kantelen.<br>
+ Door het kantelen kijk je door de eerste glaslaag heen op de daaronder liggende. Hierdoor krijg je een verduisterend effect wat je gebruikt tegen verblinding.
+ </p>
+		  </div>
+		  	  </div>
+		 
+</div>
+
+  <!-- copy everything from here till the end of script tags  -->
+  
+ 
+
+  <div class="black">
+    <p>@Copyright belongs to Shym-Tech, 2022. 
+      <a href="mailto:abekeasian@gmail.com">Contact email: abekeasian@gmail.com</a>
+    </p>
+  </div>
+
+    <script src="../js/expand_submenus.js"></script>
+    <script src="../js/swipeLeftToOpenSidemenu.js"></script>
+    <script src="../js/openAndClose_sidemenu.js"></script>
+   
+    <!-- <script>
+      const pageWidth = document.querySelector("#screen_width");
+      window.onresize = function reportWindowSize() {
+        pageWidth.textContent = `${window.innerWidth} px`;
+        };
+    </script> -->
+    
+</body>
+</html>
