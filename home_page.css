@@ -286,9 +286,13 @@ section.page {
 
 .blueZoneImage {
   position: absolute;
+
   bottom: 0;
   opacity: 0;
   object-fit: contain;
+
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .first_page_images .basis {
